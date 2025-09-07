@@ -5,6 +5,7 @@
   fetchpriority="low"
   onload="this.media='all'"
 >
+{{ 'new-product-card-list.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'header.js' | asset_url }}" defer="defer"></script>
 {%- if request.page_type != 'search' -%}
   <script src="{{ 'search.js' | asset_url }}" defer="defer"></script>
@@ -83,7 +84,10 @@
     {%- else -%}
       <div class="header__logo flex justify-center items-center z-1">
     {%- endif -%}
-    {%- if section.settings.header_layout == 'logo-left' or section.settings.header_layout == 'logo-left-search-center' and section.settings.enable_collapse_on_scroll -%}
+    {%- if section.settings.header_layout == 'logo-left'
+      or section.settings.header_layout == 'logo-left-search-center'
+      and section.settings.enable_collapse_on_scroll
+    -%}
       <button
         class="menu-drawer-button toggle-navigation-button btn btn--inherit flex-col items-center justify-center hidden lg:flex shrink-0"
         aria-label="{{ 'accessibility.menu_drawer' | t }}"
@@ -159,7 +163,12 @@
 
     <div class="header__icons header__icons--right flex justify-end z-1">
       <div class="header__buttons flex items-center justify-center">
-        {%- if custom_link and custom_link.settings.link != blank or custom_link.settings.label != blank or custom_link.settings.custom_icon != blank or custom_link.settings.icon != 'none' -%}
+        {%- if custom_link
+          and custom_link.settings.link != blank
+          or custom_link.settings.label != blank
+          or custom_link.settings.custom_icon != blank
+          or custom_link.settings.icon != 'none'
+        -%}
           <a
             href="{{ custom_link.settings.link | default: "#" }}"
             class="cusstom-button flex items-center justify-center gap-2 reversed-link{% if custom_link.settings.label == blank %} reversed-link--icon-only{% endif %}"
@@ -3042,6 +3051,22 @@
               "label": "t:general.image_ratio.options__4.label"
             }
           ]
+        }
+      ]
+    },
+    {
+      "type": "new_product_card_list",
+      "name": "New Product Card List",
+      "settings": [
+        {
+          "type": "text",
+          "label": "t:sections.header.blocks.all.menu_title.label",
+          "id": "menu_title"
+        },
+        {
+          "type": "collection",
+          "id": "npcl_collection",
+          "label": "导航栏产品集合选择"
         }
       ]
     }

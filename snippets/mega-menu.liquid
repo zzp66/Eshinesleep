@@ -320,6 +320,10 @@
                 {%- endfor -%}
               </div>
             {%- endif -%}
+          {%- when 'new_product_card_list' -%}
+            <div class="mega-menu__promotions mega-menu__column{% if link.links == blank %} no-links{% endif %}">
+              {% render 'new-header-product-card-list', block: block %}
+            </div>
           {%- when 'product_list' -%}
             {%- liquid
               assign is_carousel = false

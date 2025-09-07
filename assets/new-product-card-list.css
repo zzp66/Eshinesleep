@@ -1,0 +1,23 @@
+.new-header-card-slide>a {
+    display: block;
+}
+
+.new-header-card-item {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.card-item-infos {
+    padding: 10px;
+}
+
+.new-header-card-item p {
+    margin: 0;
+}

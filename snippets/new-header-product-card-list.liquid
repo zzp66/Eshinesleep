@@ -1,0 +1,28 @@
+{% assign products = block.settings.npcl_collection.products %}
+<div class="npcl-content">
+  <div class="swiper npcl-list-swiper">
+    <div class="swiper-wrapper">
+      {% for item in products %}
+        <div class="swiper-slide new-header-card-slide">
+          <a href="{{ item.url }}">
+            <div class="new-header-card-item">
+              <div class="card-item-img">
+                <img src="{{ item.featured_image | image_url: width: master }}" alt="">
+              </div>
+              <div class="card-item-infos">
+                <p class="infos-title">{{ item.title }}</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<script>
+  var mySwiper = new Swiper('.npcl-list-swiper', {
+    slidesPerView: 3,
+    spaceBetween: 20,
+  });
+</script>
