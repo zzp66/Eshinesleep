@@ -7152,7 +7152,8 @@ body:not(.header-pinned) .header-scrolled .header {
 .mega-menu__container {
   padding-block-start: var(--header-navigation-height);
   transition: padding var(--animation-nav);
-  background-color: rgb(var(--color-background));
+  /* background-color: rgb(var(--color-background)); */
+  background-color: #fbfbfb;
   color: rgb(var(--color-foreground));
   visibility: hidden;
 }
