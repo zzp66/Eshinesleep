@@ -4,7 +4,7 @@
     <div class="swiper-wrapper">
       {% for item in products %}
         <div class="swiper-slide new-header-card-slide">
-          <a href="{{ item.url }}">
+          <a href="{{ item.url }}" class="new-header-card-item-link">
             <div class="new-header-card-item">
               <div class="card-item-img">
                 <img src="{{ item.featured_image | image_url: width: master }}" alt="">
@@ -17,6 +17,11 @@
         </div>
       {% endfor %}
     </div>
+    <div class="npcl-list-swiper-btn">
+      <div class="swiper-button-prev npcl-btn-prev"></div>
+      <div class="swiper-pagination npcl-btn-pagination"></div>
+      <div class="swiper-button-next npcl-btn-next"></div>
+    </div>
   </div>
 </div>
 
@@ -24,5 +29,16 @@
   var mySwiper = new Swiper('.npcl-list-swiper', {
     slidesPerView: 3,
     spaceBetween: 20,
+    pagination: {
+      el: '.npcl-btn-pagination',
+    },
+    navigation: {
+      nextEl: '.npcl-btn-next',
+      prevEl: '.npcl-btn-prev',
+    },
+    grid: {
+      fill: 'row',
+      rows: 2,
+    },
   });
 </script>
