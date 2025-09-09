@@ -1,0 +1,34 @@
+<div class="new-header-card-item">
+  <div class="card-item-img">
+    <img src="{{ product.featured_image | image_url: width: master }}" alt="">
+  </div>
+  <div class="card-item-infos">
+    <p class="infos-title">{{ product.title }}</p>
+    <div class="product-parameter-bar-box">
+      {% assign total = 5 %}
+      <div class="product-parameter-bar">
+        {% assign rating_fields = 'firmness:Firmness,cooling:Cooling' | split: ',' %}
+
+        {% for field in rating_fields %}
+          {% assign parts = field | split: ':' %}
+          {% assign key = parts[0] %}
+          {% assign label = parts[1] %}
+          {% assign value = product.metafields.custom[key].value | default: 0 %}
+
+          <div class="rating-row">
+            <span class="rating-label">{{ label }}</span>
+            <div class="rating-bars">
+              {% for i in (1..total) %}
+                <span class="bar {% if i <= value %}filled {{ key }}{% endif %}"></span>
+              {% endfor %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="product-layers-height-box">
+      <div class="product-layers-info">Layers: <span>4</span></div>
+      <div class="product-height-info">Height: <span>11"</span></div>
+    </div>
+  </div>
+</div>

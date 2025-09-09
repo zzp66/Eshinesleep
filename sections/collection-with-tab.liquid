@@ -1,0 +1,162 @@
+{% liquid
+  assign header_layout = section.settings.header_layout
+%}
+{% style %}
+  .section-{{ section.id }} {
+    --section-padding-top: {{ section.settings.padding_top }}px;
+    --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+{% endstyle %}
+{{ 'collection-with-tab.css' | asset_url | stylesheet_tag }}
+<div class="section section-{{ section.id }} section--padding collection-with-tab">
+  <div class="section__container page-width page-width--{{ section.settings.container }}">
+    <div class="collection-with-tab-box">
+      <div class="tab-title-box">
+        <div class="tab-title-content">
+          {% for block in section.blocks %}
+            <div class="tab-title-item {% if forloop.first %}active{% endif %}" data-tab="tab-{{ forloop.index }}">
+              {{ block.settings.collection_title }}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="tab-content-box">
+        {% for block in section.blocks %}
+          {% assign coll = block.settings.collection %}
+          {% if coll != blank %}
+            <div
+              class="tab-content {% if forloop.first %}active{% endif %}"
+              id="tab-{{ forloop.index }}"
+            >
+              <div class="swiper tab-product-swiper">
+                <div class="swiper-wrapper">
+                  {% for product in coll.products limit: 8 %}
+                    <div class="swiper-slide tab-product-card">
+                      {% render 'new-product-card', product: product %}
+                    </div>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  var mySwiper = new Swiper('.tab-product-swiper', {
+    slidesPerView: 3,
+    spaceBetween: 40,
+    // pagination: {
+    //   el: '.npcl-btn-pagination',
+    // },
+    // navigation: {
+    //   nextEl: '.npcl-btn-next',
+    //   prevEl: '.npcl-btn-prev',
+    // },
+    // grid: {
+    //   fill: 'row',
+    //   rows: 2,
+    // },
+  });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const tabTitles = document.querySelectorAll('.collection-with-tab .tab-title-item');
+    const tabContents = document.querySelectorAll('.collection-with-tab .tab-content');
+
+    tabTitles.forEach((title) => {
+      title.addEventListener('click', () => {
+        const target = title.getAttribute('data-tab');
+
+        // 切换标题
+        tabTitles.forEach((t) => t.classList.remove('active'));
+        title.classList.add('active');
+
+        // 切换内容
+        tabContents.forEach((content) => {
+          content.classList.remove('active');
+          if (content.id === target) {
+            content.classList.add('active');
+          }
+        });
+      });
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Collection With Tab",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:general.general.name"
+    },
+    {
+      "type": "select",
+      "id": "container",
+      "options": [
+        {
+          "value": "full",
+          "label": "t:general.container.options__full.label"
+        },
+        {
+          "value": "fixed",
+          "label": "t:general.container.options__fixed.label"
+        }
+      ],
+      "default": "fixed",
+      "label": "t:general.container.label"
+    },
+    {
+      "type": "header",
+      "content": "t:general.padding.section_heading.content"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "label": "t:general.padding.top.label",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "label": "t:general.padding.bottom.label",
+      "default": 50
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Collection",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        },
+        {
+          "type": "text",
+          "id": "collection_title",
+          "label": "Title"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection With Tab"
+    }
+  ]
+}
+{% endschema %}

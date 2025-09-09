@@ -3,16 +3,10 @@
   <div class="swiper npcl-list-swiper">
     <div class="swiper-wrapper">
       {% for item in products %}
+        {% assign product = item %}
         <div class="swiper-slide new-header-card-slide">
-          <a href="{{ item.url }}" class="new-header-card-item-link">
-            <div class="new-header-card-item">
-              <div class="card-item-img">
-                <img src="{{ item.featured_image | image_url: width: master }}" alt="">
-              </div>
-              <div class="card-item-infos">
-                <p class="infos-title">{{ item.title }}</p>
-              </div>
-            </div>
+          <a href="{{ product.url }}" class="new-header-card-item-link">
+            {% render 'product-card-for-header', product: product %}
           </a>
         </div>
       {% endfor %}
