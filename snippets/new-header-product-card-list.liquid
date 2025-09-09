@@ -6,7 +6,7 @@
         {% assign product = item %}
         <div class="swiper-slide new-header-card-slide">
           <a href="{{ product.url }}" class="new-header-card-item-link">
-            {% render 'product-card-for-header', product: product %}
+            {% render 'new-product-card-header', product: product %}
           </a>
         </div>
       {% endfor %}
