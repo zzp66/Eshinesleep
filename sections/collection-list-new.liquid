@@ -1,0 +1,189 @@
+{% liquid
+  assign header_layout = section.settings.header_layout
+%}
+{% style %}
+  .section-{{ section.id }} {
+    --section-padding-top: {{ section.settings.padding_top }}px;
+    --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+{% endstyle %}
+<style>
+  .collection-list-new p {
+    margin: 0;
+  }
+  .collection-card-item {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .coll-card-item-img {
+    display: flex;
+  }
+  .coll-card-item-bg {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, #000000, #00000000);
+    z-index: 1;
+  }
+  .coll-card-item-infos {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    z-index: 2;
+  }
+  p.coll-card-item-title {
+    color: #fff;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+    margin: 0 0 12px;
+  }
+  .coll-card-item-info {
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    margin: 0 0 12px;
+  }
+</style>
+<div class="section section-{{ section.id }} section--padding collection-list-new">
+  <div class="section__container page-width page-width--{{ section.settings.container }}">
+    <div class="collection-list-new-box">
+      <div class="collection-list-new-title"></div>
+      <div class="swiper cln-swiper">
+        <div class="swiper-wrapper">
+          {% for item in section.blocks %}
+            <div class="swiper-slide">
+              <div class="collection-card-item">
+                <div class="coll-card-item-img">
+                  <img src="{{ item.settings.coll_img | image_url: width: master }}" alt="">
+                </div>
+                <div class="coll-card-item-bg"></div>
+                <div class="coll-card-item-infos">
+                  <p class="coll-card-item-title">{{ item.settings.coll_title }}</p>
+                  {% if item.settings.coll_info != blank %}
+                    <div class="coll-card-item-info">{{ item.settings.coll_info }}</div>
+                  {% endif %}
+                  <div class="coll-card-item-btn">
+                    <a href="{{ item.settings.coll_url }}" class="btn btn--primary">
+                      <span class="btn__text">Shop Now</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  var mySwiper = new Swiper('.cln-swiper', {
+    slidesPerView: 1.2,
+    spaceBetween: 20,
+    breakpoints: {
+      767: {
+        //当屏幕宽度大于等于768
+        slidesPerView: 1.2,
+        spaceBetween: 30,
+      },
+      1280: {
+        //当屏幕宽度大于等于1280
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+    },
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Collection List New",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:general.general.name"
+    },
+    {
+      "type": "select",
+      "id": "container",
+      "options": [
+        {
+          "value": "full",
+          "label": "t:general.container.options__full.label"
+        },
+        {
+          "value": "fixed",
+          "label": "t:general.container.options__fixed.label"
+        }
+      ],
+      "default": "fixed",
+      "label": "t:general.container.label"
+    },
+    {
+      "type": "header",
+      "content": "t:general.padding.section_heading.content"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "label": "t:general.padding.top.label",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "label": "t:general.padding.bottom.label",
+      "default": 50
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Collection",
+      "settings": [
+        {
+          "type": "url",
+          "id": "coll_url",
+          "label": "Collection"
+        },
+        {
+          "type": "image_picker",
+          "id": "coll_img",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "coll_title",
+          "label": "Title",
+          "default": "Mattress"
+        },
+        {
+          "type": "text",
+          "id": "coll_info",
+          "label": "Info"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection With Tab"
+    }
+  ]
+}
+{% endschema %}

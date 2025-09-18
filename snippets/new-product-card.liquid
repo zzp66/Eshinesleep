@@ -52,7 +52,9 @@
         <p class="compare-price-price">Total Value {{ product.compare_at_price | money }}</p>
       </div>
       <div class="product-link-btn-box">
-        <button class="product-link-btn">Shop Now</button>
+        <a class="btn btn--primary" href="{{ product.url }}">
+          <span class="btn__text">Shop Now</span>
+        </a>
       </div>
     </div>
     <div class="product-num-box">

@@ -158,11 +158,8 @@ p.new-product-card-title {
     -o-border-radius: 2px;
 }
 
-.product-link-btn {
+.product-link-btn-box a.btn {
     width: 100%;
-    color: #fff;
-    background: #E7600f;
-    border: none;
 }
 
 .product-num-box {
