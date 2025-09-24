@@ -9,19 +9,17 @@
     <div class="product-parameter-bar-box">
       {% assign total = 5 %}
       <div class="product-parameter-bar">
-        {% assign rating_fields = 'firmness:Firmness,cooling:Cooling' | split: ',' %}
-
-        {% for field in rating_fields %}
-          {% assign parts = field | split: ':' %}
-          {% assign key = parts[0] %}
-          {% assign label = parts[1] %}
-          {% assign value = product.metafields.custom[key].value | default: 0 %}
-
-          <div class="rating-row">
-            <span class="rating-label">{{ label }}</span>
+        {% for param in product.metafields.custom.parameter_bar.value %}
+          <div class="rating-row {{ param.label | downcase }}">
+            <span class="rating-label">{{ param.label }}</span>
             <div class="rating-bars">
               {% for i in (1..total) %}
-                <span class="bar {% if i <= value %}filled {{ key }}{% endif %}"></span>
+                <span
+                  class="bar {% if i <= param.value %}filled{% endif %}"
+                  {% if i <= param.value and param.color %}
+                    style="background-color: {{ param.color }};"
+                  {% endif %}
+                ></span>
               {% endfor %}
             </div>
           </div>
@@ -29,27 +27,17 @@
       </div>
     </div>
     <div class="product-briefinfo-box">
-      <div class="briefinfo-item">
-        <img src="https://cdn.shopify.com/s/files/1/0587/4139/1417/files/right.png?v=1757394754" alt="">
-        <p class="briefinfo">ProCore™ technology with zoned support</p>
-      </div>
-      <div class="briefinfo-item">
-        <img src="https://cdn.shopify.com/s/files/1/0587/4139/1417/files/right.png?v=1757394754" alt="">
-        <p class="briefinfo">ProCore™ technology with zoned support</p>
-      </div>
-      <div class="briefinfo-item">
-        <img src="https://cdn.shopify.com/s/files/1/0587/4139/1417/files/right.png?v=1757394754" alt="">
-        <p class="briefinfo">ProCore™ technology with zoned support</p>
-      </div>
-      <div class="briefinfo-item">
-        <img src="https://cdn.shopify.com/s/files/1/0587/4139/1417/files/right.png?v=1757394754" alt="">
-        <p class="briefinfo">ProCore™ technology with zoned support</p>
-      </div>
+      {% for briefinfo in product.metafields.custom.brief_infos.value %}
+        <div class="briefinfo-item">
+          <img src="https://cdn.shopify.com/s/files/1/0587/4139/1417/files/right.png?v=1757394754" alt="">
+          <p class="briefinfo">{{ briefinfo }}</p>
+        </div>
+      {% endfor %}
     </div>
     <div class="product-priceinfo-box">
       <div class="product-compare-price">
         <p class="compare-price-compare">Starting From {{ product.price | money }}</p>
-        <p class="compare-price-price">Total Value {{ product.compare_at_price | money }}</p>
+        <p class="compare-price-price">{{ product.compare_at_price | money }}</p>
       </div>
       <div class="product-link-btn-box">
         <a class="btn btn--primary" href="{{ product.url }}">
@@ -57,8 +45,10 @@
         </a>
       </div>
     </div>
-    <div class="product-num-box">
-      <p class="product-num">11"</p>
-    </div>
+    {% comment %}
+      <div class="product-num-box">
+        <p class="product-num">11"</p>
+      </div>
+    {% endcomment %}
   </div>
 </div>

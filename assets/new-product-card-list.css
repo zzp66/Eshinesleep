@@ -1,6 +1,6 @@
 .new-header-card-slide>a {
     display: block;
-    padding: 20px;
+    padding: 10px;
     background: #fff;
     border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -49,6 +49,8 @@
 }
 
 p.infos-title {
+    font-size: 14px;
+    line-height: 16px;
     font-weight: bold;
     display: -webkit-box;
     -webkit-line-clamp: 1;
@@ -103,7 +105,7 @@ p.infos-title {
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 8px;
+    gap: 5px;
     margin: 10px 0;
 }
 
@@ -121,24 +123,17 @@ p.infos-title {
 }
 
 .rating-bars {
+    width: 100%;
     line-height: 16px;
     display: flex;
     gap: 2px;
 }
 
 .rating-bars .bar {
-    width: 30px;
+    width: 20%;
     height: 6px;
     background: #e0e0e0;
     transform: skew(-12deg);
-}
-
-.rating-bars .bar.filled.cooling {
-    background: #5fa644;
-}
-
-.rating-bars .bar.filled.firmness {
-    background: #42742f;
 }
 
 .product-layers-height-box {
@@ -149,4 +144,26 @@ p.infos-title {
 
 .product-layers-height-box span {
     font-weight: bold;
+}
+
+.new-header-card-badge {
+    margin-bottom: 5px;
+}
+
+.new-header-card-badge .product-badges {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.new-header-card-badge span.badge {
+    color: #fff;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }

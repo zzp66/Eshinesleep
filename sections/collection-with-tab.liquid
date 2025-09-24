@@ -47,8 +47,8 @@
 
 <script>
   var mySwiper = new Swiper('.tab-product-swiper', {
-    slidesPerView: 4,
-    spaceBetween: 40,
+    slidesPerView: 1.2,
+    spaceBetween: 20,
     // pagination: {
     //   el: '.npcl-btn-pagination',
     // },
@@ -60,6 +60,23 @@
     //   fill: 'row',
     //   rows: 2,
     // },
+    breakpoints: {
+      768: {
+        //当屏幕宽度大于等于768
+        slidesPerView: 1.4,
+        spaceBetween: 20,
+      },
+      1000: {
+        //当屏幕宽度大于等于1000
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1440: {
+        //当屏幕宽度大于等于1440
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+    },
   });
 
   document.addEventListener('DOMContentLoaded', function () {

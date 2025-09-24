@@ -1,3 +1,14 @@
+<div class="new-header-card-badge">
+  {% if product.metafields.custom.badges.value != blank %}
+    <div class="product-badges">
+      {% for badge in product.metafields.custom.badges.value %}
+        <span class="badge" style="background-color: {{ badge.color }};">
+          {{ badge.title }}
+        </span>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>
 <div class="new-header-card-item">
   <div class="card-item-img">
     <img src="{{ product.featured_image | image_url: width: master }}" alt="">
@@ -7,19 +18,17 @@
     <div class="product-parameter-bar-box">
       {% assign total = 5 %}
       <div class="product-parameter-bar">
-        {% assign rating_fields = 'firmness:Firmness,cooling:Cooling' | split: ',' %}
-
-        {% for field in rating_fields %}
-          {% assign parts = field | split: ':' %}
-          {% assign key = parts[0] %}
-          {% assign label = parts[1] %}
-          {% assign value = product.metafields.custom[key].value | default: 0 %}
-
-          <div class="rating-row">
-            <span class="rating-label">{{ label }}</span>
+        {% for param in product.metafields.custom.parameter_bar.value %}
+          <div class="rating-row {{ param.label | downcase }}">
+            <span class="rating-label">{{ param.label }}</span>
             <div class="rating-bars">
               {% for i in (1..total) %}
-                <span class="bar {% if i <= value %}filled {{ key }}{% endif %}"></span>
+                <span
+                  class="bar {% if i <= param.value %}filled{% endif %}"
+                  {% if i <= param.value and param.color %}
+                    style="background-color: {{ param.color }};"
+                  {% endif %}
+                ></span>
               {% endfor %}
             </div>
           </div>
