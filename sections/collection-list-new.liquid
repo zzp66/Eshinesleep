@@ -11,6 +11,9 @@
   .collection-list-new p {
     margin: 0;
   }
+  .collection-list-new-title {
+    margin-bottom: 30px;
+  }
   .collection-card-item {
     position: relative;
     border-radius: 8px;
@@ -53,7 +56,28 @@
 <div class="section section-{{ section.id }} section--padding collection-list-new">
   <div class="section__container page-width page-width--{{ section.settings.container }}">
     <div class="collection-list-new-box">
-      <div class="collection-list-new-title"></div>
+      <div class="collection-list-new-title text-center">
+        <h2 class="rich-text__heading inline-richtext h2">
+          <motion-element
+            data-motion="fade-up"
+            data-motion-delay="50"
+            class="block"
+            style="visibility: visible; transform: translateY(0px); opacity: 1;"
+            data-initialized="true"
+          >
+            {{ section.settings.coll_title }}
+          </motion-element>
+        </h2>
+        <motion-element
+          data-motion="fade-up"
+          data-motion-delay="100"
+          class="block rich-text__text rte text-base text-subtext"
+          style="visibility: visible; transform: translateY(0px); opacity: 1;"
+          data-initialized="true"
+        >
+          <p>{{ section.settings.coll_subtitle }}</p>
+        </motion-element>
+      </div>
       <div class="swiper cln-swiper">
         <div class="swiper-wrapper">
           {% for item in section.blocks %}
@@ -125,6 +149,18 @@
       ],
       "default": "fixed",
       "label": "t:general.container.label"
+    },
+    {
+      "type": "text",
+      "id": "coll_title",
+      "label": "Title",
+      "default": "Explore All ESHINE SLEEP Products"
+    },
+    {
+      "type": "text",
+      "id": "coll_subtitle",
+      "label": "Subtitle",
+      "default": "Shop beds,frames and more."
     },
     {
       "type": "header",
