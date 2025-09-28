@@ -35,9 +35,14 @@
         {% endfor %}
       </div>
     </div>
-    <div class="product-layers-height-box">
-      <div class="product-layers-info">Layers: <span>4</span></div>
-      <div class="product-height-info">Height: <span>11"</span></div>
-    </div>
+    {% if product.metafields.custom.product_specs.value %}
+      <div class="product-layers-height-box">
+        {% for spec in product.metafields.custom.product_specs.value %}
+          <div class="product-layers-info">
+            {{ spec.spec_name }}: <span>{{ spec.spec_value }}</span>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
   </div>
 </div>
