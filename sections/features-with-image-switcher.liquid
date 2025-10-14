@@ -1,0 +1,184 @@
+{% schema %}
+{
+  "name": "Features with Image Switcher",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Feature Title"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Feature Image"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 10,
+  "presets": [
+    {
+      "name": "Features with Image Switcher",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="features-section" id="features-{{ section.id }}">
+  <div class="features-list">
+    {% for block in section.blocks %}
+      <div class="feature-item" data-index="{{ forloop.index0 }}">
+        {{ block.settings.title }}
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="features-images">
+    {% for block in section.blocks %}
+      <div class="feature-image{% if forloop.first %} active{% endif %}" data-index="{{ forloop.index0 }}">
+        {% if block.settings.image != blank %}
+          <img src="{{ block.settings.image | image_url: width: 800 }}" alt="{{ block.settings.title }}">
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+  .features-section {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  /* 左侧文案 */
+  .features-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .feature-item {
+    cursor: pointer;
+    padding: 10px;
+    border-left: 3px solid transparent;
+    transition: all 0.3s ease;
+  }
+
+  .feature-item.active {
+    border-left-color: #007bff; /* 高亮颜色，可改成品牌色 */
+    font-weight: bold;
+    color: #007bff;
+  }
+
+  /* 右侧图片区域 */
+  .features-images {
+    flex: 2;
+    position: relative;
+    min-height: 400px; /* 保证容器高度，避免闪动 */
+    width: 100%;
+  }
+
+  .feature-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.6s ease, transform 0.6s ease, visibility 0.6s ease;
+    transform: translateY(20px);
+    width: 100%;
+  }
+
+  .feature-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .feature-image.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    z-index: 1;
+  }
+
+  /* ========= 响应式优化 ========= */
+  @media (max-width: 767px) {
+    .features-section {
+      flex-direction: column; /* 移动端上下排列 */
+    }
+
+    .features-list {
+      flex-direction: row; /* 移动端左右滚动 */
+      overflow-x: auto;
+      gap: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .feature-item {
+      border-left: none;
+      border-bottom: 2px solid transparent;
+      white-space: nowrap;
+      flex: 0 0 auto;
+    }
+
+    .feature-item.active {
+      border-bottom-color: #007bff;
+    }
+
+    .features-images {
+      min-height: auto;
+      margin-top: 20px;
+    }
+
+    .feature-image {
+      position: relative;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+    }
+
+    .feature-image.active {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+      position: relative;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const sectionId = '{{ section.id }}';
+    const featureItems = document.querySelectorAll(`#features-${sectionId} .feature-item`);
+    const featureImages = document.querySelectorAll(`#features-${sectionId} .feature-image`);
+
+    featureItems.forEach((item, index) => {
+      item.addEventListener('click', () => {
+        // 左侧文案切换高亮
+        featureItems.forEach((i) => i.classList.remove('active'));
+        item.classList.add('active');
+
+        // 图片切换
+        featureImages.forEach((img) => img.classList.remove('active'));
+        featureImages[index].classList.add('active');
+      });
+    });
+
+    // 默认激活第一个
+    if (featureItems.length > 0) {
+      featureItems[0].classList.add('active');
+      featureImages[0].classList.add('active');
+    }
+  });
+</script>
