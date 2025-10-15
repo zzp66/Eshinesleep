@@ -1,55 +1,3 @@
-{% schema %}
-{
-  "name": "Features with Image Switcher",
-  "settings": [],
-  "blocks": [
-    {
-      "type": "feature",
-      "name": "Feature Item",
-      "settings": [
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Feature Title"
-        },
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Feature Image"
-        }
-      ]
-    }
-  ],
-  "max_blocks": 10,
-  "presets": [
-    {
-      "name": "Features with Image Switcher",
-      "category": "Custom"
-    }
-  ]
-}
-{% endschema %}
-
-<div class="features-section" id="features-{{ section.id }}">
-  <div class="features-list">
-    {% for block in section.blocks %}
-      <div class="feature-item" data-index="{{ forloop.index0 }}">
-        {{ block.settings.title }}
-      </div>
-    {% endfor %}
-  </div>
-
-  <div class="features-images">
-    {% for block in section.blocks %}
-      <div class="feature-image{% if forloop.first %} active{% endif %}" data-index="{{ forloop.index0 }}">
-        {% if block.settings.image != blank %}
-          <img src="{{ block.settings.image | image_url: width: 800 }}" alt="{{ block.settings.title }}">
-        {% endif %}
-      </div>
-    {% endfor %}
-  </div>
-</div>
-
 <style>
   .features-section {
     display: flex;
@@ -157,6 +105,26 @@
   }
 </style>
 
+<div class="features-section" id="features-{{ section.id }}">
+  <div class="features-list">
+    {% for block in section.blocks %}
+      <div class="feature-item" data-index="{{ forloop.index0 }}">
+        {{ block.settings.title }}
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="features-images">
+    {% for block in section.blocks %}
+      <div class="feature-image{% if forloop.first %} active{% endif %}" data-index="{{ forloop.index0 }}">
+        {% if block.settings.image != blank %}
+          <img src="{{ block.settings.image | image_url: width: 800 }}" alt="{{ block.settings.title }}">
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const sectionId = '{{ section.id }}';
@@ -182,3 +150,35 @@
     }
   });
 </script>
+
+{% schema %}
+{
+  "name": "Features Image Switcher",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Feature Title"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Feature Image"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 10,
+  "presets": [
+    {
+      "name": "Features Image Switcher",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
