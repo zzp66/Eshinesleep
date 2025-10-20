@@ -22,28 +22,28 @@
   }
 
   .feature-item.active {
-    border-left-color: #007bff; /* 高亮颜色，可改成品牌色 */
+    border-left-color: #e7600f;
     font-weight: bold;
-    color: #007bff;
+    color: #e7600f;
   }
 
   /* 右侧图片区域 */
   .features-images {
     flex: 2;
-    position: relative;
-    min-height: 400px; /* 保证容器高度，避免闪动 */
     width: 100%;
   }
 
   .feature-image {
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: none;
     opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.6s ease, transform 0.6s ease, visibility 0.6s ease;
+    transition: opacity 0.6s ease, transform 0.6s ease;
     transform: translateY(20px);
-    width: 100%;
+  }
+
+  .feature-image.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
   }
 
   .feature-image img {
@@ -52,21 +52,14 @@
     display: block;
   }
 
-  .feature-image.active {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-    z-index: 1;
-  }
-
   /* ========= 响应式优化 ========= */
   @media (max-width: 767px) {
     .features-section {
-      flex-direction: column; /* 移动端上下排列 */
+      flex-direction: column;
     }
 
     .features-list {
-      flex-direction: row; /* 移动端左右滚动 */
+      flex-direction: row;
       overflow-x: auto;
       gap: 20px;
       padding-bottom: 10px;
@@ -81,47 +74,49 @@
     }
 
     .feature-item.active {
-      border-bottom-color: #007bff;
+      border-bottom-color: #e7600f;
     }
 
     .features-images {
-      min-height: auto;
       margin-top: 20px;
     }
 
     .feature-image {
-      position: relative;
+      display: none;
       opacity: 0;
-      visibility: hidden;
       transform: translateY(10px);
+      transition: opacity 0.4s ease, transform 0.4s ease;
     }
 
     .feature-image.active {
+      display: block;
       opacity: 1;
-      visibility: visible;
       transform: translateY(0);
-      position: relative;
     }
   }
 </style>
 
-<div class="features-section" id="features-{{ section.id }}">
-  <div class="features-list">
-    {% for block in section.blocks %}
-      <div class="feature-item" data-index="{{ forloop.index0 }}">
-        {{ block.settings.title }}
+<div class="section section-{{ section.id }} section--padding features-image-switcher">
+  <div class="section__container page-width page-width--{{ section.settings.container }}">
+    <div class="features-section" id="features-{{ section.id }}">
+      <div class="features-list">
+        {% for block in section.blocks %}
+          <div class="feature-item" data-index="{{ forloop.index0 }}">
+            {{ block.settings.title }}
+          </div>
+        {% endfor %}
       </div>
-    {% endfor %}
-  </div>
 
-  <div class="features-images">
-    {% for block in section.blocks %}
-      <div class="feature-image{% if forloop.first %} active{% endif %}" data-index="{{ forloop.index0 }}">
-        {% if block.settings.image != blank %}
-          <img src="{{ block.settings.image | image_url: width: 800 }}" alt="{{ block.settings.title }}">
-        {% endif %}
+      <div class="features-images">
+        {% for block in section.blocks %}
+          <div class="feature-image{% if forloop.first %} active{% endif %}" data-index="{{ forloop.index0 }}">
+            {% if block.settings.image != blank %}
+              <img src="{{ block.settings.image | image_url: width: 800 }}" alt="{{ block.settings.title }}">
+            {% endif %}
+          </div>
+        {% endfor %}
       </div>
-    {% endfor %}
+    </div>
   </div>
 </div>
 
@@ -133,17 +128,14 @@
 
     featureItems.forEach((item, index) => {
       item.addEventListener('click', () => {
-        // 左侧文案切换高亮
         featureItems.forEach((i) => i.classList.remove('active'));
         item.classList.add('active');
 
-        // 图片切换
         featureImages.forEach((img) => img.classList.remove('active'));
         featureImages[index].classList.add('active');
       });
     });
 
-    // 默认激活第一个
     if (featureItems.length > 0) {
       featureItems[0].classList.add('active');
       featureImages[0].classList.add('active');
@@ -154,7 +146,64 @@
 {% schema %}
 {
   "name": "Features Image Switcher",
-  "settings": [],
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:general.general.name"
+    },
+    {
+      "type": "select",
+      "id": "container",
+      "options": [
+        {
+          "value": "full",
+          "label": "t:general.container.options__full.label"
+        },
+        {
+          "value": "fixed",
+          "label": "t:general.container.options__fixed.label"
+        }
+      ],
+      "default": "fixed",
+      "label": "t:general.container.label"
+    },
+    {
+      "type": "text",
+      "id": "coll_title",
+      "label": "Title",
+      "default": "Explore All ESHINE SLEEP Products"
+    },
+    {
+      "type": "text",
+      "id": "coll_subtitle",
+      "label": "Subtitle",
+      "default": "Shop beds,frames and more."
+    },
+    {
+      "type": "header",
+      "content": "t:general.padding.section_heading.content"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "label": "t:general.padding.top.label",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "label": "t:general.padding.bottom.label",
+      "default": 50
+    }
+  ],
   "blocks": [
     {
       "type": "feature",

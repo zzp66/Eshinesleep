@@ -1,0 +1,230 @@
+<style>
+  .media-with-swiper-content p {
+    margin: 0;
+  }
+  .media-with-swiper-content {
+    position: relative;
+  }
+  .swiper-slide.mws-t-item {
+    width: auto;
+    cursor: pointer;
+  }
+  .media-with-swiper-thumbs-box {
+    width: 100%;
+  }
+  .media-with-swiper-thumbs {
+    background-color: #e7600f;
+  }
+  .media-with-swiper-thumbs .swiper-wrapper {
+    justify-content: center;
+  }
+  .mws-text-item {
+    padding: 20px 40px;
+    color: #fff;
+  }
+  .swiper-slide-thumb-active p.mws-text-item-text {
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
+  .mwsg-prev,
+  .mwsg-next {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    color: #000;
+    transition: all 0.3s ease;
+  }
+  .mwsg-prev::after,
+  .mwsg-next::after {
+    font-size: 18px;
+  }
+  .mwsg-next:hover,
+  .mwsg-prev:hover {
+    background: #000;
+    color: #fff;
+  }
+  @media screen and (max-width: 767px) {
+    .media-with-swiper-thumbs .swiper-wrapper {
+      justify-content: flex-start;
+    }
+    .mws-text-item {
+      padding: 20px;
+    }
+    .media-with-swiper-gallery-btn {
+      display: none;
+    }
+  }
+</style>
+<div class="section section-{{ section.id }} section--padding media-with-swiper" id="media-swiper-{{ section.id }}">
+  <div class="section__container page-width page-width--{{ section.settings.container }}">
+    <div class="media-with-swiper-content">
+      <div class="media-with-swiper-thumbs-box">
+        <div class="swiper media-with-swiper-thumbs">
+          <div class="swiper-wrapper">
+            {% for item in section.blocks %}
+              <div class="swiper-slide mws-t-item">
+                <div class="mws-text-item">
+                  <p class="mws-text-item-text">{{ item.settings.item_text }}</p>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      <div class="media-with-swiper-gallery-box">
+        <div class="swiper media-with-swiper-gallery">
+          <div class="swiper-wrapper">
+            {% for item in section.blocks %}
+              <div class="swiper-slide">
+                <div class="mws-img-item">
+                  <picture>
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="{{ item.settings.item_img_mb | image_url: width: master }}"
+                    >
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="{{ item.settings.item_img_pc | image_url: width: master }}"
+                    >
+                    <img src="{{ item.settings.item_img_pc | image_url: width: master }}">
+                  </picture>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+
+          <div class="media-with-swiper-gallery-btn">
+            <div class="swiper-button-prev mwsg-prev"></div>
+            <div class="swiper-button-next mwsg-next"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var sectionId = '{{ section.id }}';
+    var sectionEl = document.querySelector('#media-swiper-' + sectionId);
+
+    if (!sectionEl) return;
+
+    var thumbsSwiper = new Swiper(sectionEl.querySelector('.media-with-swiper-thumbs'), {
+      spaceBetween: 0,
+      slidesPerView: 'auto',
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+      autoScrollOffset: 1,
+    });
+
+    var gallerySwiper = new Swiper(sectionEl.querySelector('.media-with-swiper-gallery'), {
+      spaceBetween: 10,
+      slidesPerView: 1,
+      grabCursor: true,
+      thumbs: {
+        swiper: thumbsSwiper,
+      },
+      navigation: {
+        nextEl: sectionEl.querySelector('.mwsg-next'),
+        prevEl: sectionEl.querySelector('.mwsg-prev'),
+      },
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Media With Swiper",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:general.general.name"
+    },
+    {
+      "type": "select",
+      "id": "container",
+      "options": [
+        {
+          "value": "full",
+          "label": "t:general.container.options__full.label"
+        },
+        {
+          "value": "fixed",
+          "label": "t:general.container.options__fixed.label"
+        }
+      ],
+      "default": "fixed",
+      "label": "t:general.container.label"
+    },
+    {
+      "type": "text",
+      "id": "coll_title",
+      "label": "Title",
+      "default": "Explore All ESHINE SLEEP Products"
+    },
+    {
+      "type": "text",
+      "id": "coll_subtitle",
+      "label": "Subtitle",
+      "default": "Shop beds,frames and more."
+    },
+    {
+      "type": "header",
+      "content": "t:general.padding.section_heading.content"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "label": "t:general.padding.top.label",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "label": "t:general.padding.bottom.label",
+      "default": 50
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "item_img_pc",
+          "label": "PC端图片"
+        },
+        {
+          "type": "image_picker",
+          "id": "item_img_mb",
+          "label": "移动端图片"
+        },
+        {
+          "type": "text",
+          "id": "item_text",
+          "label": "文案"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Media With Swiper",
+      "category": "Media"
+    }
+  ]
+}
+{% endschema %}
