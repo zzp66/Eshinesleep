@@ -114,19 +114,21 @@
                 aria-controls="{{ size_chart_modal_id }}"
                 aria-haspopup="dialog"
               >
-                {{ 'products.product.open_size_chart' | t }}
+                Need Help?
               </button>
             {%- endif -%}
           </div>
         </{{ tag_legend }}>
         {%- case picker_type -%}
           {%- when 'swatch', 'color', 'button' -%}
-            {% render 'product-variant-options',
-              product: product,
-              option: option,
-              block: block,
-              picker_type: picker_type
-            %}
+            <div class="picker-type-box">
+              {% render 'product-variant-options',
+                product: product,
+                option: option,
+                block: block,
+                picker_type: picker_type
+              %}
+            </div>
           {%- else -%}
             <div class="select">
               {%- if picker_type == 'swatch_dropdown' -%}

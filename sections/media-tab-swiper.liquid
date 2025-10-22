@@ -1,0 +1,298 @@
+{% comment %}
+  Section: Media With Tabs (严格 Liquid 语法版)
+  - 主 Tab + 最多 5 个子 Tab
+  - PC: 左图 右竖排标题（标题上下排列）
+  - Mobile: 标题在上，图片下方
+  - 子 Tab 点击切换左侧图片
+  - 所有动态 key 均先 capture/assign 再访问
+  - 复合判断使用嵌套 if（避免括号）
+{% endcomment %}
+
+<section id="media-with-tabs-{{ section.id }}" class="media-with-tabs-section">
+  <div class="mwt-inner">
+    <!-- 主 Tabs -->
+    <div class="mwt-main-tabs" role="tablist">
+      {% for block in section.blocks %}
+        <button
+          class="mwt-main-tab{% if forloop.first %} is-active{% endif %}"
+          data-main-index="{{ forloop.index0 }}"
+          type="button"
+        >
+          {{ block.settings.item_text }}
+        </button>
+      {% endfor %}
+    </div>
+
+    <!-- 主 Tab 内容 -->
+    <div class="mwt-main-contents">
+      {% for block in section.blocks %}
+        {% assign parent_index = forloop.index0 %}
+        <div
+          class="mwt-main-content{% if forloop.first %} is-active{% endif %}"
+          data-main-content="{{ parent_index }}"
+          role="tabpanel"
+          aria-hidden="{% unless forloop.first %}true{% else %}false{% endunless %}"
+        >
+          <div class="mwt-sub-wrap">
+            <!-- 左：图片展示区 -->
+            <div class="mwt-sub-images" data-parent-index="{{ parent_index }}">
+              {% assign first_image_shown = 0 %}
+              {% for i in (1..5) %}
+                {% capture title_key %}sub_title_{{ i }}{% endcapture %}
+                {% capture pc_key %}sub_img_pc_{{ i }}{% endcapture %}
+                {% capture mb_key %}sub_img_mb_{{ i }}{% endcapture %}
+
+                {% assign sub_title = block.settings[title_key] %}
+                {% assign sub_img_pc = block.settings[pc_key] %}
+                {% assign sub_img_mb = block.settings[mb_key] %}
+
+                {% if sub_title != blank %}
+                  {% if sub_img_pc != blank %}
+                    <div
+                      class="mwt-sub-image{% if first_image_shown == 0 %} is-active{% endif %}"
+                      data-sub-index="{{ i }}"
+                    >
+                      <picture>
+                        {% if sub_img_mb != blank %}
+                          <source media="(max-width: 767px)" srcset="{{ sub_img_mb | image_url: width: 800 }}">
+                        {% endif %}
+                        <source media="(min-width: 768px)" srcset="{{ sub_img_pc | image_url: width: 1600 }}">
+                        <img src="{{ sub_img_pc | image_url: width: 1200 }}" alt="{{ sub_title | escape }}">
+                      </picture>
+                    </div>
+                    {% if first_image_shown == 0 %}
+                      {% assign first_image_shown = 1 %}
+                    {% endif %}
+                  {% else %}
+                    {% if sub_img_mb != blank %}
+                      {%- comment -%}
+                        没有 PC 图但有移动图：仍然渲染（移动端会显示）
+                      {%- endcomment -%}
+                      <div
+                        class="mwt-sub-image{% if first_image_shown == 0 %} is-active{% endif %}"
+                        data-sub-index="{{ i }}"
+                      >
+                        <picture>
+                          <source media="(max-width: 767px)" srcset="{{ sub_img_mb | image_url: width: 800 }}">
+                          <img src="{{ sub_img_mb | image_url: width: 1200 }}" alt="{{ sub_title | escape }}">
+                        </picture>
+                      </div>
+                      {% if first_image_shown == 0 %}
+                        {% assign first_image_shown = 1 %}
+                      {% endif %}
+                    {% endif %}
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+            </div>
+
+            <!-- 右：子 Tab 标题区 -->
+            <div
+              class="mwt-sub-titles"
+              data-parent-index="{{ parent_index }}"
+              role="tablist"
+              aria-orientation="vertical"
+            >
+              {% assign first_title_shown = 0 %}
+              {% for i in (1..5) %}
+                {% capture title_key %}sub_title_{{ i }}{% endcapture %}
+                {% capture pc_key %}sub_img_pc_{{ i }}{% endcapture %}
+                {% capture mb_key %}sub_img_mb_{{ i }}{% endcapture %}
+
+                {% assign sub_title = block.settings[title_key] %}
+                {% assign sub_img_pc = block.settings[pc_key] %}
+                {% assign sub_img_mb = block.settings[mb_key] %}
+
+                {% if sub_title != blank %}
+                  {% if sub_img_pc != blank or sub_img_mb != blank %}
+                    <button
+                      class="mwt-sub-title{% if first_title_shown == 0 %} is-active{% endif %}"
+                      data-sub-index="{{ i }}"
+                      type="button"
+                      role="tab"
+                      aria-controls="mwt-sub-image-{{ parent_index }}-{{ i }}"
+                    >
+                      <span class="mwt-sub-title__text">{{ sub_title }}</span>
+                    </button>
+                    {% if first_title_shown == 0 %}
+                      {% assign first_title_shown = 1 %}
+                    {% endif %}
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+          <!-- .mwt-sub-wrap -->
+        </div>
+        <!-- .mwt-main-content -->
+      {% endfor %}
+    </div>
+    <!-- .mwt-main-contents -->
+  </div>
+  <!-- .mwt-inner -->
+
+  <style>
+    /* 严格作用域，避免影响其它元素 */
+    #media-with-tabs-{{ section.id }} { padding: 40px 20px; box-sizing: border-box; }
+    #media-with-tabs-{{ section.id }} .mwt-inner { max-width: 1200px; margin: 0 auto; }
+
+    /* 主 Tabs */
+    #media-with-tabs-{{ section.id }} .mwt-main-tabs { display:flex; gap:12px; flex-wrap:wrap; margin-bottom:24px; }
+    #media-with-tabs-{{ section.id }} .mwt-main-tab { background:#f4f4f4; border:none; padding:10px 18px; border-radius:20px; cursor:pointer; }
+    #media-with-tabs-{{ section.id }} .mwt-main-tab.is-active { background:#e7600f; color:#fff; font-weight:700; }
+
+    /* 主内容显示控制 */
+    #media-with-tabs-{{ section.id }} .mwt-main-content { display:none; }
+    #media-with-tabs-{{ section.id }} .mwt-main-content.is-active { display:block; }
+
+    /* 子区域整体：PC 左右布局 */
+    #media-with-tabs-{{ section.id }} .mwt-sub-wrap { display:flex; gap:24px; align-items:center; }
+    #media-with-tabs-{{ section.id }} .mwt-sub-images { flex:1; }
+    #media-with-tabs-{{ section.id }} .mwt-sub-image { display:none; }
+    #media-with-tabs-{{ section.id }} .mwt-sub-image.is-active { display:block; }
+    #media-with-tabs-{{ section.id }} .mwt-sub-image img { width:100%; height:auto; border-radius:12px; object-fit:cover; display:block; }
+
+    /* 右侧标题竖排 */
+    #media-with-tabs-{{ section.id }} .mwt-sub-titles { width:260px; display:flex; flex-direction:column; gap:12px; }
+    #media-with-tabs-{{ section.id }} .mwt-sub-title { background:transparent; border:none; text-align:left; padding:10px 12px; cursor:pointer; border-left:3px solid transparent; transition:all .18s; }
+    #media-with-tabs-{{ section.id }} .mwt-sub-title.is-active{
+      background:#e7600f; color:#fff; font-weight:700;
+    }
+
+    /* 移动端：标题在上，图片下（上下排列） */
+    @media (max-width:767px) {
+      #media-with-tabs-{{ section.id }} .mwt-sub-wrap { flex-direction:column; }
+      #media-with-tabs-{{ section.id }} .mwt-sub-titles { width:100%; flex-direction:row; flex-wrap:wrap; justify-content:center; gap:10px; order:-1; }
+      #media-with-tabs-{{ section.id }} .mwt-sub-title { border-left:none; border-bottom:2px solid transparent; padding:8px 10px; }
+      #media-with-tabs-{{ section.id }} .mwt-sub-title.is-active { border-bottom-color:#000; }
+    }
+
+    /* 可访问性 focus */
+    #media-with-tabs-{{ section.id }} .mwt-main-tab:focus,
+    #media-with-tabs-{{ section.id }} .mwt-sub-title:focus { outline:3px solid rgba(231,96,15,0.12); outline-offset:3px; }
+  </style>
+
+  <script>
+    (function () {
+      var root = document.getElementById('media-with-tabs-{{ section.id }}');
+      if (!root) return;
+
+      // 主 Tab 切换
+      var mainTabs = Array.prototype.slice.call(root.querySelectorAll('.mwt-main-tab'));
+      var mainContents = Array.prototype.slice.call(root.querySelectorAll('.mwt-main-content'));
+
+      function activateMain(index) {
+        mainTabs.forEach(function (t, i) {
+          var active = i === index;
+          t.classList.toggle('is-active', active);
+        });
+        mainContents.forEach(function (c, i) {
+          var active = i === index;
+          c.classList.toggle('is-active', active);
+          c.setAttribute('aria-hidden', !active);
+        });
+      }
+
+      mainTabs.forEach(function (btn, idx) {
+        btn.addEventListener('click', function () {
+          activateMain(idx);
+        });
+        btn.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            activateMain(idx);
+          }
+        });
+      });
+
+      // 子 Tab 切换（事件委托，按每个 main-content 处理）
+      mainContents.forEach(function (mainContent) {
+        var titlesWrap = mainContent.querySelector('.mwt-sub-titles');
+        var imagesWrap = mainContent.querySelector('.mwt-sub-images');
+        if (!titlesWrap || !imagesWrap) return;
+
+        titlesWrap.addEventListener('click', function (e) {
+          var btn = e.target.closest('.mwt-sub-title');
+          if (!btn || !titlesWrap.contains(btn)) return;
+
+          var subIndex = btn.getAttribute('data-sub-index');
+          if (!subIndex) return;
+
+          // deactivate all titles in this group
+          var titles = Array.prototype.slice.call(titlesWrap.querySelectorAll('.mwt-sub-title'));
+          titles.forEach(function (t) {
+            t.classList.remove('is-active');
+          });
+
+          // deactivate all images in this group
+          var images = Array.prototype.slice.call(imagesWrap.querySelectorAll('.mwt-sub-image'));
+          images.forEach(function (im) {
+            im.classList.remove('is-active');
+          });
+
+          // activate clicked title & corresponding image
+          btn.classList.add('is-active');
+          var targetImg = imagesWrap.querySelector('.mwt-sub-image[data-sub-index="' + subIndex + '"]');
+          if (targetImg) targetImg.classList.add('is-active');
+        });
+
+        titlesWrap.addEventListener('keydown', function (e) {
+          var btn = e.target.closest('.mwt-sub-title');
+          if (!btn || !titlesWrap.contains(btn)) return;
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            btn.click();
+          }
+        });
+
+        // ensure there is at least one active title/image
+        var foundTitle =
+          titlesWrap.querySelector('.mwt-sub-title.is-active') || titlesWrap.querySelector('.mwt-sub-title');
+        if (foundTitle) foundTitle.classList.add('is-active');
+        var foundImg =
+          imagesWrap.querySelector('.mwt-sub-image.is-active') || imagesWrap.querySelector('.mwt-sub-image');
+        if (foundImg) foundImg.classList.add('is-active');
+      });
+
+      // ensure first main active
+      if (mainTabs.length) activateMain(0);
+    })();
+  </script>
+</section>
+
+{% schema %}
+{
+  "name": "Media Tab Swiper",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "主Tab",
+      "settings": [
+        { "type": "text", "id": "item_text", "label": "主 Tab 标题", "default": "Main Tab" },
+
+        { "type": "text", "id": "sub_title_1", "label": "子 Tab 1 标题" },
+        { "type": "image_picker", "id": "sub_img_pc_1", "label": "子 Tab 1 图（PC）" },
+        { "type": "image_picker", "id": "sub_img_mb_1", "label": "子 Tab 1 图（Mobile, 可选）" },
+
+        { "type": "text", "id": "sub_title_2", "label": "子 Tab 2 标题" },
+        { "type": "image_picker", "id": "sub_img_pc_2", "label": "子 Tab 2 图（PC）" },
+        { "type": "image_picker", "id": "sub_img_mb_2", "label": "子 Tab 2 图（Mobile, 可选）" },
+
+        { "type": "text", "id": "sub_title_3", "label": "子 Tab 3 标题" },
+        { "type": "image_picker", "id": "sub_img_pc_3", "label": "子 Tab 3 图（PC）" },
+        { "type": "image_picker", "id": "sub_img_mb_3", "label": "子 Tab 3 图（Mobile, 可选）" },
+
+        { "type": "text", "id": "sub_title_4", "label": "子 Tab 4 标题" },
+        { "type": "image_picker", "id": "sub_img_pc_4", "label": "子 Tab 4 图（PC）" },
+        { "type": "image_picker", "id": "sub_img_mb_4", "label": "子 Tab 4 图（Mobile, 可选）" },
+
+        { "type": "text", "id": "sub_title_5", "label": "子 Tab 5 标题" },
+        { "type": "image_picker", "id": "sub_img_pc_5", "label": "子 Tab 5 图（PC）" },
+        { "type": "image_picker", "id": "sub_img_mb_5", "label": "子 Tab 5 图（Mobile, 可选）" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Media Tab Swiper", "category": "Media" }]
+}
+{% endschema %}

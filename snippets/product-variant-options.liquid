@@ -144,24 +144,26 @@
       <span class="swatch-color block" style="--swatch-background: {{ swatch_value }}"></span>
     </label>
   {%- elsif picker_type == 'button' -%}
-    <input
-      type="radio"
-      id="{{ input_id }}"
-      name="{{ input_name | escape }}"
-      value="{{ value | escape }}"
-      form="{{ product_form_id }}"
-      {% if value.selected %}
-        checked
-      {% endif %}
-      {% if option_disabled %}
-        class="disabled"
-      {% endif %}
-      {{ input_dataset }}
-    >
-    <label for="{{ input_id }}">
-      {{ value -}}
-      {{ label_unavailable }}
-    </label>
+    <div class="picker-button-item">
+      <input
+        type="radio"
+        id="{{ input_id }}"
+        name="{{ input_name | escape }}"
+        value="{{ value | escape }}"
+        form="{{ product_form_id }}"
+        {% if value.selected %}
+          checked
+        {% endif %}
+        {% if option_disabled %}
+          class="disabled"
+        {% endif %}
+        {{ input_dataset }}
+      >
+      <label for="{{ input_id }}">
+        {{ value -}}
+        {{ label_unavailable }}
+      </label>
+    </div>
   {%- elsif picker_type == 'dropdown' or picker_type == 'swatch_dropdown' -%}
     <option
       id="{{ input_id }}"

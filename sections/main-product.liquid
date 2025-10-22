@@ -123,7 +123,70 @@
   {%- endif -%}
 
   <script type="application/ld+json">
-    {{ product | structured_data }}
+    {
+  "@context": "http://schema.org/",
+  "@type": "Product",
+  "@id": {{ canonical_url | json }},
+  "name": "{{ product.title | strip_html | escape }}",
+  "url": "{{ shop.url }}{{ product.url }}",
+  "sku": "{{fa_product_id_value}}",
+  {%- if product.variants.first.barcode.size >= 12 and product.variants.first.barcode.size <= 14 -%}
+  "gtin": {{ product.variants.first.barcode }},
+  {%- endif -%}
+  "productID": "{{ product.id }}",
+  "brand": {
+    "@type": "Brand",
+    "name": "{{ product.vendor | escape }}"
+  },
+  "description": {{ product.description | strip_html | json }},
+  "image": "https:{{ product.featured_image.src | img_url: '1500x1500' }}",
+  {%- if product.variants -%}
+    "offers":
+      {
+        "@type" : "Offer",
+        "priceCurrency": "{{ cart.currency.iso_code }}",
+        "price": "{{ fa_product_price }}",
+        "itemCondition" : "http://schema.org/NewCondition",
+        "availability" : "http://schema.org/{% if fa_current_variant.available %}InStock{% else %}OutOfStock{% endif %}",
+        "url" : "{{ shop.url }}{{ fa_current_variant.url }}",
+        {%- if fa_current_variant.image -%}
+          {%- assign variant_image_size = fa_current_variant.image.width | append: 'x' -%}
+          "image": "https:{{ fa_current_variant.image.src | img_url: variant_image_size }}",
+        {%- else -%}
+          "image": "https:{{ product.featured_image.src | img_url: '1500x1500' }}",
+        {%- endif -%}
+        {%- if fa_current_variant.title != 'Default Title' -%}
+          "name" : "{{ product.title | strip_html | escape }} - {{ fa_current_variant.title | escape }}",
+        {%- else -%}
+          "name" : "{{ product.title | strip_html | escape }}",
+        {%- endif -%}
+        {%- if fa_current_variant.barcode.size >= 12 and fa_current_variant.barcode.size <= 14 -%}
+          "gtin": {{ product.variants.first.barcode }},
+        {%- endif -%}
+        "sku": "{{fa_product_id_value}}",
+        {%- if product.description != blank -%}
+        "description" : {{ product.description | strip_html | json }},
+        {%- endif -%}
+        "priceValidUntil": "{{ 'now' | date: '%s' | plus: 31536000 | date: '%Y-%m-%d' | uri_encode | replace:'+','%20' }}"
+      }
+    {% assign areviewsRating= product.metafields.areviewsApp.product_reviews %}
+    {%- if areviewsRating -%}
+    ,"aggregateRating": {
+      "@type": "AggregateRating",
+      "description": "areviews",
+      "ratingValue":  {{areviewsRating.value.rating}},
+      "reviewCount":  {{areviewsRating.value.number}}
+    }
+    {%- endif -%}
+    {%- if product.variants.size > 1 -%},
+      "additionalProperty": [{
+        "@type": "PropertyValue",
+        "propertyID": "item_group_id",
+        "value": "{{ product.id }}"
+      }]
+    {%- endif -%}
+  {%- endif -%}
+}
   </script>
 </product-info>
 {%- assign block_atc_bar = section.blocks | where: 'type', 'sticky-atc-bar' | first -%}

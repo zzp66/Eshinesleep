@@ -1,0 +1,233 @@
+<style>
+  .features-section {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  /* 左侧文案 */
+  .features-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .feature-item {
+    cursor: pointer;
+    padding: 10px;
+    border-left: 3px solid transparent;
+    transition: all 0.3s ease;
+  }
+
+  .feature-item.active {
+    border-left-color: #e7600f;
+    font-weight: bold;
+    color: #e7600f;
+  }
+
+  /* 右侧图片区域 */
+  .features-images {
+    flex: 2;
+    width: 100%;
+  }
+
+  .feature-image {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    transform: translateY(20px);
+  }
+
+  .feature-image.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .feature-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* ========= 响应式优化 ========= */
+  @media (max-width: 767px) {
+    .features-section {
+      flex-direction: column;
+    }
+
+    .features-list {
+      flex-direction: row;
+      overflow-x: auto;
+      gap: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .feature-item {
+      border-left: none;
+      border-bottom: 2px solid transparent;
+      white-space: nowrap;
+      flex: 0 0 auto;
+    }
+
+    .feature-item.active {
+      border-bottom-color: #e7600f;
+    }
+
+    .features-images {
+      margin-top: 20px;
+    }
+
+    .feature-image {
+      display: none;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    .feature-image.active {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+<div class="section section-{{ section.id }} section--padding features-image-switcher">
+  <div class="section__container page-width page-width--{{ section.settings.container }}">
+    <div class="features-section" id="features-{{ section.id }}">
+      <div class="features-list">
+        {% for block in section.blocks %}
+          <div class="feature-item" data-index="{{ forloop.index0 }}">
+            {{ block.settings.title }}
+          </div>
+        {% endfor %}
+      </div>
+
+      <div class="features-images">
+        {% for block in section.blocks %}
+          <div class="feature-image{% if forloop.first %} active{% endif %}" data-index="{{ forloop.index0 }}">
+            {% if block.settings.image != blank %}
+              <img src="{{ block.settings.image | image_url: width: 800 }}" alt="{{ block.settings.title }}">
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const sectionId = '{{ section.id }}';
+    const featureItems = document.querySelectorAll(`#features-${sectionId} .feature-item`);
+    const featureImages = document.querySelectorAll(`#features-${sectionId} .feature-image`);
+
+    featureItems.forEach((item, index) => {
+      item.addEventListener('click', () => {
+        featureItems.forEach((i) => i.classList.remove('active'));
+        item.classList.add('active');
+
+        featureImages.forEach((img) => img.classList.remove('active'));
+        featureImages[index].classList.add('active');
+      });
+    });
+
+    if (featureItems.length > 0) {
+      featureItems[0].classList.add('active');
+      featureImages[0].classList.add('active');
+    }
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Features Image Switcher",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:general.general.name"
+    },
+    {
+      "type": "select",
+      "id": "container",
+      "options": [
+        {
+          "value": "full",
+          "label": "t:general.container.options__full.label"
+        },
+        {
+          "value": "fixed",
+          "label": "t:general.container.options__fixed.label"
+        }
+      ],
+      "default": "fixed",
+      "label": "t:general.container.label"
+    },
+    {
+      "type": "text",
+      "id": "coll_title",
+      "label": "Title",
+      "default": "Explore All ESHINE SLEEP Products"
+    },
+    {
+      "type": "text",
+      "id": "coll_subtitle",
+      "label": "Subtitle",
+      "default": "Shop beds,frames and more."
+    },
+    {
+      "type": "header",
+      "content": "t:general.padding.section_heading.content"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "label": "t:general.padding.top.label",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "label": "t:general.padding.bottom.label",
+      "default": 50
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Feature Title"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Feature Image"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 10,
+  "presets": [
+    {
+      "name": "Features Image Switcher",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
