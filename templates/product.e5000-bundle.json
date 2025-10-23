@@ -125,6 +125,7 @@
         },
         "collapsible_tab_zafMk9": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Set Up Video",
             "heading_size": "h4",
@@ -141,7 +142,7 @@
             "heading": "Download Manual",
             "heading_size": "h4",
             "icon": "none",
-            "content": "<p>E5000</p>",
+            "content": "<p><a href=\"https://cdn.shopify.com/s/files/1/0587/4139/1417/files/E5000-pdf.pdf?v=1761223037\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0587/4139/1417/files/E5000-pdf.pdf?v=1761223037\">E5000</a></p>",
             "page": "",
             "default_open": false,
             "show_below_product_media": false
@@ -248,7 +249,7 @@
         "description": "<p>Find Your Perfect Position For Deeper Rest And Total Comfort.</p>",
         "description_size": "text-base",
         "button_label": "Learn More",
-        "button_link": "",
+        "button_link": "shopify://blogs/blogs/how-to-choose-your-perfect-mattress-after-years-of-settling-the-ultimate-buying-guide",
         "button_style": "btn--primary",
         "button_icon": "none",
         "padding_top": 50,
@@ -640,7 +641,13 @@
         "item_Th3trH"
       ],
       "name": "Media Tab Swiper",
-      "settings": {}
+      "settings": {
+        "container": "fixed",
+        "coll_title": "Explore All ESHINE SLEEP Products",
+        "coll_subtitle": "Shop beds,frames and more.",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
     },
     "collection_with_tab_dyqwDU": {
       "type": "collection-with-tab",

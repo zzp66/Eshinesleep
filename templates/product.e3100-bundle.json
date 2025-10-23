@@ -125,6 +125,7 @@
         },
         "collapsible_tab_zafMk9": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Set Up Video",
             "heading_size": "h4",
@@ -141,7 +142,7 @@
             "heading": "Download Manual",
             "heading_size": "h4",
             "icon": "none",
-            "content": "<p>E5000</p>",
+            "content": "<p><a href=\"https://cdn.shopify.com/s/files/1/0587/4139/1417/files/E3100-6-20-Troubleshooting.pdf?v=1761222959\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0587/4139/1417/files/E3100-6-20-Troubleshooting.pdf?v=1761222959\">E3100</a></p>",
             "page": "",
             "default_open": false,
             "show_below_product_media": false
@@ -248,7 +249,7 @@
         "description": "<p>Find Your Perfect Position For Deeper Rest And Total Comfort.</p>",
         "description_size": "text-base",
         "button_label": "Learn More",
-        "button_link": "",
+        "button_link": "shopify://blogs/blogs/how-to-choose-your-perfect-mattress-after-years-of-settling-the-ultimate-buying-guide",
         "button_style": "btn--primary",
         "button_icon": "none",
         "padding_top": 50,
@@ -607,14 +608,14 @@
           "type": "item",
           "settings": {
             "item_text": "Queen Bed Frame",
-            "sub_title_1": "Head Up & Pillow Tilt",
-            "sub_img_pc_1": "shopify://shop_images/5000-151-2.jpg",
+            "sub_title_1": "Head Up",
+            "sub_img_pc_1": "shopify://shop_images/3100-150-2.jpg",
             "sub_title_2": "Feet Up",
-            "sub_img_pc_2": "shopify://shop_images/5000-151-1.jpg",
+            "sub_img_pc_2": "shopify://shop_images/3100-150-1.jpg",
             "sub_title_3": "Zero Gravity",
-            "sub_img_pc_3": "shopify://shop_images/5000-151-3.jpg",
+            "sub_img_pc_3": "shopify://shop_images/3100-150-3.jpg",
             "sub_title_4": "Flat",
-            "sub_img_pc_4": "shopify://shop_images/5000-151.jpg",
+            "sub_img_pc_4": "shopify://shop_images/3100-150.jpg",
             "sub_title_5": ""
           }
         },
@@ -622,14 +623,14 @@
           "type": "item",
           "settings": {
             "item_text": "Split King Bed Frame",
-            "sub_title_1": "Head Up & Pillow Tilt",
-            "sub_img_pc_1": "shopify://shop_images/5000-95x2-2.jpg",
+            "sub_title_1": "Head Up",
+            "sub_img_pc_1": "shopify://shop_images/3100-95x2-2.jpg",
             "sub_title_2": "Feet Up",
-            "sub_img_pc_2": "shopify://shop_images/5000-95x2-1.jpg",
+            "sub_img_pc_2": "shopify://shop_images/3100-95x2-1.jpg",
             "sub_title_3": "Zero Gravity",
-            "sub_img_pc_3": "shopify://shop_images/5000-95x2-3.jpg",
+            "sub_img_pc_3": "shopify://shop_images/3100-95x2-3.jpg",
             "sub_title_4": "Flat",
-            "sub_img_pc_4": "shopify://shop_images/5000-95x2.jpg",
+            "sub_img_pc_4": "shopify://shop_images/3100-95x2.jpg",
             "sub_title_5": ""
           }
         }
@@ -640,7 +641,13 @@
         "item_Th3trH"
       ],
       "name": "Media Tab Swiper",
-      "settings": {}
+      "settings": {
+        "container": "fixed",
+        "coll_title": "Explore All ESHINE SLEEP Products",
+        "coll_subtitle": "Shop beds,frames and more.",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
     },
     "collection_with_tab_dyqwDU": {
       "type": "collection-with-tab",

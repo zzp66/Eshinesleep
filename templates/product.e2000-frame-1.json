@@ -514,6 +514,7 @@
         "heading_W3piiR",
         "text_QpTCRG"
       ],
+      "disabled": true,
       "name": "t:sections.image-with-text.name",
       "settings": {
         "container": "fixed",
@@ -566,6 +567,7 @@
         "heading_3XbnPD",
         "text_nnzBYg"
       ],
+      "disabled": true,
       "name": "t:sections.image-with-text-overlay.name",
       "settings": {
         "container": "full",

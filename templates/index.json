@@ -91,7 +91,7 @@
         "subhead": "A Royal Night's Sleep",
         "comparison_text": "E3100+ VS E5000+",
         "button_text": "Learn More",
-        "button_link": "shopify://blogs/新闻/ultimate-buying-guide-to-softening-a-firm-mattress-9-science-backed-solutions-for-back-pain-relief",
+        "button_link": "shopify://blogs/blogs/elevate-your-sleep-sanctuary-a-deep-dive-into-the-eshinesleep-e3100-vs-e5000-adjustable-bed-bundles",
         "container": "full",
         "padding_top": 0,
         "padding_bottom": 60
@@ -335,6 +335,68 @@
         "divider_width": "fixed"
       }
     },
+    "image_with_text_overlay_xwcXq4": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_zfP8ix": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "ESHINE SLEEP"
+          }
+        },
+        "heading_pQL7gw": {
+          "type": "heading",
+          "settings": {
+            "heading": "Relax More, Live Better",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h3"
+          }
+        },
+        "text_e8MBAU": {
+          "type": "text",
+          "settings": {
+            "text": "<p><br/>Never underestimate the impact of a great night's sleep. </p><p>The right bed can transform your nights—and elevate your days.</p>",
+            "text_size": "text-lg"
+          }
+        },
+        "button_GrwCcm": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More",
+            "button_link": "shopify://pages/about-us",
+            "button_style": "btn--secondary",
+            "button_icon": "none"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_zfP8ix",
+        "heading_pQL7gw",
+        "text_e8MBAU",
+        "button_GrwCcm"
+      ],
+      "name": "t:sections.image-with-text-overlay.name",
+      "settings": {
+        "container": "full",
+        "image": "shopify://shop_images/4cf410ad190bd3bed4f385cd335a8240.jpg",
+        "desktop_height": "extra-medium",
+        "overlay_opacity": 40,
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "color_scheme": "",
+        "content_position": "middle-center",
+        "content_alignment": "center",
+        "mobile_height": "auto",
+        "content_position_mobile": "middle-center-mobile",
+        "content_alignment_mobile": "center",
+        "padding_top": 4,
+        "padding_bottom": 16,
+        "enable_preload_image": false
+      }
+    },
     "featured_blog_zqyTQt": {
       "type": "featured-blog",
       "name": "t:sections.featured-blog.name",
@@ -383,6 +445,7 @@
     "collection_list_new_TVpyap",
     "image_with_text_overlay_EXNEn9",
     "testimonials_HUptpA",
+    "image_with_text_overlay_xwcXq4",
     "featured_blog_zqyTQt"
   ]
 }

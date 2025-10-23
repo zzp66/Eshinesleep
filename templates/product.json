@@ -154,6 +154,82 @@
         "padding_bottom": 60
       }
     },
+    "layered_images_with_text_tUj8fY": {
+      "type": "layered-images-with-text",
+      "blocks": {
+        "image_BrpNMA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/555-2.jpg",
+            "image_width": 144,
+            "image_desktop_vertical": 61,
+            "image_desktop_horizontal": 9,
+            "animation": "media-mover"
+          }
+        },
+        "image_KYDRd7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/95x2_785fb1a7-7ac9-4100-9901-be16c507e43e.jpg",
+            "image_width": 132,
+            "image_desktop_vertical": 25,
+            "image_desktop_horizontal": 18,
+            "animation": "media-mover-reverse"
+          }
+        },
+        "image_tDAw6C": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/35ec09fff9cc4c828596d159513965fd.jpg",
+            "image_width": 162,
+            "image_desktop_vertical": 25,
+            "image_desktop_horizontal": 85,
+            "animation": "media-mover-reverse"
+          }
+        },
+        "image_XcYhwP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/91SEC-0EgRL-AC-SL1500.jpg",
+            "image_width": 118,
+            "image_desktop_vertical": 72,
+            "image_desktop_horizontal": 92,
+            "animation": "media-mover"
+          }
+        }
+      },
+      "block_order": [
+        "image_BrpNMA",
+        "image_KYDRd7",
+        "image_tDAw6C",
+        "image_XcYhwP"
+      ],
+      "name": "t:sections.layered-images-with-text.name",
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "scheme-info",
+        "section_header_alignment": "center",
+        "section_header_alignment_mobile": "inherit",
+        "subheading": "",
+        "subheading_style": "border",
+        "heading": "Want Better Sleep?",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h1",
+        "description": "<p>Find Your Perfect Position For Deeper Rest And Total Comfort.</p>",
+        "description_size": "text-base",
+        "button_label": "Learn More",
+        "button_link": "shopify://blogs/blogs/how-to-choose-your-perfect-mattress-after-years-of-settling-the-ultimate-buying-guide",
+        "button_style": "btn--primary",
+        "button_icon": "none",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
     "media_with_swiper_FehwmV": {
       "type": "media-with-swiper",
       "blocks": {
@@ -187,6 +263,7 @@
         "item_YKYBzi",
         "item_wUkCbn"
       ],
+      "disabled": true,
       "name": "Media With Swiper",
       "settings": {
         "container": "fixed",
@@ -256,8 +333,15 @@
         "item_4FjMj7",
         "item_hUcCbr"
       ],
+      "disabled": true,
       "name": "Media Tab Swiper",
-      "settings": {}
+      "settings": {
+        "container": "fixed",
+        "coll_title": "Explore All ESHINE SLEEP Products",
+        "coll_subtitle": "Shop beds,frames and more.",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
     },
     "quick_comparison_table_Fc9q9L": {
       "type": "quick-comparison-table",
@@ -290,6 +374,7 @@
         "price_ibtxjt",
         "variants_UfEY3f"
       ],
+      "disabled": true,
       "name": "t:sections.quick-comparison-table.name",
       "settings": {
         "container": "fixed",
@@ -309,6 +394,133 @@
         "padding_bottom": 50,
         "show_section_divider": false,
         "divider_width": "fixed"
+      }
+    },
+    "image_with_text_overlay_4mdfjM": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_ayK8YU": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "ESHINE SLEEP"
+          }
+        },
+        "heading_rrXFdr": {
+          "type": "heading",
+          "settings": {
+            "heading": "Relax More, Live Better",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h3"
+          }
+        },
+        "text_64CH36": {
+          "type": "text",
+          "settings": {
+            "text": "<p><br/>Never underestimate the impact of a great night's sleep. </p><p>The right bed can transform your nights—and elevate your days.</p>",
+            "text_size": "text-lg"
+          }
+        },
+        "button_EAT4Cc": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More",
+            "button_link": "shopify://pages/about-us",
+            "button_style": "btn--secondary",
+            "button_icon": "none"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_ayK8YU",
+        "heading_rrXFdr",
+        "text_64CH36",
+        "button_EAT4Cc"
+      ],
+      "name": "t:sections.image-with-text-overlay.name",
+      "settings": {
+        "container": "full",
+        "image": "shopify://shop_images/4cf410ad190bd3bed4f385cd335a8240.jpg",
+        "desktop_height": "extra-medium",
+        "overlay_opacity": 40,
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "color_scheme": "",
+        "content_position": "middle-center",
+        "content_alignment": "center",
+        "mobile_height": "auto",
+        "content_position_mobile": "middle-center-mobile",
+        "content_alignment_mobile": "center",
+        "padding_top": 4,
+        "padding_bottom": 16,
+        "enable_preload_image": false
+      }
+    },
+    "collection_list_new_3iAb3B": {
+      "type": "collection-list-new",
+      "blocks": {
+        "collection_PVfd8q": {
+          "type": "collection",
+          "settings": {
+            "coll_url": "shopify://collections/bundles",
+            "coll_img": "shopify://shop_images/4ddf.jpg",
+            "coll_title": "Bundles",
+            "coll_info": "Hit the road with luxury comfort, thanks to the Eshine Sleep adjustable bed."
+          }
+        },
+        "collection_nKcgTF": {
+          "type": "collection",
+          "settings": {
+            "coll_url": "shopify://collections/mattresses",
+            "coll_img": "shopify://shop_images/4_1000x1000_2e4cd30a-325f-43f5-a591-759d22f410e9.jpg",
+            "coll_title": "Mattress",
+            "coll_info": "Shop the best-selling mattresses designed for all types of sleepers."
+          }
+        },
+        "collection_JcBU3f": {
+          "type": "collection",
+          "settings": {
+            "coll_url": "shopify://collections/bed-frame",
+            "coll_img": "shopify://shop_images/97bc29d6bc759a1c91d0f03efc66eb14.jpg",
+            "coll_title": "Bed Frame",
+            "coll_info": "Shop the best-selling bed frames built for style and durability."
+          }
+        },
+        "collection_ybTRQC": {
+          "type": "collection",
+          "settings": {
+            "coll_url": "shopify://collections/hospital-bed",
+            "coll_img": "shopify://shop_images/01_7_b7c8fbc3-a9b2-41dd-86d0-acac6d4c0b36.jpg",
+            "coll_title": "Hospital Bed",
+            "coll_info": "Shop the best-selling hospital beds designed for comfort and care."
+          }
+        },
+        "collection_M3PCgc": {
+          "type": "collection",
+          "settings": {
+            "coll_url": "shopify://collections/rv",
+            "coll_img": "shopify://shop_images/01_6_4bbd762f-824d-49ad-910c-377e766cf791.jpg",
+            "coll_title": "RV Mattress",
+            "coll_info": "Shop the best-selling RV mattresses made for life on the road."
+          }
+        }
+      },
+      "block_order": [
+        "collection_PVfd8q",
+        "collection_nKcgTF",
+        "collection_JcBU3f",
+        "collection_ybTRQC",
+        "collection_M3PCgc"
+      ],
+      "name": "Collection List New",
+      "settings": {
+        "container": "fixed",
+        "coll_title": "Explore All ESHINE SLEEP Products",
+        "coll_subtitle": "Shop adjustable beds,frames and more.",
+        "padding_top": 0,
+        "padding_bottom": 60
       }
     },
     "related-products": {
@@ -363,9 +575,12 @@
   "order": [
     "breadcrumbs",
     "main",
+    "layered_images_with_text_tUj8fY",
     "media_with_swiper_FehwmV",
     "media_tab_swiper_UnVhAH",
     "quick_comparison_table_Fc9q9L",
+    "image_with_text_overlay_4mdfjM",
+    "collection_list_new_3iAb3B",
     "related-products",
     "1629746450643786911",
     "17611136970011267d"

@@ -12,12 +12,78 @@
     "main": {
       "type": "main-page",
       "settings": {
+        "container": "fixed",
+        "text_alignment": "center",
         "padding_top": 28,
         "padding_bottom": 28
+      }
+    },
+    "video_7cncY8": {
+      "type": "video",
+      "name": "t:sections.video.name",
+      "settings": {
+        "container": "fixed",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_ratio": "adapt",
+        "description": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "video_hero_inNt74": {
+      "type": "video-hero",
+      "blocks": {
+        "subheading_3fJrVw": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Add a tagline"
+          }
+        },
+        "heading_wiKm7B": {
+          "type": "heading",
+          "settings": {
+            "heading": "Video hero",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "hd1"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_3fJrVw",
+        "heading_wiKm7B"
+      ],
+      "name": "t:sections.video-hero.name",
+      "settings": {
+        "container": "full",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "video_height": "adapt",
+        "overlay_opacity": 70,
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "color_scheme": "",
+        "content_position": "middle-center",
+        "content_alignment": "center",
+        "video_mobile_height": "adapt",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed"
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "video_7cncY8",
+    "video_hero_inNt74"
   ]
 }

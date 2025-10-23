@@ -142,7 +142,7 @@
             "heading": "Download Manual",
             "heading_size": "h4",
             "icon": "none",
-            "content": "<p><a href=\"https://cdn.shopify.com/s/files/1/0587/4139/1417/files/E2000-6-20-Troubleshooting.pdf?v=1761222968\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0587/4139/1417/files/E2000-6-20-Troubleshooting.pdf?v=1761222968\">E2000</a></p>",
+            "content": "<p><a href=\"https://cdn.shopify.com/s/files/1/0587/4139/1417/files/E3000-6-20-Troubleshooting.pdf?v=1761222963\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0587/4139/1417/files/E3000-6-20-Troubleshooting.pdf?v=1761222963\">E3000</a></p>",
             "page": "",
             "default_open": false,
             "show_below_product_media": false
@@ -188,7 +188,7 @@
         "image_J8JjGd": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/555-2.jpg",
+            "image": "shopify://shop_images/95x2_4c93ab48-146a-49dd-8e1c-d79b28cc8f8c.jpg",
             "image_width": 144,
             "image_desktop_vertical": 61,
             "image_desktop_horizontal": 9,
@@ -218,7 +218,7 @@
         "image_hzyrAk": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/91SEC-0EgRL-AC-SL1500.jpg",
+            "image": "shopify://shop_images/150_f456cb70-c3a4-41d5-a496-7950a4499461.jpg",
             "image_width": 118,
             "image_desktop_vertical": 72,
             "image_desktop_horizontal": 92,
@@ -323,7 +323,7 @@
         "heading_cEqgNq": {
           "type": "heading",
           "settings": {
-            "heading": "6 Reasons to love the Adjustable Royal Bundle",
+            "heading": "8 Reasons to love the Adjustable Royal Bundle",
             "highlight_style": "hand_drawn_circle",
             "highlight_font_style": "italic",
             "highlight_style_color": "",
@@ -334,7 +334,7 @@
         "text_eMVajw": {
           "type": "text",
           "settings": {
-            "text": "<ul><li>Independent head （0°-55°）and foot elevation（0°-42°）</li><li>Control via app or wireless remote with programmable memory</li><li>One-touch settings for zero gravity, anti-snore, TV recline, and Zero clearance</li><li>1 built-in, convenient USB port & Type-C port</li><li>11.4 inch legs </li><li>Easy assembly with no tools needed</li></ul>",
+            "text": "<ul><li>Independent head （0°-55°）and foot elevation（0°-42°）</li><li>Control via app or wireless remote with programmable memory</li><li>One-touch settings for zero gravity, anti-snore, TV recline, and Zero clearance</li><li>Whisper-quiet massage, with 3 intensities</li><li>1 built-in, convenient USB port & Type-C port</li><li>Underbed LED Light</li><li>Adjustable height – 8 & 3.4-inch legs </li><li>Easy assembly with no tools needed</li></ul>",
             "subtext_color": true
           }
         }
@@ -349,7 +349,7 @@
       "settings": {
         "container": "fixed",
         "color_scheme": "scheme-1",
-        "image": "shopify://shop_images/2000_e143077f-3a4e-4bd7-b756-d3c170053305.jpg",
+        "image": "shopify://shop_images/1_b306486f-bd63-4418-a843-fb932f1176c1.jpg",
         "image_position": "left",
         "image_width": 50,
         "desktop_content_position": "center",
@@ -514,11 +514,12 @@
         "heading_W3piiR",
         "text_QpTCRG"
       ],
+      "disabled": true,
       "name": "t:sections.image-with-text.name",
       "settings": {
         "container": "fixed",
         "color_scheme": "",
-        "image": "shopify://shop_images/lQDPKcYGAHzLLYfNC7jNC7iw4dlFsmtuF2II1buFq_TvAw_3000_3000.jpg",
+        "image": "shopify://shop_images/150_7bad23f8-a3dc-42b9-8422-cbc6e575bc29.jpg",
         "image_position": "left",
         "image_width": 50,
         "desktop_content_position": "center",
@@ -566,6 +567,7 @@
         "heading_3XbnPD",
         "text_nnzBYg"
       ],
+      "disabled": true,
       "name": "t:sections.image-with-text-overlay.name",
       "settings": {
         "container": "full",
@@ -725,7 +727,7 @@
       "settings": {
         "container": "fixed",
         "color_scheme": "",
-        "image": "shopify://shop_images/E2000-re.jpg",
+        "image": "shopify://shop_images/E3100-re.jpg",
         "image_position": "left",
         "image_width": 50,
         "desktop_content_position": "center",

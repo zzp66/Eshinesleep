@@ -249,7 +249,7 @@
         "description": "<p>Find Your Perfect Position For Deeper Rest And Total Comfort.</p>",
         "description_size": "text-base",
         "button_label": "Learn More",
-        "button_link": "",
+        "button_link": "shopify://blogs/blogs/how-to-choose-your-perfect-mattress-after-years-of-settling-the-ultimate-buying-guide",
         "button_style": "btn--primary",
         "button_icon": "none",
         "padding_top": 50,
@@ -514,11 +514,12 @@
         "heading_W3piiR",
         "text_QpTCRG"
       ],
+      "disabled": true,
       "name": "t:sections.image-with-text.name",
       "settings": {
         "container": "fixed",
         "color_scheme": "",
-        "image": "shopify://shop_images/3000.jpg",
+        "image": "shopify://shop_images/1-6.jpg",
         "image_position": "left",
         "image_width": 50,
         "desktop_content_position": "center",
@@ -566,6 +567,7 @@
         "heading_3XbnPD",
         "text_nnzBYg"
       ],
+      "disabled": true,
       "name": "t:sections.image-with-text-overlay.name",
       "settings": {
         "container": "full",
@@ -641,7 +643,13 @@
         "item_Th3trH"
       ],
       "name": "Media Tab Swiper",
-      "settings": {}
+      "settings": {
+        "container": "fixed",
+        "coll_title": "Explore All ESHINE SLEEP Products",
+        "coll_subtitle": "Shop beds,frames and more.",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
     },
     "collection_with_tab_dyqwDU": {
       "type": "collection-with-tab",
