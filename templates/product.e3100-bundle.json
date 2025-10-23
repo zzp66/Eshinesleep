@@ -187,7 +187,7 @@
         "image_J8JjGd": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/lQDPJwaN3ZEwrsvNA-jNA-iwaTRmInTHoI0I0XaeXycvAA_1000_1000.jpg",
+            "image": "shopify://shop_images/555-2.jpg",
             "image_width": 144,
             "image_desktop_vertical": 61,
             "image_desktop_horizontal": 9,
@@ -217,7 +217,7 @@
         "image_hzyrAk": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/95_8cb8cb27-1cde-446a-abca-c339f0750c92.jpg",
+            "image": "shopify://shop_images/91SEC-0EgRL-AC-SL1500.jpg",
             "image_width": 118,
             "image_desktop_vertical": 72,
             "image_desktop_horizontal": 92,
@@ -322,7 +322,7 @@
         "heading_cEqgNq": {
           "type": "heading",
           "settings": {
-            "heading": "9 Reasons to love the Adjustable Royal Bundle",
+            "heading": "8 Reasons to love the Adjustable Royal Bundle",
             "highlight_style": "hand_drawn_circle",
             "highlight_font_style": "italic",
             "highlight_style_color": "",
@@ -333,7 +333,7 @@
         "text_eMVajw": {
           "type": "text",
           "settings": {
-            "text": "<ul><li>Independent head （0°-55°）and foot elevation（0°-42°）</li><li>Individual Pillow Tilt</li><li>Control via app or wireless remote with programmable memory</li><li>One-touch settings for zero gravity, anti-snore, TV recline, and Zero clearance</li><li>Whisper-quiet massage, with 3 intensities</li><li>1 built-in, convenient USB port & Type-C port</li><li>Underbed LED Light</li><li>Adjustable height – 8 & 3.4-inch legs </li><li>Easy assembly with no tools needed</li></ul>",
+            "text": "<ul><li>Independent head （0°-55°）and foot elevation（0°-42°）</li><li>Control via app or wireless remote with programmable memory</li><li>One-touch settings for zero gravity, anti-snore, TV recline, and Zero clearance</li><li>Whisper-quiet massage, with 3 intensities</li><li>1 built-in, convenient USB port & Type-C port</li><li>Underbed LED Light</li><li>Adjustable height – 8 & 3.4-inch legs </li><li>Easy assembly with no tools needed</li></ul>",
             "subtext_color": true
           }
         }
@@ -348,7 +348,7 @@
       "settings": {
         "container": "fixed",
         "color_scheme": "scheme-1",
-        "image": "shopify://shop_images/2-4.jpg",
+        "image": "shopify://shop_images/1_61fb89a5-dcec-46a1-8df1-b1f51d652912.jpg",
         "image_position": "left",
         "image_width": 50,
         "desktop_content_position": "center",
@@ -517,7 +517,7 @@
       "settings": {
         "container": "fixed",
         "color_scheme": "",
-        "image": "shopify://shop_images/3000.jpg",
+        "image": "shopify://shop_images/17_1000x1000_cac609b0-7cdf-4285-af4b-364f1af78e11.jpg",
         "image_position": "left",
         "image_width": 50,
         "desktop_content_position": "center",
@@ -592,14 +592,14 @@
           "type": "item",
           "settings": {
             "item_text": "Twin xl Bed Frame",
-            "sub_title_1": "Head Up & Pillow Tilt",
-            "sub_img_pc_1": "shopify://shop_images/5000-95-1_2b84a132-7fdb-4484-a9e9-56ba019d9d09.jpg",
+            "sub_title_1": "Head Up",
+            "sub_img_pc_1": "shopify://shop_images/3100-95-2.jpg",
             "sub_title_2": "Feet Up",
-            "sub_img_pc_2": "shopify://shop_images/5000-95x2-1.jpg",
+            "sub_img_pc_2": "shopify://shop_images/3100-95-1.jpg",
             "sub_title_3": "Zero Gravity",
-            "sub_img_pc_3": "shopify://shop_images/5000-95-2.jpg",
+            "sub_img_pc_3": "shopify://shop_images/3100-95-3.jpg",
             "sub_title_4": "Flat",
-            "sub_img_pc_4": "shopify://shop_images/5000-95-3.jpg",
+            "sub_img_pc_4": "shopify://shop_images/3100-95.jpg",
             "sub_title_5": ""
           }
         },
@@ -718,7 +718,7 @@
       "settings": {
         "container": "fixed",
         "color_scheme": "",
-        "image": "shopify://shop_images/71jNren27qL._AC_SL1500.jpg",
+        "image": "shopify://shop_images/E3100-re.jpg",
         "image_position": "left",
         "image_width": 50,
         "desktop_content_position": "center",

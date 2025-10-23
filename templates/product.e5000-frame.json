@@ -125,6 +125,7 @@
         },
         "collapsible_tab_zafMk9": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Set Up Video",
             "heading_size": "h4",
@@ -141,7 +142,7 @@
             "heading": "Download Manual",
             "heading_size": "h4",
             "icon": "none",
-            "content": "<p>E5000</p>",
+            "content": "<p><a href=\"https://cdn.shopify.com/s/files/1/0587/4139/1417/files/E5000-pdf.pdf?v=1761223037\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0587/4139/1417/files/E5000-pdf.pdf?v=1761223037\">E5000</a></p>",
             "page": "",
             "default_open": false,
             "show_below_product_media": false
