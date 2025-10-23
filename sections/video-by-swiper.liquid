@@ -1,0 +1,218 @@
+<style>
+  @keyframes progressBar {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+  .video-by-swiper {
+    padding: 50px 15px;
+  }
+  .video-by-swiper-title {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .video-by-swiper-title h2 {
+    margin: 0 0 40px;
+    color: #000;
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 600;
+  }
+  .video-by-swiper-content .swiper-wrapper {
+    overflow-x: visible !important;
+  }
+  .video-by-swiper-content .swiper-slide {
+    opacity: 0.4;
+  }
+  .video-by-swiper-content .swiper-slide.swiper-slide-active {
+    opacity: 1;
+  }
+
+  .video-by-swiper-item {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .video-by-swiper-item video {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 16px;
+  }
+  .video-by-swiper-pagination {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    gap: 6px;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+  }
+  .video-by-swiper-pagination .swiper-pagination-bullet {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background: #dfe0e4;
+    overflow: hidden;
+    border: none;
+    opacity: 1;
+  }
+  .video-by-swiper-pagination .swiper-pagination-bullet-active {
+    width: 50px;
+    height: 8px;
+    border-radius: 8px;
+    background: #000;
+  }
+  .video-by-swiper-button .swiper-button-prev,
+  .video-by-swiper-button .swiper-button-next {
+    color: #fff;
+    background-color: #000;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    opacity: 0.4;
+    transition: all 0.3s ease-in-out;
+  }
+  .video-by-swiper-button .swiper-button-prev::after,
+  .video-by-swiper-button .swiper-button-next::after {
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .video-by-swiper-button .swiper-button-prev:hover,
+  .video-by-swiper-button .swiper-button-next:hover {
+    opacity: 1;
+  }
+  @media screen and (max-width: 979px) {
+    .video-by-swiper {
+      padding: 30px 15px;
+    }
+    .video-by-swiper-title h2 {
+      margin: 0 0 10px 0;
+      font-size: 26px;
+      line-height: 31px;
+    }
+    .video-by-swiper-button {
+      display: none;
+    }
+  }
+</style>
+
+<div class="video-by-swiper">
+  <div class="video-by-swiper-wrapper">
+    <div class="video-by-swiper-title">
+      <h2 class="general-title">{{ section.settings.title }}</h2>
+    </div>
+    <div class="swiper video-by-swiper-content">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          <div class="swiper-slide">
+            <div class="video-by-swiper-item">
+              {{
+                block.settings.video
+                | video_tag: class: 'video-by-swiper-item-video', playsinline: true, muted: true, loop: true
+              }}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="video-by-swiper-button">
+        <div class="swiper-button-prev vbs-btn-prev"></div>
+        <div class="swiper-button-next vbs-btn-next"></div>
+      </div>
+      <div class="swiper-pagination video-by-swiper-pagination"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const swiperSections = document.querySelectorAll('.video-by-swiper');
+
+    swiperSections.forEach((section) => {
+      const swiperContainer = section.querySelector('.video-by-swiper-content');
+
+      const swiper = new Swiper(swiperContainer, {
+        initialSlide: 1,
+        slidesPerView: 1,
+        spaceBetween: 15,
+        centeredSlides: true,
+        centeredSlidesBounds: true,
+        navigation: {
+          nextEl: '.vbs-btn-next',
+          prevEl: '.vbs-btn-prev',
+        },
+        pagination: {
+          el: '.video-by-swiper-pagination',
+          clickable: true,
+        },
+        breakpoints: {
+          999: {
+            slidesPerView: 1.8,
+            spaceBetween: 20,
+          },
+        },
+        on: {
+          init(swiper) {
+            setTimeout(() => playActiveVideo(swiper), 100); // 等待初始化完毕
+          },
+          slideChangeTransitionEnd(swiper) {
+            playActiveVideo(swiper); // 轮播切换结束后播放视频
+          },
+        },
+      });
+
+      function playActiveVideo(swiper) {
+        swiper.slides.forEach((slide) => {
+          const video = slide.querySelector('.video-by-swiper-item-video');
+          if (!video) return;
+          if (slide.classList.contains('swiper-slide-active')) {
+            video.play().catch(() => {});
+          } else {
+            video.pause();
+            video.currentTime = 0;
+          }
+        });
+      }
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Video by Swiper",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "标题",
+      "default": "Discover More with Eshineleep"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "video",
+      "name": "Video",
+      "settings": [
+        {
+          "type": "video",
+          "id": "video",
+          "label": "视频"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Video by Swiper"
+    }
+  ]
+}
+{% endschema %}
