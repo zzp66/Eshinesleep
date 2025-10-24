@@ -8,99 +8,122 @@
   }
 {% endstyle %}
 <style>
-    /* 主 Tabs */
-  #media-with-tabs-{{ section.id }} .mwt-main-tabs {
-      display:flex;
-      gap:12px;
-      flex-wrap:wrap;
-      margin-bottom:24px;
-    }
-    #media-with-tabs-{{ section.id }} .mwt-main-tab {
-      background:#f4f4f4;
-      border:none; padding:10px 18px;
-      border-radius:48px;
-      cursor:pointer;
-    }
-    #media-with-tabs-{{ section.id }} .mwt-main-tab.is-active {
-      background:#e7600f;
-      color:#fff;
-      font-weight:700;
-    }
-
-    /* 主内容显示控制 */
-    #media-with-tabs-{{ section.id }} .mwt-main-content {
-      display:none;
-    }
-    #media-with-tabs-{{ section.id }} .mwt-main-content.is-active {
-      display:block;
-    }
-
-    /* 子区域整体：PC 左右布局 */
-    #media-with-tabs-{{ section.id }} .mwt-sub-wrap {
-      display:flex;
-      gap:30px;
-      align-items:center;
-    }
-    #media-with-tabs-{{ section.id }} .mwt-sub-images {
-      flex:1;
-      max-width: 70%;
-    }
-    #media-with-tabs-{{ section.id }} .mwt-sub-image {
-      display:none;
-    }
-    #media-with-tabs-{{ section.id }} .mwt-sub-image.is-active {
-      display:block;
-    }
-    #media-with-tabs-{{ section.id }} .mwt-sub-image img {
-      width:100%;
-      height:auto;
-      border-radius:12px;
-      object-fit:cover;
-      display:block;
-    }
-
-    /* 右侧标题竖排 */
-    #media-with-tabs-{{ section.id }} .mwt-sub-titles {
-      width:260px;
-      display:flex;
-      flex-direction:column;
-      gap:12px;
-    }
-    #media-with-tabs-{{ section.id }} .mwt-sub-title {
-      background:transparent;
-      border:none;
-      text-align:left;
-      padding:10px 12px;
-      cursor:pointer;
-      border-left:3px solid transparent;
-      transition:all .18s;
-    }
-    #media-with-tabs-{{ section.id }} .mwt-sub-title.is-active{
-      background:#e7600f; color:#fff; font-weight:700;
-    }
-
-    /* 移动端：标题在上，图片下（上下排列） */
-    @media (max-width:767px) {
-      #media-with-tabs-{{ section.id }} .mwt-sub-wrap {
-        flex-direction:column;
-      }
-      #media-with-tabs-{{ section.id }} .mwt-sub-titles {
-        width:100%;
-        flex-direction:row;
+      /* 主 Tabs */
+    #media-with-tabs-{{ section.id }} .mwt-main-tabs {
+        display:flex;
+        gap:12px;
         flex-wrap:wrap;
-        justify-content:center;
-        gap:10px;
-        order:-1;
+        margin-bottom:24px;
+      }
+      #media-with-tabs-{{ section.id }} .mwt-main-tab {
+        background:#f4f4f4;
+        border:none; padding:10px 18px;
+        border-radius:48px;
+        cursor:pointer;
+      }
+      #media-with-tabs-{{ section.id }} .mwt-main-tab.is-active {
+        background:#e7600f;
+        color:#fff;
+        font-weight:700;
+      }
+
+      #media-with-tabs-{{ section.id }} .mwt-main-tab__texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.2;
+  }
+
+  #media-with-tabs-{{ section.id }} .mwt-main-tab__title {
+    font-size: 16px;
+  }
+
+  #media-with-tabs-{{ section.id }} .mwt-main-tab__subtitle {
+    font-size: 13px;
+    color: #666;
+    margin-top: 2px;
+  }
+
+  #media-with-tabs-{{ section.id }} .mwt-main-tab.is-active .mwt-main-tab__subtitle {
+    color: #fff;
+    opacity: 0.85;
+  }
+
+
+      /* 主内容显示控制 */
+      #media-with-tabs-{{ section.id }} .mwt-main-content {
+        display:none;
+      }
+      #media-with-tabs-{{ section.id }} .mwt-main-content.is-active {
+        display:block;
+      }
+
+      /* 子区域整体：PC 左右布局 */
+      #media-with-tabs-{{ section.id }} .mwt-sub-wrap {
+        display:flex;
+        gap:30px;
+        align-items:center;
+      }
+      #media-with-tabs-{{ section.id }} .mwt-sub-images {
+        flex:1;
+        max-width: 70%;
+      }
+      #media-with-tabs-{{ section.id }} .mwt-sub-image {
+        display:none;
+      }
+      #media-with-tabs-{{ section.id }} .mwt-sub-image.is-active {
+        display:block;
+      }
+      #media-with-tabs-{{ section.id }} .mwt-sub-image img {
+        width:100%;
+        height:auto;
+        border-radius:12px;
+        object-fit:cover;
+        display:block;
+      }
+
+      /* 右侧标题竖排 */
+      #media-with-tabs-{{ section.id }} .mwt-sub-titles {
+        width:260px;
+        display:flex;
+        flex-direction:column;
+        gap:12px;
       }
       #media-with-tabs-{{ section.id }} .mwt-sub-title {
-        border-left:none;
-        border-bottom:2px solid transparent;
-        padding:8px 10px;
+        background:transparent;
+        border:none;
+        text-align:left;
+        padding:10px 12px;
+        cursor:pointer;
+        border-left:3px solid transparent;
+        transition:all .18s;
       }
-      #media-with-tabs-{{ section.id }} .mwt-sub-title.is-active {
-        border-bottom-color:#000;
+      #media-with-tabs-{{ section.id }} .mwt-sub-title.is-active{
+        background:#e7600f; color:#fff; font-weight:700;
       }
-    }
+
+      /* 移动端：标题在上，图片下（上下排列） */
+      @media (max-width:767px) {
+        #media-with-tabs-{{ section.id }} .mwt-sub-wrap {
+          flex-direction:column;
+        }
+        #media-with-tabs-{{ section.id }} .mwt-sub-titles {
+          width:100%;
+          flex-direction:row;
+          flex-wrap:wrap;
+          justify-content:center;
+          gap:10px;
+          order:-1;
+        }
+        #media-with-tabs-{{ section.id }} .mwt-sub-title {
+          border-left:none;
+          border-bottom:2px solid transparent;
+          padding:8px 10px;
+        }
+        #media-with-tabs-{{ section.id }} .mwt-sub-title.is-active {
+          border-bottom-color:#000;
+        }
+      }
 </style>
 
 <div
@@ -116,7 +139,12 @@
           data-main-index="{{ forloop.index0 }}"
           type="button"
         >
-          {{ block.settings.item_text }}
+          <div class="mwt-main-tab__texts">
+            <div class="mwt-main-tab__title">{{ block.settings.item_text }}</div>
+            {% if block.settings.item_subtext != blank %}
+              <div class="mwt-main-tab__subtitle">{{ block.settings.item_subtext }}</div>
+            {% endif %}
+          </div>
         </button>
       {% endfor %}
     </div>
@@ -385,6 +413,12 @@
           "id": "item_text",
           "label": "主 Tab 标题",
           "default": "Main Tab"
+        },
+        {
+          "type": "text",
+          "id": "item_subtext",
+          "label": "主 Tab 副标题",
+          "default": "Sub Title"
         },
         {
           "type": "text",
