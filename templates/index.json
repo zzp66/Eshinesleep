@@ -1,1 +1,551 @@
-{"sections":{"slideshow_q3U4Jn":{"type":"slideshow","blocks":{"slide_U9bPyj":{"type":"slide","settings":{"color_scheme":"scheme-inverse","background":"shopify:\/\/shop_images\/20.jpg","background_mobile":"shopify:\/\/shop_images\/111111_8c448e1c-8dce-4669-a98e-a7095e62c7fc.jpg","image_overlay_opacity":0,"content_position":"middle-left","text_alignment":"right","subheading":"E5000+ Royal Hybrid Bundles","title":"<strong>Ultra Breathable<\/strong>","highlight_style":"none","highlight_font_style":"italic","highlight_style_color":"","highlight_text_color":"","heading_size":"h1","description":"<p>Graphene-Infused Antibacterial Technology<\/p>","description_size":"text-lg","button_label":"Shop Now","button_link":"shopify:\/\/products\/e5000-royal-hybrid-bundle","button_style":"btn--primary","button_icon":"none","enable_preload_image":false}}},"block_order":["slide_U9bPyj"],"settings":{"container":"full","slide_height":"adapt","show_controls":true,"autoplay":true,"autoplay_delay":7,"show_text_below":true,"text_alignment_mobile":"center","accessibility_info":"Slideshow about our brand"}},"countdown_timer_CEAdz4":{"type":"countdown-timer","blocks":{"heading_93EXVj":{"type":"heading","settings":{"heading":"20th Anniversary Celebration","highlight_style":"none","highlight_font_style":"italic","highlight_style_color":"","highlight_text_color":"","heading_size":"hd2"}},"text_3A6nQw":{"type":"text","settings":{"text":"<p>From our first adjustable bed to today’s smart comfort —<br\/>every moment has been made possible by you.<\/p>","text_size":"text-base"}},"subheading_DYTENP":{"type":"subheading","settings":{"subheading":"<strong>Discount Code：SLEEP5<\/strong>"}},"timer_a7qG7N":{"type":"timer","settings":{"type":"evergreen","style":"number","number_size":"h1","duration":"every_month","time":"2025\/012\/31 00:45 PM"}}},"block_order":["heading_93EXVj","text_3A6nQw","subheading_DYTENP","timer_a7qG7N"],"name":"t:sections.countdown-timer.name","settings":{"container":"full","color_schema":"scheme-inverse","image_overlay_opacity":0,"content_alignment":"center","text_alignment":"center","padding_top":0,"padding_bottom":0,"show_section_divider":false,"divider_width":"full"}},"collection_with_tab_BWkyHx":{"type":"collection-with-tab","blocks":{"collection_gEeYAb":{"type":"collection","settings":{"collection":"bundles","collection_title":"Bundles"}},"collection_xLbAhP":{"type":"collection","settings":{"collection":"mattresses","collection_title":"Mattresses"}}},"block_order":["collection_gEeYAb","collection_xLbAhP"],"name":"Collection With Tab","settings":{"container":"fixed","padding_top":60,"padding_bottom":60}},"product_contrast_ecRJGK":{"type":"product-contrast","name":"Product Contrast","settings":{"left_image":"shopify:\/\/shop_images\/lQDPJw3gVZDYWIXNAyDNAyCwLScp35d1M9QIhIgHLhIjAA_800_800.png","right_image":"shopify:\/\/shop_images\/21_fe0b36bf-7bcb-4e7c-8d8d-a686131e7ba0.png","headline":"Relax More, Live Better","subhead":"A Royal Night's Sleep","comparison_text":"E3100+ VS E5000+","button_text":"Learn More","button_link":"shopify:\/\/blogs\/blogs\/elevate-your-sleep-sanctuary-a-deep-dive-into-the-eshinesleep-e3100-vs-e5000-adjustable-bed-bundles","container":"full","padding_top":0,"padding_bottom":60}},"collection_list_new_TVpyap":{"type":"collection-list-new","blocks":{"collection_tkrdaA":{"type":"collection","settings":{"coll_url":"shopify:\/\/collections\/bundles","coll_img":"shopify:\/\/shop_images\/4ddf.jpg","coll_title":"Bundles","coll_info":"Hit the road with luxury comfort, thanks to the Eshine Sleep adjustable bed."}},"collection_DRmQLe":{"type":"collection","settings":{"coll_url":"shopify:\/\/collections\/mattresses","coll_img":"shopify:\/\/shop_images\/4_1000x1000_2e4cd30a-325f-43f5-a591-759d22f410e9.jpg","coll_title":"Mattress","coll_info":"Shop the best-selling mattresses designed for all types of sleepers."}},"collection_X4p4a9":{"type":"collection","settings":{"coll_url":"shopify:\/\/collections\/bed-frame","coll_img":"shopify:\/\/shop_images\/97bc29d6bc759a1c91d0f03efc66eb14.jpg","coll_title":"Bed Frame","coll_info":"Shop the best-selling bed frames built for style and durability."}},"collection_RdPqKL":{"type":"collection","settings":{"coll_url":"shopify:\/\/collections\/hospital-bed","coll_img":"shopify:\/\/shop_images\/01_7_b7c8fbc3-a9b2-41dd-86d0-acac6d4c0b36.jpg","coll_title":"Hospital Bed","coll_info":"Shop the best-selling hospital beds designed for comfort and care."}},"collection_TYhFgK":{"type":"collection","settings":{"coll_url":"shopify:\/\/collections\/rv","coll_img":"shopify:\/\/shop_images\/01_6_4bbd762f-824d-49ad-910c-377e766cf791.jpg","coll_title":"RV Mattress","coll_info":"Shop the best-selling RV mattresses made for life on the road."}}},"block_order":["collection_tkrdaA","collection_DRmQLe","collection_X4p4a9","collection_RdPqKL","collection_TYhFgK"],"name":"Collection List New","settings":{"container":"fixed","coll_title":"Explore All ESHINE SLEEP Products","coll_subtitle":"Shop adjustable beds,frames and more.","padding_top":0,"padding_bottom":60}},"image_with_text_overlay_EXNEn9":{"type":"image-with-text-overlay","blocks":{"heading_nwWbyk":{"type":"heading","settings":{"heading":"Try Your EshineBed Mattresses For 99 Nights","highlight_style":"none","highlight_font_style":"italic","highlight_style_color":"","highlight_text_color":"","heading_size":"h3"}},"text_bRjGYC":{"type":"text","settings":{"text":"<p>Lounge, nap and snooze on your Eshinesleep Mattress for 3 months. Don’t love it? Return it for free with our money back guarantee.<\/p>","text_size":"text-base"}},"button_YyKwLY":{"type":"button","settings":{"button_label":"Learn More","button_link":"shopify:\/\/pages\/99-night-sleep-trial","button_style":"btn--primary","button_icon":"arrow-right"}}},"block_order":["heading_nwWbyk","text_bRjGYC","button_YyKwLY"],"name":"t:sections.image-with-text-overlay.name","settings":{"container":"full","image":"shopify:\/\/shop_images\/16.jpg","desktop_height":"adapt","overlay_opacity":35,"enable_parallax":false,"parallax_direction":"zoom","color_scheme":"","content_position":"middle-center","content_alignment":"center","image_mobile":"shopify:\/\/shop_images\/1_4f659075-4c75-4b99-9451-821edee06c2f.jpg","mobile_height":"medium","content_position_mobile":"middle-center-mobile","content_alignment_mobile":"center","padding_top":0,"padding_bottom":60,"enable_preload_image":true}},"testimonials_HUptpA":{"type":"testimonials","blocks":{"testimonial_QeNJnD":{"type":"testimonial","settings":{"icon":"none","heading":"Testimonials","text":"<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>","author":"Author's name","bio":"","product":""}},"testimonial_WtPB4B":{"type":"testimonial","settings":{"icon":"none","heading":"Testimonials","text":"<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>","author":"Author's name","bio":"","product":""}},"testimonial_UxPNcL":{"type":"testimonial","settings":{"icon":"none","heading":"Testimonials","text":"<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>","author":"Author's name","bio":"","product":""}},"testimonial_AK4idH":{"type":"testimonial","settings":{"icon":"none","heading":"Testimonials","text":"<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>","author":"Author's name","bio":"","product":""}},"testimonial_MmNXrP":{"type":"testimonial","settings":{"icon":"none","heading":"Testimonials","text":"<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>","author":"Author's name","bio":"","product":""}},"testimonial_cwETqE":{"type":"testimonial","settings":{"icon":"none","heading":"Testimonials","text":"<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>","author":"Author's name","bio":"","product":""}}},"block_order":["testimonial_QeNJnD","testimonial_WtPB4B","testimonial_UxPNcL","testimonial_AK4idH","testimonial_MmNXrP","testimonial_cwETqE"],"disabled":true,"name":"t:sections.testimonials.name","settings":{"container":"full","color_scheme":"","section_header_alignment":"center","section_header_alignment_mobile":"inherit","subheading":"","heading":"Testimonials","highlight_style":"none","highlight_font_style":"italic","highlight_style_color":"","highlight_text_color":"","heading_size":"h1","description":"","text_size":"text-base","layout":"focused","card_color_scheme":"","card_content_color_scheme":"","card_image_ratio":"adapt","card_heading_size":"h4","card_text_size":"h1","author_info_layout":"vertical","card_trigger_behavior":"click","show_image":false,"show_author_image":false,"columns_desktop":3,"column_gap":"medium","row_gap":"medium","enable_slider":true,"columns_mobile":"1","swipe_on_mobile":true,"show_progress_bar":true,"padding_top":0,"padding_bottom":60,"show_section_divider":false,"divider_width":"fixed"}},"image_with_text_overlay_xwcXq4":{"type":"image-with-text-overlay","blocks":{"subheading_zfP8ix":{"type":"subheading","settings":{"subheading":"ESHINE SLEEP"}},"heading_pQL7gw":{"type":"heading","settings":{"heading":"Relax More, Live Better","highlight_style":"none","highlight_font_style":"italic","highlight_style_color":"","highlight_text_color":"","heading_size":"h3"}},"text_e8MBAU":{"type":"text","settings":{"text":"<p><br\/>Never underestimate the impact of a great night's sleep. <\/p><p>The right bed can transform your nights—and elevate your days.<\/p>","text_size":"text-lg"}},"button_GrwCcm":{"type":"button","settings":{"button_label":"Learn More","button_link":"shopify:\/\/pages\/about-us","button_style":"btn--secondary","button_icon":"none"}}},"block_order":["subheading_zfP8ix","heading_pQL7gw","text_e8MBAU","button_GrwCcm"],"name":"t:sections.image-with-text-overlay.name","settings":{"container":"full","image":"shopify:\/\/shop_images\/4cf410ad190bd3bed4f385cd335a8240.jpg","desktop_height":"extra-medium","overlay_opacity":40,"enable_parallax":false,"parallax_direction":"vertical","color_scheme":"","content_position":"middle-center","content_alignment":"center","mobile_height":"auto","content_position_mobile":"middle-center-mobile","content_alignment_mobile":"center","padding_top":4,"padding_bottom":16,"enable_preload_image":false}},"featured_blog_zqyTQt":{"type":"featured-blog","name":"t:sections.featured-blog.name","settings":{"container":"full","color_scheme":"scheme-1","section_header_alignment":"center","section_header_alignment_mobile":"inherit","subheading":"","heading":"Blog","highlight_style":"none","highlight_font_style":"italic","highlight_style_color":"","highlight_text_color":"","heading_size":"h2","description":"","text_size":"text-base","button_label":"","button_link":"shopify:\/\/blogs\/blogs","button_style":"btn--underline","button_icon":"none","blog":"blogs","post_limit":3,"columns_desktop":3,"column_gap":"medium","row_gap":"large","columns_mobile":"1","swipe_on_mobile":true,"card_title_size":"h4","show_tags":true,"show_excerpt":false,"show_date":true,"show_author":false,"show_button":true,"padding_top":0,"padding_bottom":50,"show_section_divider":false,"divider_width":"full"}},"video_by_swiper_kzjY9n":{"type":"video-by-swiper","blocks":{"video_xEkEeG":{"type":"video","settings":{"video":"shopify:\/\/files\/videos\/hb.mp4"}},"video_HkAFEK":{"type":"video","settings":{"video":"shopify:\/\/files\/videos\/Installation video.mp4"}},"video_yAQP9E":{"type":"video","settings":{"video":"shopify:\/\/files\/videos\/RV Mattress 02.mp4"}},"video_7DzPPd":{"type":"video","settings":{"video":"shopify:\/\/files\/videos\/06.mp4"}}},"block_order":["video_xEkEeG","video_HkAFEK","video_yAQP9E","video_7DzPPd"],"disabled":true,"name":"Video by Swiper","settings":{"title":"Discover More with EshineSleep"}},"image_with_text_overlay_8bYnCd":{"type":"image-with-text-overlay","blocks":{"heading_Gm6AaC":{"type":"heading","settings":{"heading":"Image with text overlay","highlight_style":"none","highlight_font_style":"italic","highlight_style_color":"","highlight_text_color":"","heading_size":"hd1"}},"text_N6xAKW":{"type":"text","settings":{"text":"<p>Use this text to share information about your brand with your customers. <br\/>Describe a product, share announcements, or welcome customers to your store.<\/p>","text_size":"text-base"}},"button_MqrPPB":{"type":"button","settings":{"button_label":"Button label","button_link":"","button_style":"btn--primary","button_icon":"none"}}},"block_order":["heading_Gm6AaC","text_N6xAKW","button_MqrPPB"],"disabled":true,"name":"t:sections.image-with-text-overlay.name","settings":{"container":"full","desktop_height":"extra-medium","overlay_opacity":70,"enable_parallax":false,"parallax_direction":"vertical","color_scheme":"","content_position":"middle-left","content_alignment":"left","mobile_height":"auto","content_position_mobile":"middle-center-mobile","content_alignment_mobile":"left","padding_top":50,"padding_bottom":50,"enable_preload_image":false}}},"order":["slideshow_q3U4Jn","countdown_timer_CEAdz4","collection_with_tab_BWkyHx","product_contrast_ecRJGK","collection_list_new_TVpyap","image_with_text_overlay_EXNEn9","testimonials_HUptpA","image_with_text_overlay_xwcXq4","featured_blog_zqyTQt","video_by_swiper_kzjY9n","image_with_text_overlay_8bYnCd"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_q3U4Jn": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_U9bPyj": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "scheme-inverse",
+            "background": "shopify://shop_images/20.jpg",
+            "background_mobile": "shopify://shop_images/111111_8c448e1c-8dce-4669-a98e-a7095e62c7fc.jpg",
+            "image_overlay_opacity": 0,
+            "content_position": "middle-left",
+            "text_alignment": "right",
+            "subheading": "E5000+ Royal Hybrid Bundles",
+            "title": "<strong>Ultra Breathable</strong>",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h1",
+            "description": "<p>Graphene-Infused Antibacterial Technology</p>",
+            "description_size": "text-lg",
+            "button_label": "Shop Now",
+            "button_link": "shopify://products/e5000-royal-hybrid-bundle",
+            "button_style": "btn--primary",
+            "button_icon": "none",
+            "enable_preload_image": false
+          }
+        }
+      },
+      "block_order": [
+        "slide_U9bPyj"
+      ],
+      "settings": {
+        "container": "full",
+        "slide_height": "adapt",
+        "show_controls": true,
+        "autoplay": true,
+        "autoplay_delay": 7,
+        "show_text_below": true,
+        "text_alignment_mobile": "center",
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "countdown_timer_CEAdz4": {
+      "type": "countdown-timer",
+      "blocks": {
+        "heading_93EXVj": {
+          "type": "heading",
+          "settings": {
+            "heading": "20th Anniversary & Black Friday Mega Sale",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "hd2"
+          }
+        },
+        "subheading_DYTENP": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<strong>— Our Lowest Prices of the Year!</strong>"
+          }
+        },
+        "text_3A6nQw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>From our first adjustable bed to today’s smart comfort —<br/>every moment has been made possible by you.</p>",
+            "text_size": "text-base"
+          }
+        },
+        "timer_a7qG7N": {
+          "type": "timer",
+          "disabled": true,
+          "settings": {
+            "type": "evergreen",
+            "style": "number",
+            "number_size": "h1",
+            "duration": "every_24_hrs",
+            "time": "2025/012/31 00:45 PM"
+          }
+        }
+      },
+      "block_order": [
+        "heading_93EXVj",
+        "subheading_DYTENP",
+        "text_3A6nQw",
+        "timer_a7qG7N"
+      ],
+      "name": "t:sections.countdown-timer.name",
+      "settings": {
+        "container": "full",
+        "color_schema": "scheme-inverse",
+        "image_overlay_opacity": 0,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "padding_top": 40,
+        "padding_bottom": 48,
+        "show_section_divider": false,
+        "divider_width": "full"
+      }
+    },
+    "collection_with_tab_BWkyHx": {
+      "type": "collection-with-tab",
+      "blocks": {
+        "collection_gEeYAb": {
+          "type": "collection",
+          "settings": {
+            "collection": "bundles",
+            "collection_title": "Bundles"
+          }
+        },
+        "collection_xLbAhP": {
+          "type": "collection",
+          "settings": {
+            "collection": "mattresses",
+            "collection_title": "Mattresses"
+          }
+        }
+      },
+      "block_order": [
+        "collection_gEeYAb",
+        "collection_xLbAhP"
+      ],
+      "name": "Collection With Tab",
+      "settings": {
+        "container": "fixed",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "product_contrast_ecRJGK": {
+      "type": "product-contrast",
+      "name": "Product Contrast",
+      "settings": {
+        "left_image": "shopify://shop_images/lQDPJw3gVZDYWIXNAyDNAyCwLScp35d1M9QIhIgHLhIjAA_800_800.png",
+        "right_image": "shopify://shop_images/21_fe0b36bf-7bcb-4e7c-8d8d-a686131e7ba0.png",
+        "headline": "Relax More, Live Better",
+        "subhead": "A Royal Night's Sleep",
+        "comparison_text": "E3100+ VS E5000+",
+        "button_text": "Learn More",
+        "button_link": "shopify://blogs/blogs/elevate-your-sleep-sanctuary-a-deep-dive-into-the-eshinesleep-e3100-vs-e5000-adjustable-bed-bundles",
+        "container": "full",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "collection_list_new_TVpyap": {
+      "type": "collection-list-new",
+      "blocks": {
+        "collection_tkrdaA": {
+          "type": "collection",
+          "settings": {
+            "coll_url": "shopify://collections/bundles",
+            "coll_img": "shopify://shop_images/4ddf.jpg",
+            "coll_title": "Bundles",
+            "coll_info": "Hit the road with luxury comfort, thanks to the Eshine Sleep adjustable bed."
+          }
+        },
+        "collection_DRmQLe": {
+          "type": "collection",
+          "settings": {
+            "coll_url": "shopify://collections/mattresses",
+            "coll_img": "shopify://shop_images/4_1000x1000_2e4cd30a-325f-43f5-a591-759d22f410e9.jpg",
+            "coll_title": "Mattress",
+            "coll_info": "Shop the best-selling mattresses designed for all types of sleepers."
+          }
+        },
+        "collection_X4p4a9": {
+          "type": "collection",
+          "settings": {
+            "coll_url": "shopify://collections/bed-frame",
+            "coll_img": "shopify://shop_images/97bc29d6bc759a1c91d0f03efc66eb14.jpg",
+            "coll_title": "Bed Frame",
+            "coll_info": "Shop the best-selling bed frames built for style and durability."
+          }
+        },
+        "collection_RdPqKL": {
+          "type": "collection",
+          "settings": {
+            "coll_url": "shopify://collections/hospital-bed",
+            "coll_img": "shopify://shop_images/01_7_b7c8fbc3-a9b2-41dd-86d0-acac6d4c0b36.jpg",
+            "coll_title": "Hospital Bed",
+            "coll_info": "Shop the best-selling hospital beds designed for comfort and care."
+          }
+        },
+        "collection_TYhFgK": {
+          "type": "collection",
+          "settings": {
+            "coll_url": "shopify://collections/rv",
+            "coll_img": "shopify://shop_images/01_6_4bbd762f-824d-49ad-910c-377e766cf791.jpg",
+            "coll_title": "RV Mattress",
+            "coll_info": "Shop the best-selling RV mattresses made for life on the road."
+          }
+        }
+      },
+      "block_order": [
+        "collection_tkrdaA",
+        "collection_DRmQLe",
+        "collection_X4p4a9",
+        "collection_RdPqKL",
+        "collection_TYhFgK"
+      ],
+      "name": "Collection List New",
+      "settings": {
+        "container": "fixed",
+        "coll_title": "Explore All ESHINE SLEEP Products",
+        "coll_subtitle": "Shop adjustable beds,frames and more.",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "image_with_text_overlay_EXNEn9": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_nwWbyk": {
+          "type": "heading",
+          "settings": {
+            "heading": "Try Your EshineBed Mattresses For 99 Nights",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h3"
+          }
+        },
+        "text_bRjGYC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lounge, nap and snooze on your Eshinesleep Mattress for 3 months. Don’t love it? Return it for free with our money back guarantee.</p>",
+            "text_size": "text-base"
+          }
+        },
+        "button_YyKwLY": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More",
+            "button_link": "shopify://pages/99-night-sleep-trial",
+            "button_style": "btn--primary",
+            "button_icon": "arrow-right"
+          }
+        }
+      },
+      "block_order": [
+        "heading_nwWbyk",
+        "text_bRjGYC",
+        "button_YyKwLY"
+      ],
+      "name": "t:sections.image-with-text-overlay.name",
+      "settings": {
+        "container": "full",
+        "image": "shopify://shop_images/16.jpg",
+        "desktop_height": "adapt",
+        "overlay_opacity": 35,
+        "enable_parallax": false,
+        "parallax_direction": "zoom",
+        "color_scheme": "",
+        "content_position": "middle-center",
+        "content_alignment": "center",
+        "image_mobile": "shopify://shop_images/1_4f659075-4c75-4b99-9451-821edee06c2f.jpg",
+        "mobile_height": "medium",
+        "content_position_mobile": "middle-center-mobile",
+        "content_alignment_mobile": "center",
+        "padding_top": 0,
+        "padding_bottom": 60,
+        "enable_preload_image": true
+      }
+    },
+    "testimonials_HUptpA": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_QeNJnD": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "none",
+            "heading": "Testimonials",
+            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author's name",
+            "bio": "",
+            "product": ""
+          }
+        },
+        "testimonial_WtPB4B": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "none",
+            "heading": "Testimonials",
+            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author's name",
+            "bio": "",
+            "product": ""
+          }
+        },
+        "testimonial_UxPNcL": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "none",
+            "heading": "Testimonials",
+            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author's name",
+            "bio": "",
+            "product": ""
+          }
+        },
+        "testimonial_AK4idH": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "none",
+            "heading": "Testimonials",
+            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author's name",
+            "bio": "",
+            "product": ""
+          }
+        },
+        "testimonial_MmNXrP": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "none",
+            "heading": "Testimonials",
+            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author's name",
+            "bio": "",
+            "product": ""
+          }
+        },
+        "testimonial_cwETqE": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "none",
+            "heading": "Testimonials",
+            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author's name",
+            "bio": "",
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_QeNJnD",
+        "testimonial_WtPB4B",
+        "testimonial_UxPNcL",
+        "testimonial_AK4idH",
+        "testimonial_MmNXrP",
+        "testimonial_cwETqE"
+      ],
+      "disabled": true,
+      "name": "t:sections.testimonials.name",
+      "settings": {
+        "container": "full",
+        "color_scheme": "",
+        "section_header_alignment": "center",
+        "section_header_alignment_mobile": "inherit",
+        "subheading": "",
+        "heading": "Testimonials",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h1",
+        "description": "",
+        "text_size": "text-base",
+        "layout": "focused",
+        "card_color_scheme": "",
+        "card_content_color_scheme": "",
+        "card_image_ratio": "adapt",
+        "card_heading_size": "h4",
+        "card_text_size": "h1",
+        "author_info_layout": "vertical",
+        "card_trigger_behavior": "click",
+        "show_image": false,
+        "show_author_image": false,
+        "columns_desktop": 3,
+        "column_gap": "medium",
+        "row_gap": "medium",
+        "enable_slider": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "show_progress_bar": true,
+        "padding_top": 0,
+        "padding_bottom": 60,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "image_with_text_overlay_xwcXq4": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_zfP8ix": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "ESHINE SLEEP"
+          }
+        },
+        "heading_pQL7gw": {
+          "type": "heading",
+          "settings": {
+            "heading": "Relax More, Live Better",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h3"
+          }
+        },
+        "text_e8MBAU": {
+          "type": "text",
+          "settings": {
+            "text": "<p><br/>Never underestimate the impact of a great night's sleep. </p><p>The right bed can transform your nights—and elevate your days.</p>",
+            "text_size": "text-lg"
+          }
+        },
+        "button_GrwCcm": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More",
+            "button_link": "shopify://pages/about-us",
+            "button_style": "btn--secondary",
+            "button_icon": "none"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_zfP8ix",
+        "heading_pQL7gw",
+        "text_e8MBAU",
+        "button_GrwCcm"
+      ],
+      "name": "t:sections.image-with-text-overlay.name",
+      "settings": {
+        "container": "full",
+        "image": "shopify://shop_images/4cf410ad190bd3bed4f385cd335a8240.jpg",
+        "desktop_height": "extra-medium",
+        "overlay_opacity": 40,
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "color_scheme": "",
+        "content_position": "middle-center",
+        "content_alignment": "center",
+        "mobile_height": "auto",
+        "content_position_mobile": "middle-center-mobile",
+        "content_alignment_mobile": "center",
+        "padding_top": 4,
+        "padding_bottom": 16,
+        "enable_preload_image": false
+      }
+    },
+    "featured_blog_zqyTQt": {
+      "type": "featured-blog",
+      "name": "t:sections.featured-blog.name",
+      "settings": {
+        "container": "full",
+        "color_scheme": "scheme-1",
+        "section_header_alignment": "center",
+        "section_header_alignment_mobile": "inherit",
+        "subheading": "",
+        "heading": "Blog",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h2",
+        "description": "",
+        "text_size": "text-base",
+        "button_label": "",
+        "button_link": "shopify://blogs/blogs",
+        "button_style": "btn--underline",
+        "button_icon": "none",
+        "blog": "blogs",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "column_gap": "medium",
+        "row_gap": "large",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "card_title_size": "h4",
+        "show_tags": true,
+        "show_excerpt": false,
+        "show_date": true,
+        "show_author": false,
+        "show_button": true,
+        "padding_top": 0,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "full"
+      }
+    },
+    "video_by_swiper_kzjY9n": {
+      "type": "video-by-swiper",
+      "blocks": {
+        "video_xEkEeG": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/hb.mp4"
+          }
+        },
+        "video_HkAFEK": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/Installation video.mp4"
+          }
+        },
+        "video_yAQP9E": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/RV Mattress 02.mp4"
+          }
+        },
+        "video_7DzPPd": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/06.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "video_xEkEeG",
+        "video_HkAFEK",
+        "video_yAQP9E",
+        "video_7DzPPd"
+      ],
+      "disabled": true,
+      "name": "Video by Swiper",
+      "settings": {
+        "title": "Discover More with EshineSleep"
+      }
+    }
+  },
+  "order": [
+    "slideshow_q3U4Jn",
+    "countdown_timer_CEAdz4",
+    "collection_with_tab_BWkyHx",
+    "product_contrast_ecRJGK",
+    "collection_list_new_TVpyap",
+    "image_with_text_overlay_EXNEn9",
+    "testimonials_HUptpA",
+    "image_with_text_overlay_xwcXq4",
+    "featured_blog_zqyTQt",
+    "video_by_swiper_kzjY9n"
+  ]
+}
