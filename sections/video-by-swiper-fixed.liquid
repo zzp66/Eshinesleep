@@ -1,0 +1,248 @@
+{% style %}
+  .section-{{ section.id }} {
+    --section-padding-top: {{ section.settings.padding_top }}px;
+    --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+{% endstyle %}
+<style>
+  .video-by-swiper-fixed-content {
+    margin: 40px 0 0;
+  }
+  .video-slide-item {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .video-slide-item video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+  .vbsf-pagination {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    gap: 6px;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+  }
+  .vbsf-pagination .swiper-pagination-bullet {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background: #dfe0e4;
+    overflow: hidden;
+    border: none;
+    opacity: 1;
+  }
+  .vbsf-pagination .swiper-pagination-bullet-active {
+    width: 50px;
+    height: 8px;
+    border-radius: 8px;
+    background: #000;
+  }
+  .video-by-swiper-fixed-button .swiper-button-prev,
+  .video-by-swiper-fixed-button .swiper-button-next {
+    color: #fff;
+    background-color: #000;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    opacity: 0.4;
+    transition: all 0.3s ease-in-out;
+  }
+  .video-by-swiper-fixed-button .swiper-button-prev::after,
+  .video-by-swiper-fixed-button .swiper-button-next::after {
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .video-by-swiper-fixed-button .swiper-button-prev:hover,
+  .video-by-swiper-fixed-button .swiper-button-next:hover {
+    opacity: 1;
+  }
+  @media screen and (max-width: 767px) {
+    .video-by-swiper-fixed-content {
+      margin: 25px 0 0;
+    }
+    .video-by-swiper-fixed-button {
+      display: none;
+    }
+  }
+</style>
+<div class="section section-{{ section.id }} section--padding video-by-swiper-fixed">
+  <div class="section__container page-width page-width--{{ section.settings.container }}">
+    <div class="video-by-swiper-fixed-box">
+      <div class="text-center">
+        <h2 class="rich-text__heading inline-richtext h2">
+          <motion-element
+            data-motion="fade-up"
+            data-motion-delay="50"
+            class="block"
+            style="visibility: visible; transform: translateY(0px); opacity: 1;"
+            data-initialized="true"
+          >
+            {{ section.settings.coll_title }}
+          </motion-element>
+        </h2>
+      </div>
+      <div class="swiper video-by-swiper-fixed-content">
+        <div class="swiper-wrapper">
+          {% for block in section.blocks %}
+            <div class="swiper-slide">
+              <div class="video-slide-item">
+                {{ block.settings.video | video_tag: class: 'slide-video', playsinline: true, muted: true, loop: true }}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+        <div class="video-by-swiper-fixed-button">
+          <div class="swiper-button-prev vbsf-btn-prev"></div>
+          <div class="swiper-button-next vbsf-btn-next"></div>
+        </div>
+        <div class="swiper-pagination vbsf-pagination"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const autoplayDelay = 7000;
+    const swiper = new Swiper('.video-by-swiper-fixed-content', {
+      slidesPerView: 1,
+      spaceBetween: 15,
+      loop: true,
+      autoplay: {
+        delay: autoplayDelay,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.vbsf-btn-next',
+        prevEl: '.vbsf-btn-prev',
+      },
+      pagination: {
+        el: '.vbsf-pagination',
+        clickable: true,
+        renderBullet: (index, className) => `<span class="${className}"></span>`,
+      },
+      breakpoints: {
+        750: {
+          slidesPerView: 1.2,
+          spaceBetween: 15,
+        },
+        980: {
+          slidesPerView: 3,
+          spaceBetween: 15,
+        },
+      },
+    });
+
+    function startProgress(swiper) {
+      const bullets = swiper.pagination.bullets;
+      bullets.forEach((b) => {
+        b.style.setProperty('--progress-time', `${autoplayDelay}ms`);
+        b.style.setProperty('--progress-state', 'running');
+      });
+      const active = bullets[swiper.realIndex];
+      if (active) active.style.setProperty('--progress-state', 'running');
+    }
+
+    const allVideos = document.querySelectorAll('.slide-video');
+    allVideos.forEach((video) => {
+      video.addEventListener('mouseenter', () => {
+        allVideos.forEach((v) => v.pause()); // 暂停其他视频
+        video.play().catch(() => {});
+        swiper.autoplay.stop(); // 暂停轮播
+        // 暂停分页器进度条动画
+        const bullets = swiper.pagination.bullets;
+        bullets.forEach((b) => b.style.setProperty('--progress-state', 'paused'));
+      });
+      video.addEventListener('mouseleave', () => {
+        video.pause();
+        swiper.autoplay.start(); // 恢复轮播
+        const bullets = swiper.pagination.bullets;
+        bullets.forEach((b) => b.style.setProperty('--progress-state', 'running'));
+      });
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Video by Swiper Fixed",
+  "settings": [
+    {
+      "type": "select",
+      "id": "container",
+      "options": [
+        {
+          "value": "full",
+          "label": "Full Width"
+        },
+        {
+          "value": "fixed",
+          "label": "Fixed Width"
+        }
+      ],
+      "default": "fixed",
+      "label": "Container"
+    },
+    {
+      "type": "text",
+      "id": "coll_title",
+      "label": "Title",
+      "default": "Video by Swiper Fixed"
+    },
+    {
+      "type": "header",
+      "content": "t:general.padding.section_heading.content"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "label": "t:general.padding.top.label",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "label": "t:general.padding.bottom.label",
+      "default": 60
+    }
+  ],
+  "blocks": [
+    {
+      "type": "video",
+      "name": "Video",
+      "settings": [
+        {
+          "type": "video",
+          "id": "video",
+          "label": "视频"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Video by Swiper Fixed"
+    }
+  ]
+}
+{% endschema %}

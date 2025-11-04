@@ -1,0 +1,230 @@
+{% style %}
+  .section-{{ section.id }} {
+    --section-padding-top: {{ section.settings.padding_top }}px;
+    --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+{% endstyle %}
+<style>
+  .faqs p {
+    margin: 0;
+  }
+  .faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+  }
+
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .faq-left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  p.faq-index {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #333;
+    width: 50px;
+    text-align: right;
+  }
+  p.faq-index span {
+    margin-left: 20px;
+  }
+
+  p.faq-text {
+    font-weight: bold;
+    color: #333;
+  }
+
+  .faq-icon {
+    transition: all 0.3s ease;
+    display: flex;
+  }
+  .faq-icon img {
+    max-width: 18px;
+  }
+
+  .faq-item.active .faq-icon {
+    transform: rotate(90deg);
+  }
+
+  .faq-answer {
+    display: none;
+    margin-top: 20px;
+    margin-left: calc(50px + 40px);
+    margin-right: calc(18px + 40px);
+    color: #333;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  @media screen and (max-width: 767px) {
+    p.faq-index {
+      width: 30px;
+      font-size: 14px;
+      line-height: 16px;
+    }
+    p.faq-index span {
+      margin-left: 5px;
+    }
+    .faq-left {
+      gap: 10px;
+      margin-right: 15px;
+    }
+    .faq-icon img {
+      max-width: 14px;
+    }
+    .faq-answer {
+      margin-left: calc(30px + 10px);
+      margin-right: 30px;
+    }
+  }
+</style>
+<div class="section section-{{ section.id }} section--padding faqs">
+  <div class="section__container page-width page-width--{{ section.settings.container }}">
+    <div class="faqs-box">
+      <div class="text-center">
+        <h2 class="rich-text__heading inline-richtext h2">
+          <motion-element
+            data-motion="fade-up"
+            data-motion-delay="50"
+            class="block"
+            style="visibility: visible; transform: translateY(0px); opacity: 1;"
+            data-initialized="true"
+          >
+            {{ section.settings.coll_title }}
+          </motion-element>
+        </h2>
+      </div>
+      <div class="faqs-content">
+        {% for block in section.blocks %}
+          <div class="faq-item">
+            <div class="faq-question">
+              <div class="faq-left">
+                <p class="faq-index">
+                  {{ forloop.index | prepend: '0' -}}
+                  <span>/</span>
+                </p>
+                <p class="faq-text">{{ block.settings.question }}</p>
+              </div>
+              <div class="faq-icon">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0768/5606/6378/files/icon_faq.png?v=1757526031"
+                  alt=""
+                >
+              </div>
+            </div>
+
+            <div class="faq-answer">
+              {{ block.settings.answer }}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+  $(function () {
+    $('.faq-answer').hide();
+
+    // --- FAQ 手风琴 ---
+    $('.faq-question').on('click', function () {
+      var $item = $(this).closest('.faq-item');
+      var $answer = $item.find('.faq-answer');
+
+      if ($item.hasClass('active')) {
+        $item.removeClass('active');
+        $answer.slideUp(200);
+      } else {
+        $('.faq-item').removeClass('active').find('.faq-answer').slideUp(200);
+        $item.addClass('active');
+        $answer.slideDown(200);
+      }
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "FAQs",
+  "settings": [
+    {
+      "type": "select",
+      "id": "container",
+      "options": [
+        {
+          "value": "full",
+          "label": "Full Width"
+        },
+        {
+          "value": "fixed",
+          "label": "Fixed Width"
+        }
+      ],
+      "default": "fixed",
+      "label": "Container"
+    },
+    {
+      "type": "text",
+      "id": "coll_title",
+      "label": "Title",
+      "default": "FAQs"
+    },
+    {
+      "type": "header",
+      "content": "t:general.padding.section_heading.content"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "label": "t:general.padding.top.label",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "label": "t:general.padding.bottom.label",
+      "default": 60
+    }
+  ],
+  "blocks": [
+    {
+      "type": "faq",
+      "name": "FAQ",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQs"
+    }
+  ]
+}
+{% endschema %}
