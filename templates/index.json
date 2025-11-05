@@ -104,8 +104,8 @@
         "image_overlay_opacity": 0,
         "content_alignment": "center",
         "text_alignment": "center",
-        "padding_top": 40,
-        "padding_bottom": 48,
+        "padding_top": 60,
+        "padding_bottom": 60,
         "show_section_divider": false,
         "divider_width": "full"
       }
@@ -450,8 +450,8 @@
         "mobile_height": "auto",
         "content_position_mobile": "middle-center-mobile",
         "content_alignment_mobile": "center",
-        "padding_top": 4,
-        "padding_bottom": 16,
+        "padding_top": 0,
+        "padding_bottom": 60,
         "enable_preload_image": false
       }
     },
@@ -490,7 +490,7 @@
         "show_author": false,
         "show_button": true,
         "padding_top": 0,
-        "padding_bottom": 50,
+        "padding_bottom": 60,
         "show_section_divider": false,
         "divider_width": "full"
       }
@@ -534,6 +534,49 @@
       "settings": {
         "title": "Discover More with EshineSleep"
       }
+    },
+    "video_by_swiper_fixed_bX6gWG": {
+      "type": "video-by-swiper-fixed",
+      "blocks": {
+        "video_ENCnX3": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/hb.mp4"
+          }
+        },
+        "video_WMLYjh": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/Installation video.mp4"
+          }
+        },
+        "video_XCgKDL": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/RV Mattress 02.mp4"
+          }
+        },
+        "video_J8HyTk": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/06.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "video_ENCnX3",
+        "video_WMLYjh",
+        "video_XCgKDL",
+        "video_J8HyTk"
+      ],
+      "disabled": true,
+      "name": "Video by Swiper Fixed",
+      "settings": {
+        "container": "fixed",
+        "coll_title": "Video by Swiper Fixed",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
     }
   },
   "order": [
@@ -546,6 +589,7 @@
     "testimonials_HUptpA",
     "image_with_text_overlay_xwcXq4",
     "featured_blog_zqyTQt",
-    "video_by_swiper_kzjY9n"
+    "video_by_swiper_kzjY9n",
+    "video_by_swiper_fixed_bX6gWG"
   ]
 }
