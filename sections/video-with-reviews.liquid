@@ -1,0 +1,437 @@
+{% style %}
+  .section-{{ section.id }} {
+    --section-padding-top: {{ section.settings.padding_top }}px;
+    --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+{% endstyle %}
+<style>
+  .video-with-reviews p {
+    margin: 0;
+  }
+  .review-video-box {
+    position: relative;
+    display: flex;
+  }
+  .video-with-reviews-content {
+    margin-top: 40px;
+  }
+  .review-item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  .review-video-box {
+    display: flex;
+    position: relative;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    overflow: hidden;
+  }
+  .mute-box {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #1d1c1c80;
+    cursor: pointer;
+  }
+  .mute-toggle,
+  .play-toggle {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mute-toggle img,
+  .play-toggle img {
+    max-width: 20px;
+    height: auto;
+  }
+  .play-box {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #1d1c1c80;
+    cursor: pointer;
+  }
+  .review-video-box video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    overflow: hidden;
+  }
+  .review-info-box {
+    padding: 20px;
+    /* height: 200px; */
+    background-color: #f5f5f7;
+  }
+  .review-info-author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .review-author-info-box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  p.author-name {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+  }
+  img.ring {
+    max-height: 20px;
+    width: auto;
+  }
+  img.author-img {
+    max-width: 60px;
+    height: auto;
+    border-radius: 50%;
+  }
+  .review-content {
+    margin: 15px 0 0;
+  }
+  .vwr-swiper-btns .vwr-pagination {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    width: auto;
+  }
+  .vwr-pagination .swiper-pagination-bullet-active {
+    background: #e7600f;
+  }
+  .vwr-swiper-btns .vwr-prev,
+  .vwr-swiper-btns .vwr-next {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    margin: 0;
+    color: #fff;
+    background-color: #e7600f;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+  }
+  .vwr-swiper-btns .swiper-button-disabled {
+    opacity: 0.4;
+  }
+  .vwr-swiper-btns .vwr-prev::after,
+  .vwr-swiper-btns .vwr-next::after {
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .vwr-swiper-btns .vwr-prev:hover,
+  .vwr-swiper-btns .vwr-next:hover {
+    opacity: 1;
+  }
+  .vwr-swiper-btns {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  @media screen and (max-width: 767px) {
+    .video-with-reviews-content {
+      margin-top: 25px;
+    }
+    .vwr-swiper-btns {
+      gap: 25px;
+    }
+  }
+</style>
+<div class="section section-{{ section.id }} section--padding video-with-reviews">
+  <div class="section__container page-width page-width--{{ section.settings.container }}">
+    <div class="video-with-reviews-box">
+      <div class="video-with-reviews-title text-center">
+        <h2 class="rich-text__heading inline-richtext h2">
+          <motion-element
+            data-motion="fade-up"
+            data-motion-delay="50"
+            class="block"
+            style="visibility: visible; transform: translateY(0px); opacity: 1;"
+            data-initialized="true"
+          >
+            {{ section.settings.coll_title }}
+          </motion-element>
+        </h2>
+      </div>
+      <div class="video-with-reviews-content">
+        <div class="swiper vwr-swiper">
+          <div class="swiper-wrapper">
+            {% for item in section.blocks %}
+              <div class="swiper-slide">
+                <div class="review-item">
+                  <div class="review-video-box">
+                    {{
+                      item.settings.video
+                      | video_tag: class: 'review-video', playsinline: true, autoplay: false, muted: true, loop: false
+                    }}
+                    <div class="mute-box">
+                      <div class="mute-toggle">
+                        <img src="https://cdn.shopify.com/s/files/1/0587/4139/1417/files/mute.png" alt="">
+                      </div>
+                    </div>
+                    <div class="play-box">
+                      <div class="play-toggle">
+                        <img src="https://cdn.shopify.com/s/files/1/0587/4139/1417/files/play.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="review-info-box">
+                    <div class="review-info-author">
+                      <div class="review-author-info-box">
+                        <p class="author-name">{{ item.settings.author_name }}</p>
+                        <img class="ring" src="{{ item.settings.ring | image_url: width: master }}" alt="">
+                      </div>
+                      <img class="author-img" src="{{ item.settings.author_img | image_url: width: master }}" alt="">
+                    </div>
+                    <div class="review-content">{{ item.settings.review }}</div>
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+          <div class="vwr-swiper-btns">
+            <div class="swiper-button-prev vwr-prev"></div>
+            <div class="swiper-pagination vwr-pagination"></div>
+            <div class="swiper-button-next vwr-next"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const swiperEl = document.querySelector('.vwr-swiper');
+    if (!swiperEl) return;
+
+    const swiper = new Swiper(swiperEl, {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      breakpoints: {
+        767: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        980: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+      },
+      pagination: {
+        el: '.vwr-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.vwr-next',
+        prevEl: '.vwr-prev',
+      },
+    });
+
+    // 动态获取当前所有 video 节点（保证在 DOM 变化后也能取到最新列表）
+    function getAllVideos() {
+      return Array.from(swiperEl.querySelectorAll('video.review-video, .review-video-box video, video'));
+    }
+
+    // 重置并暂停所有视频（except 可选：不影响指定 video）
+    function resetAllVideos(except = null) {
+      getAllVideos().forEach((vid) => {
+        if (vid !== except) {
+          try {
+            vid.pause();
+            vid.currentTime = 0;
+          } catch (err) {
+            // 某些浏览器/媒体状态可能抛错，忽略即可
+          }
+        }
+      });
+    }
+
+    // 点击事件委托（响应 play / mute 按钮点击）
+    swiperEl.addEventListener('click', function (e) {
+      // 找到最近的 play-box / mute-box（兼容点击到内部 img）
+      const playBox = e.target.closest('.play-box');
+      const muteBox = e.target.closest('.mute-box');
+
+      // helper: 从一个 control 元素找到对应的 video（先到 review-video-box，再到 swiper-slide）
+      function findVideoFromControl(controlEl) {
+        if (!controlEl) return null;
+        const container =
+          controlEl.closest('.review-video-box') ||
+          controlEl.closest('.swiper-slide') ||
+          controlEl.closest('.review-item');
+        if (!container) return null;
+        // 优先找 class 为 review-video 的 video 元素
+        return container.querySelector('video.review-video') || container.querySelector('video');
+      }
+
+      // 1) 切换静音（使用属性直接赋值）
+      if (muteBox) {
+        const video = findVideoFromControl(muteBox);
+        if (video) {
+          // 直接切换布尔属性，浏览器会即时生效
+          video.muted = !video.muted;
+        }
+      }
+
+      // 2) 播放 / 暂停（只让当前播放，其他暂停并重置）
+      if (playBox) {
+        const video = findVideoFromControl(playBox);
+        if (!video) return;
+
+        if (video.paused) {
+          // 暂停并重置其他视频（但不改变它们的 muted 状态）
+          resetAllVideos(video);
+          // 尝试播放（播放可能被浏览器策略阻止，但这是标准做法）
+          const playPromise = video.play();
+          if (playPromise && typeof playPromise.then === 'function') {
+            playPromise.catch(() => {
+              // 如果被浏览器阻止（例如未与用户交互），不做额外处理
+            });
+          }
+        } else {
+          video.pause();
+        }
+      }
+    });
+
+    // 3) Swiper 切换时，重置所有视频
+    swiper.on('slideChange', function () {
+      resetAllVideos();
+    });
+
+    // 额外：当用户主动在视频上点击播放（非我们的 play-box），也确保其他视频被暂停
+    // （增强兼容性）
+    getAllVideos().forEach((v) => {
+      v.addEventListener('play', function () {
+        resetAllVideos(v);
+      });
+      v.addEventListener('ended', function () {
+        // 视频播完后保持暂停并重置到 0（方便下次播放）
+        try {
+          v.pause();
+          v.currentTime = 0;
+        } catch (err) {}
+      });
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Video With Reviews",
+  "settings": [
+    {
+      "type": "select",
+      "id": "container",
+      "options": [
+        {
+          "value": "full",
+          "label": "Full Width"
+        },
+        {
+          "value": "fixed",
+          "label": "Fixed Width"
+        }
+      ],
+      "default": "fixed",
+      "label": "Container"
+    },
+    {
+      "type": "text",
+      "id": "coll_title",
+      "label": "Title",
+      "default": "Video With Reviews"
+    },
+    {
+      "type": "header",
+      "content": "t:general.padding.section_heading.content"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "label": "t:general.padding.top.label",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "label": "t:general.padding.bottom.label",
+      "default": 50
+    }
+  ],
+  "blocks": [
+    {
+      "type": "video_review",
+      "name": "Video Review",
+      "settings": [
+        {
+          "type": "video",
+          "id": "video",
+          "label": "视频选择"
+        },
+        {
+          "type": "image_picker",
+          "id": "author_img",
+          "label": "作者头像",
+          "info": "不选择图片就不会显示"
+        },
+        {
+          "type": "text",
+          "id": "author_name",
+          "label": "作者姓名",
+          "default": "Trump D"
+        },
+        {
+          "type": "image_picker",
+          "id": "ring",
+          "label": "星级图片",
+          "info": "不选择图片就不会显示"
+        },
+        {
+          "type": "textarea",
+          "id": "review",
+          "label": "评论"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Video With Reviews"
+    }
+  ]
+}
+{% endschema %}
