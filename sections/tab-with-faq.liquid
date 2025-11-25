@@ -10,8 +10,7 @@
   }
 
   .faqs-wrapper {
-    display: grid;
-    grid-template-columns: calc(50% - 20px) calc(50% - 20px);
+    display: flex;
     gap: 40px;
     margin: 40px 0 0;
     overflow: hidden;
@@ -21,6 +20,13 @@
     line-height: 26px;
     font-weight: 600;
     margin: 0 0 20px 0;
+  }
+
+  .faqs-title-box {
+    width: 50%;
+  }
+  .faqs-content-box {
+    width: 50%;
   }
   .faqs-title-content {
     display: flex;
@@ -78,14 +84,23 @@
       line-height: 24px;
     }
     .faqs-wrapper {
-      display: grid;
-      grid-template-columns: 1fr;
+      flex-wrap: wrap;
       gap: 25px;
       margin: 25px 0 0;
+    }
+    .faqs-title-box {
+      width: 100%;
+    }
+    .faqs-content-box {
+      width: 100%;
     }
     .faqs-title-content {
       overflow-x: scroll;
       flex-wrap: nowrap;
+      padding: 10px;
+    }
+    .faq-answer {
+      margin-top: 15px;
     }
   }
 </style>
