@@ -5,18 +5,16 @@
   }
 {% endstyle %}
 <style>
-  .faqs p {
+  .tab-with-faq p {
     margin: 0;
-  }
-  .faq-item {
-    border-top: 1px solid #ddd;
-    padding: 20px 0;
   }
 
   .faqs-wrapper {
     display: grid;
     grid-template-columns: calc(50% - 20px) calc(50% - 20px);
     gap: 40px;
+    margin: 40px 0 0;
+    overflow: hidden;
   }
   p.faqs-title-box-name {
     font-size: 22px;
@@ -25,14 +23,16 @@
     margin: 0 0 20px 0;
   }
   .faqs-title-content {
-    display: grid;
-    grid-template-columns: auto;
-    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
   }
   .faq-tab-title-item {
     padding: 10px 20px;
     border-radius: 50px;
     border: 1px solid #d4d4d4;
+    cursor: pointer;
+    white-space: nowrap;
   }
   .faq-tab-title-item.active {
     background: #e7600f;
@@ -40,7 +40,53 @@
     font-weight: 600;
     border: 1px solid transparent;
   }
+
+  .faq-tab-content-item {
+    display: none;
+  }
+  .faq-item {
+    border-top: 1px solid #ddd;
+    padding: 20px 10px;
+    cursor: pointer;
+  }
+  .faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .faq-question-icon {
+    display: flex;
+    transition: all 0.2s ease;
+  }
+  .faq-question-icon img {
+    max-width: 16px;
+  }
+  .faq-item.active .faq-question-icon {
+    transform: rotate(90deg);
+  }
+  .faq-tab-content-item.active {
+    display: block;
+  }
+  .faq-answer {
+    display: none;
+    margin-top: 20px;
+  }
   @media screen and (max-width: 767px) {
+    p.faqs-title-box-name {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    .faqs-wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 25px;
+      margin: 25px 0 0;
+    }
+    .faqs-title-content {
+      overflow-x: scroll;
+      flex-wrap: nowrap;
+    }
   }
 </style>
 <div class="section section-{{ section.id }} section--padding tab-with-faq">
@@ -76,7 +122,15 @@
                 {% assign a = 'answer_' | append: i %}
                 {% if item.settings[q] != blank %}
                   <div class="faq-item">
-                    <div class="faq-question">{{ item.settings[q] }}</div>
+                    <div class="faq-question">
+                      <p class="faq-question-text">{{ item.settings[q] }}</p>
+                      <div class="faq-question-icon">
+                        <img
+                          src="https://cdn.shopify.com/s/files/1/0768/5606/6378/files/icon_faq.png?v=1757526031"
+                          alt=""
+                        >
+                      </div>
+                    </div>
                     <div class="faq-answer">{{ item.settings[a] }}</div>
                   </div>
                 {% endif %}
@@ -92,31 +146,41 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
   $(function () {
-    // 默认显示第一个 tab
-    $('.faq-tab-title-item').first().addClass('active');
-    $('.faq-tab-content-item').first().addClass('active');
+    $('.faq-tab-title-item').removeClass('active');
+    $('.faq-tab-content-item').removeClass('active');
+    $('.faq-item').removeClass('active');
+    $('.faq-answer').hide();
 
-    // 切换 tab
-    $('.faq-tab-title-item').click(function () {
+    var $firstTab = $('.faq-tab-title-item').first();
+    if ($firstTab.length) {
+      $firstTab.addClass('active');
+      var firstTabId = $firstTab.data('tab');
+      $('.faq-tab-content-item[data-tab="' + firstTabId + '"]').addClass('active');
+    }
+
+    $('.faq-tab-title-item').on('click', function () {
       var tabId = $(this).data('tab');
 
       $('.faq-tab-title-item').removeClass('active');
       $(this).addClass('active');
 
-      $('.faq-tab-content-item').removeClass('active');
+      $('.faq-tab-content-item').removeClass('active').find('.faq-answer').stop(true, true).hide();
+      $('.faq-item').removeClass('active');
+
       $('.faq-tab-content-item[data-tab="' + tabId + '"]').addClass('active');
     });
 
-    // FAQ 手风琴
-    $(document).on('click', '.faq-item', function () {
-      var $ans = $(this).find('.faq-answer');
-      if ($(this).hasClass('active')) {
-        $(this).removeClass('active');
-        $ans.slideUp(200);
+    $(document).on('click', '.faq-item', function (e) {
+      var $this = $(this);
+      var $ans = $this.find('.faq-answer');
+
+      if ($this.hasClass('active')) {
+        $this.removeClass('active');
+        $ans.stop(true, true).slideUp(200);
       } else {
-        $(this).siblings('.faq-item').removeClass('active').find('.faq-answer').slideUp(200);
-        $(this).addClass('active');
-        $ans.slideDown(200);
+        $this.siblings('.faq-item').removeClass('active').find('.faq-answer').stop(true, true).slideUp(200);
+        $this.addClass('active');
+        $ans.stop(true, true).slideDown(200);
       }
     });
   });
