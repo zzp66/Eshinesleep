@@ -189,7 +189,7 @@
           "type": "image-slide",
           "settings": {
             "color_scheme": "scheme-1",
-            "image": "shopify://shop_images/1_6a08f348-db47-426f-bc48-d5a02c6f2f33.jpg",
+            "image": "shopify://shop_images/1-0.jpg",
             "image_mobile": "shopify://shop_images/1-0_8ef356af-8f7c-4ad7-b290-9a8a629934da.jpg",
             "desktop_content_position": "middle-center",
             "desktop_content_alignment": "left",
@@ -266,6 +266,7 @@
         "image_slide_JdBfJK",
         "image_slide_Byqirr"
       ],
+      "disabled": true,
       "name": "t:sections.image-with-text-slider.presets.name",
       "settings": {
         "container": "fixed",
@@ -280,6 +281,201 @@
         "mobile_controls_position": "center",
         "padding_top": 80,
         "padding_bottom": 26
+      }
+    },
+    "custom_content_cLw7aw": {
+      "type": "custom-content",
+      "blocks": {
+        "image_GGtpAa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2-4.jpg",
+            "width": "41%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        },
+        "text_APeF6K": {
+          "type": "text",
+          "settings": {
+            "content_alignment": "left",
+            "subheading": "",
+            "heading": "9 Reasons to love the Adjustable Royal Bundle",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h3",
+            "description": "<ul><li>Independent head （0°-55°）and foot elevation（0°-42°）</li><li>Control via app or wireless remote with programmable memory</li><li>One-touch settings for zero gravity, anti-snore, TV recline, and Zero clearance</li><li>Whisper-quiet massage, with 3 intensities</li><li>Built-in USB and Type-C ports for convenience.</li><li>Underbed LED Light</li><li>Adjustable height – 8 & 3.4-inch legs </li><li>Easy assembly with no tools needed</li></ul>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "btn--primary",
+            "button_icon": "none",
+            "width": "50%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_GGtpAa",
+        "text_APeF6K"
+      ],
+      "name": "t:sections.custom-content.name",
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "",
+        "enable_sticky_column": false,
+        "section_header_alignment": "left",
+        "section_header_alignment_mobile": "inherit",
+        "subheading": "",
+        "heading": "",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h3",
+        "description": "",
+        "text_size": "text-base",
+        "column_gap": "medium",
+        "row_gap": "medium",
+        "swipe_on_mobile": false,
+        "columns_mobile": "1",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "custom_content_gtUPgn": {
+      "type": "custom-content",
+      "blocks": {
+        "text_GTXMVm": {
+          "type": "text",
+          "settings": {
+            "content_alignment": "left",
+            "subheading": "",
+            "heading": "Total Body & Mind Sleep Wellness System",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h3",
+            "description": "<ul><li><strong>Ergonomic Infinite Adjustment:</strong> <br/>Dual motors adjust head (0–70°) & legs (0–45°) for zero-gravity support and full-body comfort.</li><li><strong>Anti-Snore Mode:</strong> One touch lifts the head to 12° to open airways and reduce snoring, with ultra-quiet motors (&lt;40dB). Sleep peacefully together without disturbing your partner.</li><li><strong>Smart Massage:</strong> 6 vibration modules with Wave, Pulse, Constant, and Sleep modes. One-touch control relaxes muscles and relieves stress, like having a personal masseuse at home.</li><li><strong>Individual Pillow Tilt:</strong> Head lifts 15° as the back reclines, keeping neck aligned for comfortable reading or watching.</li></ul>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "btn--primary",
+            "button_icon": "none",
+            "width": "50%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        },
+        "image_zWHNKE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/95X2-1.webp",
+            "width": "41%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_GTXMVm",
+        "image_zWHNKE"
+      ],
+      "name": "t:sections.custom-content.name",
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "",
+        "enable_sticky_column": false,
+        "section_header_alignment": "left",
+        "section_header_alignment_mobile": "inherit",
+        "subheading": "",
+        "heading": "",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h3",
+        "description": "",
+        "text_size": "text-base",
+        "column_gap": "medium",
+        "row_gap": "medium",
+        "swipe_on_mobile": false,
+        "columns_mobile": "1",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "custom_content_FkFkce": {
+      "type": "custom-content",
+      "blocks": {
+        "image_UcBjmR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/lQDPJwCoGsTeKFvNA-jNA-iw0OhqYU_TrxoGnEPsoxgiAQ_1000_1000.jpg",
+            "width": "41%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        },
+        "text_bNAnWc": {
+          "type": "text",
+          "settings": {
+            "content_alignment": "left",
+            "subheading": "",
+            "heading": "Total Body & Mind Sleep Wellness System",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h3",
+            "description": "<ul><li><strong>Independent Leg Lift:</strong> Elevate legs 15–30° to boost circulation, reduce swelling, and ease fatigue for better sleep. Ideal after long hours of standing or working.</li><li><strong>Smart Sit-Up Assist:</strong> One-touch movement into an ergonomic seated position for safe, effortless rising, helping seniors, postpartum, or post-surgery users regain independence with ease.</li><li><strong>Dual-Zone Adjustment:</strong> Each side adjusts independently (split mattress), letting partners set angles without disturbing each other. Perfect for couples with different routines or reading and relaxing together.</li><li><strong>German OKIN Motor & Steel Frame：</strong>Supports up to 750 lbs, ultra-quiet, fits most headboards for strength & style.</li></ul>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "btn--primary",
+            "button_icon": "none",
+            "width": "50%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_UcBjmR",
+        "text_bNAnWc"
+      ],
+      "name": "t:sections.custom-content.name",
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "",
+        "enable_sticky_column": false,
+        "section_header_alignment": "left",
+        "section_header_alignment_mobile": "inherit",
+        "subheading": "",
+        "heading": "",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h3",
+        "description": "",
+        "text_size": "text-base",
+        "column_gap": "medium",
+        "row_gap": "medium",
+        "swipe_on_mobile": false,
+        "columns_mobile": "1",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed"
       }
     },
     "multicolumn_icon_nqA6Yw": {
@@ -588,7 +784,7 @@
             "sub_title_1": "Head Up & Pillow Tilt",
             "sub_img_pc_1": "shopify://shop_images/5000-95-1_2b84a132-7fdb-4484-a9e9-56ba019d9d09.jpg",
             "sub_title_2": "Feet Up",
-            "sub_img_pc_2": "shopify://shop_images/5000-95x2-1.jpg",
+            "sub_img_pc_2": "shopify://shop_images/5000-95.jpg",
             "sub_title_3": "Zero Gravity",
             "sub_img_pc_3": "shopify://shop_images/5000-95-2.jpg",
             "sub_title_4": "Flat",
@@ -835,12 +1031,85 @@
         "areviews_stars_colors": "#f3c621",
         "areviews_write_reviews_botton_color": "#373737"
       }
+    },
+    "faqs_FTTUgk": {
+      "type": "faqs",
+      "blocks": {
+        "faq_VdkARN": {
+          "type": "faq",
+          "settings": {
+            "question": "I received the mattress, why didn't I receive the bed frame?",
+            "answer": "<p>We are very sorry, but due to the fact that our bed frames and mattresses are shipped separately, arrival times will vary. Please be patient.</p>"
+          }
+        },
+        "faq_Cmcjda": {
+          "type": "faq",
+          "settings": {
+            "question": "Do you offer In-Home Delivery and Setup?",
+            "answer": "<p>Thank you very much for your interest in our products, but unfortunately we do not offer in-home installation service. We will be updating this service at a later date.</p>"
+          }
+        },
+        "faq_NHnhBn": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I enjoy the warranty policy and risk-free return of the ESHINE products I purchased from amazon",
+            "answer": "<p>Only users who place orders from the official website can enjoy the official website's return warranty service</p>"
+          }
+        },
+        "faq_N8dtCT": {
+          "type": "faq",
+          "settings": {
+            "question": "What does my 30-day risk free return include?",
+            "answer": "<p>We want you to be completely satisfied with your purchase. If for any reason the customer wishes to return an item, you may do so within 30 days of the delivery date. <br/>Errors in ordering, sizing issues, financing, cancellations/requests to cancel and changes in circumstances are not part of the sleep trial and will void your refund eligibility.</p>"
+          }
+        },
+        "faq_UgkaNh": {
+          "type": "faq",
+          "settings": {
+            "question": "How soon can I sleep on the mattress after opening?",
+            "answer": "<p>You can start snoozing right away! Once the sheets are on, you're ready to begin! Make sure your mattress is face up before you put the sheets on. Mattresses take 24-72 hours to expand to their maximum size.</p>"
+          }
+        },
+        "faq_4yjaxh": {
+          "type": "faq",
+          "settings": {
+            "question": "Can a Split King adjustable bed be controlled with one remote?",
+            "answer": "<p>Yes, our Split King adjustable bed can be controlled with a single remote when both sides are connected using a sync cable. Please note that the sync cable is sold separately.</p>"
+          }
+        },
+        "faq_EgQJMp": {
+          "type": "faq",
+          "settings": {
+            "question": "Can ESHINE adjustable beds be used in zero clearance mode only?",
+            "answer": "<p>Yes, our King-size adjustable bed supports a zero-clearance setup, allowing it to fit perfectly on platform or storage bed frames.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_VdkARN",
+        "faq_Cmcjda",
+        "faq_NHnhBn",
+        "faq_N8dtCT",
+        "faq_UgkaNh",
+        "faq_4yjaxh",
+        "faq_EgQJMp"
+      ],
+      "name": "FAQs",
+      "settings": {
+        "container": "fixed",
+        "coll_title": "FAQs",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
     }
   },
   "order": [
     "breadcrumbs",
     "main",
     "image_with_text_slider_3CDfLr",
+    "custom_content_cLw7aw",
+    "custom_content_gtUPgn",
+    "custom_content_FkFkce",
     "multicolumn_icon_nqA6Yw",
     "custom_content_3bWnNJ",
     "custom_content_C6QF6z",
@@ -850,6 +1119,7 @@
     "image_with_text_tyqJEm",
     "features_image_switcher_GidNhG",
     "related-products",
-    "1629746450643786911"
+    "1629746450643786911",
+    "faqs_FTTUgk"
   ]
 }

@@ -122,11 +122,16 @@
             "show_dynamic_checkout_buttons": false,
             "show_quantity": true
           }
+        },
+        "areviews_reviews_importer_areviews_title_rating_E03E52": {
+          "type": "shopify://apps/areviews-reviews-importer/blocks/AreviewsTitleRating/ab0ec5fe-c95b-4fd6-bfb8-db2a30d0756f",
+          "settings": {}
         }
       },
       "block_order": [
         "badges",
         "title",
+        "areviews_reviews_importer_areviews_title_rating_E03E52",
         "price",
         "inventory",
         "variant_picker",
@@ -153,252 +158,6 @@
         "enable_video_looping": true,
         "padding_top": 50,
         "padding_bottom": 60
-      }
-    },
-    "layered_images_with_text_tUj8fY": {
-      "type": "layered-images-with-text",
-      "blocks": {
-        "image_BrpNMA": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/555-2.jpg",
-            "image_width": 144,
-            "image_desktop_vertical": 61,
-            "image_desktop_horizontal": 9,
-            "animation": "media-mover"
-          }
-        },
-        "image_KYDRd7": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/95x2_785fb1a7-7ac9-4100-9901-be16c507e43e.jpg",
-            "image_width": 132,
-            "image_desktop_vertical": 25,
-            "image_desktop_horizontal": 18,
-            "animation": "media-mover-reverse"
-          }
-        },
-        "image_tDAw6C": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/35ec09fff9cc4c828596d159513965fd.jpg",
-            "image_width": 162,
-            "image_desktop_vertical": 25,
-            "image_desktop_horizontal": 85,
-            "animation": "media-mover-reverse"
-          }
-        },
-        "image_XcYhwP": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/91SEC-0EgRL-AC-SL1500.jpg",
-            "image_width": 118,
-            "image_desktop_vertical": 72,
-            "image_desktop_horizontal": 92,
-            "animation": "media-mover"
-          }
-        }
-      },
-      "block_order": [
-        "image_BrpNMA",
-        "image_KYDRd7",
-        "image_tDAw6C",
-        "image_XcYhwP"
-      ],
-      "name": "t:sections.layered-images-with-text.name",
-      "settings": {
-        "container": "fixed",
-        "color_scheme": "scheme-info",
-        "section_header_alignment": "center",
-        "section_header_alignment_mobile": "inherit",
-        "subheading": "",
-        "subheading_style": "border",
-        "heading": "Want Better Sleep?",
-        "highlight_style": "none",
-        "highlight_font_style": "italic",
-        "highlight_style_color": "",
-        "highlight_text_color": "",
-        "heading_size": "h1",
-        "description": "<p>Find Your Perfect Position For Deeper Rest And Total Comfort.</p>",
-        "description_size": "text-base",
-        "button_label": "Learn More",
-        "button_link": "shopify://blogs/blogs/how-to-choose-your-perfect-mattress-after-years-of-settling-the-ultimate-buying-guide",
-        "button_style": "btn--primary",
-        "button_icon": "none",
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "show_section_divider": false,
-        "divider_width": "fixed"
-      }
-    },
-    "media_with_swiper_FehwmV": {
-      "type": "media-with-swiper",
-      "blocks": {
-        "item_4LnQHD": {
-          "type": "item",
-          "settings": {
-            "item_img_pc": "shopify://shop_images/E3000-95x2-2.jpg",
-            "item_img_mb": "shopify://shop_images/2000-190-2.jpg",
-            "item_text": "Tab 1"
-          }
-        },
-        "item_YKYBzi": {
-          "type": "item",
-          "settings": {
-            "item_img_pc": "shopify://shop_images/3_bb2bbf1c-5b9d-47b9-8f2a-1c8241da798f.jpg",
-            "item_img_mb": "shopify://shop_images/5000-95x2-1.jpg",
-            "item_text": "Tab 2"
-          }
-        },
-        "item_wUkCbn": {
-          "type": "item",
-          "settings": {
-            "item_img_pc": "shopify://shop_images/1_3573663e-b1e2-4484-8606-8475050acc56.jpg",
-            "item_img_mb": "shopify://shop_images/3100-95x2-2.jpg",
-            "item_text": "Tab 3"
-          }
-        }
-      },
-      "block_order": [
-        "item_4LnQHD",
-        "item_YKYBzi",
-        "item_wUkCbn"
-      ],
-      "disabled": true,
-      "name": "Media With Swiper",
-      "settings": {
-        "container": "fixed",
-        "coll_title": "Explore All ESHINE SLEEP Products",
-        "coll_subtitle": "Shop beds,frames and more.",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
-    "media_tab_swiper_UnVhAH": {
-      "type": "media-tab-swiper",
-      "blocks": {
-        "item_wXDmDF": {
-          "type": "item",
-          "settings": {
-            "item_text": "Main Tab 1",
-            "item_subtext": "Sub Title",
-            "sub_title_1": "111",
-            "sub_img_pc_1": "shopify://shop_images/2000-190-3.jpg",
-            "sub_title_2": "222",
-            "sub_img_pc_2": "shopify://shop_images/5000-95x2-1.jpg",
-            "sub_title_3": "333",
-            "sub_img_pc_3": "shopify://shop_images/5000-151-3.jpg",
-            "sub_title_4": "",
-            "sub_title_5": ""
-          }
-        },
-        "item_YbRwr7": {
-          "type": "item",
-          "settings": {
-            "item_text": "Main Tab 2",
-            "item_subtext": "Sub Title",
-            "sub_title_1": "444",
-            "sub_img_pc_1": "shopify://shop_images/3100-95x2-2.jpg",
-            "sub_title_2": "555",
-            "sub_img_pc_2": "shopify://shop_images/3100-150-2.jpg",
-            "sub_title_3": "666",
-            "sub_img_pc_3": "shopify://shop_images/3100-95x2-3.jpg",
-            "sub_title_4": "",
-            "sub_title_5": ""
-          }
-        },
-        "item_4FjMj7": {
-          "type": "item",
-          "settings": {
-            "item_text": "Main Tab",
-            "item_subtext": "Sub Title",
-            "sub_title_1": "",
-            "sub_title_2": "",
-            "sub_title_3": "",
-            "sub_title_4": "",
-            "sub_title_5": ""
-          }
-        },
-        "item_hUcCbr": {
-          "type": "item",
-          "settings": {
-            "item_text": "Main Tab",
-            "item_subtext": "Sub Title",
-            "sub_title_1": "",
-            "sub_title_2": "",
-            "sub_title_3": "",
-            "sub_title_4": "",
-            "sub_title_5": ""
-          }
-        }
-      },
-      "block_order": [
-        "item_wXDmDF",
-        "item_YbRwr7",
-        "item_4FjMj7",
-        "item_hUcCbr"
-      ],
-      "disabled": true,
-      "name": "Media Tab Swiper",
-      "settings": {
-        "container": "fixed",
-        "coll_title": "Explore All ESHINE SLEEP Products",
-        "coll_subtitle": "Shop beds,frames and more.",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
-    "quick_comparison_table_Fc9q9L": {
-      "type": "quick-comparison-table",
-      "blocks": {
-        "info_AqD889": {
-          "type": "info",
-          "settings": {
-            "show_view_details_button": true
-          }
-        },
-        "description_xmty6R": {
-          "type": "description",
-          "settings": {
-            "text_line_limit": "3-lines",
-            "show_view_more_button": false
-          }
-        },
-        "price_ibtxjt": {
-          "type": "price",
-          "settings": {}
-        },
-        "variants_UfEY3f": {
-          "type": "variants",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "info_AqD889",
-        "description_xmty6R",
-        "price_ibtxjt",
-        "variants_UfEY3f"
-      ],
-      "disabled": true,
-      "name": "t:sections.quick-comparison-table.name",
-      "settings": {
-        "container": "fixed",
-        "color_scheme": "",
-        "section_header_alignment": "left",
-        "section_header_alignment_mobile": "inherit",
-        "heading": "Quick comparison table",
-        "highlight_style": "none",
-        "highlight_font_style": "italic",
-        "highlight_style_color": "",
-        "highlight_text_color": "",
-        "heading_size": "h2",
-        "description": "<p>Displays a quick comparison table for the current product and its related products</p>",
-        "description_size": "text-base",
-        "limit": 8,
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "show_section_divider": false,
-        "divider_width": "fixed"
       }
     },
     "image_with_text_overlay_4mdfjM": {
@@ -582,23 +341,62 @@
         "faq_Y6U6Fy": {
           "type": "faq",
           "settings": {
-            "question": "111",
-            "answer": "<p>1111</p>"
+            "question": "I received the mattress, why didn't I receive the bed frame?",
+            "answer": "<p>We are very sorry, but due to the fact that our bed frames and mattresses are shipped separately, arrival times will vary. Please be patient.</p>"
           }
         },
         "faq_fFm97c": {
           "type": "faq",
           "settings": {
-            "question": "222",
-            "answer": "<p>2222</p>"
+            "question": "Do you offer In-Home Delivery and Setup?",
+            "answer": "<p>Thank you very much for your interest in our products, but unfortunately we do not offer in-home installation service. We will be updating this service at a later date.</p>"
+          }
+        },
+        "faq_pREyFm": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I enjoy the warranty policy and risk-free return of the ESHINE products I purchased from amazon",
+            "answer": "<p>Only users who place orders from the official website can enjoy the official website's return warranty service</p>"
+          }
+        },
+        "faq_QQzNBA": {
+          "type": "faq",
+          "settings": {
+            "question": "What does my 30-day risk free return include?",
+            "answer": "<p>We want you to be completely satisfied with your purchase. If for any reason the customer wishes to return an item, you may do so within 30 days of the delivery date. <br/>Errors in ordering, sizing issues, financing, cancellations/requests to cancel and changes in circumstances are not part of the sleep trial and will void your refund eligibility.</p>"
+          }
+        },
+        "faq_MtVdy6": {
+          "type": "faq",
+          "settings": {
+            "question": "How soon can I sleep on the mattress after opening?",
+            "answer": "<p>You can start snoozing right away! Once the sheets are on, you're ready to begin! Make sure your mattress is face up before you put the sheets on. Mattresses take 24-72 hours to expand to their maximum size.</p>"
+          }
+        },
+        "faq_B9TYg9": {
+          "type": "faq",
+          "settings": {
+            "question": "Can a Split King adjustable bed be controlled with one remote?",
+            "answer": "<p>Yes, our Split King adjustable bed can be controlled with a single remote when both sides are connected using a sync cable. Please note that the sync cable is sold separately.</p>"
+          }
+        },
+        "faq_NXDCYE": {
+          "type": "faq",
+          "settings": {
+            "question": "Can ESHINE adjustable beds be used in zero clearance mode only?",
+            "answer": "<p>Yes, our King-size adjustable bed supports a zero-clearance setup, allowing it to fit perfectly on platform or storage bed frames.</p>"
           }
         }
       },
       "block_order": [
         "faq_Y6U6Fy",
-        "faq_fFm97c"
+        "faq_fFm97c",
+        "faq_pREyFm",
+        "faq_QQzNBA",
+        "faq_MtVdy6",
+        "faq_B9TYg9",
+        "faq_NXDCYE"
       ],
-      "disabled": true,
       "name": "FAQs",
       "settings": {
         "container": "fixed",
@@ -606,20 +404,35 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
+    },
+    "areviews_1763062771_093935": {
+      "type": "apps",
+      "blocks": {
+        "areviews_reviews_importer_areviews_display_reviews_49183D": {
+          "type": "shopify://apps/areviews-reviews-importer/blocks/AreviewsDisplayReviews/ab0ec5fe-c95b-4fd6-bfb8-db2a30d0756f",
+          "settings": {
+            "hide_areviews_title_rating": false,
+            "areviews_theme_font": "inherit",
+            "areviews_stars_colors": "#f3c621",
+            "areviews_write_reviews_botton_color": "#373737"
+          }
+        }
+      },
+      "block_order": [
+        "areviews_reviews_importer_areviews_display_reviews_49183D"
+      ],
+      "settings": {}
     }
   },
   "order": [
     "breadcrumbs",
     "main",
-    "layered_images_with_text_tUj8fY",
-    "media_with_swiper_FehwmV",
-    "media_tab_swiper_UnVhAH",
-    "quick_comparison_table_Fc9q9L",
     "image_with_text_overlay_4mdfjM",
     "collection_list_new_3iAb3B",
     "related-products",
     "1629746450643786911",
     "17611136970011267d",
-    "faqs_yBDGfq"
+    "faqs_yBDGfq",
+    "areviews_1763062771_093935"
   ]
 }

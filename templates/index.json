@@ -75,8 +75,17 @@
         "text_3A6nQw": {
           "type": "text",
           "settings": {
-            "text": "<p>From our first adjustable bed to today’s smart comfort —<br/>every moment has been made possible by you.</p>",
+            "text": "<p>Discount Code ：SLEEP5</p>",
             "text_size": "text-base"
+          }
+        },
+        "button_QEtKje": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More",
+            "button_link": "shopify://pages/year-end-mega-sale-lowest-prices-of-the-year",
+            "button_style": "btn--primary",
+            "button_icon": "none"
           }
         },
         "timer_a7qG7N": {
@@ -95,6 +104,7 @@
         "heading_93EXVj",
         "subheading_DYTENP",
         "text_3A6nQw",
+        "button_QEtKje",
         "timer_a7qG7N"
       ],
       "name": "t:sections.countdown-timer.name",
@@ -283,9 +293,10 @@
           "type": "testimonial",
           "settings": {
             "icon": "none",
-            "heading": "Testimonials",
-            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
-            "author": "Author's name",
+            "image": "shopify://shop_images/71DQCJymHpL.jpg",
+            "heading": "Vicre",
+            "text": "<p>This is a great investment !! We have been sleeping on this bed for about two weeks and I felt the difference since day one I used to sleep so uncomfortable on my old bed my back my neck my shoulders used to hurt all night but so far, I feel I can say this is worth it!! Our mattresses are 14 inches tall and medium firm they are firm but soft. What other customers need to know is that this split king size needs bedspread that are oversized my bed uses 116 inches x 98 inches just so are prepared</p>",
+            "author": "Vicre",
             "bio": "",
             "product": ""
           }
@@ -294,9 +305,10 @@
           "type": "testimonial",
           "settings": {
             "icon": "none",
-            "heading": "Testimonials",
-            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
-            "author": "Author's name",
+            "image": "shopify://shop_images/81JyHHK44WL_6098b65e-e46f-4587-9cc7-fc70d298108d.jpg",
+            "heading": "<a href=\"https://www.amazon.com/gp/profile/amzn1.account.AHLLZOBJRBS6HEO6DBZNGKQDHG3Q\">Bridget</a>",
+            "text": "<p>Yes, I was hesitant too BUT it far exceeded my expectations! I’m 70 years old, screwed the legs in, connected the power supply. Very easy! Placed the still vacuum sealed mattress on top and then opened it up to let it expand. The mattress is firm yet soft, perfect. Controls work as stated on description of the product. One thing, the mattress arrived 2 days before the frame. I was a little concerned about not getting the frame too on the same day (even though there was a card in the box stating the the frame would be delivered another day because of weight requirements of the delivery service. I love it!</p>",
+            "author": "Bridget",
             "bio": "",
             "product": ""
           }
@@ -305,9 +317,10 @@
           "type": "testimonial",
           "settings": {
             "icon": "none",
-            "heading": "Testimonials",
-            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
-            "author": "Author's name",
+            "image": "shopify://shop_images/81QJrAPWmlL.jpg",
+            "heading": "<a href=\"https://www.amazon.com/gp/profile/amzn1.account.AHMLMDTA3YGNEQMYIPU3PU6KZZNQ\">Amy</a>",
+            "text": "<p>If you are down the rabbit hole like I was, looking for the perfect price, quality and style— you can drop your search. This frame is elite!</p>",
+            "author": "Amy",
             "bio": "",
             "product": ""
           }
@@ -316,9 +329,10 @@
           "type": "testimonial",
           "settings": {
             "icon": "none",
-            "heading": "Testimonials",
-            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
-            "author": "Author's name",
+            "image": "shopify://shop_images/71z3Nn2-5ML.jpg",
+            "heading": "<a href=\"https://www.amazon.com/gp/profile/amzn1.account.AFVVUJATZHFVHJJBVV6ZN2V3YFPQ\">Customer</a>",
+            "text": "<p>Perfect size for a small updated spare bedroom for mom so she didn't have to go into assisted living. Lighting under bed is great for getting up at night.</p>",
+            "author": "Customer",
             "bio": "",
             "product": ""
           }
@@ -327,9 +341,10 @@
           "type": "testimonial",
           "settings": {
             "icon": "none",
-            "heading": "Testimonials",
-            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
-            "author": "Author's name",
+            "image": "shopify://shop_images/71Zwvb4FhBL.jpg",
+            "heading": "<a href=\"https://www.amazon.com/gp/profile/amzn1.account.AFYOB6YKMIFFJUXIOM2JOKQFXRJA\">Monique Brim</a>",
+            "text": "<p>There is nothing to dislike on this bed or company. Customer service is great 👍 delivery came in two different days. The bed is awesome we have the 14\" hybrid mattress best one ever installation is 15 minutes everything you need is attached underneath the bed. We wake up completely rested with NO backpain anymore. We love our wonder bed❤️</p>",
+            "author": "Monique Brim",
             "bio": "",
             "product": ""
           }
@@ -338,9 +353,46 @@
           "type": "testimonial",
           "settings": {
             "icon": "none",
-            "heading": "Testimonials",
-            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
-            "author": "Author's name",
+            "image": "shopify://shop_images/71ZNnc9IcsL.jpg",
+            "heading": "Customer",
+            "text": "<p>Purchased this bed for my elderly father after we moved him into our home. Needed to downsize from a queen as it was getting difficult to help him out. This bed is very comfortable!! And it is similar to our sleep number in that you can change bed positions for comfort. My dad especially loved the preset positions. Especially the zero gravity. I would recommend this bed to anyone needing a comfortable night sleep and attractive bed!!</p>",
+            "author": "Customer",
+            "bio": "",
+            "product": ""
+          }
+        },
+        "testimonial_4cKxbM": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "none",
+            "image": "shopify://shop_images/81uC43xQ6WL.jpg",
+            "heading": "<a href=\"https://www.amazon.com/gp/profile/amzn1.account.AF23BWJMNXTVSCEKRCDAZZGMNNLA\">Brenda</a>",
+            "text": "<p>We thought that only the mattress were what we were getting. So I called to let them know that’s all we got. 3-4 hours later the frames showed up. The order got split up on 2 different delivery trucks. When I tell you it was worth the fuss, OMG. This bed is so comfortable and was so easy to put up. All we had to do is let the mattresses form, put the legs on the frames and it was all done. We slept in our guest bedroom for 2 nights to give the mattresses time to form, and when I tell you it is worth the money we paid for them. We ordered the split king, with the 14” mattresses. We love them. Thank you Eshine.</p>",
+            "author": "Brenda",
+            "bio": "",
+            "product": ""
+          }
+        },
+        "testimonial_636q4K": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "none",
+            "image": "shopify://shop_images/818mMvwHloL.jpg",
+            "heading": "<a href=\"https://www.amazon.com/gp/profile/amzn1.account.AFXO6A7WTVNXHL62NLNIYISSAL3A\">Brown</a>",
+            "text": "<p>The mattress is super comfortable, it was easy to put together and the remotes work great. Head and feet go up and down easily and it’s sturdy. I can’t belive how much more other beds like this cost, I don’t see how they could get much better. I highly recommend</p>",
+            "author": "Brown",
+            "bio": "",
+            "product": ""
+          }
+        },
+        "testimonial_zyXeVW": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "none",
+            "image": "shopify://shop_images/71eM5d245cL.jpg",
+            "heading": "<a href=\"https://www.amazon.com/gp/profile/amzn1.account.AFWJ474D4UXAQ34NQH7YOAKH2B7A\">Melvin</a>",
+            "text": "<p>This bed is well worth the money. We got it from my elderly father. Who despises a hospital bed? But this makes him independent enough. He can actually sleep in a bed instead of a recliner. Came in two boxes and all I had to do was screw the legs in and flip it over. Very sturdy And the mattress is really thick and comfortable. Well worth the money spent</p>",
+            "author": "Melvin",
             "bio": "",
             "product": ""
           }
@@ -352,43 +404,45 @@
         "testimonial_UxPNcL",
         "testimonial_AK4idH",
         "testimonial_MmNXrP",
-        "testimonial_cwETqE"
+        "testimonial_cwETqE",
+        "testimonial_4cKxbM",
+        "testimonial_636q4K",
+        "testimonial_zyXeVW"
       ],
-      "disabled": true,
       "name": "t:sections.testimonials.name",
       "settings": {
         "container": "full",
-        "color_scheme": "",
+        "color_scheme": "scheme-inverse",
         "section_header_alignment": "center",
-        "section_header_alignment_mobile": "inherit",
+        "section_header_alignment_mobile": "center",
         "subheading": "",
-        "heading": "Testimonials",
+        "heading": "Hear From Happy  Sleepers",
         "highlight_style": "none",
         "highlight_font_style": "italic",
         "highlight_style_color": "",
         "highlight_text_color": "",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "description": "",
-        "text_size": "text-base",
-        "layout": "focused",
-        "card_color_scheme": "",
+        "text_size": "text-lg",
+        "layout": "card",
+        "card_color_scheme": "scheme-inverse",
         "card_content_color_scheme": "",
         "card_image_ratio": "adapt",
         "card_heading_size": "h4",
-        "card_text_size": "h1",
-        "author_info_layout": "vertical",
-        "card_trigger_behavior": "click",
-        "show_image": false,
+        "card_text_size": "text-inherit",
+        "author_info_layout": "horizontal",
+        "card_trigger_behavior": "hover",
+        "show_image": true,
         "show_author_image": false,
-        "columns_desktop": 3,
+        "columns_desktop": 5,
         "column_gap": "medium",
         "row_gap": "medium",
         "enable_slider": true,
         "columns_mobile": "1",
-        "swipe_on_mobile": true,
+        "swipe_on_mobile": false,
         "show_progress_bar": true,
-        "padding_top": 0,
-        "padding_bottom": 60,
+        "padding_top": 30,
+        "padding_bottom": 30,
         "show_section_divider": false,
         "divider_width": "fixed"
       }
@@ -577,6 +631,55 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
+    },
+    "video_with_reviews_6G9HCn": {
+      "type": "video-with-reviews",
+      "blocks": {
+        "video_review_xgpV4z": {
+          "type": "video_review",
+          "settings": {
+            "video": "shopify://files/videos/Amazon.com ESHINE Queen Adjustable Bed Frame - 14 Luxury Gel Mem (1).mp4",
+            "author_name": "Trump D",
+            "ring": "shopify://shop_images/ring.png",
+            "review": ""
+          }
+        },
+        "video_review_YqzdgV": {
+          "type": "video_review",
+          "settings": {
+            "author_name": "Trump D",
+            "review": ""
+          }
+        },
+        "video_review_NgEpNH": {
+          "type": "video_review",
+          "settings": {
+            "author_name": "Trump D",
+            "review": ""
+          }
+        },
+        "video_review_PnHF6c": {
+          "type": "video_review",
+          "settings": {
+            "author_name": "Trump D",
+            "review": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_review_xgpV4z",
+        "video_review_YqzdgV",
+        "video_review_NgEpNH",
+        "video_review_PnHF6c"
+      ],
+      "disabled": true,
+      "name": "Video With Reviews",
+      "settings": {
+        "container": "fixed",
+        "coll_title": "Video With Reviews",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
     }
   },
   "order": [
@@ -590,6 +693,7 @@
     "image_with_text_overlay_xwcXq4",
     "featured_blog_zqyTQt",
     "video_by_swiper_kzjY9n",
-    "video_by_swiper_fixed_bX6gWG"
+    "video_by_swiper_fixed_bX6gWG",
+    "video_with_reviews_6G9HCn"
   ]
 }

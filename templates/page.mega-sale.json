@@ -1,0 +1,644 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "container": "fixed",
+        "text_alignment": "center",
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "countdown_timer_e4WLzn": {
+      "type": "countdown-timer",
+      "blocks": {
+        "heading_ia64RH": {
+          "type": "heading",
+          "settings": {
+            "heading": "20th Anniversary & Black Friday Mega Sale",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "hd2"
+          }
+        },
+        "subheading_FMJjVY": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<strong>— Our Lowest Prices of the Year!</strong>"
+          }
+        },
+        "timer_bVMCfT": {
+          "type": "timer",
+          "disabled": true,
+          "settings": {
+            "type": "evergreen",
+            "style": "number",
+            "number_size": "h1",
+            "duration": "every_24_hrs",
+            "time": "2025/012/31 00:45 PM"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ia64RH",
+        "subheading_FMJjVY",
+        "timer_bVMCfT"
+      ],
+      "name": "t:sections.countdown-timer.name",
+      "settings": {
+        "container": "full",
+        "color_schema": "scheme-inverse",
+        "image_overlay_opacity": 0,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "show_section_divider": false,
+        "divider_width": "full"
+      }
+    },
+    "image_with_feature_HgVqwc": {
+      "type": "image-with-feature",
+      "blocks": {
+        "column_fGthUr": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "max_width": 28,
+            "max_width_mb": 32,
+            "title": "🛒 Offer Details",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h6",
+            "heading_font": "heading",
+            "text": "<p><strong>1️⃣ Enjoy 5% OFF — Just Place an Order!</strong><br/><br/>No minimum spend required.<br/><br/>Simply enter <strong>code SLEEP5</strong> at checkout to enjoy your instant discount.</p>",
+            "text_size": "text-base"
+          }
+        },
+        "column_qV4KL8": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "max_width": 28,
+            "max_width_mb": 32,
+            "title": "🛒 Offer Details",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h6",
+            "heading_font": "heading",
+            "text": "<p><strong>2️⃣ Spend over $2,500 — Get a FREE Stand Assist (worth $699 E740)</strong><br/>Thoughtfully designed to help seniors rise with ease and confidence —a perfect, heartwarming gift for your parents or elders.</p>",
+            "text_size": "text-base"
+          }
+        }
+      },
+      "block_order": [
+        "column_fGthUr",
+        "column_qV4KL8"
+      ],
+      "name": "t:sections.image-with-feature.presets",
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "",
+        "image": "shopify://shop_images/lQDPJw4L-WAzLAnNA-jNA-iwPJjEGeKjKCwIc7-tGN6UAQ-1000-1000.jpg",
+        "image_ratio": "adapt",
+        "enable_sticky": false,
+        "section_header_alignment": "left",
+        "section_header_alignment_mobile": "inherit",
+        "subheading": "",
+        "heading": "🌙 Year-End Sleep Renewal Event | Sleep Better, Care Deeper",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h2",
+        "description": "<p>As the year draws to a close, we want to express our heartfelt thanks for your continued trust and support.<br/><br/>Celebrate this season of gratitude with our <strong>Year-End Sleep Renewal Event</strong>,<br/><br/>bringing comfort and care to you and your loved ones.</p>",
+        "text_size": "text-lg",
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_icon_xgAUKJ": {
+      "type": "multicolumn-icon",
+      "blocks": {
+        "column_UMeyqr": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "max_width": 10,
+            "max_width_mb": 28,
+            "title": "",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h6",
+            "heading_font": "heading",
+            "text": "<p>1. Enter the promo code <strong>SLEEP5</strong> at checkout to enjoy a <strong>5% discount</strong> on your order.<br/>2. For orders over <strong>$2500</strong>, please <strong>add the E740 Stand Assist</strong> to your cart.</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "btn--underline",
+            "button_icon": "none"
+          }
+        },
+        "column_fWdJcG": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "max_width": 28,
+            "max_width_mb": 28,
+            "title": "",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h6",
+            "heading_font": "heading",
+            "text": "<p>3. The system will <strong>automatically apply a full discount</strong> for the E740 at checkout—no manual action needed.</p><p>4. Offer valid for a limited time. Free gifts are available while supplies last.<br/></p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "btn--underline",
+            "button_icon": "none"
+          }
+        }
+      },
+      "block_order": [
+        "column_UMeyqr",
+        "column_fWdJcG"
+      ],
+      "name": "t:sections.multicolumn-with-icon.name",
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "",
+        "header_layout": "vertical",
+        "section_header_alignment": "left",
+        "section_header_alignment_mobile": "inherit",
+        "subheading": "",
+        "heading": "❤️ How to Redeem Your Offer",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h1",
+        "description": "",
+        "text_size": "text-base",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "btn--underline",
+        "button_icon": "none",
+        "enable_sticky": false,
+        "card_color_scheme": "",
+        "content_alignment": "left",
+        "image_position": "left",
+        "icon_color": "#1d349a",
+        "columns_desktop": 2,
+        "column_gap": "large",
+        "row_gap": "inherit",
+        "show_divider_col": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "multicolumn_icon_MQzq3A": {
+      "type": "multicolumn-icon",
+      "blocks": {
+        "column_9zRHib": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "max_width": 10,
+            "max_width_mb": 28,
+            "title": "",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h6",
+            "heading_font": "heading",
+            "text": "<ol><li>Code <strong>SLEEP5</strong> applies to all orders.<br/></li><li>Orders over $2,500 qualify for both the discount and the free gift.<br/></li><li>One free gift per order.<br/></li><li>The Stand Assist may be shipped separately depending on stock.</li></ol>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "btn--underline",
+            "button_icon": "none"
+          }
+        },
+        "column_atm8UE": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "max_width": 28,
+            "max_width_mb": 28,
+            "title": "📅 Duration",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h6",
+            "heading_font": "heading",
+            "text": "<p><br/>🗓️ <strong>Valid until December 31, 2025</strong><br/><br/>Limited-time offer. Available while supplies last.<br/></p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "btn--underline",
+            "button_icon": "none"
+          }
+        }
+      },
+      "block_order": [
+        "column_9zRHib",
+        "column_atm8UE"
+      ],
+      "name": "t:sections.multicolumn-with-icon.name",
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "",
+        "header_layout": "vertical",
+        "section_header_alignment": "left",
+        "section_header_alignment_mobile": "inherit",
+        "subheading": "",
+        "heading": "❤️ Notes",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h1",
+        "description": "",
+        "text_size": "text-base",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "btn--underline",
+        "button_icon": "none",
+        "enable_sticky": false,
+        "card_color_scheme": "",
+        "content_alignment": "left",
+        "image_position": "left",
+        "icon_color": "#1d349a",
+        "columns_desktop": 2,
+        "column_gap": "large",
+        "row_gap": "inherit",
+        "show_divider_col": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "featured_product_jRTWJ6": {
+      "type": "featured-product",
+      "blocks": {
+        "badges_pcpBPi": {
+          "type": "badges",
+          "settings": {
+            "show_soldout_badge": true,
+            "show_sale_badge": true,
+            "sale_badge_type": "percentage"
+          }
+        },
+        "title_zdwgz8": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "meta_pUXRHQ": {
+          "type": "meta",
+          "settings": {
+            "link_color": "#1d349a",
+            "show_vendor": true,
+            "show_product_type": false,
+            "show_sku": true,
+            "show_barcode": false
+          }
+        },
+        "price_fxDWba": {
+          "type": "price",
+          "settings": {}
+        },
+        "icon_with_text_Jy9Vj6": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "title_font": "body",
+            "title_size": "text-base",
+            "icon_1": "check",
+            "heading_1": "Modern",
+            "icon_2": "check",
+            "heading_2": "Eco-certified",
+            "icon_3": "check",
+            "heading_3": "Warranty"
+          }
+        },
+        "divider_a9VetT": {
+          "type": "divider",
+          "settings": {}
+        },
+        "inventory_zjjHhQ": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true
+          }
+        },
+        "description_EVmc34": {
+          "type": "description",
+          "settings": {}
+        },
+        "variant_picker_Rnf4Ab": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_type": "color_swatch",
+            "swatch_style": "square",
+            "swatch_size": 40,
+            "button_style": "normal",
+            "size_title": "Size",
+            "size_chart_from_page": ""
+          }
+        },
+        "buy_buttons_6Wccj7": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "icon_with_text_YDqdpJ": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "vertical",
+            "title_font": "body",
+            "title_size": "text-base",
+            "icon_1": "car-simple",
+            "heading_1": "Free International Shipping over $200",
+            "icon_2": "arrow-up-left",
+            "heading_2": "Free Returns Within 30 days",
+            "icon_3": "check",
+            "heading_3": "Heading"
+          }
+        }
+      },
+      "block_order": [
+        "badges_pcpBPi",
+        "title_zdwgz8",
+        "meta_pUXRHQ",
+        "price_fxDWba",
+        "icon_with_text_Jy9Vj6",
+        "divider_a9VetT",
+        "inventory_zjjHhQ",
+        "description_EVmc34",
+        "variant_picker_Rnf4Ab",
+        "buy_buttons_6Wccj7",
+        "icon_with_text_YDqdpJ"
+      ],
+      "name": "t:sections.featured-product.name",
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "",
+        "product": "e740-adjustable-bed-back-leg-support-with-bedside-rail",
+        "enable_sticky_info": true,
+        "media_size": "large",
+        "mobile_thumbnails": "hide",
+        "show_image_border": false,
+        "enable_image_zoom": true,
+        "enable_video_looping": false,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "collection_with_tab_mzwW9x": {
+      "type": "collection-with-tab",
+      "blocks": {
+        "collection_zBYW7d": {
+          "type": "collection",
+          "settings": {
+            "collection": "bundles",
+            "collection_title": "Bundles"
+          }
+        },
+        "collection_wijWbG": {
+          "type": "collection",
+          "settings": {
+            "collection": "mattresses",
+            "collection_title": "Mattresses"
+          }
+        }
+      },
+      "block_order": [
+        "collection_zBYW7d",
+        "collection_wijWbG"
+      ],
+      "name": "Collection With Tab",
+      "settings": {
+        "container": "fixed",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "collection_list_new_DxCqyc": {
+      "type": "collection-list-new",
+      "blocks": {
+        "collection_KXn7Md": {
+          "type": "collection",
+          "settings": {
+            "coll_url": "shopify://collections/bundles",
+            "coll_img": "shopify://shop_images/4ddf.jpg",
+            "coll_title": "Bundles",
+            "coll_info": "Hit the road with luxury comfort, thanks to the Eshine Sleep adjustable bed."
+          }
+        },
+        "collection_wBYmnc": {
+          "type": "collection",
+          "settings": {
+            "coll_url": "shopify://collections/mattresses",
+            "coll_img": "shopify://shop_images/4_1000x1000_2e4cd30a-325f-43f5-a591-759d22f410e9.jpg",
+            "coll_title": "Mattress",
+            "coll_info": "Shop the best-selling mattresses designed for all types of sleepers."
+          }
+        },
+        "collection_bYan3c": {
+          "type": "collection",
+          "settings": {
+            "coll_url": "shopify://collections/bed-frame",
+            "coll_img": "shopify://shop_images/97bc29d6bc759a1c91d0f03efc66eb14.jpg",
+            "coll_title": "Bed Frame",
+            "coll_info": "Shop the best-selling bed frames built for style and durability."
+          }
+        },
+        "collection_b7JUEG": {
+          "type": "collection",
+          "settings": {
+            "coll_url": "shopify://collections/hospital-bed",
+            "coll_img": "shopify://shop_images/01_7_b7c8fbc3-a9b2-41dd-86d0-acac6d4c0b36.jpg",
+            "coll_title": "Hospital Bed",
+            "coll_info": "Shop the best-selling hospital beds designed for comfort and care."
+          }
+        },
+        "collection_p9NxFA": {
+          "type": "collection",
+          "settings": {
+            "coll_url": "shopify://collections/rv",
+            "coll_img": "shopify://shop_images/01_6_4bbd762f-824d-49ad-910c-377e766cf791.jpg",
+            "coll_title": "RV Mattress",
+            "coll_info": "Shop the best-selling RV mattresses made for life on the road."
+          }
+        }
+      },
+      "block_order": [
+        "collection_KXn7Md",
+        "collection_wBYmnc",
+        "collection_bYan3c",
+        "collection_b7JUEG",
+        "collection_p9NxFA"
+      ],
+      "name": "Collection List New",
+      "settings": {
+        "container": "fixed",
+        "coll_title": "Explore All ESHINE SLEEP Products",
+        "coll_subtitle": "Shop adjustable beds,frames and more.",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "image_with_text_overlay_EgtCNR": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_rD4q66": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "ESHINE SLEEP"
+          }
+        },
+        "heading_y6G9eG": {
+          "type": "heading",
+          "settings": {
+            "heading": "Relax More, Live Better",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h3"
+          }
+        },
+        "text_GwMA4Y": {
+          "type": "text",
+          "settings": {
+            "text": "<p><br/>Never underestimate the impact of a great night's sleep. </p><p>The right bed can transform your nights—and elevate your days.</p>",
+            "text_size": "text-lg"
+          }
+        },
+        "button_Lcy7cy": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More",
+            "button_link": "shopify://pages/about-us",
+            "button_style": "btn--secondary",
+            "button_icon": "none"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_rD4q66",
+        "heading_y6G9eG",
+        "text_GwMA4Y",
+        "button_Lcy7cy"
+      ],
+      "name": "t:sections.image-with-text-overlay.name",
+      "settings": {
+        "container": "full",
+        "image": "shopify://shop_images/4cf410ad190bd3bed4f385cd335a8240.jpg",
+        "desktop_height": "extra-medium",
+        "overlay_opacity": 40,
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "color_scheme": "",
+        "content_position": "middle-center",
+        "content_alignment": "center",
+        "mobile_height": "auto",
+        "content_position_mobile": "middle-center-mobile",
+        "content_alignment_mobile": "center",
+        "padding_top": 0,
+        "padding_bottom": 60,
+        "enable_preload_image": false
+      }
+    },
+    "contact_form_FEW8ey": {
+      "type": "contact-form",
+      "blocks": {
+        "custom_field_GzYcfU": {
+          "type": "custom_field",
+          "settings": {
+            "field_type": "text",
+            "heading": "Question",
+            "placeholder": "",
+            "required": false,
+            "full_width": true,
+            "select_options": "",
+            "checkbox_checked_value": "Yes",
+            "checkbox_uncheck_value": "No",
+            "radio_options": ""
+          }
+        }
+      },
+      "block_order": [
+        "custom_field_GzYcfU"
+      ],
+      "name": "t:sections.contact-form.name",
+      "settings": {
+        "container": "fixed",
+        "section_color_scheme": "",
+        "heading": "Contact form",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h1",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "countdown_timer_e4WLzn",
+    "image_with_feature_HgVqwc",
+    "multicolumn_icon_xgAUKJ",
+    "multicolumn_icon_MQzq3A",
+    "featured_product_jRTWJ6",
+    "collection_with_tab_mzwW9x",
+    "collection_list_new_DxCqyc",
+    "image_with_text_overlay_EgtCNR",
+    "contact_form_FEW8ey"
+  ]
+}

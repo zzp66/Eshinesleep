@@ -69,7 +69,7 @@
     "social_tumblr_link": "",
     "social_vimeo_link": "",
     "predictive_search_enabled": true,
-    "predictive_search_type_enabled": true,
+    "predictive_search_type_enabled": false,
     "number_results_to_show": 10,
     "predictive_search_show_vendor": false,
     "predictive_search_show_type": true,
@@ -99,6 +99,35 @@
     "blocks": {
       "14327677521557774844": {
         "type": "shopify://apps/simprosys-google-shopping-feed/blocks/core_settings_block/1f0b859e-9fa6-4007-97e8-4513aff5ff3b",
+        "disabled": false,
+        "settings": {}
+      },
+      "6319715395561037789": {
+        "type": "shopify://apps/trackify-x/blocks/app-embed/f3561b5a-1d26-4c4b-9d29-6bae914fb95d",
+        "disabled": false,
+        "settings": {}
+      },
+      "13768625480086291342": {
+        "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
+        "disabled": false,
+        "settings": {}
+      },
+      "15683396631634586217": {
+        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "disabled": false,
+        "settings": {
+          "button_color": "#ef8507",
+          "secondary_color": "#ffffff",
+          "ternary_color": "#6a6a6a",
+          "button_icon": "chat_bubble",
+          "button_text": "chat_with_us",
+          "button_horizontal_position": "bottom_right",
+          "button_vertical_position": "higher",
+          "greeting_message": "👋 Have a question? Send us a message anytime—we’re here and happy to assist you."
+        }
+      },
+      "6146500278089136509": {
+        "type": "shopify://apps/bm-country-blocker-ip-blocker/blocks/boostmark-blocker/bf9db4b9-be4b-45e1-8127-bbcc07d93e7e",
         "disabled": false,
         "settings": {}
       }
