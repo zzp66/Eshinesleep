@@ -58,7 +58,7 @@
         "heading_93EXVj": {
           "type": "heading",
           "settings": {
-            "heading": "20th Anniversary & Black Friday Mega Sale",
+            "heading": "<strong>Cyber Monday Extended</strong>",
             "highlight_style": "none",
             "highlight_font_style": "italic",
             "highlight_style_color": "",
@@ -69,7 +69,7 @@
         "subheading_DYTENP": {
           "type": "subheading",
           "settings": {
-            "subheading": "<strong>— Our Lowest Prices of the Year!</strong>"
+            "subheading": "Our Best Offer! Save Up To 50% On Mattresses + 50% On Bundles!"
           }
         },
         "text_3A6nQw": {
@@ -81,6 +81,7 @@
         },
         "button_QEtKje": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "Learn More",
             "button_link": "shopify://pages/year-end-mega-sale-lowest-prices-of-the-year",

@@ -625,6 +625,7 @@
         "image_pWWygx",
         "text_FYakaX"
       ],
+      "disabled": true,
       "name": "t:sections.custom-content.name",
       "settings": {
         "container": "fixed",
@@ -645,6 +646,140 @@
         "row_gap": "medium",
         "swipe_on_mobile": false,
         "columns_mobile": "1",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "tabs_content_MGffRU": {
+      "type": "tabs-content",
+      "blocks": {
+        "image_with_text_UcBa3q": {
+          "type": "image_with_text",
+          "settings": {
+            "navigation_title": "Comfort Mattress",
+            "image": "shopify://shop_images/12inch_1a441221-c233-4314-af11-4f6336c303cd.jpg",
+            "desktop_image_position": "left",
+            "image_aspect_ratio": "adapt",
+            "heading": " 7 Layers Of Comfort",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h3",
+            "subheading": "",
+            "description": "<p><strong>Comfort Mattress:</strong> Gel-Infused Air Memory Foam with micro-circulating cooling gel particles efficiently wicks away heat and moisture, preventing stuffiness.</p><ul><li>12\" Comfort Hybrid Mattress</li><li>Feel: Medium-Firm</li><li>Gel-Infused Cooling Comfort</li></ul>",
+            "description_size": "text-base",
+            "button_label": "Learn More",
+            "button_link": "shopify://products/eshine-comfort-hybrid-mattress",
+            "button_style": "btn--primary",
+            "button_icon": "none",
+            "icon_1": "none",
+            "heading_1": "",
+            "icon_2": "none",
+            "heading_2": "",
+            "icon_3": "none",
+            "heading_3": ""
+          }
+        },
+        "image_with_text_cLxMfG": {
+          "type": "image_with_text",
+          "settings": {
+            "navigation_title": "Signature Mattress",
+            "image": "shopify://shop_images/12inch_1a441221-c233-4314-af11-4f6336c303cd.jpg",
+            "desktop_image_position": "left",
+            "image_aspect_ratio": "adapt",
+            "heading": " 7 Layers Of Signature",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h3",
+            "subheading": "",
+            "description": "<p><br/><strong>Signature Mattress:</strong> Gel-Infused Air Memory Foam with micro-circulating cooling gel particles efficiently wicks away heat and moisture, preventing stuffiness.</p><ul><li>14\" Signature Hybrid Mattress</li><li>Feel: Medium-Soft</li><li>Gel-Infused Cooling Comfort</li><li>Advanced Cooling Gel Layer</li></ul>",
+            "description_size": "text-base",
+            "button_label": "Learn More",
+            "button_link": "shopify://products/eshine-signature-hybrid-mattress",
+            "button_style": "btn--primary",
+            "button_icon": "none",
+            "icon_1": "none",
+            "heading_1": "",
+            "icon_2": "none",
+            "heading_2": "",
+            "icon_3": "none",
+            "heading_3": ""
+          }
+        },
+        "image_with_text_LEX4MU": {
+          "type": "image_with_text",
+          "settings": {
+            "navigation_title": "Luxe Mattress",
+            "image": "shopify://shop_images/12_ice_9bb9550d-f694-432b-8b02-d2182178ab0f.jpg",
+            "desktop_image_position": "left",
+            "image_aspect_ratio": "adapt",
+            "heading": "8 Layers Of Luxe",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h3",
+            "subheading": "",
+            "description": "<p><br/><strong>Luxe Mattress:</strong> Advanced Glacier-Cool Fibers with low-temperature phase-change technology provide immediate cooling, lowering surface temperature by 2–6°C.</p><ul><li>12\" Luxe Hybrid Mattress</li><li>Feel: Medium-Firm</li><li>Cool-to-the-Touch Feel</li><li>Silky-Smooth Skin Comfort</li><li>Durable Long-Lasting Fabric</li><li>Lightweight & Easy Care</li></ul>",
+            "description_size": "text-base",
+            "button_label": "Learn More",
+            "button_link": "shopify://products/eshine-luxe-hybrid-mattress",
+            "button_style": "btn--primary",
+            "button_icon": "none",
+            "icon_1": "none",
+            "heading_1": "",
+            "icon_2": "none",
+            "heading_2": "",
+            "icon_3": "none",
+            "heading_3": ""
+          }
+        },
+        "image_with_text_Rg7hQc": {
+          "type": "image_with_text",
+          "settings": {
+            "navigation_title": "Royal Mattress",
+            "image": "shopify://shop_images/14_fc3935d6-7a4a-4b47-82be-9566c7ec2e06.jpg",
+            "desktop_image_position": "left",
+            "image_aspect_ratio": "adapt",
+            "heading": "8 Layers Of Royal",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h3",
+            "subheading": "",
+            "description": "<p><br/><strong>Royal Mattress:</strong>PureGraphene technology delivers up to 99% antibacterial protection, effectively inhibiting common bacteria.</p><ul><li>14\" Royal Hybrid Mattress</li><li>Feel: Medium-Soft</li><li>Breathable All-Night Comfort</li><li>Fast-Drying Moisture Control </li><li>Durable Long-Lasting Fabric</li><li>Clean & Hygienic Surface</li><li>Lightweight & Easy Care</li></ul>",
+            "description_size": "text-base",
+            "button_label": "Learn More",
+            "button_link": "shopify://products/eshine-royal-hybrid-mattress",
+            "button_style": "btn--primary",
+            "button_icon": "none",
+            "icon_1": "none",
+            "heading_1": "",
+            "icon_2": "none",
+            "heading_2": "",
+            "icon_3": "none",
+            "heading_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_UcBa3q",
+        "image_with_text_cLxMfG",
+        "image_with_text_LEX4MU",
+        "image_with_text_Rg7hQc"
+      ],
+      "name": "t:sections.tabs-content.name",
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "",
+        "navigation_style": "headings",
+        "navigation_alignment": "center",
         "padding_top": 50,
         "padding_bottom": 50,
         "show_section_divider": false,
@@ -690,6 +825,7 @@
         "text_hrXeDz",
         "image_9daXDb"
       ],
+      "disabled": true,
       "name": "t:sections.custom-content.name",
       "settings": {
         "container": "fixed",
@@ -838,27 +974,48 @@
         "padding_bottom": 50
       }
     },
+    "video_hero_jtPJQH": {
+      "type": "video-hero",
+      "name": "t:sections.video-hero.name",
+      "settings": {
+        "container": "fixed",
+        "video_url": "https://www.youtube.com/watch?v=I1MogI9MG28",
+        "description": "Goodbye Back Pain! Our ESHINE Hybrid Mattress Verdict",
+        "video_height": "adapt",
+        "overlay_opacity": 0,
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "color_scheme": "",
+        "content_position": "middle-center",
+        "content_alignment": "center",
+        "video_mobile_height": "adapt",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
     "collection_with_tab_dyqwDU": {
       "type": "collection-with-tab",
       "blocks": {
-        "collection_3EeJrz": {
-          "type": "collection",
-          "settings": {
-            "collection": "mattresses",
-            "collection_title": "Mattresses"
-          }
-        },
         "collection_LnUnte": {
           "type": "collection",
           "settings": {
             "collection": "bundles",
             "collection_title": "Bundles"
           }
+        },
+        "collection_3EeJrz": {
+          "type": "collection",
+          "settings": {
+            "collection": "mattresses",
+            "collection_title": "Mattresses"
+          }
         }
       },
       "block_order": [
-        "collection_3EeJrz",
-        "collection_LnUnte"
+        "collection_LnUnte",
+        "collection_3EeJrz"
       ],
       "name": "Collection With Tab",
       "settings": {
@@ -1111,9 +1268,11 @@
     "custom_content_C7LRYh",
     "multicolumn_icon_nqA6Yw",
     "custom_content_tHWRHL",
+    "tabs_content_MGffRU",
     "custom_content_ReAkzz",
     "image_with_text_overlay_3b3dHg",
     "media_tab_swiper_hydUmC",
+    "video_hero_jtPJQH",
     "collection_with_tab_dyqwDU",
     "image_with_text_tyqJEm",
     "features_image_switcher_GidNhG",
