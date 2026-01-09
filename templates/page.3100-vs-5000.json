@@ -1,0 +1,265 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "container": "fixed",
+        "text_alignment": "center",
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "comparison_table_eaC8cQ": {
+      "type": "comparison-table",
+      "blocks": {
+        "heading_LYBHMK": {
+          "type": "heading",
+          "settings": {
+            "icon-1": "none",
+            "title-1": "Item Model",
+            "icon-2": "none",
+            "title-2": "Color",
+            "icon-3": "none",
+            "title-3": "Features",
+            "icon-4": "none",
+            "title-4": "Mattress",
+            "icon-5": "none",
+            "title-5": "Bundle Includes",
+            "icon-6": "none",
+            "title-6": "",
+            "icon-7": "chat",
+            "title-7": "",
+            "icon-8": "chat",
+            "title-8": "",
+            "icon-9": "chat",
+            "title-9": "",
+            "icon-10": "chat",
+            "title-10": ""
+          }
+        },
+        "content_dKU9my": {
+          "type": "content",
+          "settings": {
+            "product": "e2000-premium-hybrid-bundle",
+            "text-1": "<p>E2000+ Premium</p>",
+            "text-2": "<p>Orange</p>",
+            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>11.4\" Legs</p>",
+            "text-4": "<p>Comfort/Signature/Luxe/Royal Mattress</p>",
+            "text-5": "<p>Adjustable Base<br/>Mattress<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Installation Tools<br/>Manual<br/>Warranty Card</p>",
+            "text-6": "",
+            "text-7": "",
+            "text-8": "",
+            "text-9": "",
+            "text-10": ""
+          }
+        },
+        "content_ixHhwY": {
+          "type": "content",
+          "settings": {
+            "product": "e3000-luxe-hybrid-bundle",
+            "text-1": "<p>E3000+ Luxe</p>",
+            "text-2": "<p>Orange</p>",
+            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>8\"+3.4\" Adjustable Legs<br/>Massage<br/>Under-Bed Lights</p>",
+            "text-4": "<p>Comfort/Signature/Luxe/Royal Mattress</p>",
+            "text-5": "<p>Adjustable Base<br/>Mattress<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Installation Tools<br/>Manual<br/>Warranty Card</p>",
+            "text-6": "",
+            "text-7": "",
+            "text-8": "",
+            "text-9": "",
+            "text-10": ""
+          }
+        },
+        "content_N3aPkQ": {
+          "type": "content",
+          "settings": {
+            "product": "e3100-luxe-hybrid-bundle",
+            "text-1": "<p>E3100+ Luxe</p>",
+            "text-2": "<p>Grey</p>",
+            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>8\"+3.4\" Adjustable Legs<br/>Massage<br/>Under-Bed Lights</p>",
+            "text-4": "<p>Comfort/Signature/Luxe/Royal Mattress</p>",
+            "text-5": "<p>Adjustable Base<br/>Mattress<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Installation Tools<br/>Manual<br/>Warranty Card</p>",
+            "text-6": "",
+            "text-7": "",
+            "text-8": "",
+            "text-9": "",
+            "text-10": ""
+          }
+        },
+        "content_zfKJaw": {
+          "type": "content",
+          "settings": {
+            "product": "e5000-royal-hybrid-bundle",
+            "text-1": "<p>E5000+ Royal</p>",
+            "text-2": "<p>Orange</p>",
+            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>8\"+3.4\" Adjustable Legs<br/>Massage<br/>Under-Bed Lights<br/>Head Tilt (7°)</p>",
+            "text-4": "<p>Comfort/Signature/Luxe/Royal Mattress</p>",
+            "text-5": "<p>Adjustable Base<br/>Mattress<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Installation Tools<br/>Manual<br/>Warranty Card</p>",
+            "text-6": "",
+            "text-7": "",
+            "text-8": "",
+            "text-9": "",
+            "text-10": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_LYBHMK",
+        "content_dKU9my",
+        "content_ixHhwY",
+        "content_N3aPkQ",
+        "content_zfKJaw"
+      ],
+      "name": "t:sections.comparison-table.name",
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "",
+        "header_layout": "horizontal",
+        "section_header_alignment": "left",
+        "section_header_alignment_mobile": "inherit",
+        "subheading": "ESHINESLEEP",
+        "heading": "Adjustable Bed Bundles Comparison",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h3",
+        "description": "<p>E2000+，E3000+，E3100+，E5000+</p>",
+        "text_size": "text-base",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "btn--primary",
+        "button_icon": "none",
+        "icon_size": 28,
+        "text_line_limit": "none",
+        "show_view_more_button": true,
+        "show_section_divider": true,
+        "divider_width": "full",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "multicolumn_icon_EPLYgM": {
+      "type": "multicolumn-icon",
+      "blocks": {
+        "column_eigdVL": {
+          "type": "column",
+          "settings": {
+            "icon": "heart",
+            "max_width": 28,
+            "max_width_mb": 28,
+            "title": "Industry-Leading Warranty",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "text-base",
+            "heading_font": "body-bolder",
+            "text": "<p>Enjoy Worry-Free Sleep—Protected By Our 15-Year Warranty</p>",
+            "text_size": "text-sm",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "btn--primary",
+            "button_icon": "none"
+          }
+        },
+        "column_qcEQYA": {
+          "type": "column",
+          "settings": {
+            "icon": "calendar-blank",
+            "max_width": 28,
+            "max_width_mb": 28,
+            "title": "99-Night Trial",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "text-base",
+            "heading_font": "body-bolder",
+            "text": "<p>Try It At Home, Risk-Free, With Our Comfort Guarantee</p>",
+            "text_size": "text-sm",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "btn--primary",
+            "button_icon": "none"
+          }
+        },
+        "column_m6BEKy": {
+          "type": "column",
+          "settings": {
+            "icon": "car-simple",
+            "max_width": 28,
+            "max_width_mb": 28,
+            "title": "30-Day Hassle-Free Returns",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "text-base",
+            "heading_font": "body-bolder",
+            "text": "<p>Return it within 30 days—no stress, no hassle.</p>",
+            "text_size": "text-sm",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "btn--primary",
+            "button_icon": "none"
+          }
+        }
+      },
+      "block_order": [
+        "column_eigdVL",
+        "column_qcEQYA",
+        "column_m6BEKy"
+      ],
+      "name": "t:sections.multicolumn-with-icon.name",
+      "settings": {
+        "container": "full",
+        "color_scheme": "scheme-1",
+        "header_layout": "vertical",
+        "section_header_alignment": "left",
+        "section_header_alignment_mobile": "left",
+        "subheading": "",
+        "heading": "",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h5",
+        "description": "",
+        "text_size": "text-sm",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "btn--underline",
+        "button_icon": "none",
+        "enable_sticky": false,
+        "card_color_scheme": "scheme-inverse",
+        "content_alignment": "left",
+        "image_position": "left",
+        "icon_color": "#1d349a",
+        "columns_desktop": 3,
+        "column_gap": "2xs",
+        "row_gap": "inherit",
+        "show_divider_col": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "show_section_divider": false,
+        "divider_width": "full",
+        "padding_top": 10,
+        "padding_bottom": 10
+      }
+    }
+  },
+  "order": [
+    "main",
+    "comparison_table_eaC8cQ",
+    "multicolumn_icon_EPLYgM"
+  ]
+}

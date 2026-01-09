@@ -38,6 +38,10 @@
             "heading_size": "h3"
           }
         },
+        "areviews_reviews_importer_areviews_title_rating_050A28": {
+          "type": "shopify://apps/areviews-reviews-importer/blocks/AreviewsTitleRating/ab0ec5fe-c95b-4fd6-bfb8-db2a30d0756f",
+          "settings": {}
+        },
         "price": {
           "type": "price",
           "settings": {}
@@ -152,6 +156,7 @@
       "block_order": [
         "badges",
         "title",
+        "areviews_reviews_importer_areviews_title_rating_050A28",
         "price",
         "inventory",
         "variant_picker",
@@ -887,6 +892,156 @@
         "padding_bottom": 50
       }
     },
+    "comparison_table_x7EhTL": {
+      "type": "comparison-table",
+      "blocks": {
+        "heading_Tw9PxY": {
+          "type": "heading",
+          "settings": {
+            "icon-1": "none",
+            "title-1": "Item Model",
+            "icon-2": "none",
+            "title-2": "Color",
+            "icon-3": "none",
+            "title-3": "Features",
+            "icon-4": "none",
+            "title-4": "Mattress",
+            "icon-5": "none",
+            "title-5": "Bundle Includes",
+            "icon-6": "none",
+            "title-6": "",
+            "icon-7": "chat",
+            "title-7": "",
+            "icon-8": "chat",
+            "title-8": "",
+            "icon-9": "chat",
+            "title-9": "",
+            "icon-10": "chat",
+            "title-10": ""
+          }
+        },
+        "content_7xpMjU": {
+          "type": "content",
+          "settings": {
+            "product": "e2000-premium-hybrid-bundle",
+            "text-1": "<p>E2000+ Premium</p>",
+            "text-2": "<p>Orange</p>",
+            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>11.4\" Legs</p>",
+            "text-4": "<p>Comfort/Signature/Luxe/Royal Mattress</p>",
+            "text-5": "<p>Adjustable Base<br/>Mattress<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Installation Tools<br/>Manual<br/>Warranty Card</p>",
+            "text-6": "",
+            "text-7": "",
+            "text-8": "",
+            "text-9": "",
+            "text-10": ""
+          }
+        },
+        "content_QUyREQ": {
+          "type": "content",
+          "settings": {
+            "product": "e3000-luxe-hybrid-bundle",
+            "text-1": "<p>E3000+ Luxe</p>",
+            "text-2": "<p>Orange</p>",
+            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>8\"+3.4\" Adjustable Legs<br/>Massage<br/>Under-Bed Lights</p>",
+            "text-4": "<p>Comfort/Signature/Luxe/Royal Mattress</p>",
+            "text-5": "<p>Adjustable Base<br/>Mattress<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Installation Tools<br/>Manual<br/>Warranty Card</p>",
+            "text-6": "",
+            "text-7": "",
+            "text-8": "",
+            "text-9": "",
+            "text-10": ""
+          }
+        },
+        "content_LXUcjz": {
+          "type": "content",
+          "settings": {
+            "product": "e3100-luxe-hybrid-bundle",
+            "text-1": "<p>E3100+ Luxe</p>",
+            "text-2": "<p>Grey</p>",
+            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>8\"+3.4\" Adjustable Legs<br/>Massage<br/>Under-Bed Lights</p>",
+            "text-4": "<p>Comfort/Signature/Luxe/Royal Mattress</p>",
+            "text-5": "<p>Adjustable Base<br/>Mattress<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Installation Tools<br/>Manual<br/>Warranty Card</p>",
+            "text-6": "",
+            "text-7": "",
+            "text-8": "",
+            "text-9": "",
+            "text-10": ""
+          }
+        },
+        "content_tKqCmN": {
+          "type": "content",
+          "settings": {
+            "product": "e5000-royal-hybrid-bundle",
+            "text-1": "<p>E5000+ Royal</p>",
+            "text-2": "<p>Orange</p>",
+            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>8\"+3.4\" Adjustable Legs<br/>Massage<br/>Under-Bed Lights<br/>Head Tilt (7°)</p>",
+            "text-4": "<p>Comfort/Signature/Luxe/Royal Mattress</p>",
+            "text-5": "<p>Adjustable Base<br/>Mattress<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Installation Tools<br/>Manual<br/>Warranty Card</p>",
+            "text-6": "",
+            "text-7": "",
+            "text-8": "",
+            "text-9": "",
+            "text-10": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_Tw9PxY",
+        "content_7xpMjU",
+        "content_QUyREQ",
+        "content_LXUcjz",
+        "content_tKqCmN"
+      ],
+      "name": "t:sections.comparison-table.name",
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "",
+        "header_layout": "horizontal",
+        "section_header_alignment": "left",
+        "section_header_alignment_mobile": "inherit",
+        "subheading": "ESHINESLEEP",
+        "heading": "Adjustable Bed Bundles Comparison",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h3",
+        "description": "<p>E2000+，E3000+，E3100+，E5000+</p>",
+        "text_size": "text-base",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "btn--primary",
+        "button_icon": "none",
+        "icon_size": 28,
+        "text_line_limit": "none",
+        "show_view_more_button": true,
+        "show_section_divider": true,
+        "divider_width": "full",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "video_hero_jrN6jH": {
+      "type": "video-hero",
+      "name": "t:sections.video-hero.name",
+      "settings": {
+        "container": "fixed",
+        "video_url": "https://www.youtube.com/watch?v=I1MogI9MG28",
+        "description": "Goodbye Back Pain! Our ESHINE Hybrid Mattress Verdict",
+        "video_height": "adapt",
+        "overlay_opacity": 0,
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "color_scheme": "",
+        "content_position": "middle-center",
+        "content_alignment": "center",
+        "video_mobile_height": "adapt",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
     "collection_with_tab_dyqwDU": {
       "type": "collection-with-tab",
       "blocks": {
@@ -909,6 +1064,7 @@
         "collection_LnUnte",
         "collection_3EeJrz"
       ],
+      "disabled": true,
       "name": "Collection With Tab",
       "settings": {
         "container": "fixed",
@@ -1151,25 +1307,26 @@
         "padding_bottom": 60
       }
     },
-    "video_hero_jrN6jH": {
-      "type": "video-hero",
-      "name": "t:sections.video-hero.name",
+    "areviews_1766636461_093935": {
+      "type": "apps",
+      "blocks": {
+        "areviews_reviews_importer_areviews_display_reviews_047014": {
+          "type": "shopify://apps/areviews-reviews-importer/blocks/AreviewsDisplayReviews/ab0ec5fe-c95b-4fd6-bfb8-db2a30d0756f",
+          "settings": {
+            "hide_areviews_title_rating": false,
+            "areviews_theme_font": "inherit",
+            "areviews_stars_colors": "#f3c621",
+            "areviews_write_reviews_botton_color": "#373737"
+          }
+        }
+      },
+      "block_order": [
+        "areviews_reviews_importer_areviews_display_reviews_047014"
+      ],
       "settings": {
-        "container": "fixed",
-        "video_url": "https://www.youtube.com/watch?v=I1MogI9MG28",
-        "description": "Goodbye Back Pain! Our ESHINE Hybrid Mattress Verdict",
-        "video_height": "adapt",
-        "overlay_opacity": 0,
-        "enable_parallax": false,
-        "parallax_direction": "vertical",
-        "color_scheme": "",
-        "content_position": "middle-center",
-        "content_alignment": "center",
-        "video_mobile_height": "adapt",
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "show_section_divider": false,
-        "divider_width": "fixed"
+        "include_margins": true,
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
@@ -1185,12 +1342,14 @@
     "image_with_text_overlay_3b3dHg",
     "media_tab_swiper_7Nw4HB",
     "media_tab_swiper_hydUmC",
+    "comparison_table_x7EhTL",
     "video_hero_jrN6jH",
     "collection_with_tab_dyqwDU",
     "image_with_text_tyqJEm",
     "features_image_switcher_GidNhG",
     "related-products",
     "1629746450643786911",
-    "faqs_n8gjzt"
+    "faqs_n8gjzt",
+    "areviews_1766636461_093935"
   ]
 }

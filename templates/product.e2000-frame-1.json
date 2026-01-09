@@ -38,6 +38,10 @@
             "heading_size": "h3"
           }
         },
+        "areviews_reviews_importer_areviews_title_rating_E542D3": {
+          "type": "shopify://apps/areviews-reviews-importer/blocks/AreviewsTitleRating/ab0ec5fe-c95b-4fd6-bfb8-db2a30d0756f",
+          "settings": {}
+        },
         "price": {
           "type": "price",
           "settings": {}
@@ -152,6 +156,7 @@
       "block_order": [
         "badges",
         "title",
+        "areviews_reviews_importer_areviews_title_rating_E542D3",
         "price",
         "inventory",
         "variant_picker",
@@ -838,33 +843,133 @@
         "padding_bottom": 50
       }
     },
-    "collection_with_tab_dyqwDU": {
-      "type": "collection-with-tab",
+    "comparison_table_QJXfwj": {
+      "type": "comparison-table",
       "blocks": {
-        "collection_LnUnte": {
-          "type": "collection",
+        "heading_q8iYB3": {
+          "type": "heading",
           "settings": {
-            "collection": "bundles",
-            "collection_title": "Bundles"
+            "icon-1": "none",
+            "title-1": "Item Model",
+            "icon-2": "none",
+            "title-2": "Color",
+            "icon-3": "none",
+            "title-3": "Features",
+            "icon-4": "none",
+            "title-4": "Package Includes",
+            "icon-5": "none",
+            "title-5": "",
+            "icon-6": "none",
+            "title-6": "",
+            "icon-7": "chat",
+            "title-7": "",
+            "icon-8": "chat",
+            "title-8": "",
+            "icon-9": "chat",
+            "title-9": "",
+            "icon-10": "chat",
+            "title-10": ""
           }
         },
-        "collection_3EeJrz": {
-          "type": "collection",
+        "content_WUd43a": {
+          "type": "content",
           "settings": {
-            "collection": "mattresses",
-            "collection_title": "Mattresses"
+            "product": "e2000-adjustable-base",
+            "text-1": "<p>E2000+ </p>",
+            "text-2": "<p>Orange</p>",
+            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>11.4\" Legs</p>",
+            "text-4": "<p>Adjustable Base<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Installation Tools<br/>Manual<br/>Warranty Card</p>",
+            "text-5": "",
+            "text-6": "",
+            "text-7": "",
+            "text-8": "",
+            "text-9": "",
+            "text-10": ""
+          }
+        },
+        "content_Jq4Lij": {
+          "type": "content",
+          "settings": {
+            "product": "e3000-adjustable-base",
+            "text-1": "<p>E3000+</p>",
+            "text-2": "<p>Orange</p>",
+            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>8\"+3.4\" Adjustable Legs<br/>Massage<br/>Under-Bed Lights</p>",
+            "text-4": "<p>Adjustable Base<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Installation Tools<br/>Manual<br/>Warranty Card</p>",
+            "text-5": "",
+            "text-6": "",
+            "text-7": "",
+            "text-8": "",
+            "text-9": "",
+            "text-10": ""
+          }
+        },
+        "content_rJJNVU": {
+          "type": "content",
+          "settings": {
+            "product": "e3100-adjustable-base",
+            "text-1": "<p>E3100+ </p>",
+            "text-2": "<p>Grey</p>",
+            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>8\"+3.4\" Adjustable Legs<br/>Massage<br/>Under-Bed Lights</p>",
+            "text-4": "<p>Adjustable Base<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Installation Tools<br/>Manual<br/>Warranty Card</p>",
+            "text-5": "",
+            "text-6": "",
+            "text-7": "",
+            "text-8": "",
+            "text-9": "",
+            "text-10": ""
+          }
+        },
+        "content_bJPagg": {
+          "type": "content",
+          "settings": {
+            "product": "e5000-adjustable-base",
+            "text-1": "<p>E5000+ </p>",
+            "text-2": "<p>Orange</p>",
+            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>8\"+3.4\" Adjustable Legs<br/>Massage<br/>Under-Bed Lights<br/>Head Tilt (7°)</p>",
+            "text-4": "<p>Adjustable Base<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Installation Tools<br/>Manual<br/>Warranty Card</p>",
+            "text-5": "",
+            "text-6": "",
+            "text-7": "",
+            "text-8": "",
+            "text-9": "",
+            "text-10": ""
           }
         }
       },
       "block_order": [
-        "collection_LnUnte",
-        "collection_3EeJrz"
+        "heading_q8iYB3",
+        "content_WUd43a",
+        "content_Jq4Lij",
+        "content_rJJNVU",
+        "content_bJPagg"
       ],
-      "name": "Collection With Tab",
+      "name": "t:sections.comparison-table.name",
       "settings": {
         "container": "fixed",
-        "padding_top": 60,
-        "padding_bottom": 60
+        "color_scheme": "",
+        "header_layout": "horizontal",
+        "section_header_alignment": "left",
+        "section_header_alignment_mobile": "inherit",
+        "subheading": "ESHINESLEEP",
+        "heading": "Adjustable Bed Frame Comparison",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h3",
+        "description": "<p>E2000+，E3000+，E3100+，E5000+</p>",
+        "text_size": "text-base",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "btn--primary",
+        "button_icon": "none",
+        "icon_size": 28,
+        "text_line_limit": "none",
+        "show_view_more_button": true,
+        "show_section_divider": true,
+        "divider_width": "full",
+        "padding_top": 50,
+        "padding_bottom": 50
       }
     },
     "image_with_text_tyqJEm": {
@@ -1100,6 +1205,28 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
+    },
+    "areviews_1766636462_093935": {
+      "type": "apps",
+      "blocks": {
+        "areviews_reviews_importer_areviews_display_reviews_D92044": {
+          "type": "shopify://apps/areviews-reviews-importer/blocks/AreviewsDisplayReviews/ab0ec5fe-c95b-4fd6-bfb8-db2a30d0756f",
+          "settings": {
+            "hide_areviews_title_rating": false,
+            "areviews_theme_font": "inherit",
+            "areviews_stars_colors": "#f3c621",
+            "areviews_write_reviews_botton_color": "#373737"
+          }
+        }
+      },
+      "block_order": [
+        "areviews_reviews_importer_areviews_display_reviews_D92044"
+      ],
+      "settings": {
+        "include_margins": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -1114,11 +1241,12 @@
     "image_with_text_overlay_3b3dHg",
     "media_tab_swiper_hydUmC",
     "media_tab_swiper_WVnC87",
-    "collection_with_tab_dyqwDU",
+    "comparison_table_QJXfwj",
     "image_with_text_tyqJEm",
     "features_image_switcher_GidNhG",
     "related-products",
     "1629746450643786911",
-    "faqs_zkVpJh"
+    "faqs_zkVpJh",
+    "areviews_1766636462_093935"
   ]
 }
