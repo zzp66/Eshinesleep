@@ -58,7 +58,7 @@
         "heading_93EXVj": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Holiday Sale!</strong>",
+            "heading": "<strong>Winter Sale!</strong>",
             "highlight_style": "none",
             "highlight_font_style": "italic",
             "highlight_style_color": "",
@@ -108,6 +108,7 @@
         "button_QEtKje",
         "timer_a7qG7N"
       ],
+      "disabled": true,
       "name": "t:sections.countdown-timer.name",
       "settings": {
         "container": "full",

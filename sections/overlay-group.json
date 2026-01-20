@@ -173,34 +173,36 @@
         "image": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/queen-3100.jpg",
+            "image": "shopify://shop_images/4_cb36702d-0a2f-4a84-85fa-36cda4359347.jpg",
+            "image_mobile": "shopify://shop_images/4_cb36702d-0a2f-4a84-85fa-36cda4359347.jpg",
             "image_position": "left"
           }
         },
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Sign up to get 5% OFF <br>your first order",
-            "text_size": "h2"
+            "heading": "Early-Bird Offer: Buy E6000 And Receive An Adjustable E740 (Only 50 Spots)!",
+            "text_size": "h1"
           }
         },
         "text": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "<p>Sexy and sustainable goodies? Sign me up</p>",
+            "text": "<p>Only for first 50 — E6000 + E740, double comfort guaranteed!</p>",
             "text_size": "text-base"
           }
         },
-        "form": {
-          "type": "form",
+        "button_f3HqnM": {
+          "type": "button",
           "settings": {
-            "button_label": "Get 5% OFF",
+            "button_label": "Learn More",
+            "button_link": "shopify://products/e6000-platinum-hybrid-bundle",
             "button_icon": "none"
           }
         },
         "socials": {
           "type": "socials",
+          "disabled": true,
           "settings": {}
         }
       },
@@ -208,10 +210,9 @@
         "image",
         "heading",
         "text",
-        "form",
+        "button_f3HqnM",
         "socials"
       ],
-      "disabled": true,
       "settings": {
         "enable": false,
         "show_for_homepage_only": false,
