@@ -294,7 +294,7 @@
         "image_GGtpAa": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/2-4.jpg",
+            "image": "shopify://shop_images/1_d832f894-0448-4f45-b01e-fe10c513998b.jpg",
             "width": "41%",
             "alignment": "center",
             "block_custom_class": ""
@@ -305,13 +305,13 @@
           "settings": {
             "content_alignment": "left",
             "subheading": "",
-            "heading": "9 Reasons to love the Adjustable Royal Bundle",
+            "heading": "10 Reasons to love the Adjustable Royal Bundle",
             "highlight_style": "none",
             "highlight_font_style": "italic",
             "highlight_style_color": "",
             "highlight_text_color": "",
             "heading_size": "h3",
-            "description": "<ul><li>Independent head （0°-55°）and foot elevation（0°-42°）</li><li>Control via app or wireless remote with programmable memory</li><li>One-touch settings for zero gravity, anti-snore, TV recline, and Zero clearance</li><li>Whisper-quiet massage, with 3 intensities</li><li>Built-in USB and Type-C ports for convenience.</li><li>Underbed LED Light</li><li>Adjustable height – 8 & 3.4-inch legs </li><li>Easy assembly with no tools needed</li></ul>",
+            "description": "<ul><li>Independent head （0°-55°）and foot elevation（0°-42°）</li><li>Individual Pillow Tilt</li><li>Comfort Lumbar Support</li><li>Control via app or wireless remote with programmable memory</li><li>One-touch settings for anti-snore, TV recline, and Zero clearance</li><li>Whisper-quiet massage, with 3 intensities</li><li>Built-in USB and Type-C ports for convenience</li><li>Underbed LED Light</li><li>Adjustable height – 8 & 3.4-inch legs </li><li>Easy assembly with no tools needed</li></ul>",
             "text_size": "text-base",
             "button_label": "",
             "button_link": "",
@@ -367,7 +367,7 @@
             "highlight_style_color": "",
             "highlight_text_color": "",
             "heading_size": "h3",
-            "description": "<ul><li><strong>Ergonomic Infinite Adjustment:</strong> <br/>Dual motors adjust head (0–70°) & legs (0–45°) for zero-gravity support and full-body comfort.</li><li><strong>Anti-Snore Mode:</strong> One touch lifts the head to 12° to open airways and reduce snoring, with ultra-quiet motors (&lt;40dB). Sleep peacefully together without disturbing your partner.</li><li><strong>Smart Massage:</strong> 6 vibration modules with Wave, Pulse, Constant, and Sleep modes. One-touch control relaxes muscles and relieves stress, like having a personal masseuse at home.</li><li><strong>Individual Pillow Tilt:</strong> Head lifts 15° as the back reclines, keeping neck aligned for comfortable reading or watching.</li></ul>",
+            "description": "<ul><li><strong>Ergonomic Infinite Adjustment:</strong> <br/>Dual motors adjust head (0–70°) & legs (0–45°) for zero-gravity support and full-body comfort.</li><li><strong>Anti-Snore Mode:</strong> One touch lifts the head to 12° to open airways and reduce snoring, with ultra-quiet motors (&lt;40dB). Sleep peacefully together without disturbing your partner.</li><li><strong>Smart Massage:</strong> 6 vibration modules with Wave, Pulse, Constant, and Sleep modes. One-touch control relaxes muscles and relieves stress, like having a personal masseuse at home.</li><li><strong>Individual Pillow Tilt:</strong> Head lifts 15° as the back reclines, keeping neck aligned for comfortable reading or watching.</li><li><strong>Comfort Lumbar Support：</strong>It helps reduce pressure, improve posture, and relieve fatigue, ensuring a restful and supportive experience for relaxation or sleep.<br/><br/><br/><br/></li></ul>",
             "text_size": "text-base",
             "button_label": "",
             "button_link": "",
@@ -381,7 +381,7 @@
         "image_zWHNKE": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/95X2-1.webp",
+            "image": "shopify://shop_images/95x2_110f0eb0-d40b-4060-8bf8-94770c8f8a69.jpg",
             "width": "41%",
             "alignment": "center",
             "block_custom_class": ""
@@ -923,14 +923,15 @@
             "item_text": "Twin xl Bed Frame",
             "item_subtext": "37.4\" W x 78.7\" L x 13.4\"H",
             "sub_title_1": "Head Up & Pillow Tilt",
-            "sub_img_pc_1": "shopify://shop_images/5000-95-1_2b84a132-7fdb-4484-a9e9-56ba019d9d09.jpg",
-            "sub_title_2": "Feet Up",
-            "sub_img_pc_2": "shopify://shop_images/5000-95.jpg",
-            "sub_title_3": "Zero Gravity",
-            "sub_img_pc_3": "shopify://shop_images/5000-95-2.jpg",
-            "sub_title_4": "Flat",
-            "sub_img_pc_4": "shopify://shop_images/5000-95-3.jpg",
-            "sub_title_5": ""
+            "sub_img_pc_1": "shopify://shop_images/95-3_79ce6ad7-cad7-4429-b6e0-3c8c44505e52.jpg",
+            "sub_title_2": "Lumbar Support",
+            "sub_img_pc_2": "shopify://shop_images/95_9470579e-1987-439b-874b-fa2e115739cf.jpg",
+            "sub_title_3": "Feet Up",
+            "sub_img_pc_3": "shopify://shop_images/95-2_a07db3bd-142d-495c-b221-82710b6fec4a.jpg",
+            "sub_title_4": "Zero Gravity",
+            "sub_img_pc_4": "shopify://shop_images/95-4.jpg",
+            "sub_title_5": "Flat",
+            "sub_img_pc_5": "shopify://shop_images/95-1.jpg"
           }
         },
         "item_69wirY": {
@@ -939,14 +940,15 @@
             "item_text": "Queen Bed Frame",
             "item_subtext": "59\" W x 78.7\" L x 13.4\" H",
             "sub_title_1": "Head Up & Pillow Tilt",
-            "sub_img_pc_1": "shopify://shop_images/5000-151-2.jpg",
-            "sub_title_2": "Feet Up",
-            "sub_img_pc_2": "shopify://shop_images/5000-151-1.jpg",
-            "sub_title_3": "Zero Gravity",
-            "sub_img_pc_3": "shopify://shop_images/5000-151-3.jpg",
-            "sub_title_4": "Flat",
-            "sub_img_pc_4": "shopify://shop_images/5000-151.jpg",
-            "sub_title_5": ""
+            "sub_img_pc_1": "shopify://shop_images/150-3_e300df2a-94aa-4ba7-9752-713887753882.jpg",
+            "sub_title_2": "Lumbar Support",
+            "sub_img_pc_2": "shopify://shop_images/150_de6e38a5-6afb-451e-81d8-2ef93033bb2e.jpg",
+            "sub_title_3": "Feet Up",
+            "sub_img_pc_3": "shopify://shop_images/150-2_d6a67531-c4b4-4d73-a7a2-ec2264d42fff.jpg",
+            "sub_title_4": "Zero Gravity",
+            "sub_img_pc_4": "shopify://shop_images/150-4.jpg",
+            "sub_title_5": "Flat",
+            "sub_img_pc_5": "shopify://shop_images/150-1_2d2e62ae-0456-4368-a0a7-352f23c283e8.jpg"
           }
         },
         "item_Th3trH": {
@@ -955,14 +957,15 @@
             "item_text": "Split King Bed Frame",
             "item_subtext": "74.8\"W  x 78.7\"L x 13.4\" H",
             "sub_title_1": "Head Up & Pillow Tilt",
-            "sub_img_pc_1": "shopify://shop_images/5000-95x2-2.jpg",
-            "sub_title_2": "Feet Up",
-            "sub_img_pc_2": "shopify://shop_images/5000-95x2-1.jpg",
-            "sub_title_3": "Zero Gravity",
-            "sub_img_pc_3": "shopify://shop_images/5000-95x2-3.jpg",
-            "sub_title_4": "Flat",
-            "sub_img_pc_4": "shopify://shop_images/5000-95x2.jpg",
-            "sub_title_5": ""
+            "sub_img_pc_1": "shopify://shop_images/95x2-3_08601ce4-2962-4343-bfc2-d70ea14477c3.jpg",
+            "sub_title_2": "Lumbar Support",
+            "sub_img_pc_2": "shopify://shop_images/95x2_b28d201b-bfd0-4665-9c70-a5926807b0dc.jpg",
+            "sub_title_3": "Feet Up",
+            "sub_img_pc_3": "shopify://shop_images/95x2-2.jpg",
+            "sub_title_4": "Zero Gravity",
+            "sub_img_pc_4": "shopify://shop_images/95x2-4.jpg",
+            "sub_title_5": "Flat",
+            "sub_img_pc_5": "shopify://shop_images/95x2-1_611a21ff-352e-41a3-8cb6-44c7570f0792.jpg"
           }
         }
       },
@@ -1014,7 +1017,7 @@
             "product": "e2000-premium-hybrid-bundle",
             "text-1": "<p>E2000+ Premium</p>",
             "text-2": "<p>Orange</p>",
-            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>11.4\" Legs</p>",
+            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>11.4\" Legs</p>",
             "text-4": "<p>Comfort/Signature/Luxe/Royal Mattress</p>",
             "text-5": "<p>Adjustable Base<br/>Mattress<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Installation Tools<br/>Manual<br/>Warranty Card</p>",
             "text-6": "",
@@ -1071,6 +1074,22 @@
             "text-9": "",
             "text-10": ""
           }
+        },
+        "content_NJFcE9": {
+          "type": "content",
+          "settings": {
+            "product": "e6000-platinum-hybrid-bundle",
+            "text-1": "<p>E6000+ Platinum</p>",
+            "text-2": "<p>Orange</p>",
+            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>8\"+3.4\" Adjustable Legs<br/>Massage<br/>Under-Bed Lights<br/>Head Tilt (7°)<br/>Lumbar Support</p>",
+            "text-4": "<p>Comfort/Signature/Luxe/Royal Mattress</p>",
+            "text-5": "<p>Adjustable Base<br/>Mattress<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Installation Tools<br/>Manual<br/>Warranty Card</p>",
+            "text-6": "",
+            "text-7": "",
+            "text-8": "",
+            "text-9": "",
+            "text-10": ""
+          }
         }
       },
       "block_order": [
@@ -1078,7 +1097,8 @@
         "content_UTJAYE",
         "content_3Lndrx",
         "content_CMVn7J",
-        "content_QFXP7W"
+        "content_QFXP7W",
+        "content_NJFcE9"
       ],
       "name": "t:sections.comparison-table.name",
       "settings": {
@@ -1207,7 +1227,7 @@
       "settings": {
         "container": "fixed",
         "color_scheme": "",
-        "image": "shopify://shop_images/71jNren27qL._AC_SL1500.jpg",
+        "image": "shopify://shop_images/6_781d7e39-7b76-4364-bb6b-1dc9f0fd570b.jpg",
         "image_position": "left",
         "image_width": 50,
         "desktop_content_position": "center",

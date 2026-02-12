@@ -193,7 +193,7 @@
         "image_FrpEGN": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/1_6a08f348-db47-426f-bc48-d5a02c6f2f33.jpg",
+            "image": "shopify://shop_images/imgi_173_95x2_1500x1500_0b037324-e1d6-4ffc-88f0-9f7f2a420bba.jpg",
             "width": "41%",
             "alignment": "center",
             "block_custom_class": ""
@@ -204,13 +204,13 @@
           "settings": {
             "content_alignment": "left",
             "subheading": "",
-            "heading": "6 Reasons to love the Adjustable Premium Bundle",
+            "heading": "5 Reasons to love the Adjustable Premium Bundle",
             "highlight_style": "none",
             "highlight_font_style": "italic",
             "highlight_style_color": "",
             "highlight_text_color": "",
             "heading_size": "h3",
-            "description": "<ul><li>Independent head （0°-55°）and foot elevation（0°-42°）</li><li>Control via app or wireless remote with programmable memory</li><li>One-touch settings for zero gravity, anti-snore, TV recline, and Zero clearance</li><li>Built-in USB and Type-C ports for convenience.</li><li>11.4 inch legs </li><li>Easy assembly with no tools needed</li><li>Without Massage Function</li></ul>",
+            "description": "<ul><li>Independent head （0°-55°）and foot elevation（0°-42°）</li><li>Control via app or wireless remote with programmable memory</li><li>One-touch settings for zero gravity, anti-snore, TV recline, and Zero clearance</li><li>11.4 inch legs </li><li>Easy assembly with no tools needed</li><li>Without Massage Function</li></ul>",
             "text_size": "text-base",
             "button_label": "",
             "button_link": "",
@@ -892,10 +892,10 @@
         "padding_bottom": 50
       }
     },
-    "comparison_table_x7EhTL": {
+    "comparison_table_NL3pDY": {
       "type": "comparison-table",
       "blocks": {
-        "heading_Tw9PxY": {
+        "heading_7VPypH": {
           "type": "heading",
           "settings": {
             "icon-1": "none",
@@ -920,13 +920,13 @@
             "title-10": ""
           }
         },
-        "content_7xpMjU": {
+        "content_jGGeHJ": {
           "type": "content",
           "settings": {
             "product": "e2000-premium-hybrid-bundle",
             "text-1": "<p>E2000+ Premium</p>",
             "text-2": "<p>Orange</p>",
-            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>11.4\" Legs</p>",
+            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>11.4\" Legs</p>",
             "text-4": "<p>Comfort/Signature/Luxe/Royal Mattress</p>",
             "text-5": "<p>Adjustable Base<br/>Mattress<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Installation Tools<br/>Manual<br/>Warranty Card</p>",
             "text-6": "",
@@ -936,7 +936,7 @@
             "text-10": ""
           }
         },
-        "content_QUyREQ": {
+        "content_8gg3aG": {
           "type": "content",
           "settings": {
             "product": "e3000-luxe-hybrid-bundle",
@@ -952,7 +952,7 @@
             "text-10": ""
           }
         },
-        "content_LXUcjz": {
+        "content_HMN7nQ": {
           "type": "content",
           "settings": {
             "product": "e3100-luxe-hybrid-bundle",
@@ -968,7 +968,7 @@
             "text-10": ""
           }
         },
-        "content_tKqCmN": {
+        "content_RNY96W": {
           "type": "content",
           "settings": {
             "product": "e5000-royal-hybrid-bundle",
@@ -983,14 +983,31 @@
             "text-9": "",
             "text-10": ""
           }
+        },
+        "content_rLJTzD": {
+          "type": "content",
+          "settings": {
+            "product": "e6000-platinum-hybrid-bundle",
+            "text-1": "<p>E6000+ Platinum</p>",
+            "text-2": "<p>Orange</p>",
+            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>8\"+3.4\" Adjustable Legs<br/>Massage<br/>Under-Bed Lights<br/>Head Tilt (7°)<br/>Lumbar Support</p>",
+            "text-4": "<p>Comfort/Signature/Luxe/Royal Mattress</p>",
+            "text-5": "<p>Adjustable Base<br/>Mattress<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Installation Tools<br/>Manual<br/>Warranty Card</p>",
+            "text-6": "",
+            "text-7": "",
+            "text-8": "",
+            "text-9": "",
+            "text-10": ""
+          }
         }
       },
       "block_order": [
-        "heading_Tw9PxY",
-        "content_7xpMjU",
-        "content_QUyREQ",
-        "content_LXUcjz",
-        "content_tKqCmN"
+        "heading_7VPypH",
+        "content_jGGeHJ",
+        "content_8gg3aG",
+        "content_HMN7nQ",
+        "content_RNY96W",
+        "content_rLJTzD"
       ],
       "name": "t:sections.comparison-table.name",
       "settings": {
@@ -1342,7 +1359,7 @@
     "image_with_text_overlay_3b3dHg",
     "media_tab_swiper_7Nw4HB",
     "media_tab_swiper_hydUmC",
-    "comparison_table_x7EhTL",
+    "comparison_table_NL3pDY",
     "video_hero_jrN6jH",
     "collection_with_tab_dyqwDU",
     "image_with_text_tyqJEm",

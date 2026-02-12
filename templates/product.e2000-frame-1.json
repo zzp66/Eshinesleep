@@ -843,10 +843,10 @@
         "padding_bottom": 50
       }
     },
-    "comparison_table_QJXfwj": {
+    "comparison_table_D6pNeH": {
       "type": "comparison-table",
       "blocks": {
-        "heading_q8iYB3": {
+        "heading_7V3xUU": {
           "type": "heading",
           "settings": {
             "icon-1": "none",
@@ -871,13 +871,13 @@
             "title-10": ""
           }
         },
-        "content_WUd43a": {
+        "content_VXic8Q": {
           "type": "content",
           "settings": {
             "product": "e2000-adjustable-base",
             "text-1": "<p>E2000+ </p>",
             "text-2": "<p>Orange</p>",
-            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>11.4\" Legs</p>",
+            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>11.4\" Legs</p>",
             "text-4": "<p>Adjustable Base<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Installation Tools<br/>Manual<br/>Warranty Card</p>",
             "text-5": "",
             "text-6": "",
@@ -887,7 +887,7 @@
             "text-10": ""
           }
         },
-        "content_Jq4Lij": {
+        "content_4VyM8t": {
           "type": "content",
           "settings": {
             "product": "e3000-adjustable-base",
@@ -903,7 +903,7 @@
             "text-10": ""
           }
         },
-        "content_rJJNVU": {
+        "content_arcP8B": {
           "type": "content",
           "settings": {
             "product": "e3100-adjustable-base",
@@ -919,7 +919,7 @@
             "text-10": ""
           }
         },
-        "content_bJPagg": {
+        "content_LRHYjb": {
           "type": "content",
           "settings": {
             "product": "e5000-adjustable-base",
@@ -934,14 +934,31 @@
             "text-9": "",
             "text-10": ""
           }
+        },
+        "content_tdWtUk": {
+          "type": "content",
+          "settings": {
+            "product": "e6000-adjustable-base",
+            "text-1": "<p>E6000+ </p>",
+            "text-2": "<p>Orange</p>",
+            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>8\"+3.4\" Adjustable Legs<br/>Massage<br/>Under-Bed Lights<br/>Head Tilt (7°)<br/>Lumbar Support</p>",
+            "text-4": "<p>Adjustable Base<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Installation Tools<br/>Manual<br/>Warranty Card</p>",
+            "text-5": "",
+            "text-6": "",
+            "text-7": "",
+            "text-8": "",
+            "text-9": "",
+            "text-10": ""
+          }
         }
       },
       "block_order": [
-        "heading_q8iYB3",
-        "content_WUd43a",
-        "content_Jq4Lij",
-        "content_rJJNVU",
-        "content_bJPagg"
+        "heading_7V3xUU",
+        "content_VXic8Q",
+        "content_4VyM8t",
+        "content_arcP8B",
+        "content_LRHYjb",
+        "content_tdWtUk"
       ],
       "name": "t:sections.comparison-table.name",
       "settings": {
@@ -1241,7 +1258,7 @@
     "image_with_text_overlay_3b3dHg",
     "media_tab_swiper_hydUmC",
     "media_tab_swiper_WVnC87",
-    "comparison_table_QJXfwj",
+    "comparison_table_D6pNeH",
     "image_with_text_tyqJEm",
     "features_image_switcher_GidNhG",
     "related-products",

@@ -979,10 +979,10 @@
         "padding_bottom": 50
       }
     },
-    "comparison_table_tCMnei": {
+    "comparison_table_q4binw": {
       "type": "comparison-table",
       "blocks": {
-        "heading_Xr7nw6": {
+        "heading_tayBpF": {
           "type": "heading",
           "settings": {
             "icon-1": "none",
@@ -1007,13 +1007,13 @@
             "title-10": ""
           }
         },
-        "content_QRgmhM": {
+        "content_bifxyD": {
           "type": "content",
           "settings": {
             "product": "e2000-premium-hybrid-bundle",
             "text-1": "<p>E2000+ Premium</p>",
             "text-2": "<p>Orange</p>",
-            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>11.4\" Legs</p>",
+            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>11.4\" Legs</p>",
             "text-4": "<p>Comfort/Signature/Luxe/Royal Mattress</p>",
             "text-5": "<p>Adjustable Base<br/>Mattress<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Installation Tools<br/>Manual<br/>Warranty Card</p>",
             "text-6": "",
@@ -1023,7 +1023,7 @@
             "text-10": ""
           }
         },
-        "content_6JTG7n": {
+        "content_pkari4": {
           "type": "content",
           "settings": {
             "product": "e3000-luxe-hybrid-bundle",
@@ -1039,7 +1039,7 @@
             "text-10": ""
           }
         },
-        "content_nF369D": {
+        "content_679r6h": {
           "type": "content",
           "settings": {
             "product": "e3100-luxe-hybrid-bundle",
@@ -1055,7 +1055,7 @@
             "text-10": ""
           }
         },
-        "content_z97xQR": {
+        "content_QDcRMR": {
           "type": "content",
           "settings": {
             "product": "e5000-royal-hybrid-bundle",
@@ -1070,14 +1070,31 @@
             "text-9": "",
             "text-10": ""
           }
+        },
+        "content_haedAi": {
+          "type": "content",
+          "settings": {
+            "product": "e6000-platinum-hybrid-bundle",
+            "text-1": "<p>E6000+ Platinum</p>",
+            "text-2": "<p>Orange</p>",
+            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>8\"+3.4\" Adjustable Legs<br/>Massage<br/>Under-Bed Lights<br/>Head Tilt (7°)<br/>Lumbar Support</p>",
+            "text-4": "<p>Comfort/Signature/Luxe/Royal Mattress</p>",
+            "text-5": "<p>Adjustable Base<br/>Mattress<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Installation Tools<br/>Manual<br/>Warranty Card</p>",
+            "text-6": "",
+            "text-7": "",
+            "text-8": "",
+            "text-9": "",
+            "text-10": ""
+          }
         }
       },
       "block_order": [
-        "heading_Xr7nw6",
-        "content_QRgmhM",
-        "content_6JTG7n",
-        "content_nF369D",
-        "content_z97xQR"
+        "heading_tayBpF",
+        "content_bifxyD",
+        "content_pkari4",
+        "content_679r6h",
+        "content_QDcRMR",
+        "content_haedAi"
       ],
       "name": "t:sections.comparison-table.name",
       "settings": {
@@ -1429,7 +1446,7 @@
     "custom_content_ReAkzz",
     "image_with_text_overlay_3b3dHg",
     "media_tab_swiper_hydUmC",
-    "comparison_table_tCMnei",
+    "comparison_table_q4binw",
     "video_hero_jtPJQH",
     "collection_with_tab_dyqwDU",
     "image_with_text_tyqJEm",

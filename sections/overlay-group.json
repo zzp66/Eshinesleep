@@ -213,6 +213,7 @@
         "button_f3HqnM",
         "socials"
       ],
+      "disabled": true,
       "settings": {
         "enable": false,
         "show_for_homepage_only": false,

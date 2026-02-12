@@ -108,7 +108,6 @@
         "button_QEtKje",
         "timer_a7qG7N"
       ],
-      "disabled": true,
       "name": "t:sections.countdown-timer.name",
       "settings": {
         "container": "full",
