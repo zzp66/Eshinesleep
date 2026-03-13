@@ -38,6 +38,10 @@
             "heading_size": "h3"
           }
         },
+        "areviews_reviews_importer_areviews_title_rating_0A63CA": {
+          "type": "shopify://apps/areviews-reviews-importer/blocks/AreviewsTitleRating/ab0ec5fe-c95b-4fd6-bfb8-db2a30d0756f",
+          "settings": {}
+        },
         "price": {
           "type": "price",
           "settings": {}
@@ -147,10 +151,6 @@
             "default_open": false,
             "show_below_product_media": false
           }
-        },
-        "areviews_reviews_importer_areviews_title_rating_0A63CA": {
-          "type": "shopify://apps/areviews-reviews-importer/blocks/AreviewsTitleRating/ab0ec5fe-c95b-4fd6-bfb8-db2a30d0756f",
-          "settings": {}
         }
       },
       "block_order": [
@@ -183,7 +183,7 @@
         "show_image_border": false,
         "enable_image_zoom": true,
         "enable_video_looping": true,
-        "padding_top": 50,
+        "padding_top": 10,
         "padding_bottom": 60
       }
     },
@@ -598,6 +598,7 @@
           "type": "item",
           "settings": {
             "item_text": "Twin xl Bed Frame",
+            "item_subtext": "Sub Title",
             "sub_title_1": "Head Up",
             "sub_img_pc_1": "shopify://shop_images/3100-95-2.jpg",
             "sub_title_2": "Feet Up",
@@ -613,6 +614,7 @@
           "type": "item",
           "settings": {
             "item_text": "Queen Bed Frame",
+            "item_subtext": "Sub Title",
             "sub_title_1": "Head Up",
             "sub_img_pc_1": "shopify://shop_images/3100-150-2.jpg",
             "sub_title_2": "Feet Up",
@@ -628,6 +630,7 @@
           "type": "item",
           "settings": {
             "item_text": "Split King Bed Frame",
+            "item_subtext": "Sub Title",
             "sub_title_1": "Head Up",
             "sub_img_pc_1": "shopify://shop_images/3100-95x2-2.jpg",
             "sub_title_2": "Feet Up",
@@ -646,7 +649,13 @@
         "item_Th3trH"
       ],
       "name": "Media Tab Swiper",
-      "settings": {}
+      "settings": {
+        "container": "fixed",
+        "coll_title": "Explore All ESHINE SLEEP Products",
+        "coll_subtitle": "Shop beds,frames and more.",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
     },
     "collection_with_tab_dyqwDU": {
       "type": "collection-with-tab",
@@ -857,7 +866,11 @@
       "block_order": [
         "areviews_reviews_importer_areviews_display_reviews_1C3064"
       ],
-      "settings": {}
+      "settings": {
+        "include_margins": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [

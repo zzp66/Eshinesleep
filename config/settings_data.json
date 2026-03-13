@@ -18,7 +18,7 @@
     "type_body_font": "poppins_n4",
     "body_font_weight_bolder": "500",
     "body_font_size": 16,
-    "type_header_font": "poppins_n7",
+    "type_header_font": "poppins_n6",
     "heading_scale": 100,
     "heading_mobile_scale": 80,
     "heading_letter_spacing": 0,
@@ -26,22 +26,24 @@
     "display_heading_size": 40,
     "subheading_scale": 84,
     "subheading_font": "body",
-    "subheading_font_weight": "700",
+    "subheading_font_weight": "600",
     "subheading_letter_spacing": 0,
     "subheading_transform": "none",
     "pcard_title_scale": 100,
     "pcard_title_font": "heading",
-    "pcard_title_font_weight": "700",
-    "navigation_font_weight": "700",
+    "pcard_title_font_weight": "600",
+    "pcard_price_font_weight": "700",
+    "pcard_badge_font_weight": "600",
+    "navigation_font_weight": "600",
     "navigation_uppercase": false,
     "buttons_font": "body",
-    "buttons_font_weight": "700",
+    "buttons_font_weight": "600",
     "buttons_letter_spacing": 0,
     "buttons_transform": "capitalize",
     "page_width": 1440,
     "buttons_corner_radius": "round",
     "inputs_corner_radius": "round",
-    "blocks_corner_radius": "slightly",
+    "blocks_corner_radius": "square",
     "pcard_corner_radius": "slightly",
     "badges_corner_radius": "round",
     "pcard_style": "standard",
@@ -102,11 +104,6 @@
         "disabled": false,
         "settings": {}
       },
-      "6319715395561037789": {
-        "type": "shopify://apps/trackify-x/blocks/app-embed/f3561b5a-1d26-4c4b-9d29-6bae914fb95d",
-        "disabled": false,
-        "settings": {}
-      },
       "13768625480086291342": {
         "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
         "disabled": false,
@@ -128,11 +125,6 @@
       },
       "6146500278089136509": {
         "type": "shopify://apps/bm-country-blocker-ip-blocker/blocks/boostmark-blocker/bf9db4b9-be4b-45e1-8127-bbcc07d93e7e",
-        "disabled": false,
-        "settings": {}
-      },
-      "16357531335331704164": {
-        "type": "shopify://apps/wheelify-spin-wheel-email-pop/blocks/wheelify/505ff42c-abce-4466-9558-7e1d3b2cfcd7",
         "disabled": false,
         "settings": {}
       }

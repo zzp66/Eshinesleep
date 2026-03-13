@@ -183,7 +183,7 @@
         "show_image_border": false,
         "enable_image_zoom": true,
         "enable_video_looping": true,
-        "padding_top": 50,
+        "padding_top": 10,
         "padding_bottom": 60
       }
     },

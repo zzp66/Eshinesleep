@@ -17,6 +17,8 @@
       assign product_list = block.settings.product_list
       assign heading = block.settings.heading
       assign show_progress_bar = block.settings.show_progress_bar
+    when 'new_product_card_list'
+      assign products = block.settings.npcl_collection.products
   endcase
 -%}
 
@@ -332,6 +334,18 @@
               </div>
             </div>
           {%- endif -%}
+        {%- when 'new_product_card_list' -%}
+          <div class="menu-drawer__submenu">
+            <div class="npcl-content-mobile">
+              {% for product in products %}
+                <div class="new-header-card-slide mobile">
+                  <a href="{{ product.url }}" class="new-header-card-item-link">
+                    {% render 'new-product-card-header', product: product %}
+                  </a>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
       {%- endcase -%}
     </ul>
   </div>

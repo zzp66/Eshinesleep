@@ -16,22 +16,22 @@
           "type": "slide",
           "settings": {
             "color_scheme": "scheme-inverse",
-            "background": "shopify://shop_images/20.jpg",
-            "background_mobile": "shopify://shop_images/111111_8c448e1c-8dce-4669-a98e-a7095e62c7fc.jpg",
+            "background": "shopify://shop_images/lQDPKdAm-Noxi2_NB9DNB9CwedNsWHReWbgJNiQZ4e9jAQ_2000_2000.png",
+            "background_mobile": "shopify://shop_images/lQDPKdAm-Noxi2_NB9DNB9CwedNsWHReWbgJNiQZ4e9jAQ_2000_2000.png",
             "image_overlay_opacity": 0,
-            "content_position": "middle-left",
-            "text_alignment": "right",
-            "subheading": "E5000+ Royal Hybrid Bundles",
-            "title": "<strong>The Coolest Beds in the World!</strong>",
+            "content_position": "bottom-center",
+            "text_alignment": "center",
+            "subheading": "",
+            "title": "Save Up To 50% On Mattresses + 60% On Bundles!",
             "highlight_style": "none",
             "highlight_font_style": "italic",
             "highlight_style_color": "",
             "highlight_text_color": "",
             "heading_size": "h3",
-            "description": "<p><strong>Year-End Sale — Lowest Price of the Year！</strong><br/><br/>Don’t Miss Out — Once a Year Only<br/></p>",
+            "description": "",
             "description_size": "text-lg",
             "button_label": "Shop Now",
-            "button_link": "shopify://products/e5000-royal-hybrid-bundle",
+            "button_link": "shopify://collections/bundles",
             "button_style": "btn--primary",
             "button_icon": "none",
             "enable_preload_image": false
@@ -41,15 +41,64 @@
       "block_order": [
         "slide_U9bPyj"
       ],
+      "disabled": true,
       "settings": {
         "container": "full",
-        "slide_height": "adapt",
-        "show_controls": true,
-        "autoplay": true,
+        "slide_height": "medium",
+        "show_controls": false,
+        "autoplay": false,
         "autoplay_delay": 7,
         "show_text_below": true,
         "text_alignment_mobile": "center",
         "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "image_with_text_slider_GpYPXm": {
+      "type": "image-with-text-slider",
+      "blocks": {
+        "image_slide_GCLikU": {
+          "type": "image-slide",
+          "settings": {
+            "color_scheme": "scheme-info",
+            "image": "shopify://shop_images/lQDPKdAm-Noxi2_NB9DNB9CwedNsWHReWbgJNiQZ4e9jAQ_2000_2000.png",
+            "image_mobile": "shopify://shop_images/lQDPKdAm-Noxi2_NB9DNB9CwedNsWHReWbgJNiQZ4e9jAQ_2000_2000.png",
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center",
+            "mobile_content_alignment": "center",
+            "subheading": "",
+            "heading": "Spring Sale！",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h1",
+            "text": "<p><br/>Save Up To 50% On Mattresses + 60% On Bundles!<br/><br/></p>",
+            "text_size": "text-lg",
+            "button_label": "Learn More",
+            "button_link": "shopify://collections/bundles",
+            "button_style": "btn--primary",
+            "button_icon": "none",
+            "enable_preload_image": false
+          }
+        }
+      },
+      "block_order": [
+        "image_slide_GCLikU"
+      ],
+      "name": "t:sections.image-with-text-slider.presets.name",
+      "settings": {
+        "container": "full",
+        "color_scheme": "scheme-6",
+        "image_height": "large",
+        "image_width": 70,
+        "image_position": "left",
+        "show_controls": true,
+        "autoplay": false,
+        "autoplay_delay": 2,
+        "desktop_controls_position": "start",
+        "mobile_controls_position": "inherit",
+        "padding_top": 0,
+        "padding_bottom": 12
       }
     },
     "countdown_timer_CEAdz4": {
@@ -58,7 +107,7 @@
         "heading_93EXVj": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Winter Sale!</strong>",
+            "heading": "<strong>Spring Sale!Up to 50% Off</strong>",
             "highlight_style": "none",
             "highlight_font_style": "italic",
             "highlight_style_color": "",
@@ -108,6 +157,7 @@
         "button_QEtKje",
         "timer_a7qG7N"
       ],
+      "disabled": true,
       "name": "t:sections.countdown-timer.name",
       "settings": {
         "container": "full",
@@ -685,6 +735,7 @@
   },
   "order": [
     "slideshow_q3U4Jn",
+    "image_with_text_slider_GpYPXm",
     "countdown_timer_CEAdz4",
     "collection_with_tab_BWkyHx",
     "product_contrast_ecRJGK",
