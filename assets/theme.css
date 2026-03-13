@@ -3402,6 +3402,11 @@ input:is([type=radio])::after {
   font-size: var(--font-body-size);
   line-height: var(--font-body-line-height);
   font-weight: var(--font-body-weight);
+  text-decoration: none;
+}
+
+.f-price--on-sale .f-price-item--regular s{
+  text-decoration: none;
 }
 
 .f-price__unit-wrapper {
