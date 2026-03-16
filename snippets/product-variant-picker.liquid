@@ -1,298 +1,183 @@
+{% comment %}
+  Renders product variant-picker
+
+  Accepts:
+  - product: {Object} product object.
+  - block: {Object} passing the block information.
+  - product_form_id: {String} Id of the product form to which the variant picker is associated.
+  - update_url: {Boolean} whether or not to update url when changing variants. If false, the url isn't updated. Default: true (optional).
+  Usage:
+  {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
+{% endcomment %}
 {%- unless product.has_only_default_variant -%}
   {% liquid
+    assign size_option_name = block.settings.size_title | downcase
     assign size_chart_content = product.metafields.foxtheme.size_chart
     assign size_chart_modal_id = 'SizeChartModal-' | append: block.id
+
+    if size_chart_content == blank and block.settings.size_chart_from_page != blank
+      assign size_chart_content = pages[block.settings.size_chart_from_page].content
+    endif
   %}
-
-  <style>
-    .product-form__label {
-      font-weight: 600;
-      font-size: 18px;
-    }
-    .gb-custom-select-wrapper {
-      position: relative;
-      width: 100%;
-      margin-bottom: 12px;
-      font-family: inherit;
-    }
-    .gb-custom-select-trigger {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 12px 16px;
-      background: #ffffff;
-      border: 1px solid #d1d1d1;
-      border-radius: 6px;
-      cursor: pointer;
-      min-height: 64px;
-      transition: border-color 0.2s;
-      -webkit-tap-highlight-color: transparent;
-    }
-    .gb-custom-select-trigger:hover {
-      border-color: #000;
-    }
-    .gb-trigger-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      margin-right: 12px;
-      pointer-events: none;
-    }
-    .gb-custom-options {
-      position: absolute;
-      display: none;
-      top: calc(100% + 2px);
-      left: 0;
-      right: 0;
-      background: #fff;
-      border: 1px solid #000;
-      border-radius: 6px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-      max-height: 350px;
-      overflow-y: auto;
-      z-index: 1005;
-    }
-    .gb-custom-select-wrapper.open .gb-custom-options {
-      display: block;
-    }
-    .gb-custom-select-wrapper.open .gb-custom-select-trigger {
-      border-color: #000;
-      box-shadow: 0 0 0 1px #000;
-    }
-    .gb-custom-option {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 14px 16px;
-      border-bottom: 1px solid #eee;
-      cursor: pointer;
-      -webkit-tap-highlight-color: transparent;
-    }
-    .gb-custom-option:last-child {
-      border-bottom: none;
-    }
-    .gb-custom-option:hover {
-      background: #f7f7f7;
-    }
-    .gb-custom-option.selected {
-      background: #f0f7ff;
-    }
-    .gb-option-left {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-      pointer-events: none;
-    }
-    .gb-option-name {
-      font-size: 15px;
-      font-weight: 700;
-      color: #000;
-    }
-    .gb-option-save-badge {
-      font-size: 11px;
-      background: #e02020;
-      color: #fff;
-      padding: 2px 8px;
-      border-radius: 4px;
-      font-weight: 800;
-      width: fit-content;
-      text-transform: uppercase;
-    }
-    .gb-price-container {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      pointer-events: none;
-    }
-    .gb-compare-price {
-      font-size: 13px;
-      color: #757575;
-    }
-    .gb-price {
-      font-size: 15px;
-      font-weight: 700;
-      color: #000;
-    }
-    .gb-price.sale {
-      color: #e02020;
-    }
-    .variant-unavailable {
-      opacity: 0.6;
-      background-color: #fcfcfc;
-    }
-    .gb-unavailable-text {
-      font-size: 11px;
-      color: #999;
-      font-weight: normal;
-      text-transform: uppercase;
-    }
-    .gb-custom-select-wrapper.open {
-      z-index: 1010 !important;
-    }
-  </style>
-
   <script src="{{ 'variant-selects.js' | asset_url }}" defer="defer"></script>
-
   <variant-selects
     id="variant-selects-{{ section.id }}"
     data-section="{{ section.id }}"
     data-url="{{ product.url }}"
-    data-update-url="true"
+    data-update-url="{% if update_url == false %}false{% else %}true{% endif %}"
   >
-    {%- liquid
-      assign current_variant = product.selected_or_first_available_variant
-    -%}
+    {%- for option in product.options_with_values -%}
+      {%- liquid
+        assign option_name_downcase = option.name | downcase
+        assign swatch_count = option.values | map: 'swatch' | compact | size
+        assign picker_type = block.settings.picker_type
 
-    <div
-      class="product-form__label mb-2"
-    >
-      Choose Option:
-    </div>
+        assign attach_size_chart = false
+        if size_option_name contains option_name_downcase
+          assign attach_size_chart = true
+        endif
 
-    <div class="product-form__input product-form__input--dropdown">
-      <div class="gb-custom-select-wrapper" style="z-index: 50;">
-        {% comment %}
-          关键修复：模拟原生 Fieldset 结构，这是 variant-selects.js 寻找数据最稳定的路径
-        {% endcomment %}
-        <div class="gb-native-bridge visually-hidden" style="display:none !important;">
-          {%- for option in product.options_with_values -%}
-            <fieldset data-option-index="{{ forloop.index0 }}">
-              {%- for value in option.values -%}
-                <input
-                  type="radio"
-                  name="gb-opt-{{ section.id }}-{{ forloop.parentloop.index0 }}"
-                  value="{{ value | escape }}"
-                  data-option-value-id="{{ value.id }}"
-                  {% if option.selected_value == value %}
-                    checked
-                  {% endif %}
-                >
-              {%- endfor -%}
-            </fieldset>
-          {%- endfor -%}
+        if block.settings.picker_type == 'button' and settings.color_swatch_trigger != blank
+          assign color_swatch_trigger = settings.color_swatch_trigger | downcase | split: ','
+          assign has_color = color_swatch_trigger | where: option_name_downcase | first
 
-          {% comment %} 真实的提交字段 {% endcomment %}
-          <input type="hidden" name="id" value="{{ current_variant.id }}" form="{{ product_form_id }}">
-        </div>
+          if has_color != blank
+            assign picker_type = 'color'
+          elsif option_name_downcase contains 'colour'
+            assign color_swatch_trigger = color_swatch_trigger | replace: 'color', 'colour'
+            assign has_color = color_swatch_trigger | where: option_name_downcase | first
+            if has_color != blank
+              assign picker_type = 'color'
+            endif
+          endif
+        endif
 
-        <div class="gb-custom-select-trigger">
-          <div class="gb-trigger-content">
-            <div class="gb-option-left">
-              <span class="gb-option-name">{{ current_variant.title }}</span>
-              {%- if current_variant.compare_at_price > current_variant.price -%}
-                {%- assign cur_save = current_variant.compare_at_price | minus: current_variant.price -%}
-                <span class="gb-option-save-badge">Save {{ cur_save | money_without_trailing_zeros }}</span>
-              {%- endif -%}
+        if swatch_count > 0
+          if block.settings.picker_type == 'dropdown'
+            assign picker_type = 'swatch_dropdown'
+          else
+            if block.settings.swatch_type != 'variant_image'
+              assign picker_type = 'swatch'
+            endif
+          endif
+        endif
+
+        assign wrap_class = 'product-form__input product-form__input--' | append: picker_type
+        case picker_type
+          when 'swatch', 'color', 'button'
+            assign is_fieldset_tag = true
+            assign wrap_class = wrap_class | append: ' js flex flex-wrap'
+
+            if picker_type == 'button'
+              assign button_style = block.settings.button_style | default: 'normal'
+              assign wrap_class = wrap_class | append: ' gap-2'
+              assign wrap_class = wrap_class | append: ' product-form__input--button-' | append: button_style
+            else
+              assign swatch_style = block.settings.swatch_style | default: 'standard'
+              assign wrap_class = wrap_class | append: ' gap-4'
+              assign wrap_class = wrap_class | append: ' product-form__input--button-' | append: swatch_style
+            endif
+          else
+            assign is_fieldset_tag = false
+        endcase
+
+        assign tag_fieldset = 'fieldset'
+        assign tag_legend = 'legend'
+        unless is_fieldset_tag
+          assign tag_fieldset = 'div'
+          assign tag_legend = 'label'
+        endunless
+      -%}
+      <{{ tag_fieldset }}
+        class="{{ wrap_class }}"
+        {% if picker_type == 'color' %}
+          data-swatch-type="{{ block.settings.swatch_type }}"
+        {% endif %}
+        style="--swatch-size: {{ block.settings.swatch_size | default: 40 }}px;"
+      >
+        <{{ tag_legend }}
+          {% unless is_fieldset_tag %}
+            for="Option-{{ section.id }}-{{ forloop.index0 }}"
+          {% endunless %}
+          class="block w-full p-0"
+        >
+          <div class="form__label">
+            <div class="flex flex-wrap gap-2">
+              <span class="font-body-bolder">{{ option.name }}:</span>
+              <span class="text-subtext" data-selected-swatch-value="{{ option.name }}">
+                {{- option.selected_value -}}
+              </span>
             </div>
-            <div class="gb-option-right">
-              <div class="gb-price-container">
-                {%- if current_variant.compare_at_price > current_variant.price -%}
-                  <span class="gb-compare-price">{{ current_variant.compare_at_price | money }}</span>
-                  <span class="gb-price sale">{{ current_variant.price | money }}</span>
-                {%- else -%}
-                  <span class="gb-price">{{ current_variant.price | money }}</span>
-                {%- endif -%}
-              </div>
-            </div>
+            {%- if size_chart_content != blank and attach_size_chart -%}
+              <button
+                class="open-size-chart no-js-hidden btn--link tracking-normal"
+                aria-controls="{{ size_chart_modal_id }}"
+                aria-haspopup="dialog"
+              >
+                Need Help?
+              </button>
+            {%- endif -%}
           </div>
-          <div class="gb-trigger-icon">{% render 'icon-caret-down', size: '2xs' %}</div>
-        </div>
-
-        <div class="gb-custom-options">
-          {%- for variant in product.variants -%}
-            <div
-              class="gb-custom-option {% if variant.id == current_variant.id %}selected{% endif %} {% unless variant.available %}variant-unavailable{% endunless %}"
-              data-variant-id="{{ variant.id }}"
-              data-v-opt1="{{ variant.option1 | escape }}"
-              data-v-opt2="{{ variant.option2 | escape }}"
-              data-v-opt3="{{ variant.option3 | escape }}"
-            >
-              <div class="gb-option-left">
-                <span class="gb-option-name">{{ variant.title }}</span>
-                {%- if variant.compare_at_price > variant.price -%}
-                  {%- assign saving = variant.compare_at_price | minus: variant.price -%}
-                  <span class="gb-option-save-badge">Save {{ saving | money_without_trailing_zeros }}</span>
-                {%- endif -%}
-              </div>
-              <div class="gb-option-right">
-                <div class="gb-price-container">
-                  {%- if variant.compare_at_price > variant.price -%}
-                    <span class="gb-compare-price">{{ variant.compare_at_price | money }}</span>
-                    <span class="gb-price sale">{{ variant.price | money }}</span>
-                  {%- else -%}
-                    <span class="gb-price">{{ variant.price | money }}</span>
-                  {%- endif -%}
-                </div>
-                {%- unless variant.available -%}
-                  <div class="gb-unavailable-text">Sold Out</div>
-                {%- endunless -%}
-              </div>
+        </{{ tag_legend }}>
+        {%- case picker_type -%}
+          {%- when 'swatch', 'color', 'button' -%}
+            <div class="picker-type-box">
+              {% render 'product-variant-options',
+                product: product,
+                option: option,
+                block: block,
+                picker_type: picker_type
+              %}
             </div>
-          {%- endfor -%}
-        </div>
-      </div>
-    </div>
-
+          {%- else -%}
+            <div class="select">
+              {%- if picker_type == 'swatch_dropdown' -%}
+                <span
+                  data-selected-value
+                  class="dropdown-swatch"
+                >
+                  {% comment %} {% render 'swatch', swatch: option.selected_value.swatch %} {% endcomment %}
+                </span>
+              {%- endif -%}
+              <select
+                id="Option-{{ section.id }}-{{ forloop.index0 }}"
+                class="form-control form-control--select"
+                name="options[{{ option.name | escape }}]"
+                form="{{ product_form_id }}"
+              >
+                {% render 'product-variant-options',
+                  product: product,
+                  option: option,
+                  block: block,
+                  picker_type: picker_type
+                %}
+              </select>
+              {%- render 'icon-caret-down', size: '2xs' -%}
+            </div>
+        {%- endcase -%}
+      </{{ tag_fieldset }}>
+    {%- endfor -%}
     <script type="application/json" data-selected-variant>
-      {{ current_variant | json }}
+      {{ product.selected_or_first_available_variant | json }}
     </script>
   </variant-selects>
+  {%- if size_chart_content != blank -%}
+    <div id="SizeChart-{{ section.id }}">
+      <basic-modal id="{{ size_chart_modal_id }}" class="drawer modal" style="--modal-width: 77rem;">
+        <div class="fixed-overlay" aria-controls="{{ size_chart_modal_id }}"></div>
+        <div class="drawer__inner color-{{ settings.overlay_color_scheme }}">
+          <button
+            class="drawer__close-btn"
+            aria-controls="{{ size_chart_modal_id }}"
+            aria-label="{{ 'accessibility.close' | t }}"
+          >
+            {% render 'icon-close' %}
+          </button>
+          <div class="drawer__body v-scrollable h-full rte">
+            {{ size_chart_content }}
+          </div>
+        </div>
+      </basic-modal>
+    </div>
+  {%- endif -%}
 {%- endunless -%}
-
-<script>
-  (function () {
-    const initGB = () => {
-      document.addEventListener('click', (e) => {
-        const trigger = e.target.closest('.gb-custom-select-trigger');
-        const option = e.target.closest('.gb-custom-option');
-
-        if (trigger) {
-          const wrapper = trigger.closest('.gb-custom-select-wrapper');
-          const isOpen = wrapper.classList.contains('open');
-          document.querySelectorAll('.gb-custom-select-wrapper').forEach((w) => w.classList.remove('open'));
-          if (!isOpen) wrapper.classList.add('open');
-          return;
-        }
-
-        if (option) {
-          const vid = option.dataset.variantId;
-          const wrapper = option.closest('.gb-custom-select-wrapper');
-          const bridge = wrapper.querySelector('.gb-native-bridge');
-          const opts = [option.dataset.vOpt1, option.dataset.vOpt2, option.dataset.vOpt3];
-
-          // 1. 深度同步所有维度的 Input 状态 (模拟点击)
-          opts.forEach((val, i) => {
-            if (!val) return;
-            const fieldset = bridge.querySelector(`fieldset[data-option-index="${i}"]`);
-            if (fieldset) {
-              const input = fieldset.querySelector(`input[value="${CSS.escape(val)}"]`);
-              if (input) {
-                input.checked = true;
-                // 必须手动触发 change 事件，且 bubbles 设为 true 才能让 <variant-selects> 监听到
-                input.dispatchEvent(new Event('change', { bubbles: true }));
-              }
-            }
-          });
-
-          // 2. 同步最终 ID
-          const idInput = bridge.querySelector('input[name="id"]');
-          if (idInput) idInput.value = vid;
-
-          wrapper.classList.remove('open');
-          return;
-        }
-
-        if (!e.target.closest('.gb-custom-select-wrapper')) {
-          document.querySelectorAll('.gb-custom-select-wrapper').forEach((w) => w.classList.remove('open'));
-        }
-      });
-    };
-
-    if (!window.gbLoaded) {
-      initGB();
-      window.gbLoaded = true;
-    }
-  })();
-</script>
