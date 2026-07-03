@@ -89,7 +89,7 @@
         <!-- 左 -->
         <div class="product-contrast-left pc-contrast">
           {% if section.settings.left_image != blank %}
-            <img src="{{ section.settings.left_image | image_url: width: 600 }}" alt="Left Product">
+            <img loading="lazy" data-avada-lazy src="{{ section.settings.left_image | image_url: width: 600 }}" alt="Left Product">
           {% endif %}
         </div>
         <!-- 中 -->
@@ -106,7 +106,7 @@
         <!-- 右 -->
         <div class="product-contrast-right pc-contrast">
           {% if section.settings.right_image != blank %}
-            <img src="{{ section.settings.right_image | image_url: width: 600 }}" alt="Right Product">
+            <img loading="lazy" data-avada-lazy src="{{ section.settings.right_image | image_url: width: 600 }}" alt="Right Product">
           {% endif %}
         </div>
       </div>

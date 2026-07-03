@@ -1,4 +1,4 @@
-{{ 'section-press.css' | asset_url  | stylesheet_tag }}
+{{ 'section-press.aio.min.css' | asset_url  | stylesheet_tag }}
 <script src="{{'press.js' | asset_url }}" defer="defer"></script>
 {%- capture sizes -%}
   (max-width: 767px) {{ section.settings.max_width_mb }}px, {{ section.settings.max_width }}px

@@ -1,11 +1,11 @@
 <link
   rel="stylesheet"
-  href="{{ 'component-custom-card.css' | asset_url }}"
+  href="{{ 'component-custom-card.aio.min.css' | asset_url }}"
   media="print"
   fetchpriority="low"
   onload="this.media='all'"
 >
-{{ 'new-product-card-list.css' | asset_url | stylesheet_tag }}
+{{ 'new-product-card-list.aio.min.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'header.js' | asset_url }}" defer="defer"></script>
 {%- if request.page_type != 'search' -%}
   <script src="{{ 'search.js' | asset_url }}" defer="defer"></script>
@@ -117,7 +117,7 @@
           <img
             srcset="{{ logo_mobile | image_url: width: logo_width_mobile }} 1x, {{ logo_mobile | image_url: width: logo_width_mobile_2x }} 2x"
             src="{{ logo_mobile | image_url: width: logo_width_mobile }}"
-            loading="eager"
+            loading="lazy" data-avada-lazy
             width="{{ logo_mobile.width }}"
             height="{{ logo_mobile.height }}"
             alt="{{ logo_mobile.alt | default: shop.name | escape }}"
@@ -127,7 +127,7 @@
         <img
           srcset="{{ logo | image_url: width: logo_width }} 1x, {{ logo | image_url: width: logo_width_2x }} 2x"
           src="{{ logo | image_url: width: logo_width }}"
-          loading="eager"
+          loading="lazy" data-avada-lazy
           width="{{ logo.width }}"
           height="{{ logo.height }}"
           alt="{{ logo.alt | default: shop.name | escape }}"

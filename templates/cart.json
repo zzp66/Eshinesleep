@@ -1,9 +1,75 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "breadcrumbs_96z8tE": {
       "type": "breadcrumbs",
       "settings": {
-        "text_alignment": "start"
+        "container": "fixed",
+        "text_alignment": "start",
+        "padding_top": 16,
+        "padding_bottom": 20
+      }
+    },
+    "promotion_banner_MbjzTx": {
+      "type": "promotion-banner",
+      "blocks": {
+        "subheading_MaqnhG": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<strong>Countdown Begins</strong>",
+            "subheading_icon": "none"
+          }
+        },
+        "timer_Nc6aWR": {
+          "type": "timer",
+          "settings": {
+            "type": "evergreen",
+            "number_size": "h1",
+            "duration": "every_2_hrs",
+            "time": "2025/08/20 03:45 PM"
+          }
+        },
+        "text_GwhzLB": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><strong>Father's day sale— Unlock Extra 5% Off Now！</strong></h3>",
+            "text_color": "base-text"
+          }
+        },
+        "button_7P3tji": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "btn--primary",
+            "button_icon": "none"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_MaqnhG",
+        "timer_Nc6aWR",
+        "text_GwhzLB",
+        "button_7P3tji"
+      ],
+      "name": "t:sections.promotion-banner.name",
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "",
+        "layout": "horizontal",
+        "content_alignment": "center",
+        "content_alignment_mobile": "center",
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     },
     "main-cart": {
@@ -38,25 +104,33 @@
         "buttons_drwbch"
       ],
       "settings": {
+        "container": "fixed",
         "padding_top": 16,
         "padding_bottom": 80
       }
     },
     "recently_viewed_products_w4PGc3": {
       "type": "recently-viewed-products",
+      "disabled": true,
       "settings": {
+        "container": "fixed",
         "color_scheme": "",
-        "heading": "Recently viewed products",
-        "heading_size": "h2",
-        "subheading": "",
-        "description": "",
         "section_header_alignment": "left",
         "section_header_alignment_mobile": "inherit",
+        "subheading": "",
+        "heading": "Recently viewed products",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h2",
+        "description": "",
         "limit": 8,
         "columns": 4,
         "column_gap": "medium",
         "row_gap": "inherit",
         "enable_slider": true,
+        "navigation_position": "bottom",
         "pcard_image_ratio": "",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
@@ -108,6 +182,7 @@
         "text_xxFXUW",
         "text_7JdzKQ"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-3",
         "direction": "left",
@@ -122,6 +197,7 @@
   },
   "order": [
     "breadcrumbs_96z8tE",
+    "promotion_banner_MbjzTx",
     "main-cart",
     "recently_viewed_products_w4PGc3",
     "scrolling_promotion_JJjp7A"

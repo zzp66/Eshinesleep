@@ -1,6 +1,6 @@
 <div class="new-product-card">
   <div class="new-product-img">
-    <img src="{{ product.featured_image | image_url: width: master }}" alt="">
+    <img loading="lazy" data-avada-lazy src="{{ product.featured_image | image_url: width: master }}" alt="">
   </div>
   <div class="new-product-infos">
     <div class="product-title-box">
@@ -29,7 +29,7 @@
     <div class="product-briefinfo-box">
       {% for briefinfo in product.metafields.custom.brief_infos.value %}
         <div class="briefinfo-item">
-          <img src="https://cdn.shopify.com/s/files/1/0587/4139/1417/files/right.png?v=1757394754" alt="">
+          <img loading="lazy" data-avada-lazy src="https://cdn.shopify.com/s/files/1/0587/4139/1417/files/right.png?v=1757394754" alt="">
           <p class="briefinfo">{{ briefinfo }}</p>
         </div>
       {% endfor %}

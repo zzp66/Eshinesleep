@@ -101,7 +101,7 @@
                       media="(min-width: 768px)"
                       srcset="{{ item.settings.item_img_pc | image_url: width: master }}"
                     >
-                    <img src="{{ item.settings.item_img_pc | image_url: width: master }}">
+                    <img loading="lazy" data-avada-lazy src="{{ item.settings.item_img_pc | image_url: width: master }}">
                   </picture>
                 </div>
               </div>

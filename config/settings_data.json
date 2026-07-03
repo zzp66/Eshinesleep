@@ -62,7 +62,7 @@
     "quick_view_type": "modal",
     "cart_type": "drawer",
     "cart_icon": "shopping-bag",
-    "free_shipping_minimum_amount": "109",
+    "free_shipping_minimum_amount": "2",
     "cart_empty_message": "<p>Not sure where to start? Try these collections:</p>",
     "collection_card_color_scheme": "scheme-1",
     "collection_image_ratio": "3/4",
@@ -99,11 +99,6 @@
     },
     "content_for_index": [],
     "blocks": {
-      "14327677521557774844": {
-        "type": "shopify://apps/simprosys-google-shopping-feed/blocks/core_settings_block/1f0b859e-9fa6-4007-97e8-4513aff5ff3b",
-        "disabled": false,
-        "settings": {}
-      },
       "13768625480086291342": {
         "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
         "disabled": false,
@@ -113,20 +108,36 @@
         "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
         "disabled": false,
         "settings": {
+          "greeting_message": "👋 Have a question? Send us a message anytime—we’re here and happy to assist you.",
           "button_color": "#ef8507",
           "secondary_color": "#ffffff",
           "ternary_color": "#6a6a6a",
           "button_icon": "chat_bubble",
           "button_text": "chat_with_us",
           "button_horizontal_position": "bottom_right",
-          "button_vertical_position": "higher",
-          "greeting_message": "👋 Have a question? Send us a message anytime—we’re here and happy to assist you."
+          "button_vertical_position": "higher"
         }
       },
-      "6146500278089136509": {
-        "type": "shopify://apps/bm-country-blocker-ip-blocker/blocks/boostmark-blocker/bf9db4b9-be4b-45e1-8127-bbcc07d93e7e",
+      "4226490577545693572": {
+        "type": "shopify://apps/avada-seo-suite/blocks/avada-seo/15507c6e-1aa3-45d3-b698-7e175e033440",
         "disabled": false,
         "settings": {}
+      },
+      "14327677521557774844": {
+        "type": "shopify://apps/simprosys-google-shopping-feed/blocks/core_settings_block/1f0b859e-9fa6-4007-97e8-4513aff5ff3b",
+        "disabled": true,
+        "settings": {}
+      },
+      "9010622670419788200": {
+        "type": "shopify://apps/avada-seo-suite/blocks/avada-site-verification/15507c6e-1aa3-45d3-b698-7e175e033440",
+        "disabled": false,
+        "settings": {
+          "google_search_console": "",
+          "bing_webmaster_tools": "",
+          "baidu_webmaster_tools": "",
+          "pinterest": "",
+          "yandex_webmaster_tools": ""
+        }
       }
     },
     "color_schemes": {

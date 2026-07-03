@@ -84,7 +84,7 @@
             <div class="swiper-slide">
               <div class="collection-card-item">
                 <div class="coll-card-item-img">
-                  <img src="{{ item.settings.coll_img | image_url: width: master }}" alt="">
+                  <img loading="lazy" data-avada-lazy src="{{ item.settings.coll_img | image_url: width: master }}" alt="">
                 </div>
                 <div class="coll-card-item-bg"></div>
                 <div class="coll-card-item-infos">

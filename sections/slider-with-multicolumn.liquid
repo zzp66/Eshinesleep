@@ -1,4 +1,4 @@
-{{ 'section-slider-with-multicolumn.css' | asset_url | stylesheet_tag }}
+{{ 'section-slider-with-multicolumn.aio.min.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'slider-with-multicolumn.js' | asset_url }}" defer="defer"></script>
 {%- liquid
   assign slider_blocks = section.blocks | where: 'type', 'slide'

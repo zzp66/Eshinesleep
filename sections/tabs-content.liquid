@@ -12,12 +12,12 @@
   assign image_with_text_blocks = section.blocks | where: 'type', 'image_with_text'
   assign sidebar = section.blocks | where: 'type', 'sidebar' | first
 -%}
-{{ 'component-tabs.css' | asset_url | stylesheet_tag }}
+{{ 'component-tabs.aio.min.css' | asset_url | stylesheet_tag }}
 {%- if sidebar -%}
-  {{ 'component-help-sidebar.css' | asset_url | stylesheet_tag }}
+  {{ 'component-help-sidebar.aio.min.css' | asset_url | stylesheet_tag }}
 {%- endif -%}
 {%- if image_with_text_blocks != blank -%}
-  {{ 'section-image-with-text.css' | asset_url | stylesheet_tag }}
+  {{ 'section-image-with-text.aio.min.css' | asset_url | stylesheet_tag }}
 {%- endif -%}
 
 {% render 'divider',

@@ -183,7 +183,7 @@
                           <source media="(max-width: 767px)" srcset="{{ sub_img_mb | image_url: width: 800 }}">
                         {% endif %}
                         <source media="(min-width: 768px)" srcset="{{ sub_img_pc | image_url: width: 1600 }}">
-                        <img src="{{ sub_img_pc | image_url: width: 1200 }}" alt="{{ sub_title | escape }}">
+                        <img loading="lazy" data-avada-lazy src="{{ sub_img_pc | image_url: width: 1200 }}" alt="{{ sub_title | escape }}">
                       </picture>
                     </div>
                     {% if first_image_shown == 0 %}
@@ -200,7 +200,7 @@
                       >
                         <picture>
                           <source media="(max-width: 767px)" srcset="{{ sub_img_mb | image_url: width: 800 }}">
-                          <img src="{{ sub_img_mb | image_url: width: 1200 }}" alt="{{ sub_title | escape }}">
+                          <img loading="lazy" data-avada-lazy src="{{ sub_img_mb | image_url: width: 1200 }}" alt="{{ sub_title | escape }}">
                         </picture>
                       </div>
                       {% if first_image_shown == 0 %}

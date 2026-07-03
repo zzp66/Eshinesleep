@@ -1,4 +1,4 @@
-{{ 'section-collection-hero.css' | asset_url | stylesheet_tag: preload: true }}
+{{ 'section-collection-hero.aio.min.css' | asset_url | stylesheet_tag: preload: true }}
 {%- liquid
   if section.settings.image != blank
     assign banner = section.settings.image

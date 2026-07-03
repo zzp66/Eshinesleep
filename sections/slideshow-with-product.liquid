@@ -39,7 +39,7 @@
     --page-padding: 0;
   }
 {% endstyle %}
-{{ 'section-slideshow-with-product.css' | asset_url | stylesheet_tag: preload: true }}
+{{ 'section-slideshow-with-product.aio.min.css' | asset_url | stylesheet_tag: preload: true }}
 <script src="{{ 'slideshow-with-product.js' | asset_url }}" defer="defer"></script>
 <div
   class="section section-{{ section.id }} section--slideshow-with-product page-width page-width--{{ section.settings.container }}"

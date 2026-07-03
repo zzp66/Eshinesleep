@@ -1,4 +1,4 @@
-{{ 'section-featured-countdown-timer.css' | asset_url | stylesheet_tag }}
+{{ 'section-featured-countdown-timer.aio.min.css' | asset_url | stylesheet_tag }}
 {%- liquid
   assign image_card_blocks = section.blocks | where: 'type', 'image-card'
   assign countdown_block = section.blocks | where: 'type', 'countdown-timer'

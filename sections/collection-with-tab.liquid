@@ -7,7 +7,7 @@
     --section-padding-bottom: {{ section.settings.padding_bottom }}px;
   }
 {% endstyle %}
-{{ 'collection-with-tab.css' | asset_url | stylesheet_tag }}
+{{ 'collection-with-tab.aio.min.css' | asset_url | stylesheet_tag }}
 <div class="section section-{{ section.id }} section--padding collection-with-tab">
   <div class="section__container page-width page-width--{{ section.settings.container }}">
     <div class="collection-with-tab-box">

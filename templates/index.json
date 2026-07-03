@@ -59,23 +59,23 @@
         "image_slide_GCLikU": {
           "type": "image-slide",
           "settings": {
-            "color_scheme": "scheme-info",
-            "image": "shopify://shop_images/lQDPKdAm-Noxi2_NB9DNB9CwedNsWHReWbgJNiQZ4e9jAQ_2000_2000.png",
-            "image_mobile": "shopify://shop_images/lQDPKdAm-Noxi2_NB9DNB9CwedNsWHReWbgJNiQZ4e9jAQ_2000_2000.png",
+            "color_scheme": "scheme-2",
+            "image": "shopify://shop_images/95x2_95e5ed07-635e-478b-a16d-417533fbc3fe.jpg",
+            "image_mobile": "shopify://shop_images/8482d349526172d19136cbb9520c57cb.png",
             "desktop_content_position": "middle-center",
             "desktop_content_alignment": "center",
             "mobile_content_alignment": "center",
-            "subheading": "",
-            "heading": "Spring Sale！",
+            "subheading": "<strong>4th of July Sale!</strong>",
+            "heading": "<strong>The Coolest Beds in the World</strong>",
             "highlight_style": "none",
             "highlight_font_style": "italic",
             "highlight_style_color": "",
             "highlight_text_color": "",
             "heading_size": "h1",
-            "text": "<p><br/>Save Up To 50% On Mattresses + 60% On Bundles!<br/><br/></p>",
+            "text": "<p>Save Up to $1500 Sitewide<br/>Take an Extra 5% Off with Luxe + Royal Mattress Bundle<br/></p>",
             "text_size": "text-lg",
             "button_label": "Learn More",
-            "button_link": "shopify://collections/bundles",
+            "button_link": "shopify://products/eshine-e3100-luxe-hybrid-bundle-adjustable-bed-with-mattress",
             "button_style": "btn--primary",
             "button_icon": "none",
             "enable_preload_image": false
@@ -88,8 +88,8 @@
       "name": "t:sections.image-with-text-slider.presets.name",
       "settings": {
         "container": "full",
-        "color_scheme": "scheme-6",
-        "image_height": "large",
+        "color_scheme": "scheme-info",
+        "image_height": "adapt",
         "image_width": 70,
         "image_position": "left",
         "show_controls": true,
@@ -180,18 +180,39 @@
             "collection": "bundles",
             "collection_title": "Bundles"
           }
-        },
-        "collection_xLbAhP": {
+        }
+      },
+      "block_order": [
+        "collection_gEeYAb"
+      ],
+      "name": "Collection With Tab",
+      "settings": {
+        "container": "fixed",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "collection_with_tab_CRbM9c": {
+      "type": "collection-with-tab",
+      "blocks": {
+        "collection_wYmzQa": {
           "type": "collection",
           "settings": {
-            "collection": "mattresses",
-            "collection_title": "Mattresses"
+            "collection": "hybrid-mattresses",
+            "collection_title": "Hybrid Mattresses"
+          }
+        },
+        "collection_JbtWNy": {
+          "type": "collection",
+          "settings": {
+            "collection": "hybrid-mattresses-副本",
+            "collection_title": "Memory Foam Mattresses"
           }
         }
       },
       "block_order": [
-        "collection_gEeYAb",
-        "collection_xLbAhP"
+        "collection_wYmzQa",
+        "collection_JbtWNy"
       ],
       "name": "Collection With Tab",
       "settings": {
@@ -206,9 +227,9 @@
       "settings": {
         "left_image": "shopify://shop_images/lQDPJw3gVZDYWIXNAyDNAyCwLScp35d1M9QIhIgHLhIjAA_800_800.png",
         "right_image": "shopify://shop_images/21_fe0b36bf-7bcb-4e7c-8d8d-a686131e7ba0.png",
-        "headline": "Relax More, Live Better",
-        "subhead": "A Royal Night's Sleep",
-        "comparison_text": "E3100+ VS E5000+",
+        "headline": "Which Model Is Right For You？",
+        "subhead": "See the Difference- Find what Suits You",
+        "comparison_text": "All Model Comparison",
         "button_text": "Learn More",
         "button_link": "shopify://pages/3100-vs-5000",
         "container": "full",
@@ -738,6 +759,7 @@
     "image_with_text_slider_GpYPXm",
     "countdown_timer_CEAdz4",
     "collection_with_tab_BWkyHx",
+    "collection_with_tab_CRbM9c",
     "product_contrast_ecRJGK",
     "collection_list_new_TVpyap",
     "image_with_text_overlay_EXNEn9",

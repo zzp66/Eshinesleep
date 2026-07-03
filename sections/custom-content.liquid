@@ -199,7 +199,7 @@
                   heading_size_mobile: block.settings.heading_size_mobile
                 %}
               {%- when 'image_card_with_product' -%}
-                {{ 'component-card-img-with-product.css' | asset_url | stylesheet_tag }}
+                {{ 'component-card-img-with-product.aio.min.css' | asset_url | stylesheet_tag }}
                 {% render 'card-image-with-product',
                   color_scheme: block.settings.color_scheme,
                   image: block.settings.image,
@@ -218,7 +218,7 @@
                   product: block.settings.product
                 %}
               {%- when 'lookbook_card_hotspot' -%}
-                {{ 'component-lookbook-card.css' | asset_url | stylesheet_tag }}
+                {{ 'component-lookbook-card.aio.min.css' | asset_url | stylesheet_tag }}
                 <script src="{{ 'lookbook-icon.js' | asset_url }}" defer="defer"></script>
                 {% render 'lookbook-card-hotspot',
                   block: block,
@@ -258,7 +258,7 @@
                   -%}
                 </div>
               {%- when 'lookbook_card' -%}
-                {{ 'component-lookbook-card-modal.css' | asset_url | stylesheet_tag }}
+                {{ 'component-lookbook-card-modal.aio.min.css' | asset_url | stylesheet_tag }}
                 <script src="{{ 'lookbook-card.js' | asset_url }}" defer="defer"></script>
                 {% liquid
                   assign video = block.settings.video
@@ -289,7 +289,7 @@
                   heading_size: block.settings.heading_size
                 %}
               {%- when 'collections' -%}
-                {{ 'component-collection-item-slider.css' | asset_url | stylesheet_tag }}
+                {{ 'component-collection-item-slider.aio.min.css' | asset_url | stylesheet_tag }}
                 <script src="{{ 'collection-item-slider.js' | asset_url }}" defer="defer"></script>
                 <div class="collecion-list__sliders block w-full" data>
                   {%- if block.settings.collection_list != blank -%}

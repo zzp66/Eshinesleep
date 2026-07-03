@@ -28,8 +28,8 @@
       z-index: 29 !important;
     }
   {%- endstyle -%}
-  <link rel="stylesheet" href="{{ 'subscription-popup.css' | asset_url }}" media="print" onload="this.media='all'">
-  <noscript>{{ 'subscription-popup.css' | asset_url | stylesheet_tag }}</noscript>
+  <link rel="stylesheet" href="{{ 'subscription-popup.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
+  <noscript>{{ 'subscription-popup.aio.min.css' | asset_url | stylesheet_tag }}</noscript>
   {%- liquid
     assign trigger_open = section.settings.trigger_open
     assign repeat_open = section.settings.repeat_open
