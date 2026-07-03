@@ -5,9 +5,10 @@
   .section-{{ section.id }} {
     --section-padding-top: {{ section.settings.padding_top }}px;
     --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+    --swiper-navigation-size: 3.2rem;
   }
 {% endstyle %}
-{{ 'collection-with-tab.aio.min.css' | asset_url | stylesheet_tag }}
+{{ 'collection-with-tab.css' | asset_url | stylesheet_tag }}
 <div class="section section-{{ section.id }} section--padding collection-with-tab">
   <div class="section__container page-width page-width--{{ section.settings.container }}">
     <div class="collection-with-tab-box">
@@ -28,13 +29,33 @@
               class="tab-content {% if forloop.first %}active{% endif %}"
               id="tab-{{ forloop.index }}"
             >
-              <div class="swiper tab-product-swiper">
-                <div class="swiper-wrapper">
-                  {% for product in coll.products limit: 8 %}
-                    <div class="swiper-slide tab-product-card">
-                      {% render 'new-product-card', product: product %}
-                    </div>
-                  {% endfor %}
+              <div class="tab-content-swiper-wrap relative">
+                <div class="swiper tab-product-swiper">
+                  <div class="swiper-wrapper">
+                    {% for product in coll.products limit: 8 %}
+                      <div class="swiper-slide tab-product-card">
+                        {% render 'new-product-card', product: product %}
+                      </div>
+                    {% endfor %}
+                  </div>
+                </div>
+                <div class="swiper-controls swiper-controls--nav-floating collection-with-tab__nav md:hidden">
+                  <button
+                    type="button"
+                    class="swiper-button swiper-button--drop-shadow swiper-button-prev btn tab-swiper-prev"
+                    name="previous"
+                    aria-label="{{ 'general.slider.previous_slide' | t }}"
+                  >
+                    <span class="btn__text">{% render 'icon-caret-left', size: 'small' %}</span>
+                  </button>
+                  <button
+                    type="button"
+                    class="swiper-button swiper-button--drop-shadow swiper-button-next btn tab-swiper-next"
+                    name="next"
+                    aria-label="{{ 'general.slider.next_slide' | t }}"
+                  >
+                    <span class="btn__text">{% render 'icon-caret-right', size: 'small' %}</span>
+                  </button>
                 </div>
               </div>
             </div>
@@ -46,56 +67,63 @@
 </div>
 
 <script>
-  var mySwiper = new Swiper('.tab-product-swiper', {
-    slidesPerView: 1.2,
-    spaceBetween: 20,
-    // pagination: {
-    //   el: '.npcl-btn-pagination',
-    // },
-    // navigation: {
-    //   nextEl: '.npcl-btn-next',
-    //   prevEl: '.npcl-btn-prev',
-    // },
-    // grid: {
-    //   fill: 'row',
-    //   rows: 2,
-    // },
-    breakpoints: {
-      768: {
-        //当屏幕宽度大于等于768
-        slidesPerView: 1.4,
-        spaceBetween: 20,
-      },
-      1000: {
-        //当屏幕宽度大于等于1000
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-      1440: {
-        //当屏幕宽度大于等于1440
-        slidesPerView: 4,
-        spaceBetween: 20,
-      },
-    },
-  });
-
   document.addEventListener('DOMContentLoaded', function () {
-    const tabTitles = document.querySelectorAll('.collection-with-tab .tab-title-item');
-    const tabContents = document.querySelectorAll('.collection-with-tab .tab-content');
+    const section = document.querySelector('.section-{{ section.id }}.collection-with-tab');
+    if (!section) return;
+
+    const tabTitles = section.querySelectorAll('.tab-title-item');
+    const tabContents = section.querySelectorAll('.tab-content');
+    const swiperMap = new Map();
+
+    section.querySelectorAll('.tab-content .tab-product-swiper').forEach((swiperEl) => {
+      const tabContent = swiperEl.closest('.tab-content');
+      const wrap = swiperEl.closest('.tab-content-swiper-wrap');
+      if (!tabContent || !wrap) return;
+
+      const swiper = new Swiper(swiperEl, {
+        slidesPerView: 1.2,
+        spaceBetween: 20,
+        watchOverflow: true,
+        observer: true,
+        observeParents: true,
+        navigation: {
+          nextEl: wrap.querySelector('.tab-swiper-next'),
+          prevEl: wrap.querySelector('.tab-swiper-prev'),
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 1.4,
+            spaceBetween: 20,
+          },
+          1000: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1440: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+        },
+      });
+
+      swiperMap.set(tabContent.id, swiper);
+    });
 
     tabTitles.forEach((title) => {
       title.addEventListener('click', () => {
         const target = title.getAttribute('data-tab');
 
-        // 切换标题
         tabTitles.forEach((t) => t.classList.remove('active'));
         title.classList.add('active');
 
-        // 切换内容
         tabContents.forEach((content) => {
           content.classList.remove('active');
           if (content.id === target) {
             content.classList.add('active');
+            const swiper = swiperMap.get(target);
+            if (swiper) {
+              requestAnimationFrame(() => swiper.update());
+            }
           }
         });
       });
