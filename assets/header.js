@@ -404,6 +404,15 @@ class DetailsDropdown extends HTMLDetailsElement {
         MenuProductList.calcNavButtonsPosition();
       }
 
+      // 刷新头部自定义产品列表 Swiper（打开前父级为 hidden，需重新计算宽度）
+      this.querySelectorAll('.npcl-list-swiper').forEach((el) => {
+        if (el._npclSwiper) {
+          el._npclSwiper.update();
+        } else if (el.swiper) {
+          el.swiper.update();
+        }
+      });
+
       // Check for reverse condition (not implemented here for brevity)
       this.needsReverse();
 

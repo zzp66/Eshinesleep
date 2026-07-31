@@ -1,5 +1,5 @@
 {% assign products = block.settings.npcl_collection.products %}
-<div class="npcl-content">
+<div class="npcl-content" data-npcl-id="{{ block.id }}">
   <div class="swiper npcl-list-swiper">
     <div class="swiper-wrapper">
       {% for item in products %}
@@ -20,19 +20,79 @@
 </div>
 
 <script>
-  var mySwiper = new Swiper('.npcl-list-swiper', {
-    slidesPerView: 3,
-    spaceBetween: 15,
-    pagination: {
-      el: '.npcl-btn-pagination',
-    },
-    navigation: {
-      nextEl: '.npcl-btn-next',
-      prevEl: '.npcl-btn-prev',
-    },
-    grid: {
-      fill: 'row',
-      rows: 2,
-    },
-  });
+  (function () {
+    const root = document.querySelector('[data-npcl-id="{{ block.id }}"]');
+    if (!root) return;
+
+    const swiperEl = root.querySelector('.npcl-list-swiper');
+    if (!swiperEl || swiperEl.dataset.npclInited === 'true') return;
+
+    function initNpclSwiper() {
+      if (typeof Swiper === 'undefined') return false;
+      if (swiperEl.dataset.npclInited === 'true') return true;
+
+      const swiper = new Swiper(swiperEl, {
+        slidesPerView: 3,
+        spaceBetween: 15,
+        watchOverflow: true,
+        observer: true,
+        observeParents: true,
+        pagination: {
+          el: root.querySelector('.npcl-btn-pagination'),
+          clickable: true,
+        },
+        navigation: {
+          nextEl: root.querySelector('.npcl-btn-next'),
+          prevEl: root.querySelector('.npcl-btn-prev'),
+        },
+        grid: {
+          fill: 'row',
+          rows: 2,
+        },
+      });
+
+      swiperEl.dataset.npclInited = 'true';
+      swiperEl._npclSwiper = swiper;
+
+      const mega = root.closest('details');
+      if (mega) {
+        let refreshTimer = null;
+        const refresh = function () {
+          if (!mega.open && !mega.hasAttribute('open')) return;
+          // mega menu 打开动画结束后再计算宽度，避免 slide 被算成 100%
+          clearTimeout(refreshTimer);
+          refreshTimer = setTimeout(function () {
+            swiper.update();
+            if (swiper.navigation && swiper.navigation.update) swiper.navigation.update();
+            if (swiper.pagination && swiper.pagination.update) swiper.pagination.update();
+          }, 320);
+        };
+
+        mega.addEventListener('toggle', refresh);
+        // details-mega 通过自定义 open setter 控制，监听 open 属性
+        const observer = new MutationObserver(refresh);
+        observer.observe(mega, { attributes: true, attributeFilter: ['open'] });
+      }
+
+      return true;
+    }
+
+    function tryInit() {
+      if (initNpclSwiper()) return;
+      // Swiper 为 defer 加载，轮询等待可用
+      let tries = 0;
+      const timer = setInterval(function () {
+        tries += 1;
+        if (initNpclSwiper() || tries > 50) {
+          clearInterval(timer);
+        }
+      }, 50);
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', tryInit);
+    } else {
+      tryInit();
+    }
+  })();
 </script>

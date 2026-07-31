@@ -1,3 +1,17 @@
+.npcl-content .npcl-list-swiper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.npcl-content .npcl-list-swiper .swiper-slide {
+    height: auto;
+    box-sizing: border-box;
+}
+
+.npcl-content .npcl-list-swiper.swiper-grid > .swiper-wrapper {
+    flex-wrap: wrap;
+}
+
 .new-header-card-slide>a {
     display: block;
     padding: 10px;
@@ -80,17 +94,20 @@ p.infos-title {
 .npcl-list-swiper-btn .swiper-button-prev,
 .npcl-list-swiper-btn .swiper-button-next {
     background-image: none;
-    position: relative;
-    margin-top: 0;
+    position: relative !important;
+    inset: auto !important;
+    margin-top: 0 !important;
     width: 40px;
     height: 40px;
     border-radius: 40px;
     background-color: #e7600e;
     border: 1px solid #e7600e;
-    top: auto;
-    bottom: auto;
-    left: auto;
-    right: auto;
+    top: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    right: auto !important;
+    color: #fff;
+    z-index: 2;
 }
 
 .npcl-list-swiper-btn .swiper-button-prev::after,
@@ -98,6 +115,12 @@ p.infos-title {
     color: #fff;
     font-size: 12px;
     font-weight: bold;
+    content: 'prev' !important;
+    position: static !important;
+}
+
+.npcl-list-swiper-btn .swiper-button-next::after {
+    content: 'next' !important;
 }
 
 .npcl-list-swiper-btn .npcl-btn-pagination {
