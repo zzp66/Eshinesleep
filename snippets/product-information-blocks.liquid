@@ -74,13 +74,15 @@
           <div class="{{ block_classes }} rte text-subtext" {{ block.shopify_attributes }}>
             {{- block.settings.text -}}
           </div>
-        {%- when 'title' -%}
+                                {%- when 'title' -%}
           <div class="{{ block_classes }}" {{ block.shopify_attributes }}>
             <h1 class="product__title {{ block.settings.heading_size }}">{{ product.title | escape }}</h1>
+<div data-shop-id="{{shop.id}}" product-id="{{product.id }}" data-page="{{request.page_type}}" class="ddreview-star"></div>
             <a href="{{ product.url }}" class="product__title">
               <h2 class="h1">
-                {{ product.title | escape }}
+                                                                {{ product.title | escape }}
               </h2>
+<div data-shop-id="{{shop.id}}" product-id="{{product.id }}" data-page="{{request.page_type}}" class="ddreview-star"></div>
             </a>
           </div>
         {%- when 'price' -%}

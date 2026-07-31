@@ -21,9 +21,6 @@
   {% endif %}
 >
   <head>
-	<!-- Added by AVADA SEO Suite -->
-	{% include 'avada-seo' %}
-	<!-- /Added by AVADA SEO Suite -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -42,13 +39,13 @@
     <title>
       {{- page_title -}}
       {%- if current_tags -%}
-        {%- assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags -}}
+        {%- assign meta_tags = current_tags | join: ', ' %} – {{ 'general.meta.tags' | t: tags: meta_tags -}}
       {%- endif -%}
-      {%- if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif -%}
+      {%- if current_page != 1 %} – {{ 'general.meta.page' | t: page: current_page }}{% endif -%}
       {%- if template == 'password' -%}
         {{- shop.name -}}
       {%- else -%}
-        {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
+        {%- unless page_title contains shop.name %} – {{ shop.name }}{% endunless -%}
       {%- endif -%}
     </title>
 
@@ -57,21 +54,21 @@
     {% endif %}
 
     {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
-    <script src="{{ 'swiper-bundle.min.js' | asset_url }}"></script>
+    <script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer ></script>
 
     {%- liquid
       render 'meta-tags'
       render 'css-variables'
 
-      echo 'vendor.aio.min.css' | asset_url | stylesheet_tag: preload: true
-      echo 'theme.aio.min.css' | asset_url | stylesheet_tag: preload: true
+      echo 'vendor.css' | asset_url | stylesheet_tag: preload: true
+      echo 'theme.css' | asset_url | stylesheet_tag: preload: true
 
       if settings.enable_product_compare
-        echo 'compare.aio.min.css' | asset_url | stylesheet_tag: preload: true
+        echo 'compare.css' | asset_url | stylesheet_tag: preload: true
       endif
 
       if enable_rtl
-        echo 'rtl.aio.min.css' | asset_url | stylesheet_tag: preload: true
+        echo 'rtl.css' | asset_url | stylesheet_tag: preload: true
       endif
     -%}
 
@@ -99,48 +96,11 @@
     {{ shop.metafields.foxtheme.code_head.value }}
     {% comment %} End custom metafield for head tag like GTag tracking {% endcomment %}
 
-    <!-- Meta Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '681658061009239');
-    fbq('track', 'PageView');
-    </script>
-    <noscript>< img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=681658061009239&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
-
-
 <script src="https://apis.google.com/js/platform.js?onload=renderOptIn" async defer></script>
 
-{% comment %} Google顾客评价 {% endcomment %}
-<script>
-  window.renderOptIn = function() {
-    window.gapi.load('surveyoptin', function() {
-      window.gapi.surveyoptin.render(
-        {
-          // REQUIRED FIELDS
-          "merchant_id": 5323180045,
-          "order_id": "ORDER_ID",
-          "email": "CUSTOMER_EMAIL",
-          "delivery_country": "COUNTRY_CODE",
-          "estimated_delivery_date": "YYYY-MM-DD",
+  {%- render 'dadao_reviews_core' -%}
 
-          // OPTIONAL FIELDS
-          "products": [{"gtin":"GTIN1"}, {"gtin":"GTIN2"}]
-        });
-    });
-  }
-</script>
-{% comment %} End Google顾客评价 {% endcomment %}
-  </head>
+</head>
 
   <body
     class="{{ request.page_type }}-template {{ template.suffix }} blocks-corner--{{ settings.blocks_corner_radius }}{% if request.design_mode %} shopify-design-mode{% endif %}"
@@ -189,8 +149,8 @@
     {%- if settings.enable_product_compare -%}
       <script src="{{ 'compare.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-    <script src="{{ 'swiper-bundle.min.js' | asset_url }}"></script>
-    <script src="{{ 'jquery-3.7.1.min.js' | asset_url }}"></script>
+    <script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer ></script>
+    <script src="{{ 'jquery-3.7.1.min.js' | asset_url }}" defer ></script>
 
   </body>
 </html>

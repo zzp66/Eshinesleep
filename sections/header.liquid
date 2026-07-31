@@ -1,11 +1,11 @@
 <link
   rel="stylesheet"
-  href="{{ 'component-custom-card.aio.min.css' | asset_url }}"
+  href="{{ 'component-custom-card.css' | asset_url }}"
   media="print"
   fetchpriority="low"
   onload="this.media='all'"
 >
-{{ 'new-product-card-list.aio.min.css' | asset_url | stylesheet_tag }}
+{{ 'new-product-card-list.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'header.js' | asset_url }}" defer="defer"></script>
 {%- if request.page_type != 'search' -%}
   <script src="{{ 'search.js' | asset_url }}" defer="defer"></script>

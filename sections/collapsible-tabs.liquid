@@ -33,7 +33,7 @@
   assign item_trigger_class = ' font-' | append: item_font_family | append: ' ' | append: item_heading_size
   assign item_icon_size = section.settings.item_icon_size | default: 'extra-large'
 -%}
-{{ 'section-collapsible-tabs.aio.min.css' | asset_url | stylesheet_tag }}
+{{ 'section-collapsible-tabs.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'collapsible-tabs.js' | asset_url }}" defer="defer"></script>
 
 {% render 'divider',

@@ -50,10 +50,10 @@
       </button>
       <div class="drawer__body h-full quick-view__content v-scrollable">
         <template id="MainProduct-quick-view__content">
-          {{ 'section-main-product.aio.min.css' | asset_url | stylesheet_tag }}
-          {{ 'component-deferred-media.aio.min.css' | asset_url | stylesheet_tag }}
+          {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
+          {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
           {% unless product.has_only_default_variant %}
-            {{ 'component-product-variant-picker.aio.min.css' | asset_url | stylesheet_tag }}
+            {{ 'component-product-variant-picker.css' | asset_url | stylesheet_tag }}
           {% endunless %}
           {%- assign has_models = product.media | where: 'media_type', 'model' | first -%}
           {%- if has_models -%}
@@ -67,7 +67,7 @@
             <link
               id="ModelViewerOverride"
               rel="stylesheet"
-              href="{{ 'component-model-viewer-ui.aio.min.css' | asset_url }}"
+              href="{{ 'component-model-viewer-ui.css' | asset_url }}"
               media="print"
               onload="this.media='all'"
             >
@@ -76,14 +76,14 @@
             <link
               id="Photoswipe"
               rel="stylesheet"
-              href="{{ 'photoswipe-component.aio.min.css' | asset_url }}"
+              href="{{ 'photoswipe-component.css' | asset_url }}"
               media="print"
               onload="this.media='all'"
             >
           {%- endif -%}
 
           {%- if product.quantity_price_breaks_configured? -%}
-            {{ 'component-volume-pricing.aio.min.css' | asset_url | stylesheet_tag }}
+            {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
             <script src="{{ 'show-more.js' | asset_url }}" defer="defer"></script>
             <script src="{{ 'price-per-item.js' | asset_url }}" defer="defer"></script>
           {%- endif -%}

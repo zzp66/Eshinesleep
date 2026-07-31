@@ -9,166 +9,48 @@
  */
 {
   "sections": {
-    "slideshow_q3U4Jn": {
+    "slideshow_BBqn9d": {
       "type": "slideshow",
       "blocks": {
-        "slide_U9bPyj": {
+        "slide_XkDYB9": {
           "type": "slide",
           "settings": {
-            "color_scheme": "scheme-inverse",
-            "background": "shopify://shop_images/lQDPKdAm-Noxi2_NB9DNB9CwedNsWHReWbgJNiQZ4e9jAQ_2000_2000.png",
-            "background_mobile": "shopify://shop_images/lQDPKdAm-Noxi2_NB9DNB9CwedNsWHReWbgJNiQZ4e9jAQ_2000_2000.png",
+            "color_scheme": "scheme-9",
+            "background": "shopify://shop_images/95x2-3_88b7b3fd-0513-4b47-8d7c-067e53b660b1.jpg",
+            "background_mobile": "shopify://shop_images/lQDPJwpjNghSO2_NB9DNB9Cw09KWhO6gk-UJNiQZ4e9jAg_2000_2000.png",
             "image_overlay_opacity": 0,
-            "content_position": "bottom-center",
-            "text_alignment": "center",
-            "subheading": "",
-            "title": "Save Up To 50% On Mattresses + 60% On Bundles!",
-            "highlight_style": "none",
-            "highlight_font_style": "italic",
-            "highlight_style_color": "",
-            "highlight_text_color": "",
-            "heading_size": "h3",
-            "description": "",
-            "description_size": "text-lg",
-            "button_label": "Shop Now",
-            "button_link": "shopify://collections/bundles",
-            "button_style": "btn--primary",
-            "button_icon": "none",
-            "enable_preload_image": false
-          }
-        }
-      },
-      "block_order": [
-        "slide_U9bPyj"
-      ],
-      "disabled": true,
-      "settings": {
-        "container": "full",
-        "slide_height": "medium",
-        "show_controls": false,
-        "autoplay": false,
-        "autoplay_delay": 7,
-        "show_text_below": true,
-        "text_alignment_mobile": "center",
-        "accessibility_info": "Slideshow about our brand"
-      }
-    },
-    "image_with_text_slider_GpYPXm": {
-      "type": "image-with-text-slider",
-      "blocks": {
-        "image_slide_GCLikU": {
-          "type": "image-slide",
-          "settings": {
-            "color_scheme": "scheme-2",
-            "image": "shopify://shop_images/95x2_95e5ed07-635e-478b-a16d-417533fbc3fe.jpg",
-            "image_mobile": "shopify://shop_images/8482d349526172d19136cbb9520c57cb.png",
-            "desktop_content_position": "middle-center",
-            "desktop_content_alignment": "center",
-            "mobile_content_alignment": "center",
+            "content_position": "bottom-right",
+            "text_alignment": "right",
             "subheading": "<strong>4th of July Sale!</strong>",
-            "heading": "<strong>The Coolest Beds in the World</strong>",
-            "highlight_style": "none",
-            "highlight_font_style": "italic",
-            "highlight_style_color": "",
-            "highlight_text_color": "",
-            "heading_size": "h1",
-            "text": "<p>Save Up to $1500 Sitewide<br/>Take an Extra 5% Off with Luxe + Royal Mattress Bundle<br/></p>",
-            "text_size": "text-lg",
+            "title": "<strong>Save Up to 50% Sitewide</strong>",
+            "highlight_style": "thick_underline",
+            "highlight_font_style": "normal",
+            "highlight_style_color": "#cf9a9a",
+            "highlight_text_color": "#403636",
+            "heading_size": "h2",
+            "description": "<p><strong>The Coolest Beds in the World</strong></p>",
+            "description_size": "text-base",
             "button_label": "Learn More",
-            "button_link": "shopify://products/eshine-e3100-luxe-hybrid-bundle-adjustable-bed-with-mattress",
-            "button_style": "btn--primary",
+            "button_link": "shopify://products/e5000-royal-adjustable-bundle",
+            "button_style": "btn--secondary",
             "button_icon": "none",
             "enable_preload_image": false
           }
         }
       },
       "block_order": [
-        "image_slide_GCLikU"
+        "slide_XkDYB9"
       ],
-      "name": "t:sections.image-with-text-slider.presets.name",
+      "name": "t:sections.slideshow.name",
       "settings": {
-        "container": "full",
-        "color_scheme": "scheme-info",
-        "image_height": "adapt",
-        "image_width": 70,
-        "image_position": "left",
+        "container": "fixed",
+        "slide_height": "medium",
         "show_controls": true,
         "autoplay": false,
         "autoplay_delay": 2,
-        "desktop_controls_position": "start",
-        "mobile_controls_position": "inherit",
-        "padding_top": 0,
-        "padding_bottom": 12
-      }
-    },
-    "countdown_timer_CEAdz4": {
-      "type": "countdown-timer",
-      "blocks": {
-        "heading_93EXVj": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>Spring Sale!Up to 50% Off</strong>",
-            "highlight_style": "none",
-            "highlight_font_style": "italic",
-            "highlight_style_color": "",
-            "highlight_text_color": "",
-            "heading_size": "hd2"
-          }
-        },
-        "subheading_DYTENP": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Our Best Offer! Save Up To 50% On Mattresses + 50% On Bundles!"
-          }
-        },
-        "text_3A6nQw": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Discount Code ：SLEEP5</p>",
-            "text_size": "text-base"
-          }
-        },
-        "button_QEtKje": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Learn More",
-            "button_link": "shopify://pages/year-end-mega-sale-lowest-prices-of-the-year",
-            "button_style": "btn--primary",
-            "button_icon": "none"
-          }
-        },
-        "timer_a7qG7N": {
-          "type": "timer",
-          "disabled": true,
-          "settings": {
-            "type": "evergreen",
-            "style": "number",
-            "number_size": "h1",
-            "duration": "every_24_hrs",
-            "time": "2025/012/31 00:45 PM"
-          }
-        }
-      },
-      "block_order": [
-        "heading_93EXVj",
-        "subheading_DYTENP",
-        "text_3A6nQw",
-        "button_QEtKje",
-        "timer_a7qG7N"
-      ],
-      "disabled": true,
-      "name": "t:sections.countdown-timer.name",
-      "settings": {
-        "container": "full",
-        "color_schema": "scheme-inverse",
-        "image_overlay_opacity": 0,
-        "content_alignment": "center",
-        "text_alignment": "center",
-        "padding_top": 60,
-        "padding_bottom": 60,
-        "show_section_divider": false,
-        "divider_width": "full"
+        "show_text_below": true,
+        "text_alignment_mobile": "center",
+        "accessibility_info": "Slideshow about our brand"
       }
     },
     "collection_with_tab_BWkyHx": {
@@ -621,143 +503,44 @@
         "divider_width": "full"
       }
     },
-    "video_by_swiper_kzjY9n": {
-      "type": "video-by-swiper",
+    "445012133772031185": {
+      "type": "apps",
       "blocks": {
-        "video_xEkEeG": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/hb.mp4"
-          }
-        },
-        "video_HkAFEK": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/Installation video.mp4"
-          }
-        },
-        "video_yAQP9E": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/RV Mattress 02.mp4"
-          }
-        },
-        "video_7DzPPd": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/06.mp4"
-          }
+        "dc2bf64b-0259-45d3-97a0-76241e319303": {
+          "type": "shopify://apps/dadao-product-reviews/blocks/kol-reviews/3cc4253a-05eb-4164-8778-b76d83ce00cc",
+          "settings": {}
         }
       },
       "block_order": [
-        "video_xEkEeG",
-        "video_HkAFEK",
-        "video_yAQP9E",
-        "video_7DzPPd"
+        "dc2bf64b-0259-45d3-97a0-76241e319303"
       ],
-      "disabled": true,
-      "name": "Video by Swiper",
       "settings": {
-        "title": "Discover More with EshineSleep"
+        "include_margins": true,
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
-    "video_by_swiper_fixed_bX6gWG": {
-      "type": "video-by-swiper-fixed",
+    "661161055137855984": {
+      "type": "apps",
       "blocks": {
-        "video_ENCnX3": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/hb.mp4"
-          }
-        },
-        "video_WMLYjh": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/Installation video.mp4"
-          }
-        },
-        "video_XCgKDL": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/RV Mattress 02.mp4"
-          }
-        },
-        "video_J8HyTk": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/06.mp4"
-          }
+        "85e5617f-09b2-49e1-ac70-de12673f94f8": {
+          "type": "shopify://apps/dadao-product-reviews/blocks/featured-fixed-reviews/3cc4253a-05eb-4164-8778-b76d83ce00cc",
+          "disabled": true,
+          "settings": {}
         }
       },
       "block_order": [
-        "video_ENCnX3",
-        "video_WMLYjh",
-        "video_XCgKDL",
-        "video_J8HyTk"
+        "85e5617f-09b2-49e1-ac70-de12673f94f8"
       ],
-      "disabled": true,
-      "name": "Video by Swiper Fixed",
       "settings": {
-        "container": "fixed",
-        "coll_title": "Video by Swiper Fixed",
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
-    "video_with_reviews_6G9HCn": {
-      "type": "video-with-reviews",
-      "blocks": {
-        "video_review_xgpV4z": {
-          "type": "video_review",
-          "settings": {
-            "video": "shopify://files/videos/Amazon.com ESHINE Queen Adjustable Bed Frame - 14 Luxury Gel Mem (1).mp4",
-            "author_name": "Trump D",
-            "ring": "shopify://shop_images/ring.png",
-            "review": ""
-          }
-        },
-        "video_review_YqzdgV": {
-          "type": "video_review",
-          "settings": {
-            "author_name": "Trump D",
-            "review": ""
-          }
-        },
-        "video_review_NgEpNH": {
-          "type": "video_review",
-          "settings": {
-            "author_name": "Trump D",
-            "review": ""
-          }
-        },
-        "video_review_PnHF6c": {
-          "type": "video_review",
-          "settings": {
-            "author_name": "Trump D",
-            "review": ""
-          }
-        }
-      },
-      "block_order": [
-        "video_review_xgpV4z",
-        "video_review_YqzdgV",
-        "video_review_NgEpNH",
-        "video_review_PnHF6c"
-      ],
-      "disabled": true,
-      "name": "Video With Reviews",
-      "settings": {
-        "container": "fixed",
-        "coll_title": "Video With Reviews",
-        "padding_top": 50,
-        "padding_bottom": 50
+        "include_margins": true,
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
   "order": [
-    "slideshow_q3U4Jn",
-    "image_with_text_slider_GpYPXm",
-    "countdown_timer_CEAdz4",
+    "slideshow_BBqn9d",
     "collection_with_tab_BWkyHx",
     "collection_with_tab_CRbM9c",
     "product_contrast_ecRJGK",
@@ -766,8 +549,7 @@
     "testimonials_HUptpA",
     "image_with_text_overlay_xwcXq4",
     "featured_blog_zqyTQt",
-    "video_by_swiper_kzjY9n",
-    "video_by_swiper_fixed_bX6gWG",
-    "video_with_reviews_6G9HCn"
+    "445012133772031185",
+    "661161055137855984"
   ]
 }

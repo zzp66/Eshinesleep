@@ -1,5 +1,5 @@
-{{ 'component-testimonial.aio.min.css' | asset_url | stylesheet_tag }}
-{{ 'section-testimonials.aio.min.css' | asset_url | stylesheet_tag }}
+{{ 'component-testimonial.css' | asset_url | stylesheet_tag }}
+{{ 'section-testimonials.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'testimonial.js' | asset_url }}" defer="defer"></script>
 {% liquid
   assign columns_mobile_int = section.settings.columns_mobile | plus: 0

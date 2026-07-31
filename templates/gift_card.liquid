@@ -27,7 +27,7 @@
     {{ content_for_header }}
 
     {%- render 'css-variables' -%}
-    {{ 'theme.aio.min.css' | asset_url | stylesheet_tag }}
+    {{ 'theme.css' | asset_url | stylesheet_tag }}
 
     {%- unless settings.type_body_font.system? -%}
       {% comment %}theme-check-disable AssetPreload{% endcomment %}
@@ -40,7 +40,7 @@
       {% comment %}theme-check-enable AssetPreload{% endcomment %}
     {%- endunless -%}
 
-    {{ 'giftcard.aio.min.css' | asset_url | stylesheet_tag }}
+    {{ 'giftcard.css' | asset_url | stylesheet_tag }}
   </head>
 
   <body class="gift-card">

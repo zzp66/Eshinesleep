@@ -10,9 +10,9 @@
   assign form_id = 'ContactForm-' | append: section.id
   assign phone_field_index = 1
 -%}
-{{ 'section-contact-form.aio.min.css' | asset_url | stylesheet_tag }}
+{{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
 {%- if sidebar -%}
-  {{ 'component-help-sidebar.aio.min.css' | asset_url | stylesheet_tag }}
+  {{ 'component-help-sidebar.css' | asset_url | stylesheet_tag }}
 {%- endif -%}
 {% render 'divider',
   show_divider: section.settings.show_section_divider,

@@ -38,8 +38,8 @@
             "heading_size": "h3"
           }
         },
-        "areviews_reviews_importer_areviews_title_rating_6F30C3": {
-          "type": "shopify://apps/areviews-reviews-importer/blocks/AreviewsTitleRating/ab0ec5fe-c95b-4fd6-bfb8-db2a30d0756f",
+        "judge_me_reviews_preview_badge_QgaqJG": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
         },
         "price": {
@@ -156,7 +156,7 @@
       "block_order": [
         "badges",
         "title",
-        "areviews_reviews_importer_areviews_title_rating_6F30C3",
+        "judge_me_reviews_preview_badge_QgaqJG",
         "price",
         "inventory",
         "variant_picker",
@@ -185,107 +185,6 @@
         "enable_video_looping": true,
         "padding_top": 10,
         "padding_bottom": 60
-      }
-    },
-    "image_with_text_slider_zY8Lig": {
-      "type": "image-with-text-slider",
-      "blocks": {
-        "image_slide_3jM33b": {
-          "type": "image-slide",
-          "settings": {
-            "color_scheme": "scheme-1",
-            "image": "shopify://shop_images/1_6a08f348-db47-426f-bc48-d5a02c6f2f33.jpg",
-            "image_mobile": "shopify://shop_images/1-0_8ef356af-8f7c-4ad7-b290-9a8a629934da.jpg",
-            "desktop_content_position": "middle-center",
-            "desktop_content_alignment": "left",
-            "mobile_content_alignment": "left",
-            "subheading": "",
-            "heading": "8 Reasons to love the Adjustable Luxe Bundle",
-            "highlight_style": "none",
-            "highlight_font_style": "italic",
-            "highlight_style_color": "",
-            "highlight_text_color": "",
-            "heading_size": "h3",
-            "text": "<ul><li>Independent head （0°-55°）and foot elevation（0°-42°）</li><li>Control via app or wireless remote with programmable memory</li><li>One-touch settings for zero gravity, anti-snore, TV recline, and Zero clearance</li><li>Whisper-quiet massage, with 3 intensities</li><li>Built-in USB and Type-C ports for convenience.</li><li>Underbed LED Light</li><li>Adjustable height – 8 & 3.4-inch legs </li><li>Easy assembly with no tools needed</li></ul>",
-            "text_size": "text-base",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "btn--primary",
-            "button_icon": "none",
-            "enable_preload_image": false
-          }
-        },
-        "image_slide_6wk6Xf": {
-          "type": "image-slide",
-          "settings": {
-            "color_scheme": "scheme-1",
-            "image": "shopify://shop_images/95x2_d49cd82a-f683-4720-807d-8ec4093d6616.jpg",
-            "image_mobile": "shopify://shop_images/wo1_3_90912eda-59b6-4c45-afe4-34d35ddb5add.jpg",
-            "desktop_content_position": "middle-center",
-            "desktop_content_alignment": "left",
-            "mobile_content_alignment": "left",
-            "subheading": "",
-            "heading": "Total Body & Mind Sleep Wellness System",
-            "highlight_style": "none",
-            "highlight_font_style": "italic",
-            "highlight_style_color": "",
-            "highlight_text_color": "",
-            "heading_size": "h3",
-            "text": "<ul><li><strong>Ergonomic Infinite Adjustment:</strong> <br/>Dual motors adjust head (0–70°) & legs (0–45°) for zero-gravity support and full-body comfort.</li><li><strong>Anti-Snore Mode:</strong> One touch lifts the head to 12° to open airways and reduce snoring, with ultra-quiet motors (&lt;40dB). Sleep peacefully together without disturbing your partner.</li><li><strong>Smart Massage:</strong> 6 vibration modules with Wave, Pulse, Constant, and Sleep modes. One-touch control relaxes muscles and relieves stress, like having a personal masseuse at home.</li><li><strong>Independent Leg Lift:</strong> Elevate legs 15–30° to boost circulation, reduce swelling, and ease fatigue for better sleep. Ideal after long hours of standing or working.</li></ul>",
-            "text_size": "text-base",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "btn--primary",
-            "button_icon": "none",
-            "enable_preload_image": false
-          }
-        },
-        "image_slide_tLdLht": {
-          "type": "image-slide",
-          "settings": {
-            "color_scheme": "scheme-1",
-            "image": "shopify://shop_images/lQDPJwCoGsTeKFvNA-jNA-iw0OhqYU_TrxoGnEPsoxgiAQ_1000_1000.jpg",
-            "image_mobile": "shopify://shop_images/123.jpg",
-            "desktop_content_position": "middle-center",
-            "desktop_content_alignment": "left",
-            "mobile_content_alignment": "left",
-            "subheading": "",
-            "heading": "Total Body & Mind Sleep Wellness System",
-            "highlight_style": "none",
-            "highlight_font_style": "italic",
-            "highlight_style_color": "",
-            "highlight_text_color": "",
-            "heading_size": "h3",
-            "text": "<ul><li><strong>Smart Sit-Up Assist:</strong> One-touch movement into an ergonomic seated position for safe, effortless rising, helping seniors, postpartum, or post-surgery users regain independence with ease.</li><li><strong>Dual-Zone Adjustment:</strong> Each side adjusts independently (split mattress), letting partners set angles without disturbing each other. Perfect for couples with different routines or reading and relaxing together.</li><li><strong>German OKIN Motor & Steel Frame：</strong>Supports up to 750 lbs, ultra-quiet, fits most headboards for strength & style.</li></ul>",
-            "text_size": "text-base",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "btn--primary",
-            "button_icon": "none",
-            "enable_preload_image": false
-          }
-        }
-      },
-      "block_order": [
-        "image_slide_3jM33b",
-        "image_slide_6wk6Xf",
-        "image_slide_tLdLht"
-      ],
-      "disabled": true,
-      "name": "t:sections.image-with-text-slider.presets.name",
-      "settings": {
-        "container": "fixed",
-        "color_scheme": "",
-        "image_height": "adapt",
-        "image_width": 50,
-        "image_position": "left",
-        "show_controls": true,
-        "autoplay": false,
-        "autoplay_delay": 6,
-        "desktop_controls_position": "center",
-        "mobile_controls_position": "center",
-        "padding_top": 80,
-        "padding_bottom": 26
       }
     },
     "custom_content_WKVGc8": {
@@ -592,79 +491,13 @@
         "padding_bottom": 10
       }
     },
-    "custom_content_GGUNPP": {
-      "type": "custom-content",
-      "blocks": {
-        "image_jnXQp9": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/spring.gif",
-            "width": "41%",
-            "alignment": "center",
-            "block_custom_class": ""
-          }
-        },
-        "text_FEKcXg": {
-          "type": "text",
-          "settings": {
-            "content_alignment": "left",
-            "subheading": "",
-            "heading": "Tired Of Poor Sleep And Waking Up Sore?",
-            "highlight_style": "none",
-            "highlight_font_style": "italic",
-            "highlight_style_color": "",
-            "highlight_text_color": "",
-            "heading_size": "h3",
-            "description": "<ul><li>Precision 7-zone pocket coils respond to every contour of your body, offering seamless support and stability for deeper, more restorative sleep.</li><li>A 2-6cm layer of high-density slow-rebound foam gently contours to your body, easing pressure on shoulders and hips for complete relaxation through the night.</li></ul>",
-            "text_size": "text-base",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "btn--primary",
-            "button_icon": "none",
-            "width": "50%",
-            "alignment": "center",
-            "block_custom_class": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_jnXQp9",
-        "text_FEKcXg"
-      ],
-      "disabled": true,
-      "name": "t:sections.custom-content.name",
-      "settings": {
-        "container": "fixed",
-        "color_scheme": "",
-        "enable_sticky_column": false,
-        "section_header_alignment": "left",
-        "section_header_alignment_mobile": "inherit",
-        "subheading": "",
-        "heading": "",
-        "highlight_style": "none",
-        "highlight_font_style": "italic",
-        "highlight_style_color": "",
-        "highlight_text_color": "",
-        "heading_size": "h3",
-        "description": "",
-        "text_size": "text-base",
-        "column_gap": "medium",
-        "row_gap": "medium",
-        "swipe_on_mobile": false,
-        "columns_mobile": "1",
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "show_section_divider": false,
-        "divider_width": "fixed"
-      }
-    },
-    "tabs_content_HcLmGd": {
+    "tabs_content_LnCtth": {
       "type": "tabs-content",
       "blocks": {
-        "image_with_text_hpf4Ye": {
+        "image_with_text_dyChAi": {
           "type": "image_with_text",
           "settings": {
-            "navigation_title": "Comfort Memory Foam",
+            "navigation_title": "Comfort Foam",
             "image": "shopify://shop_images/81LO9qkWXLL._AC_SL1500__1.jpg",
             "desktop_image_position": "left",
             "image_aspect_ratio": "adapt",
@@ -675,10 +508,10 @@
             "highlight_text_color": "",
             "heading_size": "h3",
             "subheading": "",
-            "description": "<p><strong>Comfort Memory Foam Mattress:</strong> Gel-Infused Air Memory Foam with micro-circulating cooling gel particles efficiently wicks away heat and moisture, preventing stuffiness.</p><ul><li>8\" Comfort Memory Foam Mattress</li><li>Feel: Firm</li><li>Gel-Infused Cooling Comfort</li></ul>",
+            "description": "<p><strong>Comfort Memory Foam Mattress:</strong> Designed with gel-infused memory foam and green tea foam, this firm mattress provides stable support and cooling comfort, ideal for sleepers who prefer a firmer feel with proper spinal alignment.</p><ul><li><strong>8\" Memory Foam Mattress</strong></li><li><strong>Feel: Firm Support</strong></li><li><strong>Gel-Infused Cooling Foam</strong></li><li><strong>Green Tea Freshness Foam</strong></li><li><strong>Removable Bamboo Cover</strong></li></ul>",
             "description_size": "text-base",
-            "button_label": "Learn More",
-            "button_link": "shopify://collections/mattresses",
+            "button_label": "",
+            "button_link": "",
             "button_style": "btn--primary",
             "button_icon": "none",
             "icon_1": "none",
@@ -689,10 +522,10 @@
             "heading_3": ""
           }
         },
-        "image_with_text_Y3RNaw": {
+        "image_with_text_QDfw3n": {
           "type": "image_with_text",
           "settings": {
-            "navigation_title": "Comfort Mattress",
+            "navigation_title": "Comfort Hybrid",
             "image": "shopify://shop_images/12inch_1a441221-c233-4314-af11-4f6336c303cd.jpg",
             "desktop_image_position": "left",
             "image_aspect_ratio": "adapt",
@@ -703,10 +536,10 @@
             "highlight_text_color": "",
             "heading_size": "h3",
             "subheading": "",
-            "description": "<p><strong>Comfort Mattress:</strong> Gel-Infused Air Memory Foam with micro-circulating cooling gel particles efficiently wicks away heat and moisture, preventing stuffiness.</p><ul><li>12\" Comfort Hybrid Mattress</li><li>Feel: Medium-Firm</li><li>Gel-Infused Cooling Comfort</li></ul>",
+            "description": "<p><strong>Comfort Hybrid Mattress:</strong> A balanced combination of gel-infused memory foam and individually wrapped pocket coils delivers pressure relief, motion isolation, and breathable support for a cooler, more comfortable sleep.<br/></p><ul><li><strong>12\" Hybrid Mattress</strong></li><li><strong>Feel: Medium-Plush </strong></li><li><strong>Gel-Infused Cooling Foam</strong></li><li><strong>Individually Pocketed Coils (Motion Isolation)</strong></li><li><strong>Encased Edge Support System</strong></li><li><strong>Removable Jacquard Cover</strong></li><li><strong>Fiberglass-Free FR Inner Cover</strong></li></ul>",
             "description_size": "text-base",
-            "button_label": "Learn More",
-            "button_link": "shopify://products/eshine-comfort-hybrid-mattress",
+            "button_label": "",
+            "button_link": "",
             "button_style": "btn--primary",
             "button_icon": "none",
             "icon_1": "none",
@@ -717,10 +550,10 @@
             "heading_3": ""
           }
         },
-        "image_with_text_TkxzYU": {
+        "image_with_text_ff4y7E": {
           "type": "image_with_text",
           "settings": {
-            "navigation_title": "Signature Mattress",
+            "navigation_title": "Signature Hybrid",
             "image": "shopify://shop_images/12inch_1a441221-c233-4314-af11-4f6336c303cd.jpg",
             "desktop_image_position": "left",
             "image_aspect_ratio": "adapt",
@@ -731,10 +564,10 @@
             "highlight_text_color": "",
             "heading_size": "h3",
             "subheading": "",
-            "description": "<p><br/><strong>Signature Mattress:</strong> Gel-Infused Air Memory Foam with micro-circulating cooling gel particles efficiently wicks away heat and moisture, preventing stuffiness.</p><ul><li>14\" Signature Hybrid Mattress</li><li>Feel: Medium-Soft</li><li>Gel-Infused Cooling Comfort</li><li>Advanced Cooling Gel Layer</li></ul>",
+            "description": "<p><br/><strong>Signature Hybrid Mattress:</strong> A balanced combination of gel-infused memory foam and individually wrapped pocket coils delivers pressure relief, motion isolation, and breathable support for a cooler, more comfortable sleep.<br/></p><ul><li><strong>14\" Hybrid Mattress</strong></li><li><strong>Feel: Medium-Plush </strong></li><li><strong>Gel-Infused Cooling Foam</strong></li><li><strong>Individually Pocketed Coils (Motion Isolation)</strong></li><li><strong>Encased Edge Support System</strong></li><li><strong>Removable Jacquard Cover</strong></li><li><strong>Fiberglass-Free FR Inner Cover</strong></li></ul>",
             "description_size": "text-base",
-            "button_label": "Learn More",
-            "button_link": "shopify://products/eshine-signature-hybrid-mattress",
+            "button_label": "",
+            "button_link": "",
             "button_style": "btn--primary",
             "button_icon": "none",
             "icon_1": "none",
@@ -745,24 +578,24 @@
             "heading_3": ""
           }
         },
-        "image_with_text_R9fhBj": {
+        "image_with_text_dY7mab": {
           "type": "image_with_text",
           "settings": {
-            "navigation_title": "Luxe Mattress",
-            "image": "shopify://shop_images/12_ice_9bb9550d-f694-432b-8b02-d2182178ab0f.jpg",
+            "navigation_title": "Cloud Foam",
+            "image": "shopify://shop_images/81ePIOUY5iL._AC_SL1500_8ff676eb-a9e2-4fca-a2bb-07fff1b0a03b.jpg",
             "desktop_image_position": "left",
             "image_aspect_ratio": "adapt",
-            "heading": "8 Layers Of Luxe",
+            "heading": "6 Layers Of Cloud",
             "highlight_style": "none",
             "highlight_font_style": "italic",
             "highlight_style_color": "",
             "highlight_text_color": "",
             "heading_size": "h3",
             "subheading": "",
-            "description": "<p><br/><strong>Luxe Mattress:</strong> Advanced Glacier-Cool Fibers with low-temperature phase-change technology provide immediate cooling, lowering surface temperature by 2–6°C.</p><ul><li>12\" Luxe Hybrid Mattress</li><li>Feel: Medium-Firm</li><li>Cool-to-the-Touch Feel</li><li>Silky-Smooth Skin Comfort</li><li>Durable Long-Lasting Fabric</li><li>Lightweight & Easy Care</li></ul>",
+            "description": "<p><strong>Cloud Memory Foam Mattress:</strong> Gel-infused air memory foam with micro-circulating cooling gel particles actively wicks away heat and moisture, delivering a cloud-like, ultra-plush sleep experience with deep pressure relief.</p><ul><li><strong>14\" Memory Foam Mattress</strong></li><li><strong>Feel: Ultra-Plush (Cloud-Like Comfort)</strong></li><li><strong>Gel-Infused Cooling Comfort</strong></li><li><strong>Advanced Cooling Gel Layer</strong></li><li><strong>Green Tea Infused Foam</strong></li><li><strong>Removable Bamboo Cover</strong></li></ul>",
             "description_size": "text-base",
-            "button_label": "Learn More",
-            "button_link": "shopify://products/eshine-luxe-hybrid-mattress",
+            "button_label": "",
+            "button_link": "",
             "button_style": "btn--primary",
             "button_icon": "none",
             "icon_1": "none",
@@ -773,10 +606,38 @@
             "heading_3": ""
           }
         },
-        "image_with_text_WRR9CM": {
+        "image_with_text_HaUUMU": {
           "type": "image_with_text",
           "settings": {
-            "navigation_title": "Royal Mattress",
+            "navigation_title": "Arctic Hybrid",
+            "image": "shopify://shop_images/12_ice_9bb9550d-f694-432b-8b02-d2182178ab0f.jpg",
+            "desktop_image_position": "left",
+            "image_aspect_ratio": "adapt",
+            "heading": "8 Layers Of <strong>Arctic</strong>",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h3",
+            "subheading": "",
+            "description": "<p><strong>Arctic Hybrid Mattress:</strong> Featuring an ice-silk cooling cover that instantly reduces skin temperature by 2–5°C, combined with gel foam and pocketed coils for a refreshing, breathable, and supportive sleep.</p><ul><li><strong>12\" Hybrid Mattress</strong></li><li><strong>Cooling Hybrid Mattress (Instant Cool-to-Touch)</strong></li><li><strong>Ice-Silk Cooling Cover (2–5°C Cooler)</strong></li><li><strong>Gel-Infused Cooling Foam</strong></li><li><strong>Individually Pocketed Coils</strong></li><li><strong>Encased Edge Support System</strong></li><li><strong>Fiberglass-Free FR Inner Cover</strong></li></ul>",
+            "description_size": "text-base",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "btn--primary",
+            "button_icon": "none",
+            "icon_1": "none",
+            "heading_1": "",
+            "icon_2": "none",
+            "heading_2": "",
+            "icon_3": "none",
+            "heading_3": ""
+          }
+        },
+        "image_with_text_GWbQYj": {
+          "type": "image_with_text",
+          "settings": {
+            "navigation_title": "Royal Hybrid",
             "image": "shopify://shop_images/14_fc3935d6-7a4a-4b47-82be-9566c7ec2e06.jpg",
             "desktop_image_position": "left",
             "image_aspect_ratio": "adapt",
@@ -787,10 +648,10 @@
             "highlight_text_color": "",
             "heading_size": "h3",
             "subheading": "",
-            "description": "<p><br/><strong>Royal Mattress:</strong>PureGraphene technology delivers up to 99% antibacterial protection, effectively inhibiting common bacteria.</p><ul><li>14\" Royal Hybrid Mattress</li><li>Feel: Medium-Soft</li><li>Breathable All-Night Comfort</li><li>Fast-Drying Moisture Control </li><li>Durable Long-Lasting Fabric</li><li>Clean & Hygienic Surface</li><li>Lightweight & Easy Care</li></ul>",
+            "description": "<p><strong>Graphene Royal Hybrid Mattress:</strong> Advanced graphene-infused cover enhances heat dissipation, antibacterial protection, and odor resistance—perfect for pet owners seeking a cleaner, cooler sleep environment with premium support.</p><ul><li><strong>14\" Hybrid Mattress</strong></li><li><strong>Graphene Cooling Technology</strong></li><li><strong>Antibacterial & Odor-Resistant (Pet-Friendly)</strong></li><li><strong>Gel-Infused Cooling Foam</strong></li><li><strong>Individually Pocketed Coils</strong></li><li><strong>Encased Edge Support System</strong></li><li><strong>Fiberglass-Free FR Inner Cover</strong></li></ul>",
             "description_size": "text-base",
-            "button_label": "Learn More",
-            "button_link": "shopify://products/eshine-royal-hybrid-mattress",
+            "button_label": "",
+            "button_link": "",
             "button_style": "btn--primary",
             "button_icon": "none",
             "icon_1": "none",
@@ -803,11 +664,12 @@
         }
       },
       "block_order": [
-        "image_with_text_hpf4Ye",
-        "image_with_text_Y3RNaw",
-        "image_with_text_TkxzYU",
-        "image_with_text_R9fhBj",
-        "image_with_text_WRR9CM"
+        "image_with_text_dyChAi",
+        "image_with_text_QDfw3n",
+        "image_with_text_ff4y7E",
+        "image_with_text_dY7mab",
+        "image_with_text_HaUUMU",
+        "image_with_text_GWbQYj"
       ],
       "name": "t:sections.tabs-content.name",
       "settings": {
@@ -815,72 +677,6 @@
         "color_scheme": "",
         "navigation_style": "headings",
         "navigation_alignment": "center",
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "show_section_divider": false,
-        "divider_width": "fixed"
-      }
-    },
-    "custom_content_DXbwMQ": {
-      "type": "custom-content",
-      "blocks": {
-        "text_9ctVQb": {
-          "type": "text",
-          "settings": {
-            "content_alignment": "left",
-            "subheading": "",
-            "heading": "Too Hot Or Cold At Night?",
-            "highlight_style": "none",
-            "highlight_font_style": "italic",
-            "highlight_style_color": "",
-            "highlight_text_color": "",
-            "heading_size": "h3",
-            "description": "<ul><li><strong>Comfort & Signature Mattress:</strong> Gel-Infused Air Memory Foam with micro-circulating cooling gel particles efficiently wicks away heat and moisture, preventing stuffiness.</li><li><strong>Luxe Mattress:</strong> Advanced Glacier-Cool Fibers with low-temperature phase-change technology provide immediate cooling, lowering surface temperature by 2–6°C.</li><li><strong>Royal Mattress:</strong> PureGraphene technology delivers up to 99% antibacterial protection, effectively inhibiting common bacteria.<br/><br/></li></ul>",
-            "text_size": "text-base",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "btn--primary",
-            "button_icon": "none",
-            "width": "50%",
-            "alignment": "center",
-            "block_custom_class": ""
-          }
-        },
-        "image_bq4TLf": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/6_1.jpg",
-            "width": "41%",
-            "alignment": "center",
-            "block_custom_class": ""
-          }
-        }
-      },
-      "block_order": [
-        "text_9ctVQb",
-        "image_bq4TLf"
-      ],
-      "disabled": true,
-      "name": "t:sections.custom-content.name",
-      "settings": {
-        "container": "fixed",
-        "color_scheme": "",
-        "enable_sticky_column": false,
-        "section_header_alignment": "left",
-        "section_header_alignment_mobile": "inherit",
-        "subheading": "",
-        "heading": "",
-        "highlight_style": "none",
-        "highlight_font_style": "italic",
-        "highlight_style_color": "",
-        "highlight_text_color": "",
-        "heading_size": "h3",
-        "description": "",
-        "text_size": "text-base",
-        "column_gap": "medium",
-        "row_gap": "medium",
-        "swipe_on_mobile": false,
-        "columns_mobile": "1",
         "padding_top": 50,
         "padding_bottom": 50,
         "show_section_divider": false,
@@ -941,73 +737,6 @@
         "padding_top": 50,
         "padding_bottom": 50,
         "enable_preload_image": false
-      }
-    },
-    "media_tab_swiper_hydUmC": {
-      "type": "media-tab-swiper",
-      "blocks": {
-        "item_tX3WQQ": {
-          "type": "item",
-          "settings": {
-            "item_text": "Twin xl Bed Frame",
-            "item_subtext": "Sub Title",
-            "sub_title_1": "Head Up",
-            "sub_img_pc_1": "shopify://shop_images/2000-95-1.jpg",
-            "sub_title_2": "Feet Up",
-            "sub_img_pc_2": "shopify://shop_images/2000-95-3.jpg",
-            "sub_title_3": "Zero Gravity",
-            "sub_img_pc_3": "shopify://shop_images/2000-95.jpg",
-            "sub_title_4": "Flat",
-            "sub_img_pc_4": "shopify://shop_images/2000-95-2.jpg",
-            "sub_title_5": ""
-          }
-        },
-        "item_69wirY": {
-          "type": "item",
-          "settings": {
-            "item_text": "Queen Bed Frame",
-            "item_subtext": "Sub Title",
-            "sub_title_1": "Head Up",
-            "sub_img_pc_1": "shopify://shop_images/2000-150-2.jpg",
-            "sub_title_2": "Feet Up",
-            "sub_img_pc_2": "shopify://shop_images/2000-150-1.jpg",
-            "sub_title_3": "Zero Gravity",
-            "sub_img_pc_3": "shopify://shop_images/2000-150-3.jpg",
-            "sub_title_4": "Flat",
-            "sub_img_pc_4": "shopify://shop_images/2000-150.jpg",
-            "sub_title_5": ""
-          }
-        },
-        "item_Th3trH": {
-          "type": "item",
-          "settings": {
-            "item_text": "Split King Bed Frame",
-            "item_subtext": "Sub Title",
-            "sub_title_1": "Head Up",
-            "sub_img_pc_1": "shopify://shop_images/2000-95x2-2.jpg",
-            "sub_title_2": "Feet Up",
-            "sub_img_pc_2": "shopify://shop_images/5000-95x2-1.jpg",
-            "sub_title_3": "Zero Gravity",
-            "sub_img_pc_3": "shopify://shop_images/2000-95x2-3.jpg",
-            "sub_title_4": "Flat",
-            "sub_img_pc_4": "shopify://shop_images/5000-95x2.jpg",
-            "sub_title_5": ""
-          }
-        }
-      },
-      "block_order": [
-        "item_tX3WQQ",
-        "item_69wirY",
-        "item_Th3trH"
-      ],
-      "disabled": true,
-      "name": "Media Tab Swiper",
-      "settings": {
-        "container": "fixed",
-        "coll_title": "Explore All ESHINE SLEEP Products",
-        "coll_subtitle": "Shop beds,frames and more.",
-        "padding_top": 50,
-        "padding_bottom": 50
       }
     },
     "media_tab_swiper_P8hWA4": {
@@ -1076,200 +805,19 @@
         "padding_bottom": 50
       }
     },
-    "comparison_table_chGULJ": {
-      "type": "comparison-table",
-      "blocks": {
-        "heading_ANXidc": {
-          "type": "heading",
-          "settings": {
-            "icon-1": "none",
-            "title-1": "Item Model",
-            "icon-2": "none",
-            "title-2": "Color",
-            "icon-3": "none",
-            "title-3": "Features",
-            "icon-4": "none",
-            "title-4": "Mattress",
-            "icon-5": "none",
-            "title-5": "Bundle Includes",
-            "icon-6": "none",
-            "title-6": "",
-            "icon-7": "chat",
-            "title-7": "",
-            "icon-8": "chat",
-            "title-8": "",
-            "icon-9": "chat",
-            "title-9": "",
-            "icon-10": "chat",
-            "title-10": ""
-          }
-        },
-        "content_49jp9n": {
-          "type": "content",
-          "settings": {
-            "product": "eshine-e2000-premium-bundle-adjustable-bed-frame-with-mattress",
-            "text-1": "<p>E2000+ Premium</p>",
-            "text-2": "<p>Orange</p>",
-            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>11.4\" Legs</p>",
-            "text-4": "<p>Comfort/Signature/Luxe/Royal Mattress</p>",
-            "text-5": "<p>Adjustable Base<br/>Mattress<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Installation Tools<br/>Manual<br/>Warranty Card</p>",
-            "text-6": "",
-            "text-7": "",
-            "text-8": "",
-            "text-9": "",
-            "text-10": ""
-          }
-        },
-        "content_CRi9XP": {
-          "type": "content",
-          "settings": {
-            "product": "e3000-luxe-hybrid-bundle-massage-adjustable-base-with-hybrid-mattress",
-            "text-1": "<p>E3000+ Luxe</p>",
-            "text-2": "<p>Orange</p>",
-            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>8\"+3.4\" Adjustable Legs<br/>Massage<br/>Under-Bed Lights</p>",
-            "text-4": "<p>Comfort/Signature/Luxe/Royal Mattress</p>",
-            "text-5": "<p>Adjustable Base<br/>Mattress<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Installation Tools<br/>Manual<br/>Warranty Card</p>",
-            "text-6": "",
-            "text-7": "",
-            "text-8": "",
-            "text-9": "",
-            "text-10": ""
-          }
-        },
-        "content_EhjNKE": {
-          "type": "content",
-          "settings": {
-            "product": "eshine-e3100-luxe-hybrid-bundle-adjustable-bed-with-mattress",
-            "text-1": "<p>E3100+ Luxe</p>",
-            "text-2": "<p>Grey</p>",
-            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>8\"+3.4\" Adjustable Legs<br/>Massage<br/>Under-Bed Lights</p>",
-            "text-4": "<p>Comfort/Signature/Luxe/Royal Mattress</p>",
-            "text-5": "<p>Adjustable Base<br/>Mattress<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Installation Tools<br/>Manual<br/>Warranty Card</p>",
-            "text-6": "",
-            "text-7": "",
-            "text-8": "",
-            "text-9": "",
-            "text-10": ""
-          }
-        },
-        "content_j3wWwT": {
-          "type": "content",
-          "settings": {
-            "product": "e5000-royal-adjustable-bundle",
-            "text-1": "<p>E5000+ Royal</p>",
-            "text-2": "<p>Orange</p>",
-            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>8\"+3.4\" Adjustable Legs<br/>Massage<br/>Under-Bed Lights<br/>Head Tilt (7°)</p>",
-            "text-4": "<p>Comfort/Signature/Luxe/Royal Mattress</p>",
-            "text-5": "<p>Adjustable Base<br/>Mattress<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Installation Tools<br/>Manual<br/>Warranty Card</p>",
-            "text-6": "",
-            "text-7": "",
-            "text-8": "",
-            "text-9": "",
-            "text-10": ""
-          }
-        },
-        "content_nBtc8y": {
-          "type": "content",
-          "settings": {
-            "product": "e6000-platinum-hybrid-bundle",
-            "text-1": "<p>E6000+ Platinum</p>",
-            "text-2": "<p>Orange</p>",
-            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>8\"+3.4\" Adjustable Legs<br/>Massage<br/>Under-Bed Lights<br/>Head Tilt (7°)<br/>Lumbar Support</p>",
-            "text-4": "<p>Comfort/Signature/Luxe/Royal Mattress</p>",
-            "text-5": "<p>Adjustable Base<br/>Mattress<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Installation Tools<br/>Manual<br/>Warranty Card</p>",
-            "text-6": "",
-            "text-7": "",
-            "text-8": "",
-            "text-9": "",
-            "text-10": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading_ANXidc",
-        "content_49jp9n",
-        "content_CRi9XP",
-        "content_EhjNKE",
-        "content_j3wWwT",
-        "content_nBtc8y"
-      ],
-      "name": "t:sections.comparison-table.name",
+    "product_contrast_ftjecF": {
+      "type": "product-contrast",
+      "name": "Product Contrast",
       "settings": {
-        "container": "fixed",
-        "color_scheme": "",
-        "header_layout": "horizontal",
-        "section_header_alignment": "left",
-        "section_header_alignment_mobile": "inherit",
-        "subheading": "ESHINESLEEP",
-        "heading": "Adjustable Bed Bundles Comparison",
-        "highlight_style": "none",
-        "highlight_font_style": "italic",
-        "highlight_style_color": "",
-        "highlight_text_color": "",
-        "heading_size": "h3",
-        "description": "<p>E2000+，E3000+，E3100+，E5000+</p>",
-        "text_size": "text-base",
-        "button_label": "",
-        "button_link": "",
-        "button_style": "btn--primary",
-        "button_icon": "none",
-        "icon_size": 28,
-        "text_line_limit": "none",
-        "show_view_more_button": true,
-        "show_section_divider": true,
-        "divider_width": "full",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
-    "video_hero_Ad4hWP": {
-      "type": "video-hero",
-      "name": "t:sections.video-hero.name",
-      "settings": {
-        "container": "fixed",
-        "video_url": "https://www.youtube.com/watch?v=I1MogI9MG28",
-        "description": "Goodbye Back Pain! Our ESHINE Hybrid Mattress Verdict",
-        "video_height": "adapt",
-        "overlay_opacity": 0,
-        "enable_parallax": false,
-        "parallax_direction": "vertical",
-        "color_scheme": "",
-        "content_position": "middle-center",
-        "content_alignment": "center",
-        "video_mobile_height": "adapt",
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "show_section_divider": false,
-        "divider_width": "fixed"
-      }
-    },
-    "collection_with_tab_dyqwDU": {
-      "type": "collection-with-tab",
-      "blocks": {
-        "collection_LnUnte": {
-          "type": "collection",
-          "settings": {
-            "collection": "bundles",
-            "collection_title": "Bundles"
-          }
-        },
-        "collection_3EeJrz": {
-          "type": "collection",
-          "settings": {
-            "collection": "mattresses",
-            "collection_title": "Mattresses"
-          }
-        }
-      },
-      "block_order": [
-        "collection_LnUnte",
-        "collection_3EeJrz"
-      ],
-      "disabled": true,
-      "name": "Collection With Tab",
-      "settings": {
-        "container": "fixed",
-        "padding_top": 60,
+        "left_image": "shopify://shop_images/lQDPJw3gVZDYWIXNAyDNAyCwLScp35d1M9QIhIgHLhIjAA_800_800.png",
+        "right_image": "shopify://shop_images/21_fe0b36bf-7bcb-4e7c-8d8d-a686131e7ba0.png",
+        "headline": "Which Model Is Right For You？",
+        "subhead": "See the Difference- Find what Suits You",
+        "comparison_text": "All Model Comparison",
+        "button_text": "Learn More",
+        "button_link": "shopify://pages/3100-vs-5000",
+        "container": "full",
+        "padding_top": 0,
         "padding_bottom": 60
       }
     },
@@ -1332,69 +880,24 @@
         "padding_bottom": 80
       }
     },
-    "features_image_switcher_GidNhG": {
-      "type": "features-image-switcher",
+    "805051282781655509": {
+      "type": "apps",
       "blocks": {
-        "feature_4zFRCw": {
-          "type": "feature",
+        "a2e4eec6-66cc-4389-88ff-b7253a5e620c": {
+          "type": "shopify://apps/dadao-product-reviews/blocks/product-reviews/3cc4253a-05eb-4164-8778-b76d83ce00cc",
           "settings": {
-            "title": "Control Via Wireless Remote or App"
-          }
-        },
-        "feature_pcKK6N": {
-          "type": "feature",
-          "settings": {
-            "title": "Custom Elevation & Programmable Memory"
-          }
-        },
-        "feature_yiYz4E": {
-          "type": "feature",
-          "settings": {
-            "title": ""
-          }
-        },
-        "feature_b9HPRF": {
-          "type": "feature",
-          "settings": {
-            "title": ""
-          }
-        },
-        "feature_dkfKQr": {
-          "type": "feature",
-          "settings": {
-            "title": ""
-          }
-        },
-        "feature_mFWRYf": {
-          "type": "feature",
-          "settings": {
-            "title": ""
-          }
-        },
-        "feature_dJ3qUz": {
-          "type": "feature",
-          "settings": {
-            "title": ""
+            "product": "{{product}}",
+            "show_sample_reviews": true
           }
         }
       },
       "block_order": [
-        "feature_4zFRCw",
-        "feature_pcKK6N",
-        "feature_yiYz4E",
-        "feature_b9HPRF",
-        "feature_dkfKQr",
-        "feature_mFWRYf",
-        "feature_dJ3qUz"
+        "a2e4eec6-66cc-4389-88ff-b7253a5e620c"
       ],
-      "disabled": true,
-      "name": "Features Image Switcher",
       "settings": {
-        "container": "fixed",
-        "coll_title": "Features",
-        "coll_subtitle": "Shop beds,frames and more.",
-        "padding_top": 50,
-        "padding_bottom": 50
+        "include_margins": true,
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "related-products": {
@@ -1426,15 +929,6 @@
         "padding_bottom": 50,
         "show_section_divider": false,
         "divider_width": "fixed"
-      }
-    },
-    "1629746450643786911": {
-      "type": "areviews-section",
-      "settings": {
-        "hide_areviews_title_rating": false,
-        "areviews_theme_font": "inherit",
-        "areviews_stars_colors": "#f3c621",
-        "areviews_write_reviews_botton_color": "#373737"
       }
     },
     "faqs_rgzy3m": {
@@ -1507,21 +1001,21 @@
         "padding_bottom": 60
       }
     },
-    "areviews_1766636463_093935": {
+    "17853981799acdf875": {
       "type": "apps",
       "blocks": {
-        "areviews_reviews_importer_areviews_display_reviews_3186CE": {
-          "type": "shopify://apps/areviews-reviews-importer/blocks/AreviewsDisplayReviews/ab0ec5fe-c95b-4fd6-bfb8-db2a30d0756f",
+        "judge_me_reviews_review_widget_QpJGEB": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
-            "hide_areviews_title_rating": false,
-            "areviews_theme_font": "inherit",
-            "areviews_stars_colors": "#f3c621",
-            "areviews_write_reviews_botton_color": "#373737"
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
           }
         }
       },
       "block_order": [
-        "areviews_reviews_importer_areviews_display_reviews_3186CE"
+        "judge_me_reviews_review_widget_QpJGEB"
       ],
       "settings": {
         "include_margins": true,
@@ -1533,25 +1027,18 @@
   "order": [
     "breadcrumbs",
     "main",
-    "image_with_text_slider_zY8Lig",
     "custom_content_WKVGc8",
     "custom_content_Ckybpd",
     "custom_content_Cer7Q8",
     "multicolumn_icon_nqA6Yw",
-    "custom_content_GGUNPP",
-    "tabs_content_HcLmGd",
-    "custom_content_DXbwMQ",
+    "tabs_content_LnCtth",
     "image_with_text_overlay_3b3dHg",
-    "media_tab_swiper_hydUmC",
     "media_tab_swiper_P8hWA4",
-    "comparison_table_chGULJ",
-    "video_hero_Ad4hWP",
-    "collection_with_tab_dyqwDU",
+    "product_contrast_ftjecF",
     "image_with_text_tyqJEm",
-    "features_image_switcher_GidNhG",
+    "805051282781655509",
     "related-products",
-    "1629746450643786911",
     "faqs_rgzy3m",
-    "areviews_1766636463_093935"
+    "17853981799acdf875"
   ]
 }

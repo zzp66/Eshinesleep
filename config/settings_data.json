@@ -66,6 +66,9 @@
     "cart_empty_message": "<p>Not sure where to start? Try these collections:</p>",
     "collection_card_color_scheme": "scheme-1",
     "collection_image_ratio": "3/4",
+    "social_facebook_link": "https://www.facebook.com/p/Eshinesleep-61556104558973/",
+    "social_instagram_link": "https://www.instagram.com/eshinesleep26/",
+    "social_youtube_link": "https://www.youtube.com/channel/UC_y3lQFCgzSzbKj_2ubOZVg",
     "social_snapchat_link": "",
     "social_pinterest_link": "",
     "social_tumblr_link": "",
@@ -118,25 +121,31 @@
           "button_vertical_position": "higher"
         }
       },
-      "4226490577545693572": {
-        "type": "shopify://apps/avada-seo-suite/blocks/avada-seo/15507c6e-1aa3-45d3-b698-7e175e033440",
+      "14327677521557774844": {
+        "type": "shopify://apps/simprosys-google-shopping-feed/blocks/core_settings_block/1f0b859e-9fa6-4007-97e8-4513aff5ff3b",
         "disabled": false,
         "settings": {}
       },
-      "14327677521557774844": {
-        "type": "shopify://apps/simprosys-google-shopping-feed/blocks/core_settings_block/1f0b859e-9fa6-4007-97e8-4513aff5ff3b",
+      "16160716078332068383": {
+        "type": "shopify://apps/rubik-variant-images/blocks/rubik-variant-images/e684282e-1343-4a60-8fa2-6393aded15f6",
+        "disabled": false,
+        "settings": {}
+      },
+      "1900631457097698167": {
+        "type": "shopify://apps/rubik-variant-images/blocks/rubik-swatch/e684282e-1343-4a60-8fa2-6393aded15f6",
         "disabled": true,
         "settings": {}
       },
-      "9010622670419788200": {
-        "type": "shopify://apps/avada-seo-suite/blocks/avada-site-verification/15507c6e-1aa3-45d3-b698-7e175e033440",
+      "14060646107696862457": {
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
+      },
+      "13047258039897440615": {
+        "type": "shopify://apps/judge-me-reviews/blocks/cart_drawer_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
         "settings": {
-          "google_search_console": "",
-          "bing_webmaster_tools": "",
-          "baidu_webmaster_tools": "",
-          "pinterest": "",
-          "yandex_webmaster_tools": ""
+          "widget_type": "review-widget"
         }
       }
     },
@@ -145,7 +154,7 @@
         "settings": {
           "primary_accent": "#c00000",
           "border": "#e5e5e5",
-          "text": "#000000",
+          "text": "#0d0c0c",
           "subtext": "#000000",
           "background": "#ffffff",
           "secondary_background": "#f3f4f6",
@@ -316,10 +325,10 @@
         "settings": {
           "primary_accent": "#c4301c",
           "border": "#e5e5e5",
-          "text": "#000000",
-          "subtext": "#666666",
-          "background": "#ffffff",
-          "secondary_background": "#ededed",
+          "text": "#f9f9f9",
+          "subtext": "#ffffff",
+          "background": "#0d0c0c",
+          "secondary_background": "#0d0c0c",
           "button": "#f4f691",
           "button_label": "#000000",
           "secondary_button": "#ededed",
@@ -353,9 +362,9 @@
       "scheme-11": {
         "settings": {
           "primary_accent": "#c4301c",
-          "border": "#516971",
+          "border": "#091d3b",
           "text": "#072835",
-          "subtext": "#516971",
+          "subtext": "#091d3b",
           "background": "#f6f6f6",
           "secondary_background": "#ededed",
           "button": "#072835",

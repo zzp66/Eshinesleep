@@ -14,7 +14,8 @@
     <img loading="lazy" data-avada-lazy src="{{ product.featured_image | image_url: width: master }}" alt="">
   </div>
   <div class="card-item-infos">
-    <p class="infos-title">{{ product.title }}</p>
+        <p class="infos-title">{{ product.title }}</p>
+<div data-shop-id="{{shop.id}}" product-id="{{product.id }}" data-page="{{request.page_type}}" class="ddreview-star"></div>
     <div class="product-parameter-bar-box">
       {% assign total = 5 %}
       <div class="product-parameter-bar">

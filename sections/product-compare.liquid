@@ -87,7 +87,8 @@
                   <div class="compare-table__col-info text-center">
                     <h3 class="text-pcard-title">
                       <a class="reversed-link block" href="{{ product.url }}">
-                        <span class="reversed-link__text">{{- product.title -}}</span>
+                                                <span class="reversed-link__text">{{- product.title -}}</span>
+<div data-shop-id="{{shop.id}}" product-id="{{product.id }}" data-page="{{request.page_type}}" class="ddreview-star"></div>
                       </a>
                     </h3>
                     {%- if block.settings.show_view_details_button -%}

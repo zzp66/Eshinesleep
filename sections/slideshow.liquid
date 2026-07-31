@@ -39,7 +39,7 @@
   }
 {% endstyle %}
 
-{{ 'section-slideshow.aio.min.css' | asset_url | stylesheet_tag: preload: true }}
+{{ 'section-slideshow.css' | asset_url | stylesheet_tag: preload: true }}
 <script src="{{ 'slideshow-component.js' | asset_url }}" defer="defer"></script>
 <div
   class="section section-{{ section.id }} section--slideshow page-width page-width--{{ section.settings.container }}"

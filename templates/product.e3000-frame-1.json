@@ -38,8 +38,8 @@
             "heading_size": "h3"
           }
         },
-        "areviews_reviews_importer_areviews_title_rating_0266B0": {
-          "type": "shopify://apps/areviews-reviews-importer/blocks/AreviewsTitleRating/ab0ec5fe-c95b-4fd6-bfb8-db2a30d0756f",
+        "judge_me_reviews_preview_badge_C7kRrp": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
         },
         "price": {
@@ -156,7 +156,7 @@
       "block_order": [
         "badges",
         "title",
-        "areviews_reviews_importer_areviews_title_rating_0266B0",
+        "judge_me_reviews_preview_badge_C7kRrp",
         "price",
         "inventory",
         "variant_picker",
@@ -185,107 +185,6 @@
         "enable_video_looping": true,
         "padding_top": 10,
         "padding_bottom": 60
-      }
-    },
-    "image_with_text_slider_C87nwm": {
-      "type": "image-with-text-slider",
-      "blocks": {
-        "image_slide_WFXRFL": {
-          "type": "image-slide",
-          "settings": {
-            "color_scheme": "scheme-1",
-            "image": "shopify://shop_images/1_6a08f348-db47-426f-bc48-d5a02c6f2f33.jpg",
-            "image_mobile": "shopify://shop_images/1-0_8ef356af-8f7c-4ad7-b290-9a8a629934da.jpg",
-            "desktop_content_position": "middle-center",
-            "desktop_content_alignment": "left",
-            "mobile_content_alignment": "left",
-            "subheading": "",
-            "heading": "8 Reasons to love the Adjustable Luxe Bundle",
-            "highlight_style": "none",
-            "highlight_font_style": "italic",
-            "highlight_style_color": "",
-            "highlight_text_color": "",
-            "heading_size": "h3",
-            "text": "<ul><li>Independent head （0°-55°）and foot elevation（0°-42°）</li><li>Control via app or wireless remote with programmable memory</li><li>One-touch settings for zero gravity, anti-snore, TV recline, and Zero clearance</li><li>Whisper-quiet massage, with 3 intensities</li><li>Built-in USB and Type-C ports for convenience.</li><li>Underbed LED Light</li><li>Adjustable height – 8 & 3.4-inch legs </li><li>Easy assembly with no tools needed</li></ul>",
-            "text_size": "text-base",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "btn--primary",
-            "button_icon": "none",
-            "enable_preload_image": false
-          }
-        },
-        "image_slide_MjtQKQ": {
-          "type": "image-slide",
-          "settings": {
-            "color_scheme": "scheme-1",
-            "image": "shopify://shop_images/95x2_d49cd82a-f683-4720-807d-8ec4093d6616.jpg",
-            "image_mobile": "shopify://shop_images/wo1_3_90912eda-59b6-4c45-afe4-34d35ddb5add.jpg",
-            "desktop_content_position": "middle-center",
-            "desktop_content_alignment": "left",
-            "mobile_content_alignment": "left",
-            "subheading": "",
-            "heading": "Total Body & Mind Sleep Wellness System",
-            "highlight_style": "none",
-            "highlight_font_style": "italic",
-            "highlight_style_color": "",
-            "highlight_text_color": "",
-            "heading_size": "h3",
-            "text": "<ul><li><strong>Ergonomic Infinite Adjustment:</strong> <br/>Dual motors adjust head (0–70°) & legs (0–45°) for zero-gravity support and full-body comfort.</li><li><strong>Anti-Snore Mode:</strong> One touch lifts the head to 12° to open airways and reduce snoring, with ultra-quiet motors (&lt;40dB). Sleep peacefully together without disturbing your partner.</li><li><strong>Smart Massage:</strong> 6 vibration modules with Wave, Pulse, Constant, and Sleep modes. One-touch control relaxes muscles and relieves stress, like having a personal masseuse at home.</li><li><strong>Independent Leg Lift:</strong> Elevate legs 15–30° to boost circulation, reduce swelling, and ease fatigue for better sleep. Ideal after long hours of standing or working.</li></ul>",
-            "text_size": "text-base",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "btn--primary",
-            "button_icon": "none",
-            "enable_preload_image": false
-          }
-        },
-        "image_slide_aFHgxB": {
-          "type": "image-slide",
-          "settings": {
-            "color_scheme": "scheme-1",
-            "image": "shopify://shop_images/lQDPJwCoGsTeKFvNA-jNA-iw0OhqYU_TrxoGnEPsoxgiAQ_1000_1000.jpg",
-            "image_mobile": "shopify://shop_images/123.jpg",
-            "desktop_content_position": "middle-center",
-            "desktop_content_alignment": "left",
-            "mobile_content_alignment": "left",
-            "subheading": "",
-            "heading": "Total Body & Mind Sleep Wellness System",
-            "highlight_style": "none",
-            "highlight_font_style": "italic",
-            "highlight_style_color": "",
-            "highlight_text_color": "",
-            "heading_size": "h3",
-            "text": "<ul><li><strong>Smart Sit-Up Assist:</strong> One-touch movement into an ergonomic seated position for safe, effortless rising, helping seniors, postpartum, or post-surgery users regain independence with ease.</li><li><strong>Dual-Zone Adjustment:</strong> Each side adjusts independently (split mattress), letting partners set angles without disturbing each other. Perfect for couples with different routines or reading and relaxing together.</li><li><strong>German OKIN Motor & Steel Frame：</strong>Supports up to 750 lbs, ultra-quiet, fits most headboards for strength & style.</li></ul>",
-            "text_size": "text-base",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "btn--primary",
-            "button_icon": "none",
-            "enable_preload_image": false
-          }
-        }
-      },
-      "block_order": [
-        "image_slide_WFXRFL",
-        "image_slide_MjtQKQ",
-        "image_slide_aFHgxB"
-      ],
-      "disabled": true,
-      "name": "t:sections.image-with-text-slider.presets.name",
-      "settings": {
-        "container": "fixed",
-        "color_scheme": "",
-        "image_height": "adapt",
-        "image_width": 50,
-        "image_position": "left",
-        "show_controls": true,
-        "autoplay": false,
-        "autoplay_delay": 6,
-        "desktop_controls_position": "center",
-        "mobile_controls_position": "center",
-        "padding_top": 80,
-        "padding_bottom": 26
       }
     },
     "custom_content_WUEb4J": {
@@ -592,191 +491,6 @@
         "padding_bottom": 10
       }
     },
-    "image_with_text_6rdaVW": {
-      "type": "image-with-text",
-      "blocks": {
-        "badge_R7PabL": {
-          "type": "badge",
-          "disabled": true,
-          "settings": {
-            "color_scheme": "",
-            "text": "image with text - spinning text -",
-            "position_mobile": "right"
-          }
-        },
-        "subheading_cmgCrt": {
-          "type": "subheading",
-          "disabled": true,
-          "settings": {
-            "subheading": "10 Key Health Benefits"
-          }
-        },
-        "heading_W3piiR": {
-          "type": "heading",
-          "settings": {
-            "heading": "10 Key Health Benefits",
-            "highlight_style": "hand_drawn_circle",
-            "highlight_font_style": "italic",
-            "highlight_style_color": "",
-            "highlight_text_color": "",
-            "heading_size": "h4"
-          }
-        },
-        "text_QpTCRG": {
-          "type": "text",
-          "settings": {
-            "text": "<p>1. Enjoy Extra Lumbar & Back Support<br/>2. Snooze Snoring Away<br/>3. Relieve Acid Reflux & Heartburn<br/>4. Elevate Feet & Legs To Prevent Swelling<br/>5. Take The Pressure Off To Improve Circulation<br/>6. Find Your Ideal Zero Gravity Position<br/>7. Reduce Shoulder & Neck Strain<br/>8. Support Post-Surgery Or Recovery Needs<br/>9. Improve Digestion After Meals<br/>10. Promote Better Sleep Quality Every Night</p>",
-            "subtext_color": true
-          }
-        }
-      },
-      "block_order": [
-        "badge_R7PabL",
-        "subheading_cmgCrt",
-        "heading_W3piiR",
-        "text_QpTCRG"
-      ],
-      "disabled": true,
-      "name": "t:sections.image-with-text.name",
-      "settings": {
-        "container": "fixed",
-        "color_scheme": "",
-        "image": "shopify://shop_images/150_7bad23f8-a3dc-42b9-8422-cbc6e575bc29.jpg",
-        "image_position": "left",
-        "image_width": 50,
-        "desktop_content_position": "center",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "inherit",
-        "show_section_divider": false,
-        "divider_width": "fixed",
-        "padding_top": 80,
-        "padding_bottom": 80
-      }
-    },
-    "image_with_text_overlay_3b3dHg": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "subheading_mh7YxY": {
-          "type": "subheading",
-          "disabled": true,
-          "settings": {
-            "subheading": "Add a tagline"
-          }
-        },
-        "heading_3XbnPD": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Image with text overlay",
-            "highlight_style": "none",
-            "highlight_font_style": "italic",
-            "highlight_style_color": "",
-            "highlight_text_color": "",
-            "heading_size": "hd1"
-          }
-        },
-        "text_nnzBYg": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. <br>Describe a product, share announcements, or welcome customers to your store.</p>",
-            "text_size": "text-base"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_mh7YxY",
-        "heading_3XbnPD",
-        "text_nnzBYg"
-      ],
-      "disabled": true,
-      "name": "t:sections.image-with-text-overlay.name",
-      "settings": {
-        "container": "full",
-        "image": "shopify://shop_images/17.jpg",
-        "desktop_height": "adapt",
-        "overlay_opacity": 0,
-        "enable_parallax": false,
-        "parallax_direction": "vertical",
-        "color_scheme": "",
-        "content_position": "middle-left",
-        "content_alignment": "left",
-        "image_mobile": "shopify://shop_images/17_88dec6c6-d7e1-417f-b88a-0cac39ed22c2.jpg",
-        "mobile_height": "adapt",
-        "content_position_mobile": "middle-center-mobile",
-        "content_alignment_mobile": "left",
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "enable_preload_image": false
-      }
-    },
-    "media_tab_swiper_hydUmC": {
-      "type": "media-tab-swiper",
-      "blocks": {
-        "item_tX3WQQ": {
-          "type": "item",
-          "settings": {
-            "item_text": "Twin xl Bed Frame",
-            "item_subtext": "Sub Title",
-            "sub_title_1": "Head Up",
-            "sub_img_pc_1": "shopify://shop_images/2000-95-1.jpg",
-            "sub_title_2": "Feet Up",
-            "sub_img_pc_2": "shopify://shop_images/2000-95-3.jpg",
-            "sub_title_3": "Zero Gravity",
-            "sub_img_pc_3": "shopify://shop_images/2000-95.jpg",
-            "sub_title_4": "Flat",
-            "sub_img_pc_4": "shopify://shop_images/2000-95-2.jpg",
-            "sub_title_5": ""
-          }
-        },
-        "item_69wirY": {
-          "type": "item",
-          "settings": {
-            "item_text": "Queen Bed Frame",
-            "item_subtext": "Sub Title",
-            "sub_title_1": "Head Up",
-            "sub_img_pc_1": "shopify://shop_images/2000-150-2.jpg",
-            "sub_title_2": "Feet Up",
-            "sub_img_pc_2": "shopify://shop_images/2000-150-1.jpg",
-            "sub_title_3": "Zero Gravity",
-            "sub_img_pc_3": "shopify://shop_images/2000-150-3.jpg",
-            "sub_title_4": "Flat",
-            "sub_img_pc_4": "shopify://shop_images/2000-150.jpg",
-            "sub_title_5": ""
-          }
-        },
-        "item_Th3trH": {
-          "type": "item",
-          "settings": {
-            "item_text": "Split King Bed Frame",
-            "item_subtext": "Sub Title",
-            "sub_title_1": "Head Up",
-            "sub_img_pc_1": "shopify://shop_images/2000-95x2-2.jpg",
-            "sub_title_2": "Feet Up",
-            "sub_img_pc_2": "shopify://shop_images/5000-95x2-1.jpg",
-            "sub_title_3": "Zero Gravity",
-            "sub_img_pc_3": "shopify://shop_images/2000-95x2-3.jpg",
-            "sub_title_4": "Flat",
-            "sub_img_pc_4": "shopify://shop_images/5000-95x2.jpg",
-            "sub_title_5": ""
-          }
-        }
-      },
-      "block_order": [
-        "item_tX3WQQ",
-        "item_69wirY",
-        "item_Th3trH"
-      ],
-      "disabled": true,
-      "name": "Media Tab Swiper",
-      "settings": {
-        "container": "fixed",
-        "coll_title": "Explore All ESHINE SLEEP Products",
-        "coll_subtitle": "Shop beds,frames and more.",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
     "media_tab_swiper_kYCPJd": {
       "type": "media-tab-swiper",
       "blocks": {
@@ -843,179 +557,19 @@
         "padding_bottom": 50
       }
     },
-    "comparison_table_tt3HbH": {
-      "type": "comparison-table",
-      "blocks": {
-        "heading_KRQah7": {
-          "type": "heading",
-          "settings": {
-            "icon-1": "none",
-            "title-1": "Item Model",
-            "icon-2": "none",
-            "title-2": "Color",
-            "icon-3": "none",
-            "title-3": "Features",
-            "icon-4": "none",
-            "title-4": "Package Includes",
-            "icon-5": "none",
-            "title-5": "",
-            "icon-6": "none",
-            "title-6": "",
-            "icon-7": "chat",
-            "title-7": "",
-            "icon-8": "chat",
-            "title-8": "",
-            "icon-9": "chat",
-            "title-9": "",
-            "icon-10": "chat",
-            "title-10": ""
-          }
-        },
-        "content_RVAw9g": {
-          "type": "content",
-          "settings": {
-            "product": "e2000-adjustable-base",
-            "text-1": "<p>E2000+ </p>",
-            "text-2": "<p>Orange</p>",
-            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>11.4\" Legs</p>",
-            "text-4": "<p>Adjustable Base<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Installation Tools<br/>Manual<br/>Warranty Card</p>",
-            "text-5": "",
-            "text-6": "",
-            "text-7": "",
-            "text-8": "",
-            "text-9": "",
-            "text-10": ""
-          }
-        },
-        "content_EzDk79": {
-          "type": "content",
-          "settings": {
-            "product": "e3000-adjustable-base",
-            "text-1": "<p>E3000+</p>",
-            "text-2": "<p>Orange</p>",
-            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>8\"+3.4\" Adjustable Legs<br/>Massage<br/>Under-Bed Lights</p>",
-            "text-4": "<p>Adjustable Base<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Installation Tools<br/>Manual<br/>Warranty Card</p>",
-            "text-5": "",
-            "text-6": "",
-            "text-7": "",
-            "text-8": "",
-            "text-9": "",
-            "text-10": ""
-          }
-        },
-        "content_wajcEK": {
-          "type": "content",
-          "settings": {
-            "product": "e3100-adjustable-base",
-            "text-1": "<p>E3100+ </p>",
-            "text-2": "<p>Grey</p>",
-            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>8\"+3.4\" Adjustable Legs<br/>Massage<br/>Under-Bed Lights</p>",
-            "text-4": "<p>Adjustable Base<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Installation Tools<br/>Manual<br/>Warranty Card</p>",
-            "text-5": "",
-            "text-6": "",
-            "text-7": "",
-            "text-8": "",
-            "text-9": "",
-            "text-10": ""
-          }
-        },
-        "content_7KWpQH": {
-          "type": "content",
-          "settings": {
-            "product": "e5000-adjustable-base",
-            "text-1": "<p>E5000+ </p>",
-            "text-2": "<p>Orange</p>",
-            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>8\"+3.4\" Adjustable Legs<br/>Massage<br/>Under-Bed Lights<br/>Head Tilt (7°)</p>",
-            "text-4": "<p>Adjustable Base<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Installation Tools<br/>Manual<br/>Warranty Card</p>",
-            "text-5": "",
-            "text-6": "",
-            "text-7": "",
-            "text-8": "",
-            "text-9": "",
-            "text-10": ""
-          }
-        },
-        "content_KUPBKy": {
-          "type": "content",
-          "settings": {
-            "product": "e6000-adjustable-base",
-            "text-1": "<p>E6000+ </p>",
-            "text-2": "<p>Orange</p>",
-            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>8\"+3.4\" Adjustable Legs<br/>Massage<br/>Under-Bed Lights<br/>Head Tilt (7°)<br/>Lumbar Support</p>",
-            "text-4": "<p>Adjustable Base<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Installation Tools<br/>Manual<br/>Warranty Card</p>",
-            "text-5": "",
-            "text-6": "",
-            "text-7": "",
-            "text-8": "",
-            "text-9": "",
-            "text-10": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading_KRQah7",
-        "content_RVAw9g",
-        "content_EzDk79",
-        "content_wajcEK",
-        "content_7KWpQH",
-        "content_KUPBKy"
-      ],
-      "name": "t:sections.comparison-table.name",
+    "product_contrast_yXY8mH": {
+      "type": "product-contrast",
+      "name": "Product Contrast",
       "settings": {
-        "container": "fixed",
-        "color_scheme": "",
-        "header_layout": "horizontal",
-        "section_header_alignment": "left",
-        "section_header_alignment_mobile": "inherit",
-        "subheading": "ESHINESLEEP",
-        "heading": "Adjustable Bed Frame Comparison",
-        "highlight_style": "none",
-        "highlight_font_style": "italic",
-        "highlight_style_color": "",
-        "highlight_text_color": "",
-        "heading_size": "h3",
-        "description": "<p>E2000+，E3000+，E3100+，E5000+</p>",
-        "text_size": "text-base",
-        "button_label": "",
-        "button_link": "",
-        "button_style": "btn--primary",
-        "button_icon": "none",
-        "icon_size": 28,
-        "text_line_limit": "none",
-        "show_view_more_button": true,
-        "show_section_divider": true,
-        "divider_width": "full",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
-    "collection_with_tab_dyqwDU": {
-      "type": "collection-with-tab",
-      "blocks": {
-        "collection_LnUnte": {
-          "type": "collection",
-          "settings": {
-            "collection": "bundles",
-            "collection_title": "Bundles"
-          }
-        },
-        "collection_3EeJrz": {
-          "type": "collection",
-          "settings": {
-            "collection": "mattresses",
-            "collection_title": "Mattresses"
-          }
-        }
-      },
-      "block_order": [
-        "collection_LnUnte",
-        "collection_3EeJrz"
-      ],
-      "disabled": true,
-      "name": "Collection With Tab",
-      "settings": {
-        "container": "fixed",
-        "padding_top": 60,
+        "left_image": "shopify://shop_images/lQDPJw3gVZDYWIXNAyDNAyCwLScp35d1M9QIhIgHLhIjAA_800_800.png",
+        "right_image": "shopify://shop_images/21_fe0b36bf-7bcb-4e7c-8d8d-a686131e7ba0.png",
+        "headline": "Which Model Is Right For You？",
+        "subhead": "See the Difference- Find what Suits You",
+        "comparison_text": "All Model Comparison",
+        "button_text": "Learn More",
+        "button_link": "shopify://pages/3100-vs-5000",
+        "container": "full",
+        "padding_top": 0,
         "padding_bottom": 60
       }
     },
@@ -1078,69 +632,26 @@
         "padding_bottom": 80
       }
     },
-    "features_image_switcher_GidNhG": {
-      "type": "features-image-switcher",
+    "178538549296fe5c3e": {
+      "type": "apps",
       "blocks": {
-        "feature_4zFRCw": {
-          "type": "feature",
+        "judge_me_reviews_review_widget_wzhfQA": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
-            "title": "Control Via Wireless Remote or App"
-          }
-        },
-        "feature_pcKK6N": {
-          "type": "feature",
-          "settings": {
-            "title": "Custom Elevation & Programmable Memory"
-          }
-        },
-        "feature_yiYz4E": {
-          "type": "feature",
-          "settings": {
-            "title": ""
-          }
-        },
-        "feature_b9HPRF": {
-          "type": "feature",
-          "settings": {
-            "title": ""
-          }
-        },
-        "feature_dkfKQr": {
-          "type": "feature",
-          "settings": {
-            "title": ""
-          }
-        },
-        "feature_mFWRYf": {
-          "type": "feature",
-          "settings": {
-            "title": ""
-          }
-        },
-        "feature_dJ3qUz": {
-          "type": "feature",
-          "settings": {
-            "title": ""
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
           }
         }
       },
       "block_order": [
-        "feature_4zFRCw",
-        "feature_pcKK6N",
-        "feature_yiYz4E",
-        "feature_b9HPRF",
-        "feature_dkfKQr",
-        "feature_mFWRYf",
-        "feature_dJ3qUz"
+        "judge_me_reviews_review_widget_wzhfQA"
       ],
-      "disabled": true,
-      "name": "Features Image Switcher",
       "settings": {
-        "container": "fixed",
-        "coll_title": "Features",
-        "coll_subtitle": "Shop beds,frames and more.",
-        "padding_top": 50,
-        "padding_bottom": 50
+        "include_margins": true,
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "related-products": {
@@ -1172,15 +683,6 @@
         "padding_bottom": 50,
         "show_section_divider": false,
         "divider_width": "fixed"
-      }
-    },
-    "1629746450643786911": {
-      "type": "areviews-section",
-      "settings": {
-        "hide_areviews_title_rating": false,
-        "areviews_theme_font": "inherit",
-        "areviews_stars_colors": "#f3c621",
-        "areviews_write_reviews_botton_color": "#373737"
       }
     },
     "faqs_hhAQti": {
@@ -1253,21 +755,21 @@
         "padding_bottom": 60
       }
     },
-    "areviews_1766636464_093935": {
+    "1785398339b608f298": {
       "type": "apps",
       "blocks": {
-        "areviews_reviews_importer_areviews_display_reviews_F5D4C3": {
-          "type": "shopify://apps/areviews-reviews-importer/blocks/AreviewsDisplayReviews/ab0ec5fe-c95b-4fd6-bfb8-db2a30d0756f",
+        "judge_me_reviews_review_widget_T7WnJ3": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
-            "hide_areviews_title_rating": false,
-            "areviews_theme_font": "inherit",
-            "areviews_stars_colors": "#f3c621",
-            "areviews_write_reviews_botton_color": "#373737"
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
           }
         }
       },
       "block_order": [
-        "areviews_reviews_importer_areviews_display_reviews_F5D4C3"
+        "judge_me_reviews_review_widget_T7WnJ3"
       ],
       "settings": {
         "include_margins": true,
@@ -1279,22 +781,16 @@
   "order": [
     "breadcrumbs",
     "main",
-    "image_with_text_slider_C87nwm",
     "custom_content_WUEb4J",
     "custom_content_gcHExF",
     "custom_content_kVDxw7",
     "multicolumn_icon_nqA6Yw",
-    "image_with_text_6rdaVW",
-    "image_with_text_overlay_3b3dHg",
-    "media_tab_swiper_hydUmC",
     "media_tab_swiper_kYCPJd",
-    "comparison_table_tt3HbH",
-    "collection_with_tab_dyqwDU",
+    "product_contrast_yXY8mH",
     "image_with_text_tyqJEm",
-    "features_image_switcher_GidNhG",
+    "178538549296fe5c3e",
     "related-products",
-    "1629746450643786911",
     "faqs_hhAQti",
-    "areviews_1766636464_093935"
+    "1785398339b608f298"
   ]
 }

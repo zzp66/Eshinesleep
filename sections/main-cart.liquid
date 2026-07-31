@@ -4,8 +4,8 @@
     --section-padding-bottom: {{ section.settings.padding_bottom }}px;
   }
 {%- endstyle -%}
-{{ 'cart.aio.min.css' | asset_url | stylesheet_tag }}
-{{ 'component-custom-card.aio.min.css' | asset_url | stylesheet_tag }}
+{{ 'cart.css' | asset_url | stylesheet_tag }}
+{{ 'component-custom-card.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
 
 {%- if linklists['gift-wrapping'].links != blank and linklists['gift-wrapping'].links.first.type == 'product_link' -%}
@@ -180,7 +180,7 @@
                           </div>
                         {%- endif -%}
                         {%- if has_vol_pricing -%}
-                          {{ 'component-volume-pricing.aio.min.css' | asset_url | stylesheet_tag }}
+                          {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
                           <volume-pricing class="block parent-display blocks-radius-md" id="Volume-{{ section.id }}">
                             <span class="caption block">{{ 'products.product.volume_pricing.title' | t }}</span>
                             <ul class="list-unstyled">
@@ -236,7 +236,8 @@
                                 <div class="grid gap-1 w-full">
                                   <div class="flex items-center justify-between gap-1 flex-wrap">
                                     <div class="block">
-                                      <a href="{{ item.url }}" class="cart-item__title text-pcard-title reversed-link">{{- item.product.title | escape -}}</a>
+                                                                            <a href="{{ item.url }}" class="cart-item__title text-pcard-title reversed-link">{{- item.product.title | escape -}}</a>
+<div data-shop-id="{{shop.id}}" product-id="{{item.product.id }}" data-page="cart" class="ddreview-star"></div>
                                     </div>
                                   </div>
                                   {%- if item.product.has_only_default_variant == false or item.properties.size != 0 or item.selling_plan_allocation != null -%}
@@ -431,7 +432,8 @@
                                           </button>
                                           <div class="drawer__content cart-addons-drawer__content grid gap-5">
                                             <div>
-                                              <h4>{{ item.product.title | escape }}</h4>
+                                                                                            <h4>{{ item.product.title | escape }}</h4>
+<div data-shop-id="{{shop.id}}" product-id="{{item.product.id }}" data-page="cart" class="ddreview-star"></div>
                                               {% if item.product.has_only_default_variant == false %}
                                                 {%- assign last_index = item.options_with_values.size | minus: 1 -%}
                                                 <div class="flex gap-1">
@@ -611,7 +613,8 @@
                                       </button>
                                       <div class="drawer__content cart-addons-drawer__content grid gap-5">
                                         <div>
-                                          <h4>{{ item.product.title | escape }}</h4>
+                                                                                        <h4>{{ item.product.title | escape }}</h4>
+<div data-shop-id="{{shop.id}}" product-id="{{item.product.id }}" data-page="cart" class="ddreview-star"></div>
                                           {% if item.product.has_only_default_variant == false %}
                                             {%- assign last_index = item.options_with_values.size | minus: 1 -%}
                                             <div class="flex gap-1">

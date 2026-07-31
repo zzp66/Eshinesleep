@@ -4,7 +4,13 @@
   </div>
   <div class="new-product-infos">
     <div class="product-title-box">
-      <p class="new-product-card-title">{{ product.title }}</p>
+            <p class="new-product-card-title">{{ product.title }}</p>
+            <!-- Start of Judge.me code -->
+      <div style='{{ jm_style }}' class='jdgm-widget jdgm-preview-badge' data-id='{{ product.id }}' data-auto-install='false'>
+        {{ product.metafields.judgeme.badge }}
+      </div>
+      <!-- End of Judge.me code -->
+<div data-shop-id="{{shop.id}}" product-id="{{product.id }}" data-page="{{request.page_type}}" class="ddreview-star"></div>
     </div>
     <div class="product-parameter-bar-box">
       {% assign total = 5 %}

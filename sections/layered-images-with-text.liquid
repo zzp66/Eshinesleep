@@ -1,4 +1,4 @@
-{{ 'section-layered-images-with-text.aio.min.css' | asset_url | stylesheet_tag }}
+{{ 'section-layered-images-with-text.css' | asset_url | stylesheet_tag }}
 {%- liquid
   assign container = section.settings.container
   assign image_blocks = section.blocks | where: 'type', 'image'

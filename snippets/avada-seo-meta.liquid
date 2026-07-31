@@ -1,4 +1,4 @@
-{%- assign avada_seo_ovr_product_ids = ",8001242431545," -%}
+{%- assign avada_seo_ovr_product_ids = ",8001242431545,8060657827897,7150594752569,6717361979449,7046977814585,8001242300473,8137654927417,8144300048441,7480097898553,7479971086393,7480111956025,8168320925753,8168321908793,8168322039865,8056738250809,7037295132729,7046989643833,8011976212537,8011976278073,8271132491833,8056726650937,8098183839801," -%}
   
 {%- if request.page_type == 'product' -%}
 {%-  if avada_seo_ovr_product_ids contains product.id  -%}
@@ -63,15 +63,20 @@
 <!-- meta basic type product -->
 {%- if request.page_type == 'product' -%}
 {%- unless avada_seo_ovr_product_ids contains product.id -%}
+{%- if product.metafields.global.title_tag == blank -%}
 {%- capture avada_seo_meta_title -%}
 {%- case shop.locale -%}
+{%- when "en" -%} 
+{{ product.title }} | {{ shop.name }}
 {%- else -%}
 {%- endcase -%}
 {%- endcapture -%}
+{%- endif -%}
+{%- if product.metafields.global.description_tag == blank -%}
 {%- capture avada_seo_meta_description -%}
 {%- case shop.locale -%}
 {%- when "en" -%} 
-
+Get {{ product.title }} at EshineSleep. Zero gravity, massage & wireless remote control. Free shipping, 99-night trial, 15-year warranty.
 {%- when "pt-BR" -%} 
 
 {%- when "da" -%} 
@@ -93,21 +98,27 @@
 {%- else -%}
 {%- endcase -%}
 {%- endcapture -%}
+{%- endif -%}
 {%- endunless -%}
 {%- endif -%}
 
 <!-- meta basic type collection -->
 {%- if request.page_type == 'collection' -%}
 {%- unless avada_seo_ovr_collection_ids contains collection.id -%}
+{%- if collection.metafields.global.title_tag == blank -%}
 {%- capture avada_seo_meta_title -%}
 {%- case shop.locale -%}
+{%- when "en" -%} 
+{{ collection.title }} {{ shop.name }}
 {%- else -%}
 {%- endcase -%}
 {%- endcapture -%}
+{%- endif -%}
+{%- if collection.metafields.global.description_tag == blank -%}
 {%- capture avada_seo_meta_description -%}
 {%- case shop.locale -%}
 {%- when "en" -%} 
-
+Get{{ collection.title }} at EshineSleep. Zero gravity, massage & wireless remote control. Free shipping, 99-night trial, 15-year warranty.
 {%- when "pt-BR" -%} 
 
 {%- when "da" -%} 
@@ -129,21 +140,27 @@
 {%- else -%}
 {%- endcase -%}
 {%- endcapture -%}
+{%- endif -%}
 {%- endunless -%}
 {%- endif -%}
 
 <!-- meta basic type article -->
 {%- if request.page_type == 'article' -%}
 {%- unless avada_seo_ovr_article_ids contains article.id -%}
+{%- if article.metafields.global.title_tag == blank -%}
 {%- capture avada_seo_meta_title -%}
 {%- case shop.locale -%}
+{%- when "en" -%} 
+Sleep Tips & Buying Guides
 {%- else -%}
 {%- endcase -%}
 {%- endcapture -%}
+{%- endif -%}
+{%- if article.metafields.global.description_tag == blank -%}
 {%- capture avada_seo_meta_description -%}
 {%- case shop.locale -%}
 {%- when "en" -%} 
-
+Discover expert sleep tips, adjustable bed buying guides, mattress comparisons, and sleep health advice from EshineSleep. Improve your sleep quality today.
 {%- when "pt-BR" -%} 
 
 {%- when "da" -%} 
@@ -165,6 +182,7 @@
 {%- else -%}
 {%- endcase -%}
 {%- endcapture -%}
+{%- endif -%}
 {%- endunless -%}
 {%- endif -%}
 

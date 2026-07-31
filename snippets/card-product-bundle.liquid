@@ -217,10 +217,11 @@
       {%- endif -%}
       <h3 class="product-card__title text-pcard-title">
         <a
-          class="reversed-link block {% if pcard_title_line_limit != 'none' %} text-limit-{{ pcard_title_line_limit }}{% endif %}"
+                    class="reversed-link block {% if pcard_title_line_limit != 'none' %} text-limit-{{ pcard_title_line_limit }}{% endif %}"
           href="{{ product.url }}"
         >
           <span class="reversed-link__text">{{- product.title -}}</span>
+<div data-shop-id="{{shop.id}}" product-id="{{product.id }}" data-page="{{request.page_type}}" class="ddreview-star"></div>
         </a>
       </h3>
       {%- if show_price -%}
@@ -321,7 +322,7 @@
                     </div>
                   {%- endif -%}
                   {%- if has_vol_pricing -%}
-                    {{ 'component-volume-pricing.aio.min.css' | asset_url | stylesheet_tag }}
+                    {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
                     <volume-pricing class="block parent-display v-scrollable" id="Volume-{{ block_id }}">
                       <ul class="list-unstyled">
                         <li>

@@ -133,7 +133,8 @@
       <div class="pcard__info flex items-center justify-between gap-2 flex-grow">
         <div class="pcard__info-main">
           <h3 class="pcard__title text-pcard-title">
-            <span class="text-limit-1-line">{{- product.title -}}</span>
+                        <span class="text-limit-1-line">{{- product.title -}}</span>
+<div data-shop-id="{{shop.id}}" product-id="{{product.id }}" data-page="{{request.page_type}}" class="ddreview-star"></div>
           </h3>
           {% render 'price', product: product %}
         </div>

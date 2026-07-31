@@ -11,50 +11,13 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
-    "topbar_3YD96h": {
-      "type": "topbar",
-      "blocks": {
-        "text_Ahn3nP": {
-          "type": "text",
-          "settings": {
-            "text": "✌🏼 Free Express Shipping on all orders",
-            "position": "center",
-            "highlight_text": "",
-            "highlight_text_style": "button",
-            "highlight_text_color": "",
-            "highlight_text_background_color": ""
-          }
-        },
-        "language_country_MyFf6D": {
-          "type": "language_country",
-          "settings": {
-            "show_language_selector": true,
-            "show_country_selector": true,
-            "position": "right"
-          }
-        }
-      },
-      "block_order": [
-        "text_Ahn3nP",
-        "language_country_MyFf6D"
-      ],
-      "disabled": true,
-      "custom_css": [],
-      "settings": {
-        "container": "fixed",
-        "color_scheme": "scheme-2",
-        "show_separator_line": false,
-        "padding_top": 6,
-        "padding_bottom": 6
-      }
-    },
     "topbar_8dqym7": {
       "type": "topbar",
       "blocks": {
         "text_fNfNTz": {
           "type": "text",
           "settings": {
-            "text": "4th of July Sale!— Unlock 5% Discount",
+            "text": "4th of July Sale!— Unlock 5% Discount\nCode：SLEEP5",
             "position": "center",
             "highlight_text": "",
             "highlight_text_style": "button",
@@ -136,7 +99,6 @@
     }
   },
   "order": [
-    "topbar_3YD96h",
     "topbar_8dqym7",
     "header"
   ]

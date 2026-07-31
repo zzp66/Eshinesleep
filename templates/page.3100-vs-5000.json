@@ -18,6 +18,344 @@
         "padding_bottom": 28
       }
     },
+    "comparison_table_yP9TiX": {
+      "type": "comparison-table",
+      "blocks": {
+        "heading_YUxrhG": {
+          "type": "heading",
+          "settings": {
+            "icon-1": "none",
+            "title-1": "Item Model",
+            "icon-2": "none",
+            "title-2": "Color",
+            "icon-3": "none",
+            "title-3": "Features",
+            "icon-4": "none",
+            "title-4": "Mattress",
+            "icon-5": "none",
+            "title-5": "Bundle Includes",
+            "icon-6": "none",
+            "title-6": "",
+            "icon-7": "chat",
+            "title-7": "",
+            "icon-8": "chat",
+            "title-8": "",
+            "icon-9": "chat",
+            "title-9": "",
+            "icon-10": "chat",
+            "title-10": ""
+          }
+        },
+        "content_gXVrgU": {
+          "type": "content",
+          "settings": {
+            "product": "eshine-e2000-premium-bundle-adjustable-bed-frame-with-mattress",
+            "text-1": "<p>E2000+ Premium</p>",
+            "text-2": "<p>Orange</p>",
+            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>11.4\" Legs</p>",
+            "text-4": "<p>Comfort/Signature/Luxe/Royal Mattress</p>",
+            "text-5": "<p>Adjustable Base<br/>Mattress<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Manual<br/>Warranty Card</p>",
+            "text-6": "",
+            "text-7": "",
+            "text-8": "",
+            "text-9": "",
+            "text-10": ""
+          }
+        },
+        "content_p9Xbkr": {
+          "type": "content",
+          "settings": {
+            "product": "e3000-luxe-hybrid-bundle-massage-adjustable-base-with-hybrid-mattress",
+            "text-1": "<p>E3000+ Luxe</p>",
+            "text-2": "<p>Orange</p>",
+            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>8\"+3.4\" Adjustable Legs<br/>Massage<br/>Under-Bed Lights</p>",
+            "text-4": "<p>Comfort/Signature/Luxe/Royal Mattress</p>",
+            "text-5": "<p>Adjustable Base<br/>Mattress<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Manual<br/>Warranty Card</p>",
+            "text-6": "",
+            "text-7": "",
+            "text-8": "",
+            "text-9": "",
+            "text-10": ""
+          }
+        },
+        "content_DG8Tf4": {
+          "type": "content",
+          "settings": {
+            "product": "eshine-e3100-luxe-hybrid-bundle-adjustable-bed-with-mattress",
+            "text-1": "<p>E3100+ Luxe</p>",
+            "text-2": "<p>Grey</p>",
+            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>8\"+3.4\" Adjustable Legs<br/>Massage<br/>Under-Bed Lights</p>",
+            "text-4": "<p>Comfort/Signature/Luxe/Royal Mattress</p>",
+            "text-5": "<p>Adjustable Base<br/>Mattress<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Manual<br/>Warranty Card</p>",
+            "text-6": "",
+            "text-7": "",
+            "text-8": "",
+            "text-9": "",
+            "text-10": ""
+          }
+        },
+        "content_eJDB9y": {
+          "type": "content",
+          "settings": {
+            "product": "e5000-royal-adjustable-bundle",
+            "text-1": "<p>E5000+ Royal</p>",
+            "text-2": "<p>Orange</p>",
+            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>8\"+3.4\" Adjustable Legs<br/>Massage<br/>Under-Bed Lights<br/>Head Tilt (7°)</p>",
+            "text-4": "<p>Comfort/Signature/Luxe/Royal Mattress</p>",
+            "text-5": "<p>Adjustable Base<br/>Mattress<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Manual<br/>Warranty Card</p>",
+            "text-6": "",
+            "text-7": "",
+            "text-8": "",
+            "text-9": "",
+            "text-10": ""
+          }
+        },
+        "content_MjPm3U": {
+          "type": "content",
+          "settings": {
+            "product": "e6000-platinum-hybrid-bundle",
+            "text-1": "<p>E6000+ Platinum</p>",
+            "text-2": "<p>Orange</p>",
+            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>8\"+3.4\" Adjustable Legs<br/>Massage<br/>Under-Bed Lights<br/>Head Tilt (7°)<br/>Lumbar Support</p>",
+            "text-4": "<p>Comfort/Signature/Luxe/Royal Mattress</p>",
+            "text-5": "<p>Adjustable Base<br/>Mattress<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Manual<br/>Warranty Card</p>",
+            "text-6": "",
+            "text-7": "",
+            "text-8": "",
+            "text-9": "",
+            "text-10": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_YUxrhG",
+        "content_gXVrgU",
+        "content_p9Xbkr",
+        "content_DG8Tf4",
+        "content_eJDB9y",
+        "content_MjPm3U"
+      ],
+      "name": "t:sections.comparison-table.name",
+      "settings": {
+        "container": "full",
+        "color_scheme": "scheme-11",
+        "header_layout": "horizontal",
+        "section_header_alignment": "left",
+        "section_header_alignment_mobile": "inherit",
+        "subheading": "ESHINESLEEP",
+        "heading": "Adjustable Bed Bundles Comparison",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h3",
+        "description": "<p>E2000+ E3000+ E3100+ E5000+ E6000+</p>",
+        "text_size": "text-base",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "btn--primary",
+        "button_icon": "none",
+        "icon_size": 28,
+        "text_line_limit": "none",
+        "show_view_more_button": true,
+        "show_section_divider": true,
+        "divider_width": "full",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "tabs_content_pkMde7": {
+      "type": "tabs-content",
+      "blocks": {
+        "image_with_text_WbW8GM": {
+          "type": "image_with_text",
+          "settings": {
+            "navigation_title": "Comfort Foam",
+            "image": "shopify://shop_images/81LO9qkWXLL._AC_SL1500__1.jpg",
+            "desktop_image_position": "left",
+            "image_aspect_ratio": "adapt",
+            "heading": "6 Layers Of Comfort",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h3",
+            "subheading": "",
+            "description": "<p><strong>Comfort Memory Foam Mattress:</strong> Designed with gel-infused memory foam and green tea foam, this firm mattress provides stable support and cooling comfort, ideal for sleepers who prefer a firmer feel with proper spinal alignment.</p><ul><li><strong>8\" Memory Foam Mattress</strong></li><li><strong>Feel: Firm Support</strong></li><li><strong>Gel-Infused Cooling Foam</strong></li><li><strong>Green Tea Freshness Foam</strong></li><li><strong>Removable Bamboo Cover</strong></li></ul>",
+            "description_size": "text-base",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "btn--primary",
+            "button_icon": "none",
+            "icon_1": "none",
+            "heading_1": "",
+            "icon_2": "none",
+            "heading_2": "",
+            "icon_3": "none",
+            "heading_3": ""
+          }
+        },
+        "image_with_text_i4DYLa": {
+          "type": "image_with_text",
+          "settings": {
+            "navigation_title": "Comfort Hybrid",
+            "image": "shopify://shop_images/12inch_1a441221-c233-4314-af11-4f6336c303cd.jpg",
+            "desktop_image_position": "left",
+            "image_aspect_ratio": "adapt",
+            "heading": " 7 Layers Of Comfort",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h3",
+            "subheading": "",
+            "description": "<p><strong>Comfort Hybrid Mattress:</strong> A balanced combination of gel-infused memory foam and individually wrapped pocket coils delivers pressure relief, motion isolation, and breathable support for a cooler, more comfortable sleep.<br/></p><ul><li><strong>12\" Hybrid Mattress</strong></li><li><strong>Feel: Medium-Plush </strong></li><li><strong>Gel-Infused Cooling Foam</strong></li><li><strong>Individually Pocketed Coils (Motion Isolation)</strong></li><li><strong>Encased Edge Support System</strong></li><li><strong>Removable Jacquard Cover</strong></li><li><strong>Fiberglass-Free FR Inner Cover</strong></li></ul>",
+            "description_size": "text-base",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "btn--primary",
+            "button_icon": "none",
+            "icon_1": "none",
+            "heading_1": "",
+            "icon_2": "none",
+            "heading_2": "",
+            "icon_3": "none",
+            "heading_3": ""
+          }
+        },
+        "image_with_text_GhG6GM": {
+          "type": "image_with_text",
+          "settings": {
+            "navigation_title": "Signature Hybrid",
+            "image": "shopify://shop_images/12inch_1a441221-c233-4314-af11-4f6336c303cd.jpg",
+            "desktop_image_position": "left",
+            "image_aspect_ratio": "adapt",
+            "heading": " 7 Layers Of Signature",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h3",
+            "subheading": "",
+            "description": "<p><br/><strong>Signature Hybrid Mattress:</strong> A balanced combination of gel-infused memory foam and individually wrapped pocket coils delivers pressure relief, motion isolation, and breathable support for a cooler, more comfortable sleep.<br/></p><ul><li><strong>14\" Hybrid Mattress</strong></li><li><strong>Feel: Medium-Plush </strong></li><li><strong>Gel-Infused Cooling Foam</strong></li><li><strong>Individually Pocketed Coils (Motion Isolation)</strong></li><li><strong>Encased Edge Support System</strong></li><li><strong>Removable Jacquard Cover</strong></li><li><strong>Fiberglass-Free FR Inner Cover</strong></li></ul>",
+            "description_size": "text-base",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "btn--primary",
+            "button_icon": "none",
+            "icon_1": "none",
+            "heading_1": "",
+            "icon_2": "none",
+            "heading_2": "",
+            "icon_3": "none",
+            "heading_3": ""
+          }
+        },
+        "image_with_text_hagdtk": {
+          "type": "image_with_text",
+          "settings": {
+            "navigation_title": "Cloud Foam",
+            "image": "shopify://shop_images/81ePIOUY5iL._AC_SL1500_8ff676eb-a9e2-4fca-a2bb-07fff1b0a03b.jpg",
+            "desktop_image_position": "left",
+            "image_aspect_ratio": "adapt",
+            "heading": "6 Layers Of Cloud",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h3",
+            "subheading": "",
+            "description": "<p><strong>Cloud Memory Foam Mattress:</strong> Gel-infused air memory foam with micro-circulating cooling gel particles actively wicks away heat and moisture, delivering a cloud-like, ultra-plush sleep experience with deep pressure relief.</p><ul><li><strong>14\" Memory Foam Mattress</strong></li><li><strong>Feel: Ultra-Plush (Cloud-Like Comfort)</strong></li><li><strong>Gel-Infused Cooling Comfort</strong></li><li><strong>Advanced Cooling Gel Layer</strong></li><li><strong>Green Tea Infused Foam</strong></li><li><strong>Removable Bamboo Cover</strong></li></ul>",
+            "description_size": "text-base",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "btn--primary",
+            "button_icon": "none",
+            "icon_1": "none",
+            "heading_1": "",
+            "icon_2": "none",
+            "heading_2": "",
+            "icon_3": "none",
+            "heading_3": ""
+          }
+        },
+        "image_with_text_DPCrmx": {
+          "type": "image_with_text",
+          "settings": {
+            "navigation_title": "Arctic Hybrid",
+            "image": "shopify://shop_images/12_ice_9bb9550d-f694-432b-8b02-d2182178ab0f.jpg",
+            "desktop_image_position": "left",
+            "image_aspect_ratio": "adapt",
+            "heading": "8 Layers Of <strong>Arctic</strong>",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h3",
+            "subheading": "",
+            "description": "<p><strong>Arctic Hybrid Mattress:</strong> Featuring an ice-silk cooling cover that instantly reduces skin temperature by 2–5°C, combined with gel foam and pocketed coils for a refreshing, breathable, and supportive sleep.</p><ul><li><strong>12\" Hybrid Mattress</strong></li><li><strong>Cooling Hybrid Mattress (Instant Cool-to-Touch)</strong></li><li><strong>Ice-Silk Cooling Cover (2–5°C Cooler)</strong></li><li><strong>Gel-Infused Cooling Foam</strong></li><li><strong>Individually Pocketed Coils</strong></li><li><strong>Encased Edge Support System</strong></li><li><strong>Fiberglass-Free FR Inner Cover</strong></li></ul>",
+            "description_size": "text-base",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "btn--primary",
+            "button_icon": "none",
+            "icon_1": "none",
+            "heading_1": "",
+            "icon_2": "none",
+            "heading_2": "",
+            "icon_3": "none",
+            "heading_3": ""
+          }
+        },
+        "image_with_text_FJJVYi": {
+          "type": "image_with_text",
+          "settings": {
+            "navigation_title": "Royal Hybrid",
+            "image": "shopify://shop_images/14_fc3935d6-7a4a-4b47-82be-9566c7ec2e06.jpg",
+            "desktop_image_position": "left",
+            "image_aspect_ratio": "adapt",
+            "heading": "8 Layers Of Royal",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h3",
+            "subheading": "",
+            "description": "<p><strong>Graphene Royal Hybrid Mattress:</strong> Advanced graphene-infused cover enhances heat dissipation, antibacterial protection, and odor resistance—perfect for pet owners seeking a cleaner, cooler sleep environment with premium support.</p><ul><li><strong>14\" Hybrid Mattress</strong></li><li><strong>Graphene Cooling Technology</strong></li><li><strong>Antibacterial & Odor-Resistant (Pet-Friendly)</strong></li><li><strong>Gel-Infused Cooling Foam</strong></li><li><strong>Individually Pocketed Coils</strong></li><li><strong>Encased Edge Support System</strong></li><li><strong>Fiberglass-Free FR Inner Cover</strong></li></ul>",
+            "description_size": "text-base",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "btn--primary",
+            "button_icon": "none",
+            "icon_1": "none",
+            "heading_1": "",
+            "icon_2": "none",
+            "heading_2": "",
+            "icon_3": "none",
+            "heading_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_WbW8GM",
+        "image_with_text_i4DYLa",
+        "image_with_text_GhG6GM",
+        "image_with_text_hagdtk",
+        "image_with_text_DPCrmx",
+        "image_with_text_FJJVYi"
+      ],
+      "name": "t:sections.tabs-content.name",
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "",
+        "navigation_style": "headings",
+        "navigation_alignment": "center",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
     "multicolumn_icon_EPLYgM": {
       "type": "multicolumn-icon",
       "blocks": {
@@ -126,321 +464,12 @@
         "padding_top": 10,
         "padding_bottom": 10
       }
-    },
-    "comparison_table_eaC8cQ": {
-      "type": "comparison-table",
-      "blocks": {
-        "heading_LYBHMK": {
-          "type": "heading",
-          "settings": {
-            "icon-1": "none",
-            "title-1": "Item Model",
-            "icon-2": "none",
-            "title-2": "Color",
-            "icon-3": "none",
-            "title-3": "Features",
-            "icon-4": "none",
-            "title-4": "Mattress",
-            "icon-5": "none",
-            "title-5": "Bundle Includes",
-            "icon-6": "none",
-            "title-6": "",
-            "icon-7": "chat",
-            "title-7": "",
-            "icon-8": "chat",
-            "title-8": "",
-            "icon-9": "chat",
-            "title-9": "",
-            "icon-10": "chat",
-            "title-10": ""
-          }
-        },
-        "content_dKU9my": {
-          "type": "content",
-          "settings": {
-            "product": "eshine-e2000-premium-bundle-adjustable-bed-frame-with-mattress",
-            "text-1": "<p>E2000+ Premium</p>",
-            "text-2": "<p>Orange</p>",
-            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>11.4\" Legs</p>",
-            "text-4": "<p>Comfort/Signature/Luxe/Royal Mattress</p>",
-            "text-5": "<p>Adjustable Base<br/>Mattress<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Installation Tools<br/>Manual<br/>Warranty Card</p>",
-            "text-6": "",
-            "text-7": "",
-            "text-8": "",
-            "text-9": "",
-            "text-10": ""
-          }
-        },
-        "content_ixHhwY": {
-          "type": "content",
-          "settings": {
-            "product": "e3000-luxe-hybrid-bundle-massage-adjustable-base-with-hybrid-mattress",
-            "text-1": "<p>E3000+ Luxe</p>",
-            "text-2": "<p>Orange</p>",
-            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>8\"+3.4\" Adjustable Legs<br/>Massage<br/>Under-Bed Lights</p>",
-            "text-4": "<p>Comfort/Signature/Luxe/Royal Mattress</p>",
-            "text-5": "<p>Adjustable Base<br/>Mattress<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Installation Tools<br/>Manual<br/>Warranty Card</p>",
-            "text-6": "",
-            "text-7": "",
-            "text-8": "",
-            "text-9": "",
-            "text-10": ""
-          }
-        },
-        "content_N3aPkQ": {
-          "type": "content",
-          "settings": {
-            "product": "eshine-e3100-luxe-hybrid-bundle-adjustable-bed-with-mattress",
-            "text-1": "<p>E3100+ Luxe</p>",
-            "text-2": "<p>Grey</p>",
-            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>8\"+3.4\" Adjustable Legs<br/>Massage<br/>Under-Bed Lights</p>",
-            "text-4": "<p>Comfort/Signature/Luxe/Royal Mattress</p>",
-            "text-5": "<p>Adjustable Base<br/>Mattress<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Installation Tools<br/>Manual<br/>Warranty Card</p>",
-            "text-6": "",
-            "text-7": "",
-            "text-8": "",
-            "text-9": "",
-            "text-10": ""
-          }
-        },
-        "content_zfKJaw": {
-          "type": "content",
-          "settings": {
-            "product": "e5000-royal-adjustable-bundle",
-            "text-1": "<p>E5000+ Royal</p>",
-            "text-2": "<p>Orange</p>",
-            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>8\"+3.4\" Adjustable Legs<br/>Massage<br/>Under-Bed Lights<br/>Head Tilt (7°)</p>",
-            "text-4": "<p>Comfort/Signature/Luxe/Royal Mattress</p>",
-            "text-5": "<p>Adjustable Base<br/>Mattress<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Installation Tools<br/>Manual<br/>Warranty Card</p>",
-            "text-6": "",
-            "text-7": "",
-            "text-8": "",
-            "text-9": "",
-            "text-10": ""
-          }
-        },
-        "content_hADBiQ": {
-          "type": "content",
-          "settings": {
-            "product": "e6000-platinum-hybrid-bundle",
-            "text-1": "<p>E6000+ Platinum</p>",
-            "text-2": "<p>Orange</p>",
-            "text-3": "<p>Head Lift(75°)<br/>Foot Lift (45°)<br/>USB Ports<br/>Zero-Gravity<br/>Memory Positions<br/>One-Touch Flat<br/>Wireless Remote<br/>iOS + Android<br/>8\"+3.4\" Adjustable Legs<br/>Massage<br/>Under-Bed Lights<br/>Head Tilt (7°)<br/>Lubar Support</p>",
-            "text-4": "<p>Comfort/Signature/Luxe/Royal Mattress</p>",
-            "text-5": "<p>Adjustable Base<br/>Mattress<br/>Remote Control<br/>Legs<br/>Power Supply<br/>Power Cord<br/>Retainer Bar<br/>Installation Tools<br/>Manual<br/>Warranty Card</p>",
-            "text-6": "",
-            "text-7": "",
-            "text-8": "",
-            "text-9": "",
-            "text-10": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading_LYBHMK",
-        "content_dKU9my",
-        "content_ixHhwY",
-        "content_N3aPkQ",
-        "content_zfKJaw",
-        "content_hADBiQ"
-      ],
-      "name": "t:sections.comparison-table.name",
-      "settings": {
-        "container": "fixed",
-        "color_scheme": "",
-        "header_layout": "horizontal",
-        "section_header_alignment": "left",
-        "section_header_alignment_mobile": "inherit",
-        "subheading": "ESHINESLEEP",
-        "heading": "Adjustable Bed Bundles Comparison",
-        "highlight_style": "none",
-        "highlight_font_style": "italic",
-        "highlight_style_color": "",
-        "highlight_text_color": "",
-        "heading_size": "h3",
-        "description": "<p>E2000+，E3000+，E3100+，E5000+</p>",
-        "text_size": "text-base",
-        "button_label": "",
-        "button_link": "",
-        "button_style": "btn--primary",
-        "button_icon": "none",
-        "icon_size": 28,
-        "text_line_limit": "none",
-        "show_view_more_button": true,
-        "show_section_divider": true,
-        "divider_width": "full",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
-    "tabs_content_pkMde7": {
-      "type": "tabs-content",
-      "blocks": {
-        "image_with_text_WbW8GM": {
-          "type": "image_with_text",
-          "settings": {
-            "navigation_title": "Comfort Memory Foam",
-            "image": "shopify://shop_images/81LO9qkWXLL._AC_SL1500__1.jpg",
-            "desktop_image_position": "left",
-            "image_aspect_ratio": "adapt",
-            "heading": "6 Layers Of Comfort",
-            "highlight_style": "none",
-            "highlight_font_style": "italic",
-            "highlight_style_color": "",
-            "highlight_text_color": "",
-            "heading_size": "h3",
-            "subheading": "",
-            "description": "<p><strong>Comfort Memory Foam Mattress:</strong> Gel-Infused Air Memory Foam with micro-circulating cooling gel particles efficiently wicks away heat and moisture, preventing stuffiness.</p><ul><li>8\" Comfort Memory Foam Mattress</li><li>Feel: Firm</li><li>Gel-Infused Cooling Comfort</li></ul>",
-            "description_size": "text-base",
-            "button_label": "Learn More",
-            "button_link": "shopify://collections/mattresses",
-            "button_style": "btn--primary",
-            "button_icon": "none",
-            "icon_1": "none",
-            "heading_1": "",
-            "icon_2": "none",
-            "heading_2": "",
-            "icon_3": "none",
-            "heading_3": ""
-          }
-        },
-        "image_with_text_i4DYLa": {
-          "type": "image_with_text",
-          "settings": {
-            "navigation_title": "Comfort Hybrid",
-            "image": "shopify://shop_images/12inch_1a441221-c233-4314-af11-4f6336c303cd.jpg",
-            "desktop_image_position": "left",
-            "image_aspect_ratio": "adapt",
-            "heading": " 7 Layers Of Comfort",
-            "highlight_style": "none",
-            "highlight_font_style": "italic",
-            "highlight_style_color": "",
-            "highlight_text_color": "",
-            "heading_size": "h3",
-            "subheading": "",
-            "description": "<p><strong>Comfort Mattress:</strong> Gel-Infused Air Memory Foam with micro-circulating cooling gel particles efficiently wicks away heat and moisture, preventing stuffiness.</p><ul><li>12\" Comfort Hybrid Mattress</li><li>Feel: Medium-Firm</li><li>Gel-Infused Cooling Comfort</li></ul>",
-            "description_size": "text-base",
-            "button_label": "Learn More",
-            "button_link": "shopify://products/eshine-comfort-hybrid-mattress",
-            "button_style": "btn--primary",
-            "button_icon": "none",
-            "icon_1": "none",
-            "heading_1": "",
-            "icon_2": "none",
-            "heading_2": "",
-            "icon_3": "none",
-            "heading_3": ""
-          }
-        },
-        "image_with_text_GhG6GM": {
-          "type": "image_with_text",
-          "settings": {
-            "navigation_title": "Signature Mattress",
-            "image": "shopify://shop_images/12inch_1a441221-c233-4314-af11-4f6336c303cd.jpg",
-            "desktop_image_position": "left",
-            "image_aspect_ratio": "adapt",
-            "heading": " 7 Layers Of Signature",
-            "highlight_style": "none",
-            "highlight_font_style": "italic",
-            "highlight_style_color": "",
-            "highlight_text_color": "",
-            "heading_size": "h3",
-            "subheading": "",
-            "description": "<p><br/><strong>Signature Mattress:</strong> Gel-Infused Air Memory Foam with micro-circulating cooling gel particles efficiently wicks away heat and moisture, preventing stuffiness.</p><ul><li>14\" Signature Hybrid Mattress</li><li>Feel: Medium-Soft</li><li>Gel-Infused Cooling Comfort</li><li>Advanced Cooling Gel Layer</li></ul>",
-            "description_size": "text-base",
-            "button_label": "Learn More",
-            "button_link": "shopify://products/eshine-signature-hybrid-mattress",
-            "button_style": "btn--primary",
-            "button_icon": "none",
-            "icon_1": "none",
-            "heading_1": "",
-            "icon_2": "none",
-            "heading_2": "",
-            "icon_3": "none",
-            "heading_3": ""
-          }
-        },
-        "image_with_text_DPCrmx": {
-          "type": "image_with_text",
-          "settings": {
-            "navigation_title": "Luxe Mattress",
-            "image": "shopify://shop_images/12_ice_9bb9550d-f694-432b-8b02-d2182178ab0f.jpg",
-            "desktop_image_position": "left",
-            "image_aspect_ratio": "adapt",
-            "heading": "8 Layers Of Luxe",
-            "highlight_style": "none",
-            "highlight_font_style": "italic",
-            "highlight_style_color": "",
-            "highlight_text_color": "",
-            "heading_size": "h3",
-            "subheading": "",
-            "description": "<p><br/><strong>Luxe Mattress:</strong> Advanced Glacier-Cool Fibers with low-temperature phase-change technology provide immediate cooling, lowering surface temperature by 2–6°C.</p><ul><li>12\" Luxe Hybrid Mattress</li><li>Feel: Medium-Firm</li><li>Cool-to-the-Touch Feel</li><li>Silky-Smooth Skin Comfort</li><li>Durable Long-Lasting Fabric</li><li>Lightweight & Easy Care</li></ul>",
-            "description_size": "text-base",
-            "button_label": "Learn More",
-            "button_link": "shopify://products/eshine-luxe-hybrid-mattress",
-            "button_style": "btn--primary",
-            "button_icon": "none",
-            "icon_1": "none",
-            "heading_1": "",
-            "icon_2": "none",
-            "heading_2": "",
-            "icon_3": "none",
-            "heading_3": ""
-          }
-        },
-        "image_with_text_FJJVYi": {
-          "type": "image_with_text",
-          "settings": {
-            "navigation_title": "Royal Mattress",
-            "image": "shopify://shop_images/14_fc3935d6-7a4a-4b47-82be-9566c7ec2e06.jpg",
-            "desktop_image_position": "left",
-            "image_aspect_ratio": "adapt",
-            "heading": "8 Layers Of Royal",
-            "highlight_style": "none",
-            "highlight_font_style": "italic",
-            "highlight_style_color": "",
-            "highlight_text_color": "",
-            "heading_size": "h3",
-            "subheading": "",
-            "description": "<p><br/><strong>Royal Mattress:</strong>PureGraphene technology delivers up to 99% antibacterial protection, effectively inhibiting common bacteria.</p><ul><li>14\" Royal Hybrid Mattress</li><li>Feel: Medium-Soft</li><li>Breathable All-Night Comfort</li><li>Fast-Drying Moisture Control </li><li>Durable Long-Lasting Fabric</li><li>Clean & Hygienic Surface</li><li>Lightweight & Easy Care</li></ul>",
-            "description_size": "text-base",
-            "button_label": "Learn More",
-            "button_link": "shopify://products/eshine-royal-hybrid-mattress",
-            "button_style": "btn--primary",
-            "button_icon": "none",
-            "icon_1": "none",
-            "heading_1": "",
-            "icon_2": "none",
-            "heading_2": "",
-            "icon_3": "none",
-            "heading_3": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_with_text_WbW8GM",
-        "image_with_text_i4DYLa",
-        "image_with_text_GhG6GM",
-        "image_with_text_DPCrmx",
-        "image_with_text_FJJVYi"
-      ],
-      "name": "t:sections.tabs-content.name",
-      "settings": {
-        "container": "fixed",
-        "color_scheme": "",
-        "navigation_style": "headings",
-        "navigation_alignment": "center",
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "show_section_divider": false,
-        "divider_width": "fixed"
-      }
     }
   },
   "order": [
     "main",
-    "multicolumn_icon_EPLYgM",
-    "comparison_table_eaC8cQ",
-    "tabs_content_pkMde7"
+    "comparison_table_yP9TiX",
+    "tabs_content_pkMde7",
+    "multicolumn_icon_EPLYgM"
   ]
 }

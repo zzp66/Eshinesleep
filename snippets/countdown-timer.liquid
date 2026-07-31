@@ -1,4 +1,4 @@
-{{ 'component-countdown-timer.aio.min.css' | asset_url | stylesheet_tag }}
+{{ 'component-countdown-timer.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'countdown-timer.js' | asset_url }}" defer="defer"></script>
 {%- liquid
   assign number_size = number_size | default: 'h3'

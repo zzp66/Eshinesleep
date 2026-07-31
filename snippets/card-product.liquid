@@ -309,12 +309,18 @@
           </a>
         </p>
       {%- endif -%}
+      <!-- Start of Judge.me code -->
+    <div style='{{ jm_style }}' class='jdgm-widget jdgm-preview-badge' data-id='{{ product.id }}' data-auto-install='false'>
+        {{ product.metafields.judgeme.badge }}
+    </div>
+<!-- End of Judge.me code -->
       <h3 class="product-card__title text-pcard-title">
         <a
-          class="reversed-link block {% if settings.pcard_title_line_limit != 'none' %} text-limit-{{ settings.pcard_title_line_limit }}{% endif %}"
+                    class="reversed-link block {% if settings.pcard_title_line_limit != 'none' %} text-limit-{{ settings.pcard_title_line_limit }}{% endif %}"
           href="{{ product.url }}"
         >
           <span class="reversed-link__text">{{- product.title -}}</span>
+<div data-shop-id="{{shop.id}}" product-id="{{product.id }}" data-page="{{request.page_type}}" class="ddreview-star"></div>
         </a>
       </h3>
       {%- if show_price -%}
